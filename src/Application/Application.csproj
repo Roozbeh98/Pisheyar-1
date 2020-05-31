@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RootNamespace>Pisheyar.Application</RootNamespace>
+    <AssemblyName>Pisheyar.Application</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="TblSmstemplate\**" />
+    <EmbeddedResource Remove="TblSmstemplate\**" />
+    <None Remove="TblSmstemplate\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="FluentValidation" Version="8.6.2" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Hosting" Version="2.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Advertisements\Commands\CreateAdvertisement\" />
+    <Folder Include="Advertisements\Commands\DeleteAdvertisement\" />
+    <Folder Include="Advertisements\Commands\UpdateAdvertisement\" />
+    <Folder Include="Advertisements\Queries\GetAdvertisement\" />
+    <Folder Include="Advertisements\Queries\GetAllAdvertisements\" />
+    <Folder Include="Clients\Queries\" />
+    <Folder Include="Codes\Commands\" />
+    <Folder Include="Contact\Queries\" />
+    <Folder Include="Payments\Queries\GetPayment\" />
+    <Folder Include="Tags\Commands\" />
+    <Folder Include="Common\Mappings\" />
+    <Folder Include="Users\Queries\" />
+  </ItemGroup>
+
+</Project>
