@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Pisheyar.Application.Orders.Commands.CreateOrder;
 using Pisheyar.Application.Orders.Commands.FinishOrder;
 using Pisheyar.Application.Orders.Queries.GetClientOrders;
+using Pisheyar.Application.Orders.Queries.GetOrdersForAdmin;
 using Pisheyar.Application.Orders.Queries.GetOrdersForContractor;
 
 namespace WebUI.Controllers
@@ -48,6 +49,17 @@ namespace WebUI.Controllers
         public async Task<ActionResult<GetOrdersForContractorVm>> GetOrdersForContractor(Guid? categoryGuid)
         {
             return await Mediator.Send(new GetOrdersForContractorQuery() { CategoryGuid = categoryGuid });
+        }
+
+        /// <summary>
+        /// دریافت کلیه سفارش ها
+        /// </summary>
+        /// <param name="stateGuid">آیدی وضعیت سفارش</param>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetOrdersForAdminVm>> GetAll(Guid? stateGuid)
+        {
+            return await Mediator.Send(new GetOrdersForAdminQuery() { StateGuid = stateGuid });
         }
 
         /// <summary>
