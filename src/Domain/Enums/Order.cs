@@ -43,4 +43,19 @@ namespace Pisheyar.Domain.Enums
         StateNotFound = 4,
         NotAnyOrdersFound = 5
     }
+
+    public enum GetOrdersForAdminState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        StateNotFound = 4,
+        NotAnyOrdersFound = 5
+    }
+
+    public enum DeleteOrderState
+    {
+        Success = 1,
+        OrderNotFound = 2
+    }
 }

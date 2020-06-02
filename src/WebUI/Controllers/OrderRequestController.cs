@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pisheyar.Application.Accounts.Commands.DeleteOrderRequest;
 using Pisheyar.Application.OrderRequests.Commands.AcceptOrderRequest;
 using Pisheyar.Application.OrderRequests.Commands.AllowContractorToChatByClient;
 using Pisheyar.Application.OrderRequests.Commands.CreateOrderRequest;
@@ -142,6 +143,17 @@ namespace WebUI.Controllers
         public async Task<ActionResult<GetChatMessagesVm>> GetChatMessages(Guid orderRequestGuid)
         {
             return await Mediator.Send(new GetChatMessagesQuery() { OrderRequestGuid = orderRequestGuid });
+        }
+
+        /// <summary>
+        /// حذف درخواست سفارش
+        /// </summary>
+        /// <param name="command">آیدی درخواست سفارش</param>
+        /// <returns></returns>
+        [HttpPost("[action]")]
+        public async Task<ActionResult<DeleteOrderRequestVm>> Delete(DeleteOrderRequestCommand command)
+        {
+            return await Mediator.Send(command);
         }
     }
 }

@@ -89,7 +89,7 @@ namespace Pisheyar.Application.OrderRequests.Queries.GetOrderRequestsForClient
                 {
                     Message = "عملیات موفق آمیز",
                     State = (int)GetOrderRequestsForClientState.Success,
-                    Orders = orderRequestRes
+                    OrderRequests = orderRequestRes
                 };
             }
         }

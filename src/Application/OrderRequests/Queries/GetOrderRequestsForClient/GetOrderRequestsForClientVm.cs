@@ -10,6 +10,6 @@ namespace Pisheyar.Application.OrderRequests.Queries.GetOrderRequestsForClient
 
         public int State { get; set; }
 
-        public List<GetOrderRequestsForClientDto> Orders { get; set; }
+        public List<GetOrderRequestsForClientDto> OrderRequests { get; set; }
     }
 }

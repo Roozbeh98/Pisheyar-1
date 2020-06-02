@@ -45,6 +45,15 @@ namespace Pisheyar.Domain.Enums
         NotAnyOrderRequestsFound = 5
     }
 
+    public enum GetOrderRequestsForAdminState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        OrderNotFound = 4,
+        NotAnyOrderRequestsFound = 5
+    }
+
     public enum GetContractorOrderRequestsState
     {
         Success = 1,
@@ -92,5 +101,11 @@ namespace Pisheyar.Domain.Enums
         UserNotFound = 2,
         OrderRequestNotFound = 3,
         NotAnyChatMessagesFound = 4
+    }
+
+    public enum DeleteOrderRequestState
+    {
+        Success = 1,
+        OrderRequestNotFound = 2
     }
 }

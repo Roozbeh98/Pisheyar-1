@@ -42,7 +42,7 @@ namespace Pisheyar.Application.Orders.Queries.GetOrdersForAdmin
                     return new GetOrdersForAdminVm()
                     {
                         Message = "کاربر مورد نظر یافت نشد",
-                        State = (int)GetClientOrdersState.UserNotFound
+                        State = (int)GetOrdersForAdminState.UserNotFound
                     };
                 }
 
@@ -54,11 +54,12 @@ namespace Pisheyar.Application.Orders.Queries.GetOrdersForAdmin
                     return new GetOrdersForAdminVm()
                     {
                         Message = "ادمین مورد نظر یافت نشد",
-                        State = (int)GetClientOrdersState.ClientNotFound
+                        State = (int)GetOrdersForAdminState.AdminNotFound
                     };
                 }
 
                 IQueryable<Order> orders = _context.Order
+                    .Where(x => !x.IsDelete)
                     .AsQueryable();
 
                 if (request.StateGuid != null)
@@ -71,7 +72,7 @@ namespace Pisheyar.Application.Orders.Queries.GetOrdersForAdmin
                         return new GetOrdersForAdminVm()
                         {
                             Message = "وضعیت مورد نظر یافت نشد",
-                            State = (int)GetClientOrdersState.StateNotFound
+                            State = (int)GetOrdersForAdminState.StateNotFound
                         };
                     }
 
@@ -87,14 +88,14 @@ namespace Pisheyar.Application.Orders.Queries.GetOrdersForAdmin
                     return new GetOrdersForAdminVm()
                     {
                         Message = "سفارشی یافت نشد",
-                        State = (int)GetClientOrdersState.NotAnyOrdersFound
+                        State = (int)GetOrdersForAdminState.NotAnyOrdersFound
                     };
                 }
 
                 return new GetOrdersForAdminVm()
                 {
                     Message = "عملیات موفق آمیز",
-                    State = (int)GetClientOrdersState.Success,
+                    State = (int)GetOrdersForAdminState.Success,
                     Orders = ordersResult
                 };
             }

@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Pisheyar.Application.Accounts.Commands.DeleteOrder;
+using Pisheyar.Application.OrderRequests.Queries.GetOrderRequestsForAdmin;
 using Pisheyar.Application.Orders.Commands.CreateOrder;
 using Pisheyar.Application.Orders.Commands.FinishOrder;
 using Pisheyar.Application.Orders.Queries.GetClientOrders;
@@ -63,6 +65,17 @@ namespace WebUI.Controllers
         }
 
         /// <summary>
+        /// دریافت درخواست های سفارش
+        /// </summary>
+        /// <param name="orderGuid">آیدی سفارش</param>
+        /// <returns></returns>
+        [HttpGet("{orderGuid}/[action]")]
+        public async Task<ActionResult<GetOrderRequestsForAdminVm>> GetOrderRequests(Guid orderGuid)
+        {
+            return await Mediator.Send(new GetOrderRequestsForAdminQuery() { OrderGuid = orderGuid });
+        }
+
+        /// <summary>
         /// دریافت سفارش های ثبت شده سرویس گیرنده
         /// </summary>
         /// <param name="stateGuid">آیدی وضعیت سفارش</param>
@@ -71,6 +84,17 @@ namespace WebUI.Controllers
         public async Task<ActionResult<GetClientOrdersVm>> GetClientOrders(Guid? stateGuid)
         {
             return await Mediator.Send(new GetClientOrdersQuery() { StateGuid = stateGuid });
+        }
+
+        /// <summary>
+        /// حذف سفارش
+        /// </summary>
+        /// <param name="command">آیدی سفارش</param>
+        /// <returns></returns>
+        [HttpPost("[action]")]
+        public async Task<ActionResult<DeleteOrderVm>> Delete(DeleteOrderCommand command)
+        {
+            return await Mediator.Send(command);
         }
     }
 }
