@@ -39,7 +39,6 @@
     <Folder Include="Clients\Queries\" />
     <Folder Include="Codes\Commands\" />
     <Folder Include="Contact\Queries\" />
-    <Folder Include="Payments\Queries\GetPaymentByGuid\" />
     <Folder Include="Tags\Commands\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Users\Queries\" />

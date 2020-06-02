@@ -24,7 +24,14 @@ namespace Pisheyar.Domain.Enums
         Success = 1,
         UserNotFound = 2,
         AdminNotFound = 3,
-        PaymentNotFound = 4,
-        NotAnyPaymentsFound = 5
+        NotAnyPaymentsFound = 4
+    }
+
+    public enum GetPaymentByGuidState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        PaymentNotFound = 4
     }
 }

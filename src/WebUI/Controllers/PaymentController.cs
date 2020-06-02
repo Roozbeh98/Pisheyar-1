@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Pisheyar.Application.Payments.Commands.CreatePayment;
 using Pisheyar.Application.Payments.Commands.VerifyPayment;
 using Pisheyar.Application.Payments.Queries.GetAllPayments;
+using Pisheyar.Application.Payments.Queries.GetPaymentByGuid;
 
 namespace WebUI.Controllers
 {
@@ -25,6 +26,17 @@ namespace WebUI.Controllers
         public async Task<ActionResult<GetAllPaymentsVm>> GetAll(bool successfulOnly = false)
         {
             return await Mediator.Send(new GetAllPaymentsQuery() { SuccessfulOnly = successfulOnly });
+        }
+
+        /// <summary>
+        /// دریافت پرداخت
+        /// </summary>
+        /// <param name="paymentGuid">آیدی پرداخت</param>
+        /// <returns></returns>
+        [HttpGet("[action]/{paymentGuid}")]
+        public async Task<ActionResult<GetPaymentByGuidVm>> Get(Guid paymentGuid)
+        {
+            return await Mediator.Send(new GetPaymentByGuidQuery() { PaymentGuid = paymentGuid });
         }
 
         /// <summary>

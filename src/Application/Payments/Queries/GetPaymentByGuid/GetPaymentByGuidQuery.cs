@@ -12,13 +12,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Pisheyar.Application.Payments.Queries.GetAllPayments
+namespace Pisheyar.Application.Payments.Queries.GetPaymentByGuid
 {
-    public class GetAllPaymentsQuery : IRequest<GetAllPaymentsVm>
+    public class GetPaymentByGuidQuery : IRequest<GetPaymentByGuidVm>
     {
-        public bool SuccessfulOnly { get; set; }
+        public Guid PaymentGuid { get; set; }
 
-        public class OrdersListQueryHandler : IRequestHandler<GetAllPaymentsQuery, GetAllPaymentsVm>
+        public class OrdersListQueryHandler : IRequestHandler<GetPaymentByGuidQuery, GetPaymentByGuidVm>
         {
             private readonly IPisheyarContext _context;
             private readonly ICurrentUserService _currentUser;
@@ -31,49 +31,43 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
                 _mapper = mapper;
             }
 
-            public async Task<GetAllPaymentsVm> Handle(GetAllPaymentsQuery request, CancellationToken cancellationToken)
+            public async Task<GetPaymentByGuidVm> Handle(GetPaymentByGuidQuery request, CancellationToken cancellationToken)
             {
                 User currentUser = await _context.User
                     .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier))
                     .SingleOrDefaultAsync(cancellationToken);
 
-                if (currentUser == null) return new GetAllPaymentsVm()
+                if (currentUser == null) return new GetPaymentByGuidVm()
                 {
                     Message = "کاربر مورد نظر یافت نشد",
-                    State = (int)GetAllPaymentsState.UserNotFound
+                    State = (int)GetPaymentByGuidState.UserNotFound
                 };
 
                 Admin admin = await _context.Admin
                     .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId, cancellationToken);
 
-                if (admin == null) return new GetAllPaymentsVm()
+                if (admin == null) return new GetPaymentByGuidVm()
                 {
                     Message = "ادمین مورد نظر یافت نشد",
-                    State = (int)GetAllPaymentsState.AdminNotFound
+                    State = (int)GetPaymentByGuidState.AdminNotFound
                 };
 
-                IQueryable<Payment> payments = _context.Payment
-                    .AsQueryable();
+                GetPaymentByGuidDto payment = await _context.Payment
+                    .Where(x => x.PaymentGuid == request.PaymentGuid)
+                    .ProjectTo<GetPaymentByGuidDto>(_mapper.ConfigurationProvider)
+                    .SingleOrDefaultAsync(cancellationToken);
 
-                if (request.SuccessfulOnly)
-                    payments = payments.Where(x => x.IsSuccessful);
-
-                List<GetAllPaymentsDto> paymentsResult = await payments
-                    .OrderByDescending(x => x.CreationDate)
-                    .ProjectTo<GetAllPaymentsDto>(_mapper.ConfigurationProvider)
-                    .ToListAsync(cancellationToken);
-
-                if (paymentsResult.Count <= 0) return new GetAllPaymentsVm()
+                if (payment == null) return new GetPaymentByGuidVm()
                 {
-                    Message = "پرداختی یافت نشد",
-                    State = (int)GetAllPaymentsState.NotAnyPaymentsFound
+                    Message = "پرداخت مورد نظر یافت نشد",
+                    State = (int)GetPaymentByGuidState.PaymentNotFound
                 };
 
-                return new GetAllPaymentsVm()
+                return new GetPaymentByGuidVm()
                 {
                     Message = "عملیات موفق آمیز",
-                    State = (int)GetAllPaymentsState.Success,
-                    Payments = paymentsResult
+                    State = (int)GetPaymentByGuidState.Success,
+                    Payment = payment
                 };
             }
         }
