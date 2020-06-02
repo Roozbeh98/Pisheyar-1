@@ -131,16 +131,16 @@ namespace Pisheyar.Application.Accounts.Commands.RegisterContractor
 
                     await _context.SaveChangesAsync(cancellationToken);
 
-                    //object smsResult = await _sms.SendServiceable(Domain.Enums.SmsTemplate.VerifyAccount, request.PhoneNumber, t.ToString());
+                    object smsResult = await _sms.SendServiceable(Domain.Enums.SmsTemplate.VerifyAccount, request.PhoneNumber, t.ToString());
 
-                    //if (smsResult.GetType().Name != "SendResult")
-                    //{
-                    //    // sent result
-                    //}
-                    //else
-                    //{
-                    //    // sms error
-                    //}
+                    if (smsResult.GetType().Name != "SendResult")
+                    {
+                        // sent result
+                    }
+                    else
+                    {
+                        // sms error
+                    }
 
                     return new RegisterContractorVm() { Message = "عملیات موفق آمیز", State = (int)RegisterContractorState.Success };
                 }
@@ -239,16 +239,16 @@ namespace Pisheyar.Application.Accounts.Commands.RegisterContractor
 
                     await _context.SaveChangesAsync(cancellationToken);
 
-                    //object smsResult = await _sms.SendServiceable(Domain.Enums.SmsTemplate.VerifyAccount, request.PhoneNumber, t.ToString());
+                    object smsResult = await _sms.SendServiceable(Domain.Enums.SmsTemplate.VerifyAccount, request.PhoneNumber, t.ToString());
 
-                    //if (smsResult.GetType().Name != "SendResult")
-                    //{
-                    //    // sent result
-                    //}
-                    //else
-                    //{
-                    //    // sms error
-                    //}
+                    if (smsResult.GetType().Name != "SendResult")
+                    {
+                        // sent result
+                    }
+                    else
+                    {
+                        // sms error
+                    }
 
                     return new RegisterContractorVm() { Message = "عملیات موفق آمیز", State = (int)RegisterContractorState.Success };
                 }

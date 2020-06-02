@@ -50,22 +50,25 @@ namespace Pisheyar.Application.Categories.Commands.SetCategoryDetails
                         State = (int)SetCategoryDetailsState.CoverDocumentNotFound
                     };
 
-                    Document oldDocument = await _context.Document
-                        .FirstOrDefaultAsync(x => x.DocumentId == category.CoverDocumentId, cancellationToken);
-
-                    if (oldDocument != null && category.CoverDocumentId != coverDocument.DocumentId)
+                    if (category.CoverDocumentId != coverDocument.DocumentId)
                     {
+                        Document oldDocument = await _context.Document
+                            .FirstOrDefaultAsync(x => x.DocumentId == category.CoverDocumentId, cancellationToken);
+
+                        if (oldDocument != null)
+                        {
+                            int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
+                            string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
+                                request.WebRootPath,
+                                oldDocument.Path.Substring(uploadsIndex));
+
+                            if (File.Exists(documentPath))
+                                File.Delete(documentPath);
+
+                            _context.Document.Remove(oldDocument);
+                        }
+
                         category.CoverDocumentId = coverDocument.DocumentId;
-
-                        int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
-                        string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
-                            request.WebRootPath,
-                            oldDocument.Path.Substring(uploadsIndex));
-
-                        if (File.Exists(documentPath))
-                            File.Delete(documentPath);
-
-                        _context.Document.Remove(oldDocument);
                     }
                 }
 
@@ -79,23 +82,26 @@ namespace Pisheyar.Application.Categories.Commands.SetCategoryDetails
                         Message = "تصویر آیکون فعال مورد نظر یافت نشد",
                         State = (int)SetCategoryDetailsState.CoverDocumentNotFound
                     };
-
-                    Document oldDocument = await _context.Document
-                        .FirstOrDefaultAsync(x => x.DocumentId == category.ActiveIconDocumentId, cancellationToken);
-
-                    if (oldDocument != null && category.ActiveIconDocumentId != activeIconDocument.DocumentId)
+                    
+                    if (category.ActiveIconDocumentId != activeIconDocument.DocumentId)
                     {
+                        Document oldDocument = await _context.Document
+                           .FirstOrDefaultAsync(x => x.DocumentId == category.ActiveIconDocumentId, cancellationToken);
+
+                        if (oldDocument != null)
+                        {
+                            int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
+                            string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
+                                request.WebRootPath,
+                                oldDocument.Path.Substring(uploadsIndex));
+
+                            if (File.Exists(documentPath))
+                                File.Delete(documentPath);
+
+                            _context.Document.Remove(oldDocument);
+                        }
+
                         category.ActiveIconDocumentId = activeIconDocument.DocumentId;
-
-                        int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
-                        string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
-                            request.WebRootPath,
-                            oldDocument.Path.Substring(uploadsIndex));
-
-                        if (File.Exists(documentPath))
-                            File.Delete(documentPath);
-
-                        _context.Document.Remove(oldDocument);
                     }
                 }
 
@@ -110,22 +116,25 @@ namespace Pisheyar.Application.Categories.Commands.SetCategoryDetails
                         State = (int)SetCategoryDetailsState.CoverDocumentNotFound
                     };
 
-                    Document oldDocument = await _context.Document
-                        .FirstOrDefaultAsync(x => x.DocumentId == category.InactiveIconDocumentId, cancellationToken);
-
-                    if (oldDocument != null && category.InactiveIconDocumentId != inactiveIconDocument.DocumentId)
+                    if (category.InactiveIconDocumentId != inactiveIconDocument.DocumentId)
                     {
+                        Document oldDocument = await _context.Document
+                            .FirstOrDefaultAsync(x => x.DocumentId == category.InactiveIconDocumentId, cancellationToken);
+
+                        if (oldDocument != null)
+                        {
+                            int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
+                            string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
+                                request.WebRootPath,
+                                oldDocument.Path.Substring(uploadsIndex));
+
+                            if (File.Exists(documentPath))
+                                File.Delete(documentPath);
+
+                            _context.Document.Remove(oldDocument);
+                        }
+
                         category.InactiveIconDocumentId = inactiveIconDocument.DocumentId;
-
-                        int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
-                        string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
-                            request.WebRootPath,
-                            oldDocument.Path.Substring(uploadsIndex));
-
-                        if (File.Exists(documentPath))
-                            File.Delete(documentPath);
-
-                        _context.Document.Remove(oldDocument);
                     }
                 }
 
@@ -139,23 +148,26 @@ namespace Pisheyar.Application.Categories.Commands.SetCategoryDetails
                         Message = "تصویر فهرست چرخشی مورد نظر یافت نشد",
                         State = (int)SetCategoryDetailsState.CoverDocumentNotFound
                     };
-
-                    Document oldDocument = await _context.Document
-                        .FirstOrDefaultAsync(x => x.DocumentId == category.QuadMenuDocumentId, cancellationToken);
-
-                    if (oldDocument != null && category.QuadMenuDocumentId != quadMenuDocument.DocumentId)
+                    
+                    if (category.QuadMenuDocumentId != quadMenuDocument.DocumentId)
                     {
+                        Document oldDocument = await _context.Document
+                           .FirstOrDefaultAsync(x => x.DocumentId == category.QuadMenuDocumentId, cancellationToken);
+
+                        if (oldDocument != null)
+                        {
+                            int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
+                            string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
+                                request.WebRootPath,
+                                oldDocument.Path.Substring(uploadsIndex));
+
+                            if (File.Exists(documentPath))
+                                File.Delete(documentPath);
+
+                            _context.Document.Remove(oldDocument);
+                        }
+
                         category.QuadMenuDocumentId = quadMenuDocument.DocumentId;
-
-                        int uploadsIndex = oldDocument.Path.IndexOf("Uploads");
-                        string documentPath = Path.Combine(Directory.GetCurrentDirectory(),
-                            request.WebRootPath,
-                            oldDocument.Path.Substring(uploadsIndex));
-
-                        if (File.Exists(documentPath))
-                            File.Delete(documentPath);
-
-                        _context.Document.Remove(oldDocument);
                     }
                 }
 

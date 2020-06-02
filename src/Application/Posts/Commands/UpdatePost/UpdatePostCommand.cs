@@ -71,22 +71,25 @@ namespace Pisheyar.Application.Posts.Commands.UpdatePost
                         };
                     }
 
-                    var oldDocument = await _context.Document
-                        .FirstOrDefaultAsync(x => x.DocumentId == post.DocumentId, cancellationToken);
-
-                    if (oldDocument != null && post.DocumentId != document.DocumentId)
+                    if (post.DocumentId != document.DocumentId)
                     {
-                        post.DocumentId = document.DocumentId;
+                        var oldDocument = await _context.Document
+                           .FirstOrDefaultAsync(x => x.DocumentId == post.DocumentId, cancellationToken);
 
-                        var uploadsIndex = oldDocument.Path.IndexOf("Uploads");
-                        var documentPath = Path.Combine(Directory.GetCurrentDirectory(), request.WebRootPath, oldDocument.Path.Substring(uploadsIndex));
-
-                        if (File.Exists(documentPath))
+                        if (oldDocument != null)
                         {
-                            File.Delete(documentPath);
+                            var uploadsIndex = oldDocument.Path.IndexOf("Uploads");
+                            var documentPath = Path.Combine(Directory.GetCurrentDirectory(), request.WebRootPath, oldDocument.Path.Substring(uploadsIndex));
+
+                            if (File.Exists(documentPath))
+                            {
+                                File.Delete(documentPath);
+                            }
+
+                            _context.Document.Remove(oldDocument);
                         }
 
-                        _context.Document.Remove(oldDocument);
+                        post.DocumentId = document.DocumentId;
                     }
                 }
 
