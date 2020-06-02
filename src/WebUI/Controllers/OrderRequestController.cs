@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Pisheyar.Application.Accounts.Commands.DeleteOrderRequest;
+using Pisheyar.Application.OrderRequests.Commands.DeleteOrderRequest;
 using Pisheyar.Application.OrderRequests.Commands.AcceptOrderRequest;
 using Pisheyar.Application.OrderRequests.Commands.AllowContractorToChatByClient;
 using Pisheyar.Application.OrderRequests.Commands.CreateOrderRequest;

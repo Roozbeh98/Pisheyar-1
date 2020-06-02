@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pisheyar.Application.Payments.Commands.CreatePayment;
 using Pisheyar.Application.Payments.Commands.VerifyPayment;
+using Pisheyar.Application.Payments.Queries.GetAllPayments;
 
 namespace WebUI.Controllers
 {
@@ -15,6 +16,17 @@ namespace WebUI.Controllers
     [ApiController]
     public class PaymentController : ApiController
     {
+        /// <summary>
+        /// دریافت کلیه پرداختی ها
+        /// </summary>
+        /// <param name="successfulOnly">فقط پرداختی های موفق؟</param>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetAllPaymentsVm>> GetAll(bool successfulOnly = false)
+        {
+            return await Mediator.Send(new GetAllPaymentsQuery() { SuccessfulOnly = successfulOnly });
+        }
+
         /// <summary>
         /// 
         /// </summary>

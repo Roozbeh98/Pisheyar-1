@@ -18,4 +18,13 @@ namespace Pisheyar.Domain.Enums
         PaymentNotFound = 2,
         InvalidPayment = 3
     }
+
+    public enum GetAllPaymentsState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        PaymentNotFound = 4,
+        NotAnyPaymentsFound = 5
+    }
 }

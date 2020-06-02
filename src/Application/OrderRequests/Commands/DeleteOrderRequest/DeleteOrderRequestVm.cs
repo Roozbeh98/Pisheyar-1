@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pisheyar.Application.Accounts.Commands.DeleteOrderRequest
+namespace Pisheyar.Application.OrderRequests.Commands.DeleteOrderRequest
 {
     public class DeleteOrderRequestVm
     {

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Pisheyar.Application.Accounts.Commands.DeleteOrder;
+using Pisheyar.Application.Orders.Commands.DeleteOrder;
 using Pisheyar.Application.OrderRequests.Queries.GetOrderRequestsForAdmin;
 using Pisheyar.Application.Orders.Commands.CreateOrder;
 using Pisheyar.Application.Orders.Commands.FinishOrder;

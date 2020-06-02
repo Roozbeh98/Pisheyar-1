@@ -10,7 +10,7 @@ using Pisheyar.Domain.Enums;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace Pisheyar.Application.Accounts.Commands.DeleteOrder
+namespace Pisheyar.Application.Orders.Commands.DeleteOrder
 {
     public class DeleteOrderCommand : IRequest<DeleteOrderVm>
     {
