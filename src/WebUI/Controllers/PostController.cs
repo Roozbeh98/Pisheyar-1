@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Pisheyar.Application.Posts.Commands.ChangePostCommentAcceptance;
-using Pisheyar.Application.Posts.Commands.ChangePostShow;
+using Pisheyar.Application.Posts.Commands.ChangePostInSliderStatus;
+using Pisheyar.Application.Posts.Commands.ChangePostShowStatus;
+using Pisheyar.Application.Posts.Commands.ChangePostSuggestionStatus;
 using Pisheyar.Application.Posts.Commands.CreatePost;
 using Pisheyar.Application.Posts.Commands.CreatePostComment;
 using Pisheyar.Application.Posts.Commands.DeletePost;
@@ -21,6 +23,8 @@ using Pisheyar.Application.Posts.Queries.GetPost;
 using Pisheyar.Application.Posts.Queries.GetPostsByCategory;
 using Pisheyar.Application.Posts.Queries.GetPostsByPagination;
 using Pisheyar.Application.Posts.Queries.GetRejectedPostCommentsQuery;
+using Pisheyar.Application.Posts.Queries.GetSliderPosts;
+using Pisheyar.Application.Posts.Queries.GetSuggestedPosts;
 using Pisheyar.Application.Posts.Queries.GetWeeklyMostViewedPosts;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -127,6 +131,28 @@ namespace WebUI.Controllers
         }
 
         /// <summary>
+        /// دریافت پست های اسلایدر
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        [AllowAnonymous]
+        public async Task<ActionResult<GetSliderPostsVm>> GetSliderPosts()
+        {
+            return await Mediator.Send(new GetSliderPostsQuery());
+        }
+
+        /// <summary>
+        /// دریافت پست های منتخبین سردبیر
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        [AllowAnonymous]
+        public async Task<ActionResult<GetSuggestedPostsVm>> GetSuggestedPosts()
+        {
+            return await Mediator.Send(new GetSuggestedPostsQuery());
+        }
+
+        /// <summary>
         /// دریافت پست ها از طریق شماره صفحه
         /// </summary>
         /// <param name="page">شماره صفحه</param>
@@ -187,7 +213,29 @@ namespace WebUI.Controllers
         /// <param name="command">اطلاعات لازم</param>
         /// <returns></returns>
         [HttpPost("[action]")]
-        public async Task<ActionResult<int>> ChangeShow(ChangePostShowCommand command)
+        public async Task<ActionResult<ChangePostShowStatusVm>> ChangeShowStatus(ChangePostShowStatusCommand command)
+        {
+            return await Mediator.Send(command);
+        }
+
+        /// <summary>
+        /// تغییر وضعیت نمایش پست در اسلایدر
+        /// </summary>
+        /// <param name="command">اطلاعات لازم</param>
+        /// <returns></returns>
+        [HttpPost("[action]")]
+        public async Task<ActionResult<ChangePostInSliderStatusVm>> ChangeInSliderStatus(ChangePostInSliderStatusCommand command)
+        {
+            return await Mediator.Send(command);
+        }
+
+        /// <summary>
+        /// تغییر وضعیت نمایش پست در منتخبین سردبیر
+        /// </summary>
+        /// <param name="command">اطلاعات لازم</param>
+        /// <returns></returns>
+        [HttpPost("[action]")]
+        public async Task<ActionResult<ChangePostSuggestionStatusVm>> ChangeSuggestionStatus(ChangePostSuggestionStatusCommand command)
         {
             return await Mediator.Send(command);
         }

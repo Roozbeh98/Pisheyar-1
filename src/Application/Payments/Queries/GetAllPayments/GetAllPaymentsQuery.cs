@@ -16,7 +16,13 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
 {
     public class GetAllPaymentsQuery : IRequest<GetAllPaymentsVm>
     {
-        public bool SuccessfulOnly { get; set; }
+        public Guid? ContractorGuid { get; set; }
+
+        public DateTime? StartDate { get; set; }
+
+        public DateTime? EndDate { get; set; }
+
+        public bool? SuccessfulStatus { get; set; }
 
         public class OrdersListQueryHandler : IRequestHandler<GetAllPaymentsQuery, GetAllPaymentsVm>
         {
@@ -55,8 +61,17 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
                 IQueryable<Payment> payments = _context.Payment
                     .AsQueryable();
 
-                if (request.SuccessfulOnly)
-                    payments = payments.Where(x => x.IsSuccessful);
+                if (request.ContractorGuid != null)
+                    payments = payments.Where(x => x.Contractor.ContractorGuid == request.ContractorGuid);
+
+                if (request.StartDate != null)
+                    payments = payments.Where(x => x.CreationDate.Date >= request.StartDate.Value.Date);
+
+                if (request.EndDate != null)
+                    payments = payments.Where(x => x.CreationDate.Date <= request.EndDate.Value.Date);
+
+                if (request.SuccessfulStatus != null)
+                    payments = payments.Where(x => x.IsSuccessful == request.SuccessfulStatus);
 
                 List<GetAllPaymentsDto> paymentsResult = await payments
                     .OrderByDescending(x => x.CreationDate)

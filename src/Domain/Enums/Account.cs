@@ -77,12 +77,28 @@ namespace Pisheyar.Domain.Enums
     public enum GetAllContractorsState
     {
         Success = 1,
-        NotAnyContractosFound = 2
+        NotAnyContractorsFound = 2
     }
 
     public enum GetAllAdminsState
     {
         Success = 1,
         NotAnyAdminsFound = 2
+    }
+
+    public enum GetContractorPaymentsState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        NotAnyPaymentsFound = 4
+    }
+
+    public enum GetLoyalContractorsState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        NotAnyContractorsFound = 4
     }
 }

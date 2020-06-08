@@ -20,12 +20,15 @@ namespace WebUI.Controllers
         /// <summary>
         /// دریافت کلیه پرداختی ها
         /// </summary>
-        /// <param name="successfulOnly">فقط پرداختی های موفق؟</param>
+        /// <param name="contractorGuid">آیدی سرویس دهنده</param>
+        /// <param name="startDate">از تاریخ</param>
+        /// <param name="endDate">تا تاریخ</param>
+        /// <param name="successfulStatus">وضعیت پرداخت</param>
         /// <returns></returns>
         [HttpGet("[action]")]
-        public async Task<ActionResult<GetAllPaymentsVm>> GetAll(bool successfulOnly = false)
+        public async Task<ActionResult<GetAllPaymentsVm>> GetAll(Guid? contractorGuid = null, DateTime? startDate = null, DateTime? endDate = null, bool? successfulStatus = null)
         {
-            return await Mediator.Send(new GetAllPaymentsQuery() { SuccessfulOnly = successfulOnly });
+            return await Mediator.Send(new GetAllPaymentsQuery() { ContractorGuid = contractorGuid, StartDate = startDate, EndDate = endDate, SuccessfulStatus = successfulStatus });
         }
 
         /// <summary>

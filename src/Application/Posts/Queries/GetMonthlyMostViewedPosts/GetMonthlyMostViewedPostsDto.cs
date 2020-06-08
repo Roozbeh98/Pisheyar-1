@@ -21,21 +21,23 @@ namespace Pisheyar.Application.Posts.Queries.GetMonthlyMostViewedPosts
 
         public string UserFullName { get; set; }
 
-        public int PostViewCount { get; set; }
+        public int ViewCount { get; set; }
 
-        public int PostLikeCount { get; set; }
+        public int LikeCount { get; set; }
 
-        public string PostTitle { get; set; }
+        public string Title { get; set; }
 
-        public string PostAbstract { get; set; }
+        public string Abstract { get; set; }
 
-        public string PostDescription { get; set; }
+        public string Description { get; set; }
 
-        public string PostCreateDate { get; set; }
+        public bool IsShow { get; set; }
 
-        public string PostModifyDate { get; set; }
+        public bool IsSuggested { get; set; }
 
-        public bool PostIsShow { get; set; }
+        public bool IsInSlider { get; set; }
+
+        public string ModifiedDate { get; set; }
 
         public string Slug { get; set; }
 
@@ -43,7 +45,7 @@ namespace Pisheyar.Application.Posts.Queries.GetMonthlyMostViewedPosts
         {
             profile.CreateMap<Post, GetMonthlyMostViewedPostsDto>()
                 .ForMember(d => d.UserFullName, opt => opt.MapFrom(s => s.User.FirstName + " " + s.User.LastName))
-                .ForMember(d => d.PostModifyDate, opt => opt.MapFrom(s => PersianDateExtensionMethods.ToPeString(s.ModifiedDate, "yyyy/MM/dd HH:mm")))
+                .ForMember(d => d.ModifiedDate, opt => opt.MapFrom(s => PersianDateExtensionMethods.ToPeString(s.ModifiedDate, "yyyy/MM/dd HH:mm")))
                 .ForMember(d => d.Slug, opt => opt.MapFrom(s => s.Title.Trim().ToLowerInvariant().Replace(" ", "-")))
                 .ForMember(d => d.Document, opt => opt.MapFrom(s => new FilepondDto
                 {

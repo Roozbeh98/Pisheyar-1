@@ -33,6 +33,8 @@ namespace Pisheyar.Domain.Entities
         public string Description { get; set; }
         [Required]
         public bool IsShow { get; set; }
+        public bool IsSuggested { get; set; }
+        public bool IsInSlider { get; set; }
         public bool IsDelete { get; set; }
         public DateTime CreationDate { get; set; }
         public DateTime ModifiedDate { get; set; }

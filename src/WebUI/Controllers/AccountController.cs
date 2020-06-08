@@ -21,6 +21,7 @@ using Pisheyar.Application.Users.Commands.SetProfilePicture;
 using Pisheyar.Application.Accounts.Queries.GetAllClients;
 using Pisheyar.Application.Accounts.Queries.GetAllContractors;
 using Pisheyar.Application.Accounts.Queries.GetAllAdmins;
+using Pisheyar.Application.Payments.Queries.GetLoyalContractors;
 
 namespace WebUI.Controllers
 {
@@ -109,6 +110,16 @@ namespace WebUI.Controllers
         public async Task<ActionResult<GetAllContractorsVm>> GetAllContractors()
         {
             return await Mediator.Send(new GetAllContractorsQuery());
+        }
+
+        /// <summary>
+        /// دربافت سرویس دهندگان وفادار
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetLoyalContractorsVm>> GetLoyalContractors()
+        {
+            return await Mediator.Send(new GetLoyalContractorsQuery());
         }
 
         /// <summary>

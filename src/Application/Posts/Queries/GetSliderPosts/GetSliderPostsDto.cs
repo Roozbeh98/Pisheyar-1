@@ -7,17 +7,17 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pisheyar.Application.Posts.Queries.GetIndexPosts
+namespace Pisheyar.Application.Posts.Queries.GetSliderPosts
 {
-    public class GetIndexPostsDto : IMapFrom<Post>
+    public class GetSliderPostsDto : IMapFrom<Post>
     {
         public Guid PostGuid { get; set; }
 
         public FilepondDto Document { get; set; }
 
-        public GetIndexPostsCategoryNameDto Category { get; set; }
+        public GetSliderPostsCategoryNameDto Category { get; set; }
 
-        public List<GetIndexPostsTagNameDto> Tags { get; set; }
+        public List<GetSliderPostsTagNameDto> Tags { get; set; }
 
         public string UserFullName { get; set; }
 
@@ -43,7 +43,7 @@ namespace Pisheyar.Application.Posts.Queries.GetIndexPosts
 
         public void Mapping(Profile profile)
         {
-            profile.CreateMap<Post, GetIndexPostsDto>()
+            profile.CreateMap<Post, GetSliderPostsDto>()
                 .ForMember(d => d.UserFullName, opt => opt.MapFrom(s => s.User.FirstName + " " + s.User.LastName))
                 .ForMember(d => d.ModifiedDate, opt => opt.MapFrom(s => PersianDateExtensionMethods.ToPeString(s.ModifiedDate, "yyyy/MM/dd HH:mm")))
                 .ForMember(d => d.Slug, opt => opt.MapFrom(s => s.Title.Trim().ToLowerInvariant().Replace(" ", "-")))
@@ -68,14 +68,14 @@ namespace Pisheyar.Application.Posts.Queries.GetIndexPosts
         }
     }
 
-    public class GetIndexPostsCategoryNameDto
+    public class GetSliderPostsCategoryNameDto
     {
         public Guid Guid { get; set; }
 
         public string Title { get; set; }
     }
 
-    public class GetIndexPostsTagNameDto
+    public class GetSliderPostsTagNameDto
     {
         public Guid Guid { get; set; }
 

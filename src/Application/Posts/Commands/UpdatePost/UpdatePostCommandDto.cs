@@ -16,6 +16,10 @@ namespace Pisheyar.Application.Posts.Commands.UpdatePost
 
         public bool IsShow { get; set; }
 
+        public bool IsInSlider { get; set; }
+
+        public bool IsSuggested { get; set; }
+
         public string DocumentGuid { get; set; }
 
         public Guid[] Categories { get; set; }

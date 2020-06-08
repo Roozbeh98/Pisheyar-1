@@ -53,13 +53,16 @@ namespace Pisheyar.Application.Posts.Queries.GetPostsByCategory
                                        PostGuid = p.PostGuid,
                                        UserFullName = p.User.FirstName + " " + p.User.LastName,
                                        DocumentFileName = p.Document.Name,
-                                       PostViewCount = p.ViewCount,
-                                       PostLikeCount = p.LikeCount,
-                                       PostTitle = p.Title,
-                                       PostAbstract = p.Abstract,
-                                       PostDescription = p.Description,
-                                       PostModifyDate = p.ModifiedDate,
-                                       PostIsShow = p.IsShow
+                                       ViewCount = p.ViewCount,
+                                       LikeCount = p.LikeCount,
+                                       Title = p.Title,
+                                       Abstract = p.Abstract,
+                                       Description = p.Description,
+                                       IsShow = p.IsShow,
+                                       IsSuggested = p.IsSuggested,
+                                       IsInSlider = p.IsInSlider,
+                                       CreationDate = p.CreationDate,
+                                       ModifiedDate = p.ModifiedDate
 
                                    }).Skip(12 * (request.Page - 1))
                                    .Take(12)

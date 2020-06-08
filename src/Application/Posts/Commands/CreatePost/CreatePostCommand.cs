@@ -22,6 +22,10 @@ namespace Pisheyar.Application.Posts.Commands.CreatePost
 
         public bool IsShow { get; set; }
 
+        public bool IsInSlider { get; set; }
+
+        public bool IsSuggested { get; set; }
+
         public string DocumentGuid { get; set; }
 
         public Guid[] Categories { get; set; }
@@ -81,6 +85,8 @@ namespace Pisheyar.Application.Posts.Commands.CreatePost
                     Abstract = request.Abstract,
                     Description = request.Description,
                     IsShow = request.IsShow,
+                    IsInSlider = request.IsInSlider,
+                    IsSuggested = request.IsSuggested,
                     DocumentId = document.DocumentId
                 };
 

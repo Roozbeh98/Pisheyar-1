@@ -98,6 +98,8 @@ namespace Pisheyar.Application.Posts.Commands.UpdatePost
                 post.Abstract = request.Command.Abstract;
                 post.Description = request.Command.Description;
                 post.IsShow = request.Command.IsShow;
+                post.IsInSlider = request.Command.IsInSlider;
+                post.IsSuggested = request.Command.IsSuggested;
                 post.ModifiedDate = DateTime.Now;
 
                 var oldCategories = await _context.PostCategory

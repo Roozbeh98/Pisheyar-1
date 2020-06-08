@@ -31,11 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Advertisements\Commands\CreateAdvertisement\" />
-    <Folder Include="Advertisements\Commands\DeleteAdvertisement\" />
-    <Folder Include="Advertisements\Commands\UpdateAdvertisement\" />
-    <Folder Include="Advertisements\Queries\GetAdvertisement\" />
-    <Folder Include="Advertisements\Queries\GetAllAdvertisements\" />
     <Folder Include="Clients\Queries\" />
     <Folder Include="Codes\Commands\" />
     <Folder Include="Contact\Queries\" />

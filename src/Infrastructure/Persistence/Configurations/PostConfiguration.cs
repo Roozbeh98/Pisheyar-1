@@ -13,9 +13,11 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
         {
             entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
 
-            entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
+            entity.Property(e => e.IsInSlider).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.IsShow).HasDefaultValueSql("((1))");
+
+            entity.Property(e => e.IsSuggested).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");
 

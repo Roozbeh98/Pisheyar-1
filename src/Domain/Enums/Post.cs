@@ -7,9 +7,9 @@ namespace Pisheyar.Domain.Enums
     public enum CreatePostState
     {
         Success = 1,
-        DocumentNotFound = 2,
+        DocumentGuidProblem = 2,
         UserNotFound = 3,
-        DocumentGuidProblem = 4
+        DocumentNotFound = 4,
     }
 
     public enum UpdatePostState
@@ -44,7 +44,37 @@ namespace Pisheyar.Domain.Enums
         NoPosts = 2
     }
 
+    public enum GetSuggestedPostsState
+    {
+        Success = 1,
+        NoPosts = 2
+    }
+
+    public enum GetSliderPostsState
+    {
+        Success = 1,
+        NoPosts = 2
+    }
+
     public enum DeletePostState
+    {
+        Success = 1,
+        PostNotFound = 2
+    }
+
+    public enum ChangePostShowStatusState
+    {
+        Success = 1,
+        PostNotFound = 2
+    }
+
+    public enum ChangePostInSliderStatusState
+    {
+        Success = 1,
+        PostNotFound = 2
+    }
+
+    public enum ChangePostSuggestionStatusState
     {
         Success = 1,
         PostNotFound = 2

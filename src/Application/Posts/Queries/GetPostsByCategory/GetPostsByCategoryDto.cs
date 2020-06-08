@@ -11,23 +11,27 @@ namespace Pisheyar.Application.Posts.Queries.GetPostsByCategory
 
         public string UserFullName { get; set; }
 
+        public int ViewCount { get; set; }
+
+        public int LikeCount { get; set; }
+
+        public string Title { get; set; }
+
+        public string Abstract { get; set; }
+
+        public string Description { get; set; }
+
+        public bool IsShow { get; set; }
+
+        public bool IsSuggested { get; set; }
+
+        public bool IsInSlider { get; set; }
+
+        public DateTime CreationDate { get; set; }
+
+        public DateTime ModifiedDate { get; set; }
+
         public string DocumentFileName { get; set; }
-
-        public int PostViewCount { get; set; }
-
-        public int PostLikeCount { get; set; }
-
-        public string PostTitle { get; set; }
-
-        public string PostAbstract { get; set; }
-
-        public string PostDescription { get; set; }
-
-        public DateTime PostCreateDate { get; set; }
-
-        public DateTime PostModifyDate { get; set; }
-
-        public bool? PostIsShow { get; set; }
 
         public void Mapping(Profile profile)
         {

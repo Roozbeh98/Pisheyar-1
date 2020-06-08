@@ -11,14 +11,18 @@ namespace Pisheyar.Application.Posts.Queries.GetPostsByPagination
 
         public string UserFullName { get; set; }
 
-        public int PostViewCount { get; set; }
+        public int ViewCount { get; set; }
 
-        public int PostLikeCount { get; set; }
+        public int LikeCount { get; set; }
 
-        public string PostTitle { get; set; }
+        public string Title { get; set; }
 
-        public DateTime PostModifyDate { get; set; }
+        public bool IsShow { get; set; }
 
-        public bool PostIsShow { get; set; }
+        public bool IsSuggested { get; set; }
+
+        public bool IsInSlider { get; set; }
+
+        public DateTime ModifiedDate { get; set; }
     }
 }

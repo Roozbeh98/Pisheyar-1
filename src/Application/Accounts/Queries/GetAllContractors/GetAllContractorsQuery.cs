@@ -38,7 +38,7 @@ namespace Pisheyar.Application.Accounts.Queries.GetAllContractors
                 if (contractors.Count < 0) return new GetAllContractorsVm()
                 {
                     Message = "سرویس دهنده ای یافت نشد",
-                    State = (int)GetAllContractorsState.NotAnyContractosFound
+                    State = (int)GetAllContractorsState.NotAnyContractorsFound
                 };
 
                 return new GetAllContractorsVm()
