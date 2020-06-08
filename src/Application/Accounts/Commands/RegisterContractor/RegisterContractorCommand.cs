@@ -184,7 +184,7 @@ namespace Pisheyar.Application.Accounts.Commands.RegisterContractor
                     user.ModifiedDate = now;
 
                     Contractor contractor = await _context.Contractor
-                        .Where(x => x.UserId == user.UserId && !x.IsDelete)
+                        .Where(x => x.UserId == user.UserId)
                         .SingleOrDefaultAsync(cancellationToken);
 
                     if (contractor == null)

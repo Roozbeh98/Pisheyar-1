@@ -67,4 +67,22 @@ namespace Pisheyar.Domain.Enums
         Success = 1,
         UserNotFound = 2
     }
+
+    public enum GetAllClientsState
+    {
+        Success = 1,
+        NotAnyClientsFound = 2
+    }
+
+    public enum GetAllContractorsState
+    {
+        Success = 1,
+        NotAnyContractosFound = 2
+    }
+
+    public enum GetAllAdminsState
+    {
+        Success = 1,
+        NotAnyAdminsFound = 2
+    }
 }

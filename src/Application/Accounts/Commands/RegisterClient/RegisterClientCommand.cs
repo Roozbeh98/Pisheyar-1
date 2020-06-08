@@ -138,7 +138,7 @@ namespace Pisheyar.Application.Accounts.Commands.RegisterClient
                     user.ModifiedDate = now;
 
                     Client client = await _context.Client
-                        .Where(x => x.UserId == user.UserId && !x.IsDelete)
+                        .Where(x => x.UserId == user.UserId)
                         .SingleOrDefaultAsync(cancellationToken);
 
                     if (client == null)

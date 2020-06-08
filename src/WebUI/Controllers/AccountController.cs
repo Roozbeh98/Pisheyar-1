@@ -18,6 +18,9 @@ using Pisheyar.Application.Accounts.Queries.GetCurrentAdminUser;
 using Pisheyar.Application.Accounts.Queries.GetCurrentClientUser;
 using Pisheyar.Application.Accounts.Queries.GetCurrentContractorUser;
 using Pisheyar.Application.Users.Commands.SetProfilePicture;
+using Pisheyar.Application.Accounts.Queries.GetAllClients;
+using Pisheyar.Application.Accounts.Queries.GetAllContractors;
+using Pisheyar.Application.Accounts.Queries.GetAllAdmins;
 
 namespace WebUI.Controllers
 {
@@ -86,6 +89,36 @@ namespace WebUI.Controllers
         public async Task<ActionResult<AllUsersVm>> GetAll()
         {
             return await Mediator.Send(new GetAllUsersQuery());
+        }
+
+        /// <summary>
+        /// دربافت تمامی سرویس گیرندگان
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetAllClientsVm>> GetAllClients()
+        {
+            return await Mediator.Send(new GetAllClientsQuery());
+        }
+
+        /// <summary>
+        /// دربافت تمامی سرویس دهندگان
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetAllContractorsVm>> GetAllContractors()
+        {
+            return await Mediator.Send(new GetAllContractorsQuery());
+        }
+
+        /// <summary>
+        /// دربافت تمامی ادمین ها
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetAllAdminsVm>> GetAllAdmins()
+        {
+            return await Mediator.Send(new GetAllAdminsQuery());
         }
 
         /// <summary>
@@ -183,7 +216,7 @@ namespace WebUI.Controllers
         }
 
         /// <summary>
-        /// تغییر وضعیت فعالیت کاربر
+        /// تغییر وضعیت اکانت کاربر
         /// </summary>
         /// <param name="command">اطلاعات لازم</param>
         /// <returns></returns>

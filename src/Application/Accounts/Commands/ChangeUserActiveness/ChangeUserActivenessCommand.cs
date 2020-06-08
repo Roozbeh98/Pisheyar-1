@@ -29,19 +29,25 @@ namespace Pisheyar.Application.Accounts.Commands.ChangeUserActiveness
 
             public async Task<ChangeUserActivenessVm> Handle(ChangeUserActivenessCommand request, CancellationToken cancellationToken)
             {
-                var query = await _context.User.SingleOrDefaultAsync(x => x.UserGuid == request.UserGuid && !x.IsDelete);
+                User user = await _context.User
+                    .SingleOrDefaultAsync(x => x.UserGuid == request.UserGuid && !x.IsDelete);
 
-                if (query != null)
+                if (user == null) return new ChangeUserActivenessVm()
                 {
-                    query.IsActive = request.IsActive;
-                    query.ModifiedDate = DateTime.Now;
+                    Message = "کاربر مورد نظر یافت نشد",
+                    State = (int)ChangeUserActivenessState.UserNotFound
+                };
 
-                    await _context.SaveChangesAsync(cancellationToken);
+                user.IsActive = request.IsActive;
+                user.ModifiedDate = DateTime.Now;
 
-                    return new ChangeUserActivenessVm() { Message = "عملیات موفق آمیز", State = (int)ChangeUserActivenessState.Success };
-                }
+                await _context.SaveChangesAsync(cancellationToken);
 
-                return new ChangeUserActivenessVm() { Message = "کاربر مورد نظر یافت نشد", State = (int)ChangeUserActivenessState.UserNotFound };
+                return new ChangeUserActivenessVm()
+                { 
+                    Message = "عملیات موفق آمیز", 
+                    State = (int)ChangeUserActivenessState.Success 
+                };
             }
         }
     }

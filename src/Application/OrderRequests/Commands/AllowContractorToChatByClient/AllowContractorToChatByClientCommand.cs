@@ -31,7 +31,7 @@ namespace Pisheyar.Application.OrderRequests.Commands.AllowContractorToChatByCli
             public async Task<AllowContractorToChatByClientVm> Handle(AllowContractorToChatByClientCommand request, CancellationToken cancellationToken)
             {
                 User currentUser = await _context.User
-                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier))
+                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier) && !x.IsDelete)
                     .SingleOrDefaultAsync(cancellationToken);
 
                 if (currentUser == null)
@@ -44,7 +44,7 @@ namespace Pisheyar.Application.OrderRequests.Commands.AllowContractorToChatByCli
                 }
 
                 Client client = await _context.Client
-                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId && !x.IsDelete, cancellationToken);
+                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId, cancellationToken);
 
                 if (client == null) return new AllowContractorToChatByClientVm
                 {

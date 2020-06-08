@@ -27,19 +27,25 @@ namespace Pisheyar.Application.Accounts.Commands.DeleteUser
 
             public async Task<DeleteUserVm> Handle(DeleteUserCommand request, CancellationToken cancellationToken)
             {
-                var query = await _context.User.SingleOrDefaultAsync(x => x.UserGuid == request.UserGuid && !x.IsDelete);
+                User user = await _context.User
+                    .SingleOrDefaultAsync(x => x.UserGuid == request.UserGuid && !x.IsDelete);
 
-                if (query != null)
+                if (user == null) return new DeleteUserVm()
                 {
-                    query.IsDelete = true;
-                    query.ModifiedDate = DateTime.Now;
+                    Message = "کاربر مورد نظر یافت نشد",
+                    State = (int)DeleteUserState.UserNotFound
+                };
 
-                    await _context.SaveChangesAsync(cancellationToken);
+                user.IsDelete = true;
+                user.ModifiedDate = DateTime.Now;
 
-                    return new DeleteUserVm() { Message = "عملیات موفق آمیز", State = (int)DeleteUserState.Success };
-                }
+                await _context.SaveChangesAsync(cancellationToken);
 
-                return new DeleteUserVm() { Message = "کاربر مورد نظر یافت نشد", State = (int)DeleteUserState.UserNotFound };
+                return new DeleteUserVm() 
+                {
+                    Message = "عملیات موفق آمیز",
+                    State = (int)DeleteUserState.Success 
+                };
             }
         }
     }

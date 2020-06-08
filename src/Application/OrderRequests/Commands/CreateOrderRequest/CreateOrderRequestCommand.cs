@@ -37,7 +37,7 @@ namespace Pisheyar.Application.OrderRequests.Commands.CreateOrderRequest
             public async Task<CreateOrderRequestVm> Handle(CreateOrderRequestCommand request, CancellationToken cancellationToken)
             {
                 User currentUser = await _context.User
-                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier))
+                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier) && !x.IsDelete)
                     .SingleOrDefaultAsync(cancellationToken);
 
                 if (currentUser == null)
@@ -50,7 +50,7 @@ namespace Pisheyar.Application.OrderRequests.Commands.CreateOrderRequest
                 }
 
                 Contractor contractor = await _context.Contractor
-                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId && !x.IsDelete, cancellationToken);
+                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId, cancellationToken);
 
                 if (contractor == null) return new CreateOrderRequestVm
                 {

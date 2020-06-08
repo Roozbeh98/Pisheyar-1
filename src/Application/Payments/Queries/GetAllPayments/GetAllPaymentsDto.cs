@@ -14,6 +14,8 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
 
         public string Contractor { get; set; }
 
+        public int Cost { get; set; }
+
         public int Discount { get; set; }
 
         public long? TrackingToken { get; set; }

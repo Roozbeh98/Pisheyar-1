@@ -47,7 +47,7 @@ namespace Pisheyar.Application.Orders.Commands.FinishOrder
             public async Task<FinishOrderVm> Handle(FinishOrderCommand request, CancellationToken cancellationToken)
             {
                 User currentUser = await _context.User
-                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier))
+                    .Where(x => x.UserGuid == Guid.Parse(_currentUser.NameIdentifier) && !x.IsDelete)
                     .SingleOrDefaultAsync(cancellationToken);
 
                 if (currentUser == null)
@@ -60,7 +60,7 @@ namespace Pisheyar.Application.Orders.Commands.FinishOrder
                 }
 
                 Client client = await _context.Client
-                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId && !x.IsDelete, cancellationToken);
+                    .SingleOrDefaultAsync(x => x.UserId == currentUser.UserId, cancellationToken);
 
                 if (client == null) return new FinishOrderVm
                 {
