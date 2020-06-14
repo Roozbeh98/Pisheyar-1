@@ -15,6 +15,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
 
+            entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
+
             entity.HasOne(d => d.ContactUsBusinessTypeCode)
                 .WithMany(p => p.ContactUs)
                 .HasForeignKey(d => d.ContactUsBusinessTypeCodeId)

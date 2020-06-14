@@ -23,6 +23,7 @@ namespace Pisheyar.Domain.Entities
         [Required]
         [StringLength(128)]
         public string PhoneNumber { get; set; }
+        public DateTime CreationDate { get; set; }
 
         [ForeignKey(nameof(ContactUsBusinessTypeCodeId))]
         [InverseProperty(nameof(Code.ContactUs))]
