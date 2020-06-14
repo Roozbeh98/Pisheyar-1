@@ -13,9 +13,11 @@ namespace Pisheyar.Domain.Entities
             ChatMessage = new HashSet<ChatMessage>();
             Client = new HashSet<Client>();
             Comment = new HashSet<Comment>();
+            Complaint = new HashSet<Complaint>();
             Contractor = new HashSet<Contractor>();
             Post = new HashSet<Post>();
             SmsResponse = new HashSet<SmsResponse>();
+            Suggestion = new HashSet<Suggestion>();
             Token = new HashSet<Token>();
             UserPermission = new HashSet<UserPermission>();
         }
@@ -66,11 +68,15 @@ namespace Pisheyar.Domain.Entities
         [InverseProperty("User")]
         public virtual ICollection<Comment> Comment { get; set; }
         [InverseProperty("User")]
+        public virtual ICollection<Complaint> Complaint { get; set; }
+        [InverseProperty("User")]
         public virtual ICollection<Contractor> Contractor { get; set; }
         [InverseProperty("User")]
         public virtual ICollection<Post> Post { get; set; }
         [InverseProperty("User")]
         public virtual ICollection<SmsResponse> SmsResponse { get; set; }
+        [InverseProperty("User")]
+        public virtual ICollection<Suggestion> Suggestion { get; set; }
         [InverseProperty("User")]
         public virtual ICollection<Token> Token { get; set; }
         [InverseProperty("User")]

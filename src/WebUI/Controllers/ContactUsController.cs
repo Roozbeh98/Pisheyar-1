@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Pisheyar.Application.Contact.Commands.SendMessage;
+using Pisheyar.Application.Posts.Queries.GetAllContactUsMessages;
 
 namespace WebUI.Controllers
 {
@@ -21,6 +22,16 @@ namespace WebUI.Controllers
         public async Task<SendMessageVm> SendMessage(SendMessageCommand command)
         {
             return await Mediator.Send(command);
+        }
+
+        /// <summary>
+        /// دریافت تمامی پیام های ارتباط با ما
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet("[action]")]
+        public async Task<ActionResult<GetAllContactUsMessagesVm>> GetAll()
+        {
+            return await Mediator.Send(new GetAllContactUsMessagesQuery());
         }
     }
 }

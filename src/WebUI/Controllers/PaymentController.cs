@@ -26,7 +26,7 @@ namespace WebUI.Controllers
         /// <param name="successfulStatus">وضعیت پرداخت</param>
         /// <returns></returns>
         [HttpGet("[action]")]
-        public async Task<ActionResult<GetAllPaymentsVm>> GetAll(Guid? contractorGuid = null, DateTime? startDate = null, DateTime? endDate = null, bool? successfulStatus = null)
+        public async Task<ActionResult<GetAllPaymentsVm>> GetAll(Guid? contractorGuid = null, string startDate = null, string endDate = null, bool? successfulStatus = null)
         {
             return await Mediator.Send(new GetAllPaymentsQuery() { ContractorGuid = contractorGuid, StartDate = startDate, EndDate = endDate, SuccessfulStatus = successfulStatus });
         }

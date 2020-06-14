@@ -38,9 +38,11 @@ namespace Pisheyar.Infrastructure.Persistence
         public virtual DbSet<Code> Code { get; set; }
         public virtual DbSet<CodeGroup> CodeGroup { get; set; }
         public virtual DbSet<Comment> Comment { get; set; }
+        public virtual DbSet<Complaint> Complaint { get; set; }
         public virtual DbSet<ContactUs> ContactUs { get; set; }
         public virtual DbSet<Contractor> Contractor { get; set; }
         public virtual DbSet<ContractorCategory> ContractorCategory { get; set; }
+        public virtual DbSet<ContractorDiscount> ContractorDiscount { get; set; }
         public virtual DbSet<Document> Document { get; set; }
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderRequest> OrderRequest { get; set; }
@@ -51,14 +53,18 @@ namespace Pisheyar.Infrastructure.Persistence
         public virtual DbSet<PostCategory> PostCategory { get; set; }
         public virtual DbSet<PostComment> PostComment { get; set; }
         public virtual DbSet<PostTag> PostTag { get; set; }
+        public virtual DbSet<PrivateDiscount> PrivateDiscount { get; set; }
         public virtual DbSet<Province> Province { get; set; }
+        public virtual DbSet<PublicDiscount> PublicDiscount { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<RolePermission> RolePermission { get; set; }
+        public virtual DbSet<Setting> Setting { get; set; }
         public virtual DbSet<SmsProviderConfiguration> SmsProviderConfiguration { get; set; }
         public virtual DbSet<SmsProviderNumber> SmsProviderNumber { get; set; }
         public virtual DbSet<SmsResponse> SmsResponse { get; set; }
         public virtual DbSet<SmsSetting> SmsSetting { get; set; }
         public virtual DbSet<SmsTemplate> SmsTemplate { get; set; }
+        public virtual DbSet<Suggestion> Suggestion { get; set; }
         public virtual DbSet<Tag> Tag { get; set; }
         public virtual DbSet<Token> Token { get; set; }
         public virtual DbSet<Transaction> Transaction { get; set; }

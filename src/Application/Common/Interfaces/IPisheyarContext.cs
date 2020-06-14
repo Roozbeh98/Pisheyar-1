@@ -17,9 +17,11 @@ namespace Pisheyar.Application.Common.Interfaces
         DbSet<Code> Code { get; set; }
         DbSet<CodeGroup> CodeGroup { get; set; }
         DbSet<Comment> Comment { get; set; }
+        DbSet<Complaint> Complaint { get; set; }
         DbSet<ContactUs> ContactUs { get; set; }
         DbSet<Contractor> Contractor { get; set; }
         DbSet<ContractorCategory> ContractorCategory { get; set; }
+        DbSet<ContractorDiscount> ContractorDiscount { get; set; }
         DbSet<Document> Document { get; set; }
         DbSet<Order> Order { get; set; }
         DbSet<OrderRequest> OrderRequest { get; set; }
@@ -30,14 +32,18 @@ namespace Pisheyar.Application.Common.Interfaces
         DbSet<PostCategory> PostCategory { get; set; }
         DbSet<PostComment> PostComment { get; set; }
         DbSet<PostTag> PostTag { get; set; }
+        DbSet<PrivateDiscount> PrivateDiscount { get; set; }
         DbSet<Province> Province { get; set; }
+        DbSet<PublicDiscount> PublicDiscount { get; set; }
         DbSet<Role> Role { get; set; }
         DbSet<RolePermission> RolePermission { get; set; }
+        DbSet<Setting> Setting { get; set; }
         DbSet<SmsProviderConfiguration> SmsProviderConfiguration { get; set; }
         DbSet<SmsProviderNumber> SmsProviderNumber { get; set; }
         DbSet<SmsResponse> SmsResponse { get; set; }
         DbSet<SmsSetting> SmsSetting { get; set; }
         DbSet<SmsTemplate> SmsTemplate { get; set; }
+        DbSet<Suggestion> Suggestion { get; set; }
         DbSet<Tag> Tag { get; set; }
         DbSet<Token> Token { get; set; }
         DbSet<Transaction> Transaction { get; set; }

@@ -10,9 +10,11 @@ namespace Pisheyar.Domain.Entities
         public Contractor()
         {
             ContractorCategory = new HashSet<ContractorCategory>();
+            ContractorDiscount = new HashSet<ContractorDiscount>();
             Order = new HashSet<Order>();
             OrderRequest = new HashSet<OrderRequest>();
             Payment = new HashSet<Payment>();
+            PrivateDiscount = new HashSet<PrivateDiscount>();
         }
 
         [Key]
@@ -49,10 +51,14 @@ namespace Pisheyar.Domain.Entities
         [InverseProperty("Contractor")]
         public virtual ICollection<ContractorCategory> ContractorCategory { get; set; }
         [InverseProperty("Contractor")]
+        public virtual ICollection<ContractorDiscount> ContractorDiscount { get; set; }
+        [InverseProperty("Contractor")]
         public virtual ICollection<Order> Order { get; set; }
         [InverseProperty("Contractor")]
         public virtual ICollection<OrderRequest> OrderRequest { get; set; }
         [InverseProperty("Contractor")]
         public virtual ICollection<Payment> Payment { get; set; }
+        [InverseProperty("Contractor")]
+        public virtual ICollection<PrivateDiscount> PrivateDiscount { get; set; }
     }
 }

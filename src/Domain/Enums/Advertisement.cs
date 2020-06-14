@@ -14,6 +14,8 @@ namespace Pisheyar.Domain.Enums
     public enum GetAllAdvertisementsState
     {
         Success = 1,
-        NotAnyAdvertisements = 2
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        NotAnyAdvertisements = 4
     }
 }

@@ -9,4 +9,12 @@ namespace Pisheyar.Domain.Enums
         Success = 1,
         CategoryNotFound = 2
     }
+
+    public enum GetAllContactUsMessagesState
+    {
+        Success = 1,
+        UserNotFound = 2,
+        AdminNotFound = 3,
+        NotAnyMessages = 4
+    }
 }

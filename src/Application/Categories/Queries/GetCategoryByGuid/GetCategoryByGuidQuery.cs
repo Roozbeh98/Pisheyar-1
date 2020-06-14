@@ -133,6 +133,11 @@ namespace Pisheyar.Application.Categories.Queries.GetCategoryByGuid
                 if (includeChildren)
                 {
                     List<Category> categories = await _context.Category
+                       .Include(x => x.CoverDocument)
+                       .Include(x => x.ActiveIconDocument)
+                       .Include(x => x.InactiveIconDocument)
+                       .Include(x => x.QuadMenuDocument)
+                       .Include(x => x.CategoryTag)
                        .Where(x => !x.IsDelete)
                        .ToListAsync();
 

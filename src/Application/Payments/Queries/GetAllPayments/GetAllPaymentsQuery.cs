@@ -18,9 +18,9 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
     {
         public Guid? ContractorGuid { get; set; }
 
-        public DateTime? StartDate { get; set; }
+        public string StartDate { get; set; }
 
-        public DateTime? EndDate { get; set; }
+        public string EndDate { get; set; }
 
         public bool? SuccessfulStatus { get; set; }
 
@@ -29,6 +29,21 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
             private readonly IPisheyarContext _context;
             private readonly ICurrentUserService _currentUser;
             private readonly IMapper _mapper;
+            private readonly Dictionary<string, int> _monthNumber = new Dictionary<string, int>()
+            {
+                { "Jan", 1 },
+                { "Feb", 2 },
+                { "Mar", 3 },
+                { "Apr", 4 },
+                { "May", 5 },
+                { "Jun", 6 },
+                { "Jul", 7 },
+                { "Aug", 8 },
+                { "Sep", 9 },
+                { "Oct", 10 },
+                { "Nov", 11 },
+                { "Dec", 12 },
+            };
 
             public OrdersListQueryHandler(IPisheyarContext context, ICurrentUserService currentUserService, IMapper mapper)
             {
@@ -64,11 +79,47 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
                 if (request.ContractorGuid != null)
                     payments = payments.Where(x => x.Contractor.ContractorGuid == request.ContractorGuid);
 
-                if (request.StartDate != null)
-                    payments = payments.Where(x => x.CreationDate.Date >= request.StartDate.Value.Date);
+                if (!string.IsNullOrEmpty(request.StartDate))
+                {
+                    string monthName = request.StartDate.Substring(4, 3);
+                    _monthNumber.TryGetValue(monthName, out int month);
 
-                if (request.EndDate != null)
-                    payments = payments.Where(x => x.CreationDate.Date <= request.EndDate.Value.Date);
+                    // TODO: error handling
+
+                    //if (monthNum == 0) return new GetAllPaymentsVm()
+                    //{
+                    //    Message = "تاریخ شروع نامعتبر",
+                    //    State = (int)GetAllPaymentsState.InvalidStartDate
+                    //};
+
+                    int day = Convert.ToInt32(request.StartDate.Substring(8, 2));
+                    int year = Convert.ToInt32(request.StartDate.Substring(11, 4));
+
+                    DateTime date = new DateTime(year, month, day);
+
+                    payments = payments.Where(x => x.CreationDate.Date >= date);
+                }
+
+                if (!string.IsNullOrEmpty(request.EndDate))
+                {
+                    string monthName = request.EndDate.Substring(4, 3);
+                    _monthNumber.TryGetValue(monthName, out int month);
+
+                    // TODO: error handling
+
+                    //if (monthNum == 0) return new GetAllPaymentsVm()
+                    //{
+                    //    Message = "تاریخ پایان نامعتبر",
+                    //    State = (int)GetAllPaymentsState.InvalidEndDate
+                    //};
+
+                    int day = Convert.ToInt32(request.EndDate.Substring(8, 2));
+                    int year = Convert.ToInt32(request.EndDate.Substring(11, 4));
+
+                    DateTime date = new DateTime(year, month, day);
+
+                    payments = payments.Where(x => x.CreationDate.Date <= date);
+                }
 
                 if (request.SuccessfulStatus != null)
                     payments = payments.Where(x => x.IsSuccessful == request.SuccessfulStatus);

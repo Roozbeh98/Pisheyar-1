@@ -13,6 +13,8 @@ namespace Pisheyar.Domain.Entities
             Contractor = new HashSet<Contractor>();
             Document = new HashSet<Document>();
             Order = new HashSet<Order>();
+            PrivateDiscount = new HashSet<PrivateDiscount>();
+            PublicDiscount = new HashSet<PublicDiscount>();
             Token = new HashSet<Token>();
             Transaction = new HashSet<Transaction>();
             User = new HashSet<User>();
@@ -43,6 +45,10 @@ namespace Pisheyar.Domain.Entities
         public virtual ICollection<Document> Document { get; set; }
         [InverseProperty("StateCode")]
         public virtual ICollection<Order> Order { get; set; }
+        [InverseProperty("TypeCode")]
+        public virtual ICollection<PrivateDiscount> PrivateDiscount { get; set; }
+        [InverseProperty("TypeCode")]
+        public virtual ICollection<PublicDiscount> PublicDiscount { get; set; }
         [InverseProperty("RoleCode")]
         public virtual ICollection<Token> Token { get; set; }
         [InverseProperty("TypeCode")]
