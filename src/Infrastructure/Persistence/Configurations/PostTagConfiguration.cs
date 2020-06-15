@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<PostTag> entity)
         {
+            entity.HasIndex(e => e.PostId);
+
+            entity.HasIndex(e => e.TagId);
+
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");

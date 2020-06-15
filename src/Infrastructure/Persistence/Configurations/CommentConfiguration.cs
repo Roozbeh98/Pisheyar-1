@@ -11,6 +11,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Comment> entity)
         {
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.CommentGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");

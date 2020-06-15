@@ -12,6 +12,8 @@ namespace Pisheyar.Domain.Entities
         public int PaymentId { get; set; }
         [Column("PaymentGUID")]
         public Guid PaymentGuid { get; set; }
+        [Column("PaymentProviderSettingID")]
+        public int PaymentProviderSettingId { get; set; }
         [Column("ContractorID")]
         public int ContractorId { get; set; }
         public int Cost { get; set; }
@@ -23,5 +25,8 @@ namespace Pisheyar.Domain.Entities
         [ForeignKey(nameof(ContractorId))]
         [InverseProperty("Payment")]
         public virtual Contractor Contractor { get; set; }
+        [ForeignKey(nameof(PaymentProviderSettingId))]
+        [InverseProperty("Payment")]
+        public virtual PaymentProviderSetting PaymentProviderSetting { get; set; }
     }
 }

@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<OrderRequest> entity)
         {
+            entity.HasIndex(e => e.ContractorId);
+
+            entity.HasIndex(e => e.OrderId);
+
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.IsAccept).HasDefaultValueSql("((0))");

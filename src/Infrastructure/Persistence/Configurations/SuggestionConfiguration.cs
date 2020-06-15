@@ -11,6 +11,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Suggestion> entity)
         {
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
 
             entity.Property(e => e.SuggestionGuid)

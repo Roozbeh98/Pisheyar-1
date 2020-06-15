@@ -7,27 +7,19 @@ using System.Text;
 
 namespace Pisheyar.Infrastructure.Persistence.Configurations
 {
-    public class PermissionConfiguration : IEntityTypeConfiguration<Permission>
+    public class PaymentProviderConfiguration : IEntityTypeConfiguration<PaymentProvider>
     {
-        public void Configure(EntityTypeBuilder<Permission> entity)
+        public void Configure(EntityTypeBuilder<PaymentProvider> entity)
         {
-            entity.HasIndex(e => e.PermissionGroupId);
-
             entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");
 
-            entity.Property(e => e.PermissionGuid)
+            entity.Property(e => e.PaymentProviderGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
-
-            entity.HasOne(d => d.PermissionGroup)
-                .WithMany(p => p.Permission)
-                .HasForeignKey(d => d.PermissionGroupId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Permission_PermissionGroup");
         }
     }
 }

@@ -26,6 +26,8 @@ namespace Pisheyar.Application.Common.Interfaces
         DbSet<Order> Order { get; set; }
         DbSet<OrderRequest> OrderRequest { get; set; }
         DbSet<Payment> Payment { get; set; }
+        DbSet<PaymentProvider> PaymentProvider { get; set; }
+        DbSet<PaymentProviderSetting> PaymentProviderSetting { get; set; }
         DbSet<Permission> Permission { get; set; }
         DbSet<PermissionGroup> PermissionGroup { get; set; }
         DbSet<Post> Post { get; set; }

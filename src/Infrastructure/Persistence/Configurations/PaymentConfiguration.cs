@@ -11,6 +11,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Payment> entity)
         {
+            entity.HasIndex(e => e.ContractorId);
+
             entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
 
             entity.Property(e => e.IsSuccessful).HasDefaultValueSql("((0))");

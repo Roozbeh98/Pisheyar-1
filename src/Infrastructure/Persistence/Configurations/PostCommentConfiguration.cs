@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<PostComment> entity)
         {
+            entity.HasIndex(e => e.CommentId);
+
+            entity.HasIndex(e => e.PostId);
+
             entity.Property(e => e.IsAccept).HasDefaultValueSql("((1))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");

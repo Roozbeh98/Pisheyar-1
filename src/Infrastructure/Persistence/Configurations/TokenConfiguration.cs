@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Token> entity)
         {
+            entity.HasIndex(e => e.RoleCodeId);
+
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.ExpireDate).HasDefaultValueSql("(getdate())");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");

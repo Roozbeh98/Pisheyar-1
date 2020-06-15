@@ -14,6 +14,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
             entity.HasIndex(e => e.PermissionId)
                     .HasName("IX_Tbl_UserPermission_UP_PermissionID");
 
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");

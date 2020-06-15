@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Post> entity)
         {
+            entity.HasIndex(e => e.DocumentId);
+
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
 
             entity.Property(e => e.IsInSlider).HasDefaultValueSql("((0))");

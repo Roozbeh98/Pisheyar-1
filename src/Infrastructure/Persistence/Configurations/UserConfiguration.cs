@@ -11,6 +11,12 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<User> entity)
         {
+            entity.HasIndex(e => e.GenderCodeId);
+
+            entity.HasIndex(e => e.ProfileDocumentId);
+
+            entity.HasIndex(e => e.RoleId);
+
             entity.Property(e => e.IsActive).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");

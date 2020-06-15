@@ -47,6 +47,8 @@ namespace Pisheyar.Infrastructure.Persistence
         public virtual DbSet<Order> Order { get; set; }
         public virtual DbSet<OrderRequest> OrderRequest { get; set; }
         public virtual DbSet<Payment> Payment { get; set; }
+        public virtual DbSet<PaymentProvider> PaymentProvider { get; set; }
+        public virtual DbSet<PaymentProviderSetting> PaymentProviderSetting { get; set; }
         public virtual DbSet<Permission> Permission { get; set; }
         public virtual DbSet<PermissionGroup> PermissionGroup { get; set; }
         public virtual DbSet<Post> Post { get; set; }

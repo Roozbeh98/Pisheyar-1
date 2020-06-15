@@ -11,6 +11,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<ContactUs> entity)
         {
+            entity.HasIndex(e => e.ContactUsBusinessTypeCodeId);
+
             entity.Property(e => e.ContactUsGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");

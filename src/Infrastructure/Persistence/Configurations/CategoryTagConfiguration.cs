@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<CategoryTag> entity)
         {
+            entity.HasIndex(e => e.CategoryId);
+
+            entity.HasIndex(e => e.TagId);
+
             entity.Property(e => e.CategoryTagGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");

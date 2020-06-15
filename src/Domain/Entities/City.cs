@@ -23,6 +23,10 @@ namespace Pisheyar.Domain.Entities
         [Required]
         [StringLength(128)]
         public string Name { get; set; }
+        [Required]
+        public bool IsActive { get; set; }
+        public bool IsDelete { get; set; }
+        public DateTime ModifiedDate { get; set; }
 
         [ForeignKey(nameof(ProvinceId))]
         [InverseProperty("City")]

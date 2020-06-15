@@ -11,6 +11,8 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<PublicDiscount> entity)
         {
+            entity.HasIndex(e => e.TypeCodeId);
+
             entity.Property(e => e.CreationDate).HasDefaultValueSql("(getdate())");
 
             entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");

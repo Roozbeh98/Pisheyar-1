@@ -11,6 +11,14 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<Order> entity)
         {
+            entity.HasIndex(e => e.CategoryId);
+
+            entity.HasIndex(e => e.ClientId);
+
+            entity.HasIndex(e => e.ContractorId);
+
+            entity.HasIndex(e => e.StateCodeId);
+
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");

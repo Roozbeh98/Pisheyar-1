@@ -9106,11 +9106,12 @@ namespace Pisheyar.Infrastructure.Persistence
 
 			#endregion
 
-			#region SmsProviderConfiguration
+			#region SmsProviderSetting
 
 			modelBuilder.Entity<SmsProviderSetting>().HasData(
 					new SmsProviderSetting
 					{
+						SmsProviderSettingId = 1,
 						SmsProviderId = 1,
 						Username = "ptmgroupco@gmail.com",
 						Password = "ptcoptco",
@@ -9120,11 +9121,12 @@ namespace Pisheyar.Infrastructure.Persistence
 
 			#endregion
 
-			#region SmsSetting
+			#region SmsProvider
 
 			modelBuilder.Entity<SmsProvider>().HasData(
 					new SmsProvider
 					{
+						SmsProviderId = 1,
 						Name = "Kavenegar"
 					}
 				);
@@ -9136,6 +9138,7 @@ namespace Pisheyar.Infrastructure.Persistence
 			modelBuilder.Entity<SmsTemplate>().HasData(
 					new SmsTemplate
 					{
+						SmsTemplateId = 1,
 						SmsProviderSettingId = 1,
 						Name = "VerifyAccount"
 					}

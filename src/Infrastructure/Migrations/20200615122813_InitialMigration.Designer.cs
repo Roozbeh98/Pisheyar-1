@@ -10,7 +10,7 @@ using Pisheyar.Infrastructure.Persistence;
 namespace Pisheyar.Infrastructure.Migrations
 {
     [DbContext(typeof(PisheyarContext))]
-    [Migration("20200610101140_InitialMigration")]
+    [Migration("20200615122813_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -57,9 +57,9 @@ namespace Pisheyar.Infrastructure.Migrations
                         new
                         {
                             AdminId = 1,
-                            AdminGuid = new Guid("4e510278-67c3-4810-834d-eb6a0dcce9ee"),
+                            AdminGuid = new Guid("f3c05c82-e725-4d54-9f1e-69a734c6962d"),
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(2414),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(8292),
                             UserId = 1
                         });
                 });
@@ -197,7 +197,7 @@ namespace Pisheyar.Infrastructure.Migrations
                             DisplayName = "سایت اصلی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(5865),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 178, DateTimeKind.Local).AddTicks(7526),
                             Sort = 1
                         },
                         new
@@ -207,358 +207,358 @@ namespace Pisheyar.Infrastructure.Migrations
                             DisplayName = "وبلاگ",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7390),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(522),
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 3,
-                            CategoryGuid = new Guid("6b9a83c1-8807-4505-be10-a9f2af1c6e5f"),
+                            CategoryGuid = new Guid("9561551f-8535-4567-8708-4b8db3e1b9d7"),
                             DisplayName = "خانه",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7444),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(665),
                             ParentCategoryId = 1,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 4,
-                            CategoryGuid = new Guid("90131911-2ab8-440b-ad99-5a252b0a0d05"),
+                            CategoryGuid = new Guid("232f06e0-73c4-4023-85a7-475f3a026f26"),
                             DisplayName = "حمل و نقل",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7455),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(687),
                             ParentCategoryId = 1,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 5,
-                            CategoryGuid = new Guid("6cad6634-e31f-4580-a11a-23e590262169"),
+                            CategoryGuid = new Guid("8db4fbe1-b6f2-467f-8a95-941d1ee3d8ba"),
                             DisplayName = "تاسیسات",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7464),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(710),
                             ParentCategoryId = 3,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 6,
-                            CategoryGuid = new Guid("90ada9b1-d59b-4618-aede-af795b2d3a97"),
+                            CategoryGuid = new Guid("7c93509a-a5dc-40d2-ad38-4c0551de438f"),
                             DisplayName = "الکتریکی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7472),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(729),
                             ParentCategoryId = 3,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 7,
-                            CategoryGuid = new Guid("f3742a44-2f8f-4c01-8962-8084ad1ddf99"),
+                            CategoryGuid = new Guid("bc997237-4eab-496c-8985-34d2f63e557d"),
                             DisplayName = "ایمنی و امنیت",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7493),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(750),
                             ParentCategoryId = 3,
                             Sort = 3
                         },
                         new
                         {
                             CategoryId = 8,
-                            CategoryGuid = new Guid("12c0b98c-65bd-43e1-a9de-17e3ecb7651e"),
+                            CategoryGuid = new Guid("6a3133f2-3a47-46bb-afaf-b02e3ccb0bd0"),
                             DisplayName = "مبلمان",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7501),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(887),
                             ParentCategoryId = 3,
                             Sort = 4
                         },
                         new
                         {
                             CategoryId = 9,
-                            CategoryGuid = new Guid("254af750-05e8-4e23-905e-52f4f972b9e0"),
+                            CategoryGuid = new Guid("71fce2a5-0c66-40a3-adca-88c380db37c2"),
                             DisplayName = "آلومینیوم سازی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7509),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(925),
                             ParentCategoryId = 3,
                             Sort = 5
                         },
                         new
                         {
                             CategoryId = 10,
-                            CategoryGuid = new Guid("87f80a89-3219-4659-91e3-5027341a78ba"),
+                            CategoryGuid = new Guid("05236875-c49b-4271-b318-0ab7bb5b4657"),
                             DisplayName = "شیشه بری و قابسازی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7516),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(946),
                             ParentCategoryId = 3,
                             Sort = 6
                         },
                         new
                         {
                             CategoryId = 11,
-                            CategoryGuid = new Guid("cf285c94-b6f7-4ded-9813-46688a0579f7"),
+                            CategoryGuid = new Guid("1e0d9331-90ae-409c-93af-67e9ff7a4334"),
                             DisplayName = "کابینت سازی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7580),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(967),
                             ParentCategoryId = 3,
                             Sort = 7
                         },
                         new
                         {
                             CategoryId = 12,
-                            CategoryGuid = new Guid("ff85be72-882a-4647-80bc-3ff7c46656b2"),
+                            CategoryGuid = new Guid("79f1e730-8b05-4c8c-aa60-e5eafce35c5d"),
                             DisplayName = "دکوراسیون داخلی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7588),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(988),
                             ParentCategoryId = 3,
                             Sort = 8
                         },
                         new
                         {
                             CategoryId = 13,
-                            CategoryGuid = new Guid("ee35bb19-5e38-4bb6-bfbc-c70c51059c32"),
+                            CategoryGuid = new Guid("c6e04f08-38a7-4b26-8db4-6356edeb6aa9"),
                             DisplayName = "بنایی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7596),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1009),
                             ParentCategoryId = 3,
                             Sort = 9
                         },
                         new
                         {
                             CategoryId = 14,
-                            CategoryGuid = new Guid("3fd42685-bed8-4ea5-af82-9ac5a0d916c0"),
+                            CategoryGuid = new Guid("850870f3-329e-4f62-8a41-28d6c108f4b0"),
                             DisplayName = "آهنگری",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7604),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1028),
                             ParentCategoryId = 3,
                             Sort = 10
                         },
                         new
                         {
                             CategoryId = 15,
-                            CategoryGuid = new Guid("38f69780-fc31-4fb6-913f-81c7c0c926ba"),
+                            CategoryGuid = new Guid("4736c559-57c1-400d-91b1-a771ae7cfda6"),
                             DisplayName = "عایق کاری",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7614),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1046),
                             ParentCategoryId = 3,
                             Sort = 11
                         },
                         new
                         {
                             CategoryId = 16,
-                            CategoryGuid = new Guid("9cc5664d-dae0-4290-891a-75b628284293"),
+                            CategoryGuid = new Guid("ed41941b-16b0-422c-bd72-c969e3ade50f"),
                             DisplayName = "عایق کاری",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7621),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1066),
                             ParentCategoryId = 3,
                             Sort = 12
                         },
                         new
                         {
                             CategoryId = 17,
-                            CategoryGuid = new Guid("e86215a3-12c0-4aa7-89d0-602153920f8f"),
+                            CategoryGuid = new Guid("d3abb76f-d676-4ec0-875e-ac93adecb382"),
                             DisplayName = "نرده و حفاظ استیل",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7629),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1095),
                             ParentCategoryId = 3,
                             Sort = 13
                         },
                         new
                         {
                             CategoryId = 18,
-                            CategoryGuid = new Guid("9c27b1f5-2e7d-4eae-9724-54c736edb99d"),
+                            CategoryGuid = new Guid("317f11bf-8e8c-4caa-9b3c-f735b2791f73"),
                             DisplayName = "تعمیرات لوازم خانگی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7636),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1115),
                             ParentCategoryId = 3,
                             Sort = 14
                         },
                         new
                         {
                             CategoryId = 19,
-                            CategoryGuid = new Guid("2b28813e-4a38-43ee-8cd6-1cb7490f21ad"),
+                            CategoryGuid = new Guid("f1b23e49-aae7-4774-a659-42635afb55a5"),
                             DisplayName = "نجاری",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7644),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1135),
                             ParentCategoryId = 3,
                             Sort = 15
                         },
                         new
                         {
                             CategoryId = 20,
-                            CategoryGuid = new Guid("c260d698-7913-4718-81c4-ba22870b0e94"),
+                            CategoryGuid = new Guid("bc996806-8481-4aa5-8ee7-750a83a08616"),
                             DisplayName = "آسانسور و بالابر",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7653),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1157),
                             ParentCategoryId = 3,
                             Sort = 16
                         },
                         new
                         {
                             CategoryId = 21,
-                            CategoryGuid = new Guid("6c3cf5f8-371b-42e0-a33a-13be33692811"),
+                            CategoryGuid = new Guid("9b4cfb65-1e49-4a46-a060-b34d3392b048"),
                             DisplayName = "کار در ارتفاع",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7661),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1179),
                             ParentCategoryId = 3,
                             Sort = 17
                         },
                         new
                         {
                             CategoryId = 22,
-                            CategoryGuid = new Guid("d51a4107-8588-48d2-9bbb-3ce5e48f288c"),
+                            CategoryGuid = new Guid("13fb15cc-a49f-4654-bcd9-e3ad41f46f06"),
                             DisplayName = "سرویس کولر آبی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7670),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1197),
                             ParentCategoryId = 5,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 23,
-                            CategoryGuid = new Guid("258d7746-505f-4036-bba8-d7631a7a11bb"),
+                            CategoryGuid = new Guid("06bb01a4-159c-4fd2-8e16-eebdbebd1e21"),
                             DisplayName = "نقاشی ساختمان",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7680),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1216),
                             ParentCategoryId = 5,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 24,
-                            CategoryGuid = new Guid("db04518d-c1cc-4da4-89d2-75eb0d9c0190"),
+                            CategoryGuid = new Guid("608a63e4-635e-4902-9bff-cc94302962d7"),
                             DisplayName = "رنگ کاری مبل",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7687),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1305),
                             ParentCategoryId = 8,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 25,
-                            CategoryGuid = new Guid("c52be504-1d35-45eb-9f93-34ae3e988506"),
+                            CategoryGuid = new Guid("577b658b-f564-4a70-8dc2-c6d3bb9240b1"),
                             DisplayName = "تعمیر صندلی اداری",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7695),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1334),
                             ParentCategoryId = 8,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 26,
-                            CategoryGuid = new Guid("f7bef4c4-6fe1-4e38-94b3-64a78b778a37"),
+                            CategoryGuid = new Guid("8e75f86f-6de2-4691-b794-4353d3180dde"),
                             DisplayName = "ساخت مبلمان",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7702),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1352),
                             ParentCategoryId = 8,
                             Sort = 3
                         },
                         new
                         {
                             CategoryId = 27,
-                            CategoryGuid = new Guid("bfc35196-9ee2-4745-ade7-500fe3f9beb6"),
+                            CategoryGuid = new Guid("75da9a7c-194b-484f-8014-2b4d0d415f5f"),
                             DisplayName = "دوخت کاور مبل",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7749),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1374),
                             ParentCategoryId = 8,
                             Sort = 4
                         },
                         new
                         {
                             CategoryId = 28,
-                            CategoryGuid = new Guid("9d4d0eb6-3d3c-4f73-a425-6ee1e00ccc83"),
+                            CategoryGuid = new Guid("024b9727-d943-4777-a87d-1e02853d31f3"),
                             DisplayName = "تعمیر مبل",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7756),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1390),
                             ParentCategoryId = 8,
                             Sort = 5
                         },
                         new
                         {
                             CategoryId = 29,
-                            CategoryGuid = new Guid("382f3ea2-93f0-47ad-b317-df3433bfff51"),
+                            CategoryGuid = new Guid("93563a09-8cc3-4b5f-8f7d-734058a08da7"),
                             DisplayName = "اتوبار",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7763),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1408),
                             ParentCategoryId = 4,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 30,
-                            CategoryGuid = new Guid("0d15f2cf-9d8f-4bec-8704-fade67470fed"),
+                            CategoryGuid = new Guid("821054eb-b531-4753-b828-227472a8c8b5"),
                             DisplayName = "اجاره خودرو",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7771),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1430),
                             ParentCategoryId = 4,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 31,
-                            CategoryGuid = new Guid("c66482f1-3242-4d59-ac08-bd4b25ccf912"),
+                            CategoryGuid = new Guid("6c09710d-7f38-4444-a1d7-7dc5215deb1f"),
                             DisplayName = "سرویس و تعمیر خودرو",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7781),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1449),
                             ParentCategoryId = 4,
                             Sort = 3
                         },
                         new
                         {
                             CategoryId = 32,
-                            CategoryGuid = new Guid("2c97dce5-964b-451a-885d-e60e94dc1b7d"),
+                            CategoryGuid = new Guid("a0e71300-b05c-4759-89b9-54c28defafa2"),
                             DisplayName = "وانت بار",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7788),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1469),
                             ParentCategoryId = 29,
                             Sort = 1
                         },
                         new
                         {
                             CategoryId = 33,
-                            CategoryGuid = new Guid("78e9e34a-186d-47ff-83e1-254ca5f710c8"),
+                            CategoryGuid = new Guid("6bcf4231-c1b4-476d-9258-eaf8f55eedc3"),
                             DisplayName = "باربری و اتوبار",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7795),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1495),
                             ParentCategoryId = 29,
                             Sort = 2
                         },
                         new
                         {
                             CategoryId = 34,
-                            CategoryGuid = new Guid("ff175da8-46d7-43bc-a33e-a7227f99249d"),
+                            CategoryGuid = new Guid("48f08b61-c111-4688-b9c8-9ac3cdf7e3c9"),
                             DisplayName = "کارگر اسباب کشی",
                             IsActive = true,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 254, DateTimeKind.Local).AddTicks(7803),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 179, DateTimeKind.Local).AddTicks(1510),
                             ParentCategoryId = 29,
                             Sort = 3
                         });
@@ -679,6 +679,21 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                         .HasDefaultValueSql("(newid())");
 
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((0))");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(128)")
@@ -698,8687 +713,12410 @@ namespace Pisheyar.Infrastructure.Migrations
                         new
                         {
                             CityId = 1,
-                            CityGuid = new Guid("9c01330d-0e06-4e3a-bcef-977055a4273c"),
+                            CityGuid = new Guid("d876be96-966d-43c7-8a18-15e75416ac62"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابرکوه",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 2,
-                            CityGuid = new Guid("6e2ee37a-6c02-43d0-8a88-4cd78d0de9f8"),
+                            CityGuid = new Guid("eafefad3-09f7-4ea1-be1c-c36150042fc9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "احمد آباد",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 3,
-                            CityGuid = new Guid("06dc90d2-f46f-417f-859a-1129b3a3c483"),
+                            CityGuid = new Guid("ecdd929e-7fb8-46a3-b8eb-dfd9188a7623"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردکان",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 4,
-                            CityGuid = new Guid("49320f47-248b-43fd-8fe2-874410a4ea98"),
+                            CityGuid = new Guid("5adab455-d0ff-424d-9136-0fda7079e8c3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اشکذر",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 5,
-                            CityGuid = new Guid("b358b511-1d87-4b31-9cb4-71dc4d0b6a16"),
+                            CityGuid = new Guid("8724092d-36a3-4d54-a342-dfd45ff1e907"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بافق",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 6,
-                            CityGuid = new Guid("d0b681b0-2fe1-405c-8162-04cc306ccb26"),
+                            CityGuid = new Guid("bf769e37-1421-41c0-b72a-a2426e21415c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بفروئيه",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 7,
-                            CityGuid = new Guid("38975418-c99a-49d0-8637-09e4e2a49b28"),
+                            CityGuid = new Guid("9cdee426-3b41-41cc-92b2-7e5b1a4cc1b5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهاباد",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 8,
-                            CityGuid = new Guid("dc4494ad-16ba-447a-af97-8168fcb9a5e3"),
+                            CityGuid = new Guid("26afe78e-1445-40f7-97c2-32a5b781e29b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تفت",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 9,
-                            CityGuid = new Guid("16c9098d-546b-4560-aafd-e0b9f37fd35f"),
+                            CityGuid = new Guid("7124599e-3753-4a70-8e10-d39dc4b90ec5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حميديا",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 10,
-                            CityGuid = new Guid("920b4d1c-fa09-424f-b61b-74fde321a258"),
+                            CityGuid = new Guid("5b5d9a43-d1cf-4014-abce-cfabd84a73fb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خضر آباد",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 11,
-                            CityGuid = new Guid("ca84ec53-7626-4045-8686-67a03935dd89"),
+                            CityGuid = new Guid("d83604ec-81d5-4eee-a79c-370cbfc5c19c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زارچ",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 12,
-                            CityGuid = new Guid("d5ccd0d2-c1fa-439d-a87a-6009113914ef"),
+                            CityGuid = new Guid("96ea2fb0-c22b-41a5-87b6-a50d8998c322"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهديه",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 13,
-                            CityGuid = new Guid("db62f62d-29d7-444f-b74d-561d91980d29"),
+                            CityGuid = new Guid("4e661dfb-2452-4484-9be4-1b41ac9e295e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عقدا",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 14,
-                            CityGuid = new Guid("494da5a6-9334-417a-b140-c0c592d7aaac"),
+                            CityGuid = new Guid("da6aaad0-8836-4b74-a117-578640a9187b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مروست",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 15,
-                            CityGuid = new Guid("caade28d-2d9c-437d-ac70-224acbb194b6"),
+                            CityGuid = new Guid("36044872-a1f1-4ed3-9269-100d745375eb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهردشت",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 16,
-                            CityGuid = new Guid("8c0be99f-585c-4ce0-b5a4-093942ee739d"),
+                            CityGuid = new Guid("55dc8006-9543-4f63-b031-1c18d312b7c9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهريز",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 17,
-                            CityGuid = new Guid("02c4333f-4848-439f-97f0-201a3cde09a9"),
+                            CityGuid = new Guid("15f4ed36-734a-456d-9682-fe939be13af5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميبد",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 18,
-                            CityGuid = new Guid("285b6a72-a2cd-4065-8277-df695b55ef33"),
+                            CityGuid = new Guid("e1b1bb80-d499-4cba-ba35-9a22952dac2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ندوشن",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 19,
-                            CityGuid = new Guid("2ff646db-e06e-4dc7-a898-daa1ff9ebe9f"),
+                            CityGuid = new Guid("9c8731d0-a7e9-4875-b68e-e8bcd9518023"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نير",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 20,
-                            CityGuid = new Guid("dc028569-fae4-4ae7-b5a3-150b7daa63dd"),
+                            CityGuid = new Guid("36732b25-2e55-4bc8-a574-0b5993f6ec4b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هرات",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 21,
-                            CityGuid = new Guid("caf8eb65-fee6-411d-813a-28159283dae0"),
+                            CityGuid = new Guid("139cdcf5-aedc-48fb-8d34-35126cf6bf73"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "يزد",
                             ProvinceId = 1
                         },
                         new
                         {
                             CityId = 22,
-                            CityGuid = new Guid("3b5300ee-9d29-4e82-b6c9-e21be7536202"),
+                            CityGuid = new Guid("b37f380d-ad87-448a-97ce-87012ed81705"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آلوني",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 23,
-                            CityGuid = new Guid("7d92c222-a4cd-4caa-84fc-059daa92269c"),
+                            CityGuid = new Guid("9a845620-adbf-41c8-9027-85c98b0ff497"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردل",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 24,
-                            CityGuid = new Guid("801d43a4-80ee-4c3f-aabb-a6b3ea66fd02"),
+                            CityGuid = new Guid("d6182fd5-f60d-4772-8466-c46128160df5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باباحيدر",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 25,
-                            CityGuid = new Guid("25c14709-1f8d-43bf-8727-573ffac57f61"),
+                            CityGuid = new Guid("4d7119de-56ae-4805-9cf2-49097c4ccbc6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بازفت",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 26,
-                            CityGuid = new Guid("d043b490-3723-40d3-9c9c-c7fd105b4225"),
+                            CityGuid = new Guid("50e7aa0e-d1c9-461d-bea5-98c5bb978b54"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بروجن",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 27,
-                            CityGuid = new Guid("9428df4a-6fa6-4476-8344-8b69eb4f529c"),
+                            CityGuid = new Guid("eb40337d-193f-4348-b01c-0eee624e1555"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلداجي",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 28,
-                            CityGuid = new Guid("c895dd5c-c7ce-40f0-864b-d8817a33f7c6"),
+                            CityGuid = new Guid("6e7af1ef-9ba0-4a31-81b5-ac604a13cd01"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بن",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 29,
-                            CityGuid = new Guid("021b1a70-9033-44af-ae65-cdd9a50c18d8"),
+                            CityGuid = new Guid("88954527-6c1d-41f4-a32f-b0c71fd72b05"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جونقان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 30,
-                            CityGuid = new Guid("9e0dad69-be1e-4875-bf91-97bcaf4abeb2"),
+                            CityGuid = new Guid("1242778b-e651-41f8-8077-de373be68ec6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دستناء",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 31,
-                            CityGuid = new Guid("112ae6f6-2b66-4bb6-a7a0-514cb564624a"),
+                            CityGuid = new Guid("b91041e1-63e7-4cf0-bb2b-ca9e2b19d927"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دشتک",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 32,
-                            CityGuid = new Guid("f0cf5a18-3b5a-4305-965d-9f30b2f98891"),
+                            CityGuid = new Guid("c77cb1a8-b952-474d-b969-c2d67d98e603"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سامان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 33,
-                            CityGuid = new Guid("739f44d0-9da8-4667-a44e-9f09668fccd6"),
+                            CityGuid = new Guid("4549f498-2fc9-42d3-9af0-33ca033cc214"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرخون",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 34,
-                            CityGuid = new Guid("f9eefc78-c176-451e-97ce-618bf502a128"),
+                            CityGuid = new Guid("e26c22f5-aca1-4ebc-b4f3-b691d7b96197"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سردشت لردگان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 35,
-                            CityGuid = new Guid("eb76c344-50eb-42de-b579-db4621f73e34"),
+                            CityGuid = new Guid("ba1574b0-0ac0-4cf3-868a-ac5ecf0f696b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سفيد دشت",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 36,
-                            CityGuid = new Guid("21c0e858-61bb-4a41-b463-8544b86b8b7f"),
+                            CityGuid = new Guid("0c0d1330-c260-4fc7-b71a-51f910c52844"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سودجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 37,
-                            CityGuid = new Guid("4ef55ec7-fc9f-48f3-987c-cd882111353d"),
+                            CityGuid = new Guid("68b9d335-6386-4465-b27f-dd62c0c1c0e2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سورشجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 38,
-                            CityGuid = new Guid("271d9435-3bf5-4873-b56d-826955b0fe89"),
+                            CityGuid = new Guid("88870832-cfe0-497b-8f06-561c79e351cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شلمزار",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 39,
-                            CityGuid = new Guid("fc387e58-7c1d-487e-8113-d5144e142ec7"),
+                            CityGuid = new Guid("c9656b8c-8cd3-441e-ae5d-915e33b1ed8d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهرکرد",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 40,
-                            CityGuid = new Guid("d8134016-b95e-42de-ad0e-cc2ee25bdec1"),
+                            CityGuid = new Guid("d5034c23-cd94-451e-812d-37dd6ee28ea7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صمصامي",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 41,
-                            CityGuid = new Guid("8141a9c7-d3e3-4fce-812e-f5e71b634c78"),
+                            CityGuid = new Guid("a4ff973c-3c02-49c3-b1f2-592f481aa2d0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طاقانک",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 42,
-                            CityGuid = new Guid("1ad4b861-86b5-4168-93f2-33a350035f2b"),
+                            CityGuid = new Guid("1a94e169-3681-422f-b190-4d477d667ee6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فارسان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 43,
-                            CityGuid = new Guid("40d7e0ba-a6fe-4e7a-a3b1-3734cdedef5f"),
+                            CityGuid = new Guid("de0043cc-274e-47a9-8912-04fa15bb94b5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرادنبه",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 44,
-                            CityGuid = new Guid("23752603-d8b1-4719-b323-e90a1661a6b1"),
+                            CityGuid = new Guid("3238c3eb-5fab-45d3-b331-24cf7601d8e1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرخ شهر",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 45,
-                            CityGuid = new Guid("85061b31-27a1-4a80-97a6-600eb1b71460"),
+                            CityGuid = new Guid("d344ee0f-1f10-4877-96e7-557b799f00fa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لردگان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 46,
-                            CityGuid = new Guid("9787453a-f7b3-429c-b9e4-a43576bd1103"),
+                            CityGuid = new Guid("82ca6cbc-f84d-491b-bdf0-490d4bbfba76"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مال خليفه",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 47,
-                            CityGuid = new Guid("bc44dbc8-1499-46db-a208-ebd84aafe917"),
+                            CityGuid = new Guid("ece09797-b9bb-43b2-8020-f2b208b71b7b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "منج",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 48,
-                            CityGuid = new Guid("dd944e64-1d63-4907-9581-ca5ab693b94a"),
+                            CityGuid = new Guid("82c01ab9-085d-4142-8cd5-0bd30cd99b11"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ناغان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 49,
-                            CityGuid = new Guid("4e999862-ffd5-449e-aef6-107f07c4f735"),
+                            CityGuid = new Guid("040963c1-8b1b-4437-95e4-b1b78b50a49b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نافچ",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 50,
-                            CityGuid = new Guid("0e346264-1d1b-48a4-97bb-3b42675f7131"),
+                            CityGuid = new Guid("e67acf9a-8297-4990-ab69-d76f5d801f5a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نقنه",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 51,
-                            CityGuid = new Guid("55dc9d07-081e-44f9-8db8-0d08b48e8477"),
+                            CityGuid = new Guid("17a9b7d9-b971-4f42-8947-abf159077a9d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هاروني",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 52,
-                            CityGuid = new Guid("7171c57a-fc24-4e4e-b970-080d2a6648c9"),
+                            CityGuid = new Guid("ce772dfe-ca22-42e7-8681-4a38b25d3850"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هفشجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 53,
-                            CityGuid = new Guid("6c124719-ddea-4639-bd57-f3695ba2d92f"),
+                            CityGuid = new Guid("56eb7f15-f865-43a0-8074-36b6ebd219a6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وردنجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 54,
-                            CityGuid = new Guid("1ca476bc-adee-405a-af46-e2f9ccd069fe"),
+                            CityGuid = new Guid("edd04bec-cc79-4de1-92f1-101fba76b062"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پردنجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 55,
-                            CityGuid = new Guid("ff5cba48-c43d-4164-8aaf-2ef2235da217"),
+                            CityGuid = new Guid("f792346b-c4fc-49a0-a8b0-c83a9d705b32"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چليچه",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 56,
-                            CityGuid = new Guid("4dc6853c-aa94-4b92-b065-9b60aa3db7d2"),
+                            CityGuid = new Guid("dafa1474-e86f-4219-a740-dab97abe9d07"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چلگرد",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 57,
-                            CityGuid = new Guid("2348c882-1a59-4d62-9534-d4ad1efb8e06"),
+                            CityGuid = new Guid("0d156960-772c-4cff-ad4a-69f6f557b16e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاج",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 58,
-                            CityGuid = new Guid("a4a0d93a-dc0a-493c-9b75-69a3887e8948"),
+                            CityGuid = new Guid("b4759ac4-31f3-411e-b901-06bf4010111d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کيان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 59,
-                            CityGuid = new Guid("2c0e60cc-6305-469a-807b-652b48a6195f"),
+                            CityGuid = new Guid("1a1565eb-5a37-4cef-b577-06bd958d20ea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گندمان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 60,
-                            CityGuid = new Guid("987a01ed-f26b-4242-8744-37d28e31a64c"),
+                            CityGuid = new Guid("2e568339-ba0c-4b98-a331-4d7272513bfb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گهرو",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 61,
-                            CityGuid = new Guid("e4f23d16-aff7-4ff4-b5f8-9f7a0dd8ed69"),
+                            CityGuid = new Guid("32241ad5-fc05-4c63-9f43-2bc8f93d9c17"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوجان",
                             ProvinceId = 2
                         },
                         new
                         {
                             CityId = 62,
-                            CityGuid = new Guid("af510fbf-e8d1-4650-b626-704c4c49976a"),
+                            CityGuid = new Guid("545d368b-0ae8-4ba7-8962-f494990c613c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آشخانه",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 63,
-                            CityGuid = new Guid("d6dd3742-87d4-4afc-8d4a-01cd347ba76e"),
+                            CityGuid = new Guid("f171360b-21ed-440f-9628-575f886fc196"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آوا",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 64,
-                            CityGuid = new Guid("ad44c5ec-e52d-4b30-a72a-85c03fcda325"),
+                            CityGuid = new Guid("06d84752-9c88-40ef-8d76-81d0b6c7319d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسفراين",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 65,
-                            CityGuid = new Guid("69ca0be8-dbb6-488a-bd82-45baf88aeaab"),
+                            CityGuid = new Guid("5ba5a0f8-5b06-490b-b2a3-5fe37bd8cd0e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايور",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 66,
-                            CityGuid = new Guid("80af9007-52d0-45cb-ab51-009c9b927b88"),
+                            CityGuid = new Guid("6ac1d485-43c7-412d-b977-cc2b99f471be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بجنورد",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 67,
-                            CityGuid = new Guid("7cb03fef-ee19-4863-82dd-1ac67a7100fe"),
+                            CityGuid = new Guid("516cd208-ca24-43c5-b308-0444c7d28343"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تيتکانلو",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 68,
-                            CityGuid = new Guid("5ac0090e-00d9-4217-ab51-25f541513a09"),
+                            CityGuid = new Guid("8ca51209-a59c-46ea-a075-173ee76230f3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جاجرم",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 69,
-                            CityGuid = new Guid("0d718620-64b7-434a-9131-e549668a5235"),
+                            CityGuid = new Guid("209648f1-9152-44a5-94a8-b3381d7071d4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حصارگرمخان",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 70,
-                            CityGuid = new Guid("9f905362-bd30-491e-b844-1f7cea32cda4"),
+                            CityGuid = new Guid("1f654b19-c1f4-4c7d-9bcb-a2d023f3214a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درق",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 71,
-                            CityGuid = new Guid("005d1e5f-a1d1-4ea4-8725-427429eabfc8"),
+                            CityGuid = new Guid("edef279c-8f3c-4f3a-9025-40a9dbaec19f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "راز",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 72,
-                            CityGuid = new Guid("6da6ee64-128d-4ae0-8196-6208495a9e84"),
+                            CityGuid = new Guid("e4b9f4c8-28da-4991-b098-b41daee85708"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيارت",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 73,
-                            CityGuid = new Guid("afa125e3-13a2-4a65-b795-00afdb0b4321"),
+                            CityGuid = new Guid("3e328b71-0440-4aae-8fe4-95284884f25e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنخواست",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 74,
-                            CityGuid = new Guid("d11bad1d-72e6-42fd-8be4-8048df0ed968"),
+                            CityGuid = new Guid("4024ffbd-a140-4a26-8d26-c33a92c563f6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شوقان",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 75,
-                            CityGuid = new Guid("0c6d18bf-85b0-473f-a7d0-6c131d37c66a"),
+                            CityGuid = new Guid("7b294e27-16e0-493f-9f9f-abca79aad5c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيروان",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 76,
-                            CityGuid = new Guid("e1de1d6e-70e0-4bf0-858c-ae61c868da48"),
+                            CityGuid = new Guid("bffbb96e-c776-489e-a19f-79ba0362fe05"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صفي آباد",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 77,
-                            CityGuid = new Guid("c9b76bfc-ee6a-4b9e-be04-dc62a41f51ac"),
+                            CityGuid = new Guid("b00dfb78-8171-448b-afac-6a9cd8400bbb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فاروج",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 78,
-                            CityGuid = new Guid("d5d28a25-2180-4e5b-be77-51221b0437a9"),
+                            CityGuid = new Guid("eee50945-fdb4-4945-a337-e34a8272ab19"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قاضي",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 79,
-                            CityGuid = new Guid("ece72a50-b848-4686-a7df-82af77c0f26a"),
+                            CityGuid = new Guid("1d8b8da3-efe8-49c0-b006-daee7c18fae5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قوشخانه",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 80,
-                            CityGuid = new Guid("55f1c162-2e75-4a4b-9858-4d77de6761b8"),
+                            CityGuid = new Guid("d3863548-5543-4de3-a932-c58651480215"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لوجلي",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 81,
-                            CityGuid = new Guid("dcd9bf48-43cc-4f1e-822e-fde34071b791"),
+                            CityGuid = new Guid("0e207dbd-f590-4fbc-8d93-9737ec00eb2e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پيش قلعه",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 82,
-                            CityGuid = new Guid("294bd486-d10f-4b8f-9a9e-7f020a283025"),
+                            CityGuid = new Guid("d4bad6db-dabe-4cf5-80ea-b4d782040843"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چناران شهر",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 83,
-                            CityGuid = new Guid("cf445b40-8e88-4f7c-aed6-6cbfd7b0a1b1"),
+                            CityGuid = new Guid("61b8b4d3-3090-4a9b-a499-5243e845eec6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرمه",
                             ProvinceId = 3
                         },
                         new
                         {
                             CityId = 84,
-                            CityGuid = new Guid("e5b4d8b1-94c8-46f7-a6c2-c0ce4ff85824"),
+                            CityGuid = new Guid("49dd41db-40f5-4230-b3ad-0e7caddd000b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آسارا",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 85,
-                            CityGuid = new Guid("45029b19-9deb-45fc-839a-ac509dbf4ae7"),
+                            CityGuid = new Guid("95acc3d4-efa6-4949-99a1-7bdc59090b8b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اشتهارد",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 86,
-                            CityGuid = new Guid("b4dc87e1-ac4b-4067-b431-d745cb9ddc0c"),
+                            CityGuid = new Guid("0eb6129d-520f-4337-8ac3-ec91ef93f013"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تنکمان",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 87,
-                            CityGuid = new Guid("299faa08-3fae-4762-b71a-2cdb75e90516"),
+                            CityGuid = new Guid("f07714f8-bd2f-4ba1-9668-d40d3ad835c9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر جديد هشتگرد",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 88,
-                            CityGuid = new Guid("65b9b842-bfb6-41aa-b10d-e107378b38e0"),
+                            CityGuid = new Guid("b6d86672-9025-45e5-8f52-4ae2b3759c5c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طالقان",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 89,
-                            CityGuid = new Guid("a87a595c-cbe5-40f5-bc88-942c9e1daa50"),
+                            CityGuid = new Guid("efd03479-a7af-410d-b724-138c73142f81"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرديس",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 90,
-                            CityGuid = new Guid("e6560ed6-ef40-4b3c-8b63-31b580e7dee1"),
+                            CityGuid = new Guid("98d96916-51ac-454d-a8b2-9319902bd87f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماهدشت",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 91,
-                            CityGuid = new Guid("20af44de-9356-466d-9351-d191d7b12990"),
+                            CityGuid = new Guid("374c424c-0c86-49db-ab6b-34573d6c94b5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمد شهر",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 92,
-                            CityGuid = new Guid("1805a52c-4ba9-4e5e-a49b-dc82fd1e664f"),
+                            CityGuid = new Guid("630ba836-5ae6-4ee2-94b7-16a134abc99c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشکين دشت",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 93,
-                            CityGuid = new Guid("91b701a2-00c7-4b86-b14c-663c7c4cbd36"),
+                            CityGuid = new Guid("0c27db56-e98b-4033-9816-1fce7e334717"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نظر آباد",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 94,
-                            CityGuid = new Guid("24a9cf42-452b-49b8-a8a0-4a7dc1176751"),
+                            CityGuid = new Guid("fb0159c1-5fdd-46c7-b6b6-d2d4c7abb41a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هشتگرد",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 95,
-                            CityGuid = new Guid("a6967f58-85e7-46d5-a864-e2266ac24518"),
+                            CityGuid = new Guid("0061ed44-7d3f-4913-b2ee-f4042f03dff6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چهارباغ",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 96,
-                            CityGuid = new Guid("d9f48e04-dfb5-4304-ad01-a7b789331000"),
+                            CityGuid = new Guid("d306b475-65f0-435b-9cf8-e6ec2c10966c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرج",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 97,
-                            CityGuid = new Guid("04355bc8-5243-48cd-93d4-23ebc97ccfb2"),
+                            CityGuid = new Guid("be48f270-b7ad-4204-870f-3dcc3cd4fc39"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کمال شهر",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 98,
-                            CityGuid = new Guid("3af4ead9-4698-4d1f-a275-e5b1a20e974c"),
+                            CityGuid = new Guid("b56d44e2-3441-4b81-bde9-3981e845399e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهسار",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 99,
-                            CityGuid = new Guid("706d0aab-ec91-4bfa-a439-c5e049fd31e7"),
+                            CityGuid = new Guid("369fee20-ccd2-4e9b-902a-22709180b5c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرمدره",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 100,
-                            CityGuid = new Guid("5535d5c5-9eef-440b-9d6a-87dd60d21eaf"),
+                            CityGuid = new Guid("5646a53e-21d2-4d8a-9f5f-0b414a3e8157"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلسار",
                             ProvinceId = 4
                         },
                         new
                         {
                             CityId = 101,
-                            CityGuid = new Guid("7ebf5291-7609-403e-a41c-296b97f54e13"),
+                            CityGuid = new Guid("3ee34810-379a-44b3-8aaa-b484c42e30f3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جعفريه",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 102,
-                            CityGuid = new Guid("bd4b53e1-8fb7-4685-b535-7c0fa0b2c7ce"),
+                            CityGuid = new Guid("1cf72040-bb9e-4a65-9291-cd6a0b59b4d6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دستجرد",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 103,
-                            CityGuid = new Guid("09744936-0cdc-461f-8753-f24f59285ccf"),
+                            CityGuid = new Guid("b6fd1b60-2f49-4053-94e8-25996f5e0a1a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلفچگان",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 104,
-                            CityGuid = new Guid("f38701b8-3a43-4066-9d10-7d7189ffc357"),
+                            CityGuid = new Guid("cf9c8018-6e6e-40cb-98eb-97d42b38e57f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قم",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 105,
-                            CityGuid = new Guid("9abb8d12-674f-4e5e-8e5f-0e137d5c71c9"),
+                            CityGuid = new Guid("ce7b36d6-2273-46fb-8813-5469c7a1f8ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قنوات",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 106,
-                            CityGuid = new Guid("d15d3392-5da8-4788-86a7-29dedc562725"),
+                            CityGuid = new Guid("408c68a1-750a-4755-a34c-8a4f173ecb10"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهک",
                             ProvinceId = 5
                         },
                         new
                         {
                             CityId = 107,
-                            CityGuid = new Guid("e5d7f067-6195-4a17-806a-c2d708e3c066"),
+                            CityGuid = new Guid("bf61999e-e656-4a03-8eeb-96a056d47e2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آرمرده",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 108,
-                            CityGuid = new Guid("8616ff97-0e67-494a-800e-e6aefb17322a"),
+                            CityGuid = new Guid("87105688-a987-49b6-848a-68eb4a7ad267"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اورامان تخت",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 109,
-                            CityGuid = new Guid("bd234225-927d-4c5f-ac60-cc953ec218f0"),
+                            CityGuid = new Guid("b675b4df-1c72-4744-a2aa-1936a0d0c5d3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بابارشاني",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 110,
-                            CityGuid = new Guid("a23090d5-7f8c-4071-9ef5-7b2f6b001d94"),
+                            CityGuid = new Guid("756571b9-8972-4999-b1d0-f0c7103505f0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بانه",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 111,
-                            CityGuid = new Guid("365e500a-f41a-4e17-b9e2-73176f901c6f"),
+                            CityGuid = new Guid("7cbfcc15-13c9-4c66-9aea-8ddc2dce2445"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "برده رشه",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 112,
-                            CityGuid = new Guid("b70167c8-930a-403f-a846-99adcf7b14e2"),
+                            CityGuid = new Guid("f8bf90ed-c36d-4ee6-b6d7-e1bfb2409aee"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلبان آباد",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 113,
-                            CityGuid = new Guid("644d2b2f-3961-48a2-9d8a-357f70993cbd"),
+                            CityGuid = new Guid("fe1b310c-209c-42fe-8fc6-b3b435267279"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوئين سفلي",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 114,
-                            CityGuid = new Guid("cc26027d-0e62-425a-ae82-cef567492a3a"),
+                            CityGuid = new Guid("15719069-d5ab-4836-b239-3d921a538551"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيجار",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 115,
-                            CityGuid = new Guid("54a6d608-b54f-4f55-877a-730ef226cb64"),
+                            CityGuid = new Guid("24830dcf-ab60-49d9-900c-4a3ebdf88e48"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "توپ آغاج",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 116,
-                            CityGuid = new Guid("0c0ee3a4-08bb-4d07-a322-cb4860db3420"),
+                            CityGuid = new Guid("73abf9a9-f2ab-4c09-8e2d-53211b4d2ba3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دزج",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 117,
-                            CityGuid = new Guid("7a528f12-c8ea-4ed6-8f0d-4a739ebbb839"),
+                            CityGuid = new Guid("8da0121f-ce47-4257-bfbc-ad356692f24c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دلبران",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 118,
-                            CityGuid = new Guid("8909b2b8-03f4-4b3d-90b7-5f812bf28d84"),
+                            CityGuid = new Guid("0a86cd9c-8448-43dc-ae4b-2c53dda3e474"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهگلان",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 119,
-                            CityGuid = new Guid("8e788ec9-fe3f-441a-8659-afc51b9ca046"),
+                            CityGuid = new Guid("f5675d96-4d84-4ab9-a89c-968fc09cd41e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديواندره",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 120,
-                            CityGuid = new Guid("4e42c2ca-e0e5-422f-8fed-c077018420d5"),
+                            CityGuid = new Guid("ef23579c-91c1-4508-bf38-cf760db071ed"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرينه",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 121,
-                            CityGuid = new Guid("06c3593f-98bf-4b9d-80c3-007b0b14f114"),
+                            CityGuid = new Guid("937b717b-0a14-4fbb-9fe3-e21bde993f80"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرو آباد",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 122,
-                            CityGuid = new Guid("47c41d58-df5b-49ab-b366-f12f06a92b51"),
+                            CityGuid = new Guid("11798e6a-c754-485b-aeba-f004fc69cd40"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سريش آباد",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 123,
-                            CityGuid = new Guid("b40e92c0-1e81-4d88-80e6-3d1114250eee"),
+                            CityGuid = new Guid("177e32b8-4e55-473f-a913-ac82ecfb9863"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سقز",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 124,
-                            CityGuid = new Guid("fd0e3e7a-a36d-466a-a471-3bbf25e408c7"),
+                            CityGuid = new Guid("a3726dcd-a535-456b-9e9a-ca334287dc15"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنندج",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 125,
-                            CityGuid = new Guid("882bb73e-08e4-472e-9259-ea7227a3ea37"),
+                            CityGuid = new Guid("5c62ab48-8de5-44be-bbb0-163489522761"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شويشه",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 126,
-                            CityGuid = new Guid("ab255a5b-0623-4397-9399-42e5b6e11c3c"),
+                            CityGuid = new Guid("791703a0-c669-4877-ad91-597de7dbb370"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صاحب",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 127,
-                            CityGuid = new Guid("6db878a7-358e-4523-a64d-02d13b0ba536"),
+                            CityGuid = new Guid("a5251f5d-79ac-4184-96bb-fac96d40c439"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قروه",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 128,
-                            CityGuid = new Guid("55ac1b97-8d3a-41cd-9931-3d97af363289"),
+                            CityGuid = new Guid("9fc515fc-eab6-48d2-add3-7ed347a19aa4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مريوان",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 129,
-                            CityGuid = new Guid("cef46dab-c913-4982-9c63-73c8a0528b11"),
+                            CityGuid = new Guid("bbbd8ccb-641a-4fdb-b285-991ffb6617df"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "موچش",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 130,
-                            CityGuid = new Guid("0e325554-7be6-42c9-af9f-00d0bbd1854c"),
+                            CityGuid = new Guid("654c8e91-61a0-4baf-a019-0a13217b8b84"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ياسوکند",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 131,
-                            CityGuid = new Guid("72d4be50-1fd0-4477-b5b9-e2742aec8ebb"),
+                            CityGuid = new Guid("adf3116c-3ac2-47d8-bc4f-6a736e234ab0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پيرتاج",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 132,
-                            CityGuid = new Guid("0c9440a2-58e4-4ee0-9e3b-a28b6d634376"),
+                            CityGuid = new Guid("47bd5dc8-25db-4d6f-953a-0782c9c7060e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چناره",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 133,
-                            CityGuid = new Guid("462ac0f6-160c-4d1e-89c4-db4e82af93b1"),
+                            CityGuid = new Guid("b380c366-0cc1-43aa-a93e-873f675e2018"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کامياران",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 134,
-                            CityGuid = new Guid("eccaf200-64a9-447a-9707-78d78c06ace1"),
+                            CityGuid = new Guid("f16d4334-0bae-4ba1-8ec7-9963c190e281"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاني دينار",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 135,
-                            CityGuid = new Guid("351e4925-a387-4d07-a4ca-96cbc33e23a3"),
+                            CityGuid = new Guid("29f80931-f634-4a0f-923b-401f72a2259d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاني سور",
                             ProvinceId = 6
                         },
                         new
                         {
                             CityId = 136,
-                            CityGuid = new Guid("806e9405-2802-4f1c-8c12-f42400db55b3"),
+                            CityGuid = new Guid("9b5bfc71-5014-4081-a6ae-9ed0125966a7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آواجيق",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 137,
-                            CityGuid = new Guid("e88baa42-1068-4aed-9100-09205077ba13"),
+                            CityGuid = new Guid("862c7a36-66cb-457e-ad70-01a81f5764b7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اروميه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 138,
-                            CityGuid = new Guid("c4098e5b-293a-4292-91b8-132c2a36f7a6"),
+                            CityGuid = new Guid("43e6d998-f1c3-47c6-9f40-f81c76cd89db"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اشنويه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 139,
-                            CityGuid = new Guid("b74e0408-6ad6-45f2-a1a8-4dbf2673e9b7"),
+                            CityGuid = new Guid("31d18a75-9c74-43ac-bc02-ef7fdf639e1b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايواوغلي",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 140,
-                            CityGuid = new Guid("2b7d7cc0-ecd7-40fb-8cda-df693832e8ed"),
+                            CityGuid = new Guid("fa7b7b61-95a4-4cf8-865b-96e87506c505"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باروق",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 141,
-                            CityGuid = new Guid("d280e441-2cfc-4c7e-9996-2f93d5626376"),
+                            CityGuid = new Guid("5204556f-a852-4ef3-840b-2213b8e4c820"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بازرگان",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 142,
-                            CityGuid = new Guid("a6b79dfe-fa4d-4533-b2e9-ac48c9f86c79"),
+                            CityGuid = new Guid("3eb1079c-99f3-4f8d-9758-9cb58befec09"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوکان",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 143,
-                            CityGuid = new Guid("7ad87c2b-8fdd-46fd-8352-915ce94ccee1"),
+                            CityGuid = new Guid("6c2f5f68-7076-41cb-bde0-5fe92e78fad9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تازه شهر",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 144,
-                            CityGuid = new Guid("104b330a-e728-45e7-b4c3-ad3d999baa11"),
+                            CityGuid = new Guid("06ae790c-0d2c-4798-a56b-76fb4dec8eab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تکاب",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 145,
-                            CityGuid = new Guid("2e566914-b950-4d9c-becf-356b9499bb9c"),
+                            CityGuid = new Guid("254fed22-e2a0-4609-849c-2c46ee35e972"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خليفان",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 146,
-                            CityGuid = new Guid("cb96bcae-c909-4cc7-8bdc-714f2610f3a3"),
+                            CityGuid = new Guid("95917b43-3737-4d10-a479-c02fc167c6c4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوي",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 147,
-                            CityGuid = new Guid("4d88ebf4-f9eb-4fa5-9dd6-8e4ebf631dc8"),
+                            CityGuid = new Guid("235395bb-4dc3-491b-b33c-e0f5e7e083c7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديزج ديز",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 148,
-                            CityGuid = new Guid("16c7900d-6797-439e-bb4a-950221329f66"),
+                            CityGuid = new Guid("3310064e-b786-43e5-93a8-969edb16fea2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ربط",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 149,
-                            CityGuid = new Guid("739ba8ee-69c2-4afe-9bcf-3e0af6203744"),
+                            CityGuid = new Guid("314f27c9-3406-4c86-bcff-5e51b89395f1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرآباد",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 150,
-                            CityGuid = new Guid("63ba2ce6-0956-432e-848b-685545b7ca26"),
+                            CityGuid = new Guid("c23109ad-d567-4696-92b7-d4a8d5f3ec24"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سردشت",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 151,
-                            CityGuid = new Guid("1979b84a-1d0e-43f2-bff7-2e2e7701f6a1"),
+                            CityGuid = new Guid("ac265ec4-16d3-4409-b352-72175bf4b9d5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرو",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 152,
-                            CityGuid = new Guid("96a8ea0a-9aa8-4847-8a5a-84b6d192647b"),
+                            CityGuid = new Guid("d5152c66-eaa3-48e4-bba1-d1bf5d2d61ca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلماس",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 153,
-                            CityGuid = new Guid("22a56793-79ba-4da9-94c1-18a71b5bd451"),
+                            CityGuid = new Guid("8450b692-fe1f-4c1a-8dcf-268e3ad63d82"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيلوانه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 154,
-                            CityGuid = new Guid("e6d6ebbe-250c-4595-b7c2-4e076042ec34"),
+                            CityGuid = new Guid("69af8856-267b-4752-b4a8-de4c05b048e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيمينه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 155,
-                            CityGuid = new Guid("6c262b20-6b86-409b-97f8-f39adb6ccb68"),
+                            CityGuid = new Guid("f564dd6c-09eb-490a-a452-dd49a535b654"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيه چشمه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 156,
-                            CityGuid = new Guid("1553a7f9-fcc0-46e6-ae2c-f21aee8bc979"),
+                            CityGuid = new Guid("96242170-def5-41f6-b602-099673857618"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهين دژ",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 157,
-                            CityGuid = new Guid("4108d876-df6d-4df5-978c-c28907f63362"),
+                            CityGuid = new Guid("d592244e-5f3f-4735-9a05-1de2b935dd21"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شوط",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 158,
-                            CityGuid = new Guid("1754e6cd-d0b9-4153-a0b2-a7e8a5c5749f"),
+                            CityGuid = new Guid("58fab462-36cc-48cf-968b-5cf6bf84f36a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيرورق",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 159,
-                            CityGuid = new Guid("33a3e72b-3f5a-42ec-a1d6-a9804a8a9fba"),
+                            CityGuid = new Guid("229de1cf-ba69-4b0a-858b-0b689efe0c9f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قره ضياء الدين",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 160,
-                            CityGuid = new Guid("86a10441-0b81-4721-b7fb-6d9c615a9f4f"),
+                            CityGuid = new Guid("99e7c819-593d-4f8d-a957-39f021433d9a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قطور",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 161,
-                            CityGuid = new Guid("a59601a1-7f59-4b4a-838c-7aa646eb012a"),
+                            CityGuid = new Guid("64641015-58b8-4197-88ab-4eebdda9f43a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قوشچي",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 162,
-                            CityGuid = new Guid("62542202-d691-4872-857a-6f0df5cd8704"),
+                            CityGuid = new Guid("be5a013e-9159-448f-b1f0-29d3b0053a3d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماکو",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 163,
-                            CityGuid = new Guid("f8180fa0-10f4-4ed8-a0a3-093f9635e29d"),
+                            CityGuid = new Guid("55b41b80-fe1b-4046-a943-f40a45b4c2c3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمد يار",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 164,
-                            CityGuid = new Guid("b7b8f9cf-e980-4b95-9748-c0fb84ea060f"),
+                            CityGuid = new Guid("4fc82c84-7954-4253-8d31-79b953038db0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمود آباد",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 165,
-                            CityGuid = new Guid("323fc35e-7691-4448-b252-41383e98ef7f"),
+                            CityGuid = new Guid("f06e4d21-cc60-469e-80cf-fe530fa28ca3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرگنلر",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 166,
-                            CityGuid = new Guid("fffa0e7f-b77b-49ac-b01a-dd6022ba7e25"),
+                            CityGuid = new Guid("f438f66d-1f17-4415-ae19-abbfd1a91e57"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهاباد",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 167,
-                            CityGuid = new Guid("7512328e-004c-4ffd-a2e8-708300b459ad"),
+                            CityGuid = new Guid("437582db-4f78-426b-8c70-3293b3a99352"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مياندوآب",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 168,
-                            CityGuid = new Guid("cf134a32-07a6-43b3-ba7f-f81e553a115f"),
+                            CityGuid = new Guid("0d62a280-46f6-489f-b0f0-2fe5784d133d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميرآباد",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 169,
-                            CityGuid = new Guid("eb2488e8-8888-4fba-baae-6729cf9c569b"),
+                            CityGuid = new Guid("89f41c9b-6300-470b-8401-0b119ec67e84"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نازک عليا",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 170,
-                            CityGuid = new Guid("9f26cf67-3b58-40d5-96cd-c09645271dd1"),
+                            CityGuid = new Guid("837f8fa5-0342-42d7-b058-3da9909368a4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نالوس",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 171,
-                            CityGuid = new Guid("8ca89f67-6284-46ad-89b7-33f89c59ea62"),
+                            CityGuid = new Guid("9435eb31-c670-4a44-9021-f72d5886bab5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نقده",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 172,
-                            CityGuid = new Guid("891f49eb-4c86-409f-90a7-d7abe1a6d7ae"),
+                            CityGuid = new Guid("ba2b3d15-7ffc-4d45-85e6-2bf373c2dc96"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوشين",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 173,
-                            CityGuid = new Guid("3dd02007-a17b-4c60-9654-c4abed511bcc"),
+                            CityGuid = new Guid("c2ecf04f-c1c4-44d9-b78d-a369e287b551"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پلدشت",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 174,
-                            CityGuid = new Guid("759f9ac5-2640-44ae-9bbe-053bfab72fe8"),
+                            CityGuid = new Guid("ffedb917-6647-47cd-aaa1-c66c7ffcbb28"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پيرانشهر",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 175,
-                            CityGuid = new Guid("6830d863-37f3-4073-a9e5-0ba433c2a3c0"),
+                            CityGuid = new Guid("ab05e48e-11ad-4661-bbd2-bfe0e04447c5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چهار برج",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 176,
-                            CityGuid = new Guid("f0b185a6-1a5d-4a7a-a270-4bc3cc8cd433"),
+                            CityGuid = new Guid("c72a771c-0972-467d-bc12-69b6e8fb4b70"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کشاورز",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 177,
-                            CityGuid = new Guid("22e491c6-b787-4128-8f5a-813bac923031"),
+                            CityGuid = new Guid("b6e54069-adff-401a-934d-3effbe947c29"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گردکشانه",
                             ProvinceId = 7
                         },
                         new
                         {
                             CityId = 178,
-                            CityGuid = new Guid("1eaf2be1-175d-4656-9d6a-410b4f0b5f59"),
+                            CityGuid = new Guid("d955e33e-f127-4ba5-bc1c-dd65fac6c131"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "احمدآباد صولت",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 179,
-                            CityGuid = new Guid("e662c31a-e01c-4fb0-89d5-5188cae99a70"),
+                            CityGuid = new Guid("3e7d5cf8-99b2-4868-87fd-0fc09a995225"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انابد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 180,
-                            CityGuid = new Guid("9cec2ce0-6c2a-4fbb-92fa-7e89c6d945ca"),
+                            CityGuid = new Guid("1d4eaf17-5942-4025-a129-c05be996c7dd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باجگيران",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 181,
-                            CityGuid = new Guid("c9a54fe9-b392-4f6f-a924-8bdec02dab23"),
+                            CityGuid = new Guid("9c1acd4b-f4bc-4634-8070-a5d99fc45cf6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باخرز",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 182,
-                            CityGuid = new Guid("ccc36e42-2627-49ed-9a85-84f58f21d396"),
+                            CityGuid = new Guid("9a0004af-6933-4254-bc90-b0036be63f03"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بار",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 183,
-                            CityGuid = new Guid("d48d9fbd-b632-41a7-9b13-5160a60136e9"),
+                            CityGuid = new Guid("5d779acd-0063-4eef-956d-6bb69577ab76"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بايک",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 184,
-                            CityGuid = new Guid("87690ebb-7758-456d-b3ec-5b995f4dbb8d"),
+                            CityGuid = new Guid("4918b945-5a31-4af4-b422-0fc6769d6e87"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بجستان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 185,
-                            CityGuid = new Guid("4979db9d-59c1-43b6-98fe-4e250339f6e3"),
+                            CityGuid = new Guid("774dbd60-9784-4a1d-857f-d0c82f4c7eb8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بردسکن",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 186,
-                            CityGuid = new Guid("5460d763-10d3-4dd9-9023-52e0a9d0364f"),
+                            CityGuid = new Guid("e91da842-3b53-45c0-be5d-96e99f2b509e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيدخت",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 187,
-                            CityGuid = new Guid("68ce7389-874f-4794-893e-d955e202f9b4"),
+                            CityGuid = new Guid("f46418ae-0b8f-4b5b-8f12-1d570f8ab611"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تايباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 188,
-                            CityGuid = new Guid("c3b1cc8e-698b-4d66-a322-649214683176"),
+                            CityGuid = new Guid("fa48b44f-1a77-442c-b4ff-d40114e09a11"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تربت جام",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 189,
-                            CityGuid = new Guid("d2da7ab4-19ec-4bcc-8150-33773af11147"),
+                            CityGuid = new Guid("124b0f69-0efa-481b-b96d-b8422512d534"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تربت حيدريه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 190,
-                            CityGuid = new Guid("d0a90b41-c0a4-4854-a069-89db6db7417e"),
+                            CityGuid = new Guid("193f8e8b-9a55-42e6-9351-6b466d187166"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جغتاي",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 191,
-                            CityGuid = new Guid("108594bb-edcf-4f20-a92d-b509511db790"),
+                            CityGuid = new Guid("0d8a0db1-497a-49b0-9962-a4a82446b7c1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جنگل",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 192,
-                            CityGuid = new Guid("822f301d-843e-40d7-a0d1-eae1ef91c8dd"),
+                            CityGuid = new Guid("9a1c33ad-acc4-4b5b-9028-8b1f093304a7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرو",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 193,
-                            CityGuid = new Guid("59a2bfe5-02a3-4928-8c99-44f6449030cd"),
+                            CityGuid = new Guid("6a78fc3f-147d-47bc-a4f0-187ec4aaf374"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خليل آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 194,
-                            CityGuid = new Guid("82f356b9-8fef-45d4-a287-15982818ff88"),
+                            CityGuid = new Guid("7070eb40-11b2-4022-93e9-0e7eca1e7215"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خواف",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 195,
-                            CityGuid = new Guid("f3f77468-853d-426f-981f-715a8e702a43"),
+                            CityGuid = new Guid("3436ea64-a3b5-4506-944e-5bd7d2741773"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "داورزن",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 196,
-                            CityGuid = new Guid("b4a90988-e791-4817-bcc6-6d9c864fad1b"),
+                            CityGuid = new Guid("aa377c25-5d7e-476f-83e5-ba0452a6ea16"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درود",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 197,
-                            CityGuid = new Guid("7b793cc8-fa15-41fe-8cea-4673ce0a25a0"),
+                            CityGuid = new Guid("bc0a8c9d-be3f-4cad-b85d-80087f78eb9e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درگز",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 198,
-                            CityGuid = new Guid("e203f8a1-5076-4526-ad2f-5fc9af3d3b02"),
+                            CityGuid = new Guid("d1fa134e-2218-4c24-9421-77fcbe697d0d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دولت آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 199,
-                            CityGuid = new Guid("e707133d-e7d8-4ebe-ae7b-c40d50592f9c"),
+                            CityGuid = new Guid("a8b21ed4-2928-4fdd-bd31-f4140c2475fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رباط سنگ",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 200,
-                            CityGuid = new Guid("bee3852a-199c-4ba7-96f6-98f587f85d7f"),
+                            CityGuid = new Guid("f5925669-f13f-48f1-adaf-058eee4fd59c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رشتخوار",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 201,
-                            CityGuid = new Guid("f4642a05-2e9e-46f2-b167-2229e8dd4738"),
+                            CityGuid = new Guid("9c18abe3-363b-4210-bfeb-c4bd288611fa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رضويه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 202,
-                            CityGuid = new Guid("20564b6a-ee64-4a01-b221-38fda6d125ad"),
+                            CityGuid = new Guid("2f9a6660-3583-43e9-8392-6a15bc6ed382"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "روداب",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 203,
-                            CityGuid = new Guid("a72497e3-2085-4529-9175-82bd9dba4da4"),
+                            CityGuid = new Guid("e213640a-95f4-470b-a237-d11a27ca1ab9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ريوش",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 204,
-                            CityGuid = new Guid("bee1e9c5-33dd-40b2-bbc8-b4666d9e9a57"),
+                            CityGuid = new Guid("c447d3bf-b9d9-4279-944d-51ffc2f4e901"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سبزوار",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 205,
-                            CityGuid = new Guid("28b5f9dc-f01e-469e-8b7f-77735571d408"),
+                            CityGuid = new Guid("f5c59a3f-9db8-4e7f-9acc-33e201fe8feb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرخس",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 206,
-                            CityGuid = new Guid("73bb1818-da62-47b0-80e7-24fd9a95ebd7"),
+                            CityGuid = new Guid("ccf4e805-fd02-4dd7-969c-d4f30e456a73"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سفيد سنگ",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 207,
-                            CityGuid = new Guid("1145941d-227e-4ea5-8d72-fdd313449116"),
+                            CityGuid = new Guid("244fe849-d69c-426e-b57e-9ae5271a14b9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلامي",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 208,
-                            CityGuid = new Guid("370b1b6e-85ce-42cc-b489-a0d841ab89ba"),
+                            CityGuid = new Guid("97786d58-d258-4020-99f3-73eef041e986"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلطان آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 209,
-                            CityGuid = new Guid("10f182b3-dcb0-497a-8d23-86cb18847fcb"),
+                            CityGuid = new Guid("c3444e01-0311-488c-905f-566583fee38d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنگان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 210,
-                            CityGuid = new Guid("c429cbab-de99-4963-809a-339224424c7e"),
+                            CityGuid = new Guid("79d8d70b-5972-4830-bcd9-e693a0d77209"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شادمهر",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 211,
-                            CityGuid = new Guid("1286223e-8d06-4790-8c94-b7777cc0cb25"),
+                            CityGuid = new Guid("0819df17-dc43-45a5-9dd2-e79835611ad3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شانديز",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 212,
-                            CityGuid = new Guid("9d9c3917-9524-4f61-9d81-98df4d2a6b22"),
+                            CityGuid = new Guid("69103a96-f328-4d32-a1c8-27651b515546"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ششتمد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 213,
-                            CityGuid = new Guid("45cf2d32-ad3c-4761-bb64-19caed9c3e06"),
+                            CityGuid = new Guid("8fcc860f-f0cf-4086-ac96-d753b9a27e2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر زو",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 214,
-                            CityGuid = new Guid("38b56b00-25c0-42c8-9204-2fa3e45b07dc"),
+                            CityGuid = new Guid("f18ad1e2-0dbe-4088-9970-c691265edfa0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهرآباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 215,
-                            CityGuid = new Guid("0ac8ab03-d4e9-4dde-b68b-f0190ade4cda"),
+                            CityGuid = new Guid("167c373b-61da-4b2e-9a8b-8106b442948a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صالح آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 216,
-                            CityGuid = new Guid("6cbfe326-d05f-4172-ade1-536afc3a1c48"),
+                            CityGuid = new Guid("28aee98f-2019-4398-a689-ca55867df5c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طرقبه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 217,
-                            CityGuid = new Guid("556bd4a3-fa56-43f0-bda9-5e1d688da9f5"),
+                            CityGuid = new Guid("0dbb0259-4694-4ea3-8f03-4d9a64827e47"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عشق آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 218,
-                            CityGuid = new Guid("96320370-7ac1-4682-9339-970ec0606233"),
+                            CityGuid = new Guid("8459b98a-7ce6-4631-88fa-db4f25912393"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرهاد گرد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 219,
-                            CityGuid = new Guid("fedd00bb-e19b-4b47-87af-300c806ee175"),
+                            CityGuid = new Guid("877514a8-b602-4345-a1af-638d9b6c3e11"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فريمان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 220,
-                            CityGuid = new Guid("0ac1eab0-e6b6-49cd-b344-492092da2fb4"),
+                            CityGuid = new Guid("61991e23-a1d6-4e18-9531-50f777d5de48"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيروزه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 221,
-                            CityGuid = new Guid("c78e0d9b-1139-4c51-83c9-a0c7d5335848"),
+                            CityGuid = new Guid("76c3e30e-1ab7-4d0b-8d55-04e4ee29cc47"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيض آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 222,
-                            CityGuid = new Guid("8674a52e-4ab7-4a84-a268-733c7f8a8b52"),
+                            CityGuid = new Guid("935cdab9-2d9c-4c60-8b4b-9f9a5793ad4b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قاسم آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 223,
-                            CityGuid = new Guid("6e9d1114-a841-4b09-9c82-7c6f163c02ca"),
+                            CityGuid = new Guid("a53df95f-a640-414d-a9b4-2e315fcbb2e3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قدمگاه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 224,
-                            CityGuid = new Guid("7c07470c-f424-4ea9-98cd-f565ce0a4977"),
+                            CityGuid = new Guid("16a99c05-11d8-40f0-ae46-ae1cbedd6a2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلندر آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 225,
-                            CityGuid = new Guid("787a1646-a467-4f4e-b949-d1d37c8db630"),
+                            CityGuid = new Guid("69d627be-cacd-45c0-83d8-d87d7e308702"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قوچان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 226,
-                            CityGuid = new Guid("4aac07bb-3d8a-4f09-aec6-b3a600b51cce"),
+                            CityGuid = new Guid("febfb76d-0a12-4867-b13a-887e7490ba0b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لطف آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 227,
-                            CityGuid = new Guid("f7eb7ba9-fb67-4bfc-80f1-d65147662f25"),
+                            CityGuid = new Guid("7eb12dfe-ed55-4271-8be8-ab46080b60e2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مزدآوند",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 228,
-                            CityGuid = new Guid("29a3f92a-194c-43a7-9a6f-cd880b14fd8d"),
+                            CityGuid = new Guid("dfebd9b2-2b3f-4cc5-a0ab-2706f06cd9cc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشهد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 229,
-                            CityGuid = new Guid("52250871-3775-4533-ae58-dd3317389f60"),
+                            CityGuid = new Guid("942dcae8-bfd8-443c-8212-9bc39d7a2c4d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشهدريزه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 230,
-                            CityGuid = new Guid("4b080318-d01b-43cb-bd83-1fb1d4bc121f"),
+                            CityGuid = new Guid("c24df33b-367b-44a8-b05e-b8260c99a6d1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ملک آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 231,
-                            CityGuid = new Guid("0e7db68a-3c63-4a8f-8d4e-ceb77378cdd5"),
+                            CityGuid = new Guid("43357cb7-0453-45f5-88c0-625779282b19"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نشتيفان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 232,
-                            CityGuid = new Guid("f31ac92e-e1dd-4099-b224-47de9fa5a098"),
+                            CityGuid = new Guid("9bbe4888-e200-4e04-9d13-ab31da2e36b9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نصرآباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 233,
-                            CityGuid = new Guid("688add27-e034-4c43-bd4c-359a61c6d46c"),
+                            CityGuid = new Guid("f63fbcb1-b5d6-41bb-9d49-0038590a748d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نقاب",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 234,
-                            CityGuid = new Guid("a3283916-7957-4943-8c2c-3b6adc9718cd"),
+                            CityGuid = new Guid("7ef5a73e-3ac8-48b1-823e-6d4da37b5491"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوخندان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 235,
-                            CityGuid = new Guid("397b78a8-9f6e-4aba-afde-70fe6c1dc05c"),
+                            CityGuid = new Guid("a02e98c6-2389-4247-859c-0d05c171ee53"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيشابور",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 236,
-                            CityGuid = new Guid("15c7ea68-bf69-4a22-a278-27810a2dd79a"),
+                            CityGuid = new Guid("9c7fd8aa-11e6-4c82-9b1a-a091e2806ddb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيل شهر",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 237,
-                            CityGuid = new Guid("42523a25-b0ff-4a08-bc84-32a126bec526"),
+                            CityGuid = new Guid("2695ddd2-0a00-4752-902f-341532b0dd07"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "همت آباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 238,
-                            CityGuid = new Guid("983fea73-793b-425f-819e-586cc0c67a75"),
+                            CityGuid = new Guid("75d03077-10e4-4ecd-b3ec-0c934572d4ff"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "يونسي",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 239,
-                            CityGuid = new Guid("681e5e2a-6eb4-4fec-8be3-a17d6b5d2b64"),
+                            CityGuid = new Guid("330cd4c1-d9d6-43fc-8209-7bbc9df88f16"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چاپشلو",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 240,
-                            CityGuid = new Guid("2391333f-8879-413b-9a97-1159e8bfc802"),
+                            CityGuid = new Guid("9e416f98-e0fe-4a2b-ab85-b6fcdb34cd13"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چناران",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 241,
-                            CityGuid = new Guid("8637e97f-f5cb-42dc-85eb-fb4a84aae614"),
+                            CityGuid = new Guid("8b37fa9c-5b2e-4278-bde1-2e1907eec796"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چکنه",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 242,
-                            CityGuid = new Guid("d8856bc1-d5a3-49bd-9dbf-31067aa8ce08"),
+                            CityGuid = new Guid("ccad5a06-286b-4e5b-b206-ff3d876fd4db"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاخک",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 243,
-                            CityGuid = new Guid("94b6ba8b-08d6-418e-863f-f65c064c7f58"),
+                            CityGuid = new Guid("64b525d4-2d4b-47dd-8f3a-f7e3da12eadd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاريز",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 244,
-                            CityGuid = new Guid("6862b14b-56a1-4a52-b1c5-a9e0b6f370bf"),
+                            CityGuid = new Guid("2cfae0b3-5cfa-4518-b9d4-ca01395229aa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاشمر",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 245,
-                            CityGuid = new Guid("92b536ee-8c64-4daa-988f-e1eb3e7a62a5"),
+                            CityGuid = new Guid("e57438f6-642a-4261-a1b7-74687f41b526"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کدکن",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 246,
-                            CityGuid = new Guid("6a2e1ef8-bda5-438a-ac67-aa272799bff7"),
+                            CityGuid = new Guid("12f1eb49-f25b-4f64-912a-f8c0dd7332fe"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلات",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 247,
-                            CityGuid = new Guid("233a5c6e-a8d8-4a9d-bbb8-63f94cd634ff"),
+                            CityGuid = new Guid("3897e592-3eeb-497a-8e3c-7ba0a35fd30b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کندر",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 248,
-                            CityGuid = new Guid("3936843f-13df-4144-95d7-84e6a00eddfe"),
+                            CityGuid = new Guid("3c354cfd-8255-42de-8361-ccb7752ef2bb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلمکان",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 249,
-                            CityGuid = new Guid("f3e1c51f-72a9-48e2-bac6-a70239229e8c"),
+                            CityGuid = new Guid("53041b73-bfd8-4559-9dd3-0c4f8fc1ce31"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گناباد",
                             ProvinceId = 8
                         },
                         new
                         {
                             CityId = 250,
-                            CityGuid = new Guid("3dee0716-efcc-485e-91b2-9d08df4e204c"),
+                            CityGuid = new Guid("8e840eff-247b-4df8-95d0-ce51dd3d3a8c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اديمي",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 251,
-                            CityGuid = new Guid("c6efbe6e-bb8e-4dde-92fe-cbda4b32e285"),
+                            CityGuid = new Guid("90ff4e32-6b3b-4d61-830d-b67bc9dcf03d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسپکه",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 252,
-                            CityGuid = new Guid("7084e3fb-ccbf-44a8-ae24-aefc3796c3ad"),
+                            CityGuid = new Guid("43bd873c-ea01-4613-a709-817322dba650"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايرانشهر",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 253,
-                            CityGuid = new Guid("1ce246ed-5859-45c5-a3a9-cee321d3b6fa"),
+                            CityGuid = new Guid("1a14b98c-1012-4a6a-8e52-fd83baada52e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بزمان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 254,
-                            CityGuid = new Guid("f0d20971-1b2a-4ebd-b8f6-263eae1f2426"),
+                            CityGuid = new Guid("e205f937-8560-4146-aee6-8d7403111d3a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بمپور",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 255,
-                            CityGuid = new Guid("15fc655a-6e25-4e41-9913-51dedc185318"),
+                            CityGuid = new Guid("941e7380-f61e-4d38-835b-bd71c5087816"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بنت",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 256,
-                            CityGuid = new Guid("7016b0c4-139c-459f-8dff-d48e5febf70c"),
+                            CityGuid = new Guid("eecf6016-71fc-49c9-ac14-1d1d5cfbcf53"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بنجار",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 257,
-                            CityGuid = new Guid("a89676a2-58c9-4adc-a999-3948b6de876b"),
+                            CityGuid = new Guid("62902101-c73d-4aa1-ac67-5cf25a55216e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جالق",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 258,
-                            CityGuid = new Guid("95b0b59d-b10d-49ec-9498-686f7205fd93"),
+                            CityGuid = new Guid("ee39f5a8-21a9-4964-a2b5-0b236782fa71"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خاش",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 259,
-                            CityGuid = new Guid("64bc9dca-fd9a-42eb-ad15-f55a3546f1a0"),
+                            CityGuid = new Guid("eb7ea209-df87-4139-b524-6b2a1789509c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوست محمد",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 260,
-                            CityGuid = new Guid("d4bd3c1e-e960-4930-8a40-0964abecd5f1"),
+                            CityGuid = new Guid("3b36b476-b3e6-453d-afaf-68df102a6ce6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "راسک",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 261,
-                            CityGuid = new Guid("73ae36b1-8ab8-4b9a-a50a-1e1143e4f6fd"),
+                            CityGuid = new Guid("d51d2864-166b-4729-8764-dc8d9aadfafb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زابل",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 262,
-                            CityGuid = new Guid("f5883b38-258a-4247-9a05-6f1aedba2afd"),
+                            CityGuid = new Guid("e2b38fdb-adc6-4385-8e70-6961ef037639"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زاهدان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 263,
-                            CityGuid = new Guid("93f4ded9-1e31-4cb3-9509-d38686493659"),
+                            CityGuid = new Guid("462b825c-2ff6-4701-b2ce-0da4b5c873f2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرآباد",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 264,
-                            CityGuid = new Guid("b3a8e826-2e8d-48f5-b88b-0c23d5812f41"),
+                            CityGuid = new Guid("9d87787b-d568-496d-9f56-24d71430c18e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زهک",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 265,
-                            CityGuid = new Guid("e6c4c3ef-d7fd-4699-9416-859ce304acb4"),
+                            CityGuid = new Guid("f5fc0e29-f9b9-4759-912e-015729e16252"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سراوان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 266,
-                            CityGuid = new Guid("4bafea02-b93e-4073-afe9-fdbd643c96fe"),
+                            CityGuid = new Guid("4b2fee23-8b25-4d54-984d-abac7d300b24"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرباز",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 267,
-                            CityGuid = new Guid("d26ee731-2446-4f19-98c3-11fca0765a5d"),
+                            CityGuid = new Guid("3b518570-5c85-4a03-82fc-c7867de7b3dd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سوران",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 268,
-                            CityGuid = new Guid("6fea83f4-4373-4c0f-826f-4bb2aafdfc12"),
+                            CityGuid = new Guid("94c823f9-9c07-4515-ac5f-d8bf16ac0abc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيرکان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 269,
-                            CityGuid = new Guid("91e41bd0-643f-4793-98cf-d565603fd3bf"),
+                            CityGuid = new Guid("b8d78e1d-024b-4d05-9143-cad90a421b32"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "علي اکبر",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 270,
-                            CityGuid = new Guid("795d64e3-f2e2-4770-bde1-d562b43ce3c7"),
+                            CityGuid = new Guid("48c3237b-8ed3-4a9d-9cd9-d3ea75dbbb5f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فنوج",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 271,
-                            CityGuid = new Guid("28bec937-ae5a-4a23-b20c-e14ebafcc019"),
+                            CityGuid = new Guid("788c1d5b-be32-4d43-8c3b-addc2ffce575"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قصر قند",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 272,
-                            CityGuid = new Guid("17f22547-ebe6-456e-bed3-bd9fe0bd722d"),
+                            CityGuid = new Guid("07861539-a8ab-4fbb-a974-7547ca1b7691"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمد آباد",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 273,
-                            CityGuid = new Guid("7efe6b48-4751-494f-a497-9d1202f343e0"),
+                            CityGuid = new Guid("7c34b12b-ac9e-46d4-a30d-c6e866b06390"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمدان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 274,
-                            CityGuid = new Guid("8f290849-0214-4005-a341-e7cd6188668a"),
+                            CityGuid = new Guid("80b92415-716d-46a3-b7db-f41907e00b9a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمدي",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 275,
-                            CityGuid = new Guid("439f1092-b941-48da-85bd-c4987cf9c14d"),
+                            CityGuid = new Guid("06d12296-80d7-4532-8870-0bce4bcff976"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهرستان",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 276,
-                            CityGuid = new Guid("235b52ec-31d4-4728-ba2f-d80690e63129"),
+                            CityGuid = new Guid("88f35aa9-e267-4f08-94f2-c42c9212f9e0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميرجاوه",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 277,
-                            CityGuid = new Guid("6f5d5e16-0c92-42cb-b2a9-6dc3e811a570"),
+                            CityGuid = new Guid("72a88f72-172c-435c-99d1-ffacd34df90b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نصرت آباد",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 278,
-                            CityGuid = new Guid("bd461223-749b-4e92-aec0-29991b5ccf93"),
+                            CityGuid = new Guid("9389009b-9d0f-431c-a512-a996ee99ef3f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوک آباد",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 279,
-                            CityGuid = new Guid("0c359227-9eda-4833-bfcb-0de578a685cc"),
+                            CityGuid = new Guid("02edef13-ac70-479e-98cc-0dbcd3d1ef18"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيک شهر",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 280,
-                            CityGuid = new Guid("b06839e8-e1da-4be5-80e4-cd96600a2842"),
+                            CityGuid = new Guid("e8aba65f-a12d-4908-b053-7d7ed8fcf15f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نگور",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 281,
-                            CityGuid = new Guid("e393541d-6c18-40dd-80f9-349105dc684b"),
+                            CityGuid = new Guid("2002f33b-6ced-4d0c-b147-29a3621a4413"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هيدوچ",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 282,
-                            CityGuid = new Guid("64389c15-6cde-4cb8-b183-dd4083275432"),
+                            CityGuid = new Guid("8a7ac940-3444-44cd-a5b3-e4c3c51f6ea5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پيشين",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 283,
-                            CityGuid = new Guid("7467b23f-4082-4836-aacc-68c5b36599bc"),
+                            CityGuid = new Guid("c958a241-c64f-43dd-a61b-067998b8c722"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چاه بهار",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 284,
-                            CityGuid = new Guid("5dca8b34-06b5-4cd3-ab3a-a26cfb571f4e"),
+                            CityGuid = new Guid("e416933c-df52-49da-b4de-757530050bc5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کنارک",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 285,
-                            CityGuid = new Guid("f96684e8-8a73-473d-9e38-69ff033cb276"),
+                            CityGuid = new Guid("b9b20d85-c3bd-46e0-9e1a-0d86119a2692"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گشت",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 286,
-                            CityGuid = new Guid("c7a8d250-8bed-454f-bee0-561d1af14f58"),
+                            CityGuid = new Guid("59740201-ba96-4d2b-a258-7bf85f7df7d5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلمورتي",
                             ProvinceId = 9
                         },
                         new
                         {
                             CityId = 287,
-                            CityGuid = new Guid("2deb6fc7-cf29-4d26-b16a-ddf7c6a75650"),
+                            CityGuid = new Guid("0ed9271d-7d45-4402-b670-40e2b5ec11be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آرين شهر",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 288,
-                            CityGuid = new Guid("fc9c2d24-a2e3-4f3e-b1c3-cf997b0eacdb"),
+                            CityGuid = new Guid("7de9a581-c1cc-494d-b707-17da64a89bae"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آيسک",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 289,
-                            CityGuid = new Guid("d6a39182-3f0e-4572-888c-24dae32d3916"),
+                            CityGuid = new Guid("4788385f-3756-4754-ba3a-b50562b81f84"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارسک",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 290,
-                            CityGuid = new Guid("ec74cd24-e204-4c76-9dd9-57d52f498eb3"),
+                            CityGuid = new Guid("acc70deb-5f32-4b2d-85aa-a1424a2f47a1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسديه",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 291,
-                            CityGuid = new Guid("9d7a7b63-c3ec-42c4-a88c-464b993c96ba"),
+                            CityGuid = new Guid("0c30b106-773a-464c-a90f-0a3260c7d895"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسفدن",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 292,
-                            CityGuid = new Guid("ec429044-291b-48f4-bd38-272bb0e2a079"),
+                            CityGuid = new Guid("0147bfda-6706-49bc-946d-d25372f88031"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسلاميه",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 293,
-                            CityGuid = new Guid("d0a2f42c-8b16-43c5-8d00-b04f2aea687a"),
+                            CityGuid = new Guid("c4c33970-70a4-4de5-83a0-1a63fbeaa7a7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بشرويه",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 294,
-                            CityGuid = new Guid("85b80396-741e-4ee6-9c2a-7b0eac033db2"),
+                            CityGuid = new Guid("62aea89b-f0d1-4af2-8168-f6b31bdf6496"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيرجند",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 295,
-                            CityGuid = new Guid("dc466fac-81de-47be-a5af-bf3095a74179"),
+                            CityGuid = new Guid("9a0614dc-a69c-44cd-a1e0-f72ec8d0e05a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حاجي آباد",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 296,
-                            CityGuid = new Guid("06cd9290-8dc8-4ad1-9e4a-3e8212dc8551"),
+                            CityGuid = new Guid("b48d2fc2-867f-4e91-b970-ba54a148be92"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خضري دشت بياض",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 297,
-                            CityGuid = new Guid("9940fa76-5399-4954-a1b7-7017b3ccb542"),
+                            CityGuid = new Guid("5669da0c-323e-45e3-b08b-d758dbeeaf3a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوسف",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 298,
-                            CityGuid = new Guid("c91af6b3-a068-40ff-ae8c-76ea58ddd909"),
+                            CityGuid = new Guid("d67bc014-08ec-4e6c-bc9a-2720cead1cbf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديهوک",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 299,
-                            CityGuid = new Guid("3b096f73-49e0-45de-a7e1-59c9959e1741"),
+                            CityGuid = new Guid("323f0bbf-529b-4941-9927-72bf0e779cc4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زهان",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 300,
-                            CityGuid = new Guid("a3065d26-7884-413a-9b41-b575edf2a576"),
+                            CityGuid = new Guid("882d7969-4e9a-41e7-b084-f2082bc917bf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرايان",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 301,
-                            CityGuid = new Guid("6d5ffb15-833d-4754-b3d5-9e2e5822074b"),
+                            CityGuid = new Guid("8f1483be-0c4c-4fbc-853c-8452e3d1cce7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سربيشه",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 302,
-                            CityGuid = new Guid("b788039a-ac3d-4ef1-81e8-1ca86b563f17"),
+                            CityGuid = new Guid("b92dcf29-8fb6-4b7a-87af-c2af81878dd2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سه قلعه",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 303,
-                            CityGuid = new Guid("5f373ae3-9aea-44ad-a9cb-42600d13db61"),
+                            CityGuid = new Guid("a5f772b8-c9a6-4c25-96a8-d20d5e7ff1d8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شوسف",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 304,
-                            CityGuid = new Guid("e53eb754-3bb1-4023-822b-83b5f3ddd72c"),
+                            CityGuid = new Guid("0c48481d-27a7-4412-8d45-e31a01208cb9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طبس",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 305,
-                            CityGuid = new Guid("cf0bb75f-d6aa-42e8-be0a-58fefbd2b71f"),
+                            CityGuid = new Guid("9a511fe3-c809-4f3e-be83-e5068ee79871"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طبس مسينا",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 306,
-                            CityGuid = new Guid("df40771a-568c-444a-bca9-d2cb0e092ea3"),
+                            CityGuid = new Guid("eae63624-4afb-479c-9572-1f4dd4295030"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عشق آباد",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 307,
-                            CityGuid = new Guid("8f1d04f0-c8ef-4a1a-9085-f7c12ce2fb05"),
+                            CityGuid = new Guid("69ee1704-a9c7-46c4-8ead-0720a087df3d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فردوس",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 308,
-                            CityGuid = new Guid("e03d8c97-1436-46a3-ba96-0ab16b8a05ad"),
+                            CityGuid = new Guid("cf559baf-5b83-4b55-a180-9fafde5e8cdd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قائن",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 309,
-                            CityGuid = new Guid("fb988f5f-8d64-4730-baf6-65d3e96cf551"),
+                            CityGuid = new Guid("17279d29-5a48-4ef8-95fa-b939d1f871d1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قهستان",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 310,
-                            CityGuid = new Guid("ce9d5682-5eb4-41e5-9fad-0a8a85d16f4f"),
+                            CityGuid = new Guid("2fdaaf5f-47b8-4170-80ee-7686dcbd61bd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمدشهر",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 311,
-                            CityGuid = new Guid("b065bc97-0178-4562-b48d-9f0362edd866"),
+                            CityGuid = new Guid("fbb7d36e-fc50-4df3-8936-d4eb79fef740"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مود",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 312,
-                            CityGuid = new Guid("5a07f4e3-a471-48db-99a1-7d48fc562da7"),
+                            CityGuid = new Guid("cab25c4f-63ea-4b12-a188-f9060ee6d858"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نهبندان",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 313,
-                            CityGuid = new Guid("cf8651ad-39eb-400a-81a7-9973b1ee66cb"),
+                            CityGuid = new Guid("6eb1c7e7-2743-45c0-b001-0096067d1dc2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيمبلوک",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 314,
-                            CityGuid = new Guid("41f7bfed-d193-463e-811c-7765602bc937"),
+                            CityGuid = new Guid("6c9aff3f-86ca-46a1-b2ce-a052973a2a01"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گزيک",
                             ProvinceId = 10
                         },
                         new
                         {
                             CityId = 315,
-                            CityGuid = new Guid("9e645541-3064-40e1-a237-f32bfcd1eb37"),
+                            CityGuid = new Guid("1fa8acc5-ffc2-479f-822a-dd06dc305ee2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبادان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 316,
-                            CityGuid = new Guid("56c17eef-958f-4b06-93de-1f2e4095bf30"),
+                            CityGuid = new Guid("a2fa5026-3bbb-4192-ad3f-b9ff1d53d8c2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبژدان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 317,
-                            CityGuid = new Guid("85f1491d-098a-4c45-bd02-5c1e15e918c0"),
+                            CityGuid = new Guid("c86eeab3-b1a7-4aed-bb6d-a39ffa442146"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آزادي",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 318,
-                            CityGuid = new Guid("64e3a34b-8aca-4ae9-846b-286da8eb8aae"),
+                            CityGuid = new Guid("2214ccd9-431a-4bb8-932e-c1c5ae5472be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آغاجاري",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 319,
-                            CityGuid = new Guid("986f64f8-8c1a-40e8-8b3e-bfd0a55366ea"),
+                            CityGuid = new Guid("fb56ed98-6610-4a76-99ac-00eef5ff800f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابوحميظه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 320,
-                            CityGuid = new Guid("717ef3b9-0ec4-4125-978b-5cb0f96cff00"),
+                            CityGuid = new Guid("a6d535d3-3888-45b5-bdfe-f35e25e26775"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اروند کنار",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 321,
-                            CityGuid = new Guid("c50af59c-dab4-43e0-9266-a11717861a27"),
+                            CityGuid = new Guid("cb056bc7-c364-42ac-b454-5ded24d7c25d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "الهايي",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 322,
-                            CityGuid = new Guid("1fcc0d86-35d6-45cb-b8a0-693bf0e404ba"),
+                            CityGuid = new Guid("04a72838-2b06-4b03-be60-6a219aea6214"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "الوان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 323,
-                            CityGuid = new Guid("d516a8be-7e8c-4de7-b52c-1fc97de089fc"),
+                            CityGuid = new Guid("ae5d08b1-58e4-4a79-ad23-af7b57f6f205"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اميديه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 324,
-                            CityGuid = new Guid("95224bfe-3702-4ce5-baee-c61eafce895f"),
+                            CityGuid = new Guid("50d22a9a-ca13-491c-815e-94c74f83f6a0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انديمشک",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 325,
-                            CityGuid = new Guid("9b36b335-35f2-4f6b-aea1-0b1ca6be41cb"),
+                            CityGuid = new Guid("3f95ff82-59fb-40be-92f0-6b18dc94107c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اهواز",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 326,
-                            CityGuid = new Guid("2d03855c-d3b9-4375-a1a0-f7ecf67289c0"),
+                            CityGuid = new Guid("0806a1b2-8adc-4068-a70f-b08de920c898"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايذه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 327,
-                            CityGuid = new Guid("e65154f1-decd-49c7-9571-b575e8169ce1"),
+                            CityGuid = new Guid("e7abcb29-f9ca-4838-89da-72825683377f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باغ ملک",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 328,
-                            CityGuid = new Guid("11b74147-11ab-4b32-8d4e-dbbbf505fa46"),
+                            CityGuid = new Guid("7d432dc4-1f1b-48b2-82bb-0f86fbfc5a26"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بستان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 329,
-                            CityGuid = new Guid("f881d3c1-86ac-47fa-9674-9b0723aa8461"),
+                            CityGuid = new Guid("c174352c-aad5-487a-a311-34a7f6e1b697"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر امام خميني",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 330,
-                            CityGuid = new Guid("aee08020-48b5-4d8b-b991-6b9b6d007216"),
+                            CityGuid = new Guid("5d21dc0d-e4da-4b60-a865-350a4bec5095"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر ماهشهر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 331,
-                            CityGuid = new Guid("ab2fad75-7541-4de9-8be6-e724007683db"),
+                            CityGuid = new Guid("1cefe0e7-1168-4d68-a822-a714847be3bf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهبهان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 332,
-                            CityGuid = new Guid("fe40f4fd-e603-4599-8fe2-3aa56ea561fa"),
+                            CityGuid = new Guid("c2196f8c-143c-4694-b48c-721d2554da09"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيدروبه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 333,
-                            CityGuid = new Guid("a50f4800-c62e-4126-8db9-405a55407fa3"),
+                            CityGuid = new Guid("9ea82830-7941-42cf-ac0c-eb09bedd1d12"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ترکالکي",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 334,
-                            CityGuid = new Guid("2987cb67-be11-47f2-a871-6e30e6596768"),
+                            CityGuid = new Guid("2c4839dd-387d-4473-9cc9-35cfc34bcb0e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تشان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 335,
-                            CityGuid = new Guid("3d2b24c2-ded8-4269-a190-8477d72d2459"),
+                            CityGuid = new Guid("18ef27dc-55bc-4eb4-bcc5-5868e2dd4048"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جايزان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 336,
-                            CityGuid = new Guid("0c59d534-a42d-41b1-9739-8b52c111b57e"),
+                            CityGuid = new Guid("dc391039-2181-4c44-bfca-c6266e0a5047"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جنت مکان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 337,
-                            CityGuid = new Guid("af39a50c-64fe-4b68-8496-1f1772e479a3"),
+                            CityGuid = new Guid("c2538ee7-2d45-4b7d-a772-7107ffa2175d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 338,
-                            CityGuid = new Guid("1dfd9824-e9fb-4475-9844-ae74a6bcf548"),
+                            CityGuid = new Guid("ece39ce4-34bc-4a8f-bd68-b0f99825852b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حسينيه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 339,
-                            CityGuid = new Guid("2db3ee07-df68-4fc3-9977-d739b0d201a9"),
+                            CityGuid = new Guid("3b7a5a99-3438-4c26-b515-95512f856d44"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حمزه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 340,
-                            CityGuid = new Guid("c24367a1-9d90-41a1-84ba-8d707ad56cfb"),
+                            CityGuid = new Guid("e709f7f0-926a-4355-9c7f-fb32ba26841f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حميديه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 341,
-                            CityGuid = new Guid("ce71c81e-5175-486e-a24a-9afc9576970a"),
+                            CityGuid = new Guid("4529774c-320f-4fa8-be2c-ad5c1b07bb1f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرمشهر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 342,
-                            CityGuid = new Guid("758be42a-5021-4d24-a3ab-cd37b9a7346d"),
+                            CityGuid = new Guid("3e6f5ddf-bd5f-4141-8cc7-68a1a71aad7d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خنافره",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 343,
-                            CityGuid = new Guid("d19f91de-c8d9-4102-9925-b1acd44fa55c"),
+                            CityGuid = new Guid("85797d22-b33d-478d-acaa-75df5d90b4e0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دارخوين",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 344,
-                            CityGuid = new Guid("0f9aec98-ab8b-4e41-a952-3f068033109b"),
+                            CityGuid = new Guid("9c7275ba-e460-4c4b-9c0e-917c459bc69d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دزفول",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 345,
-                            CityGuid = new Guid("68c9d695-855e-431c-a538-6126690c787b"),
+                            CityGuid = new Guid("3b986d93-25b2-4cf8-a324-9207ac41ab55"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهدز",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 346,
-                            CityGuid = new Guid("3f984037-9e72-42cf-b042-8e9a3a034236"),
+                            CityGuid = new Guid("92f97ca7-6a08-49d4-8904-ed4415c9e2b0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رامشير",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 347,
-                            CityGuid = new Guid("f1292c16-665b-4376-b902-4068ee316bd5"),
+                            CityGuid = new Guid("87e28f11-ff65-455b-9c9d-a0b0c8240371"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رامهرمز",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 348,
-                            CityGuid = new Guid("afc1f858-7fa1-434e-b777-37fef6a1d537"),
+                            CityGuid = new Guid("73452303-948b-4532-b0c8-8319a7c784ca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رفيع",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 349,
-                            CityGuid = new Guid("791c0734-342f-4f3a-849d-aaf61f96888e"),
+                            CityGuid = new Guid("a2b7f599-357c-4d6a-a4c8-3fcfc27d65df"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زهره",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 350,
-                            CityGuid = new Guid("f6ce106a-7297-4844-ba56-23122bd9e122"),
+                            CityGuid = new Guid("739702cf-64ac-4c2e-9986-2105e30d7cd7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سالند",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 351,
-                            CityGuid = new Guid("662e2b53-c3e8-4da1-91f2-fe015b3e43a2"),
+                            CityGuid = new Guid("168dead4-36d6-445b-8f7a-8f154f81c00c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرداران",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 352,
-                            CityGuid = new Guid("71f21368-fb77-4b37-9382-c8cb5787011b"),
+                            CityGuid = new Guid("cb0965da-1bbf-44d0-acf0-0618e46ec979"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سردشت",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 353,
-                            CityGuid = new Guid("0c39363d-d0a4-4ed2-bbd2-55ded1a3a3a9"),
+                            CityGuid = new Guid("460b466d-afcf-4314-a2c5-e0b5b4bb1880"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سماله",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 354,
-                            CityGuid = new Guid("ce17779c-c0e5-4666-9bed-6877fecc2e8c"),
+                            CityGuid = new Guid("68f69780-5807-466b-9615-4ddec259aac0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سوسنگرد",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 355,
-                            CityGuid = new Guid("8538de7b-938f-4b67-98cc-94db268118de"),
+                            CityGuid = new Guid("9bdd433c-e57b-4921-b804-467634350689"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سياه منصور",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 356,
-                            CityGuid = new Guid("2c5af97c-121e-4fc6-a1d3-e34e6c30e056"),
+                            CityGuid = new Guid("d29461d3-67e7-47d0-80fe-bd2de3000aee"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شادگان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 357,
-                            CityGuid = new Guid("6f9ee716-d689-4488-a097-f9ba38767be0"),
+                            CityGuid = new Guid("b3c9998f-e502-4572-8109-2ed262b87bd3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاوور",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 358,
-                            CityGuid = new Guid("1081c37d-e009-4d4d-8cf2-7a5908219433"),
+                            CityGuid = new Guid("fd3e87e2-17d8-459e-92bf-c116d02e601d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شرافت",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 359,
-                            CityGuid = new Guid("bf4d3b49-589c-4d7c-8209-a752f40ca8b9"),
+                            CityGuid = new Guid("39c49df8-58ff-4dc8-b885-5d6e001465cf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شمس آباد",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 360,
-                            CityGuid = new Guid("c38f18bf-0f7c-47a1-b2dc-37d0009a8c4c"),
+                            CityGuid = new Guid("6e26d162-f3c3-4b89-8043-8ef7a56aa61a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر امام",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 361,
-                            CityGuid = new Guid("d9d7ec26-86a5-468b-babd-fe01cf940723"),
+                            CityGuid = new Guid("4c006024-8c55-41f2-9c50-26c8f3d09504"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شوش",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 362,
-                            CityGuid = new Guid("08605066-5301-4a00-8500-0f56cf4ec33a"),
+                            CityGuid = new Guid("a9ed6dcd-1ae3-435c-9204-5022514d24cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شوشتر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 363,
-                            CityGuid = new Guid("e2638b78-ed50-405f-a99f-b48212c39d4b"),
+                            CityGuid = new Guid("125641df-9095-40eb-930b-2c357104e922"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيبان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 364,
-                            CityGuid = new Guid("a4ff707f-bbcf-40af-b1a5-152dd7fb26d8"),
+                            CityGuid = new Guid("4dded659-ce59-4afe-a98a-4341f201a584"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صالح شهر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 365,
-                            CityGuid = new Guid("75520fc3-6c9d-43f9-99e5-7edec66a4fdf"),
+                            CityGuid = new Guid("27805da2-3901-43be-ac37-deed36c2e59e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صفي آباد",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 366,
-                            CityGuid = new Guid("81499b65-6c28-47a2-a68b-3a9c3273eb43"),
+                            CityGuid = new Guid("da0044ca-676e-4435-af51-44fe14794298"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صيدون",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 367,
-                            CityGuid = new Guid("be523f0b-ec2e-44d2-86f5-2d6d3b30204d"),
+                            CityGuid = new Guid("b75e2aee-18c0-4119-acc9-82186be7be89"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فتح المبين",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 368,
-                            CityGuid = new Guid("96b77612-c1b0-4523-a9e8-24c535d6959e"),
+                            CityGuid = new Guid("0a47de21-8a9d-4a6b-a37f-94b8c3c2625d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلعه تل",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 369,
-                            CityGuid = new Guid("99b6e042-e746-44bd-93e7-573e8cb8da22"),
+                            CityGuid = new Guid("78d72329-19ce-4d4a-ae78-6d854ad5ccb5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلعه خواجه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 370,
-                            CityGuid = new Guid("bf56e25d-5217-4291-a5a0-678c361f7647"),
+                            CityGuid = new Guid("0068b7e6-cb38-48f0-bbc7-0ec9c286c21a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لالي",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 371,
-                            CityGuid = new Guid("479eead0-ba6d-45cb-b377-d65244485eb9"),
+                            CityGuid = new Guid("b442e4d7-abec-428a-9fff-21a6379c333d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مسجد سليمان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 372,
-                            CityGuid = new Guid("fca4067f-68e6-4ca5-890a-7561f78b6751"),
+                            CityGuid = new Guid("6dae7e6f-d6e4-4e93-b2b0-f0b64933e869"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشراگه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 373,
-                            CityGuid = new Guid("a606ec60-b1ae-425b-a027-bdad4936a71b"),
+                            CityGuid = new Guid("c720ca59-24dc-420a-92e8-4c9ffd75f727"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مقاومت",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 374,
-                            CityGuid = new Guid("dbf9ad5f-8925-48e9-aaaf-2699f08146f2"),
+                            CityGuid = new Guid("b9eba596-dadb-4896-a22e-3281204eeaca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ملاثاني",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 375,
-                            CityGuid = new Guid("06b0159e-ba57-4a99-87c3-57fa1aaba763"),
+                            CityGuid = new Guid("55235515-571c-4fac-adb1-639e9684cccc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "منصوريه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 376,
-                            CityGuid = new Guid("f94b983e-3605-4610-816c-abfeb16a817d"),
+                            CityGuid = new Guid("c2502b96-16f8-47d4-bdfb-1fd446dc28c7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميانرود",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 377,
-                            CityGuid = new Guid("2147d5c8-746a-4774-bbd0-9192e4fcc08c"),
+                            CityGuid = new Guid("268fa3a1-8e08-4eb2-8dce-e8cba345c55f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميداود",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 378,
-                            CityGuid = new Guid("def353a1-50b1-4785-b308-6118e7734207"),
+                            CityGuid = new Guid("1fdd7bab-fd1e-433a-afef-6dffd14d1961"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مينوشهر",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 379,
-                            CityGuid = new Guid("c14064ac-91c3-4eee-a9f3-811e2e9999f6"),
+                            CityGuid = new Guid("f10783d8-2d4a-46a6-82ed-0dfd52e6c233"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هفتگل",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 380,
-                            CityGuid = new Guid("c6b99612-068d-4d14-b831-cd88223582e5"),
+                            CityGuid = new Guid("f4534f1b-d82f-4d8b-82ca-38ef03b687a3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هنديجان",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 381,
-                            CityGuid = new Guid("b36b516a-6d85-4106-90d0-8e874c3f91ca"),
+                            CityGuid = new Guid("7725cf19-0a8d-43e5-bc36-88822b39fcc8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هويزه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 382,
-                            CityGuid = new Guid("a545123d-8e95-4e55-99d1-6fcd3aefccb8"),
+                            CityGuid = new Guid("099fa013-1910-434b-9c03-4e757342388b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ويس",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 383,
-                            CityGuid = new Guid("3a292a9c-b338-4893-badb-4eee1eff7bfa"),
+                            CityGuid = new Guid("7fd70bc3-3932-42ba-8a7b-efe8d5e0eaee"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چغاميش",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 384,
-                            CityGuid = new Guid("ba4e275c-a85d-4009-9537-739dc1aaa75b"),
+                            CityGuid = new Guid("0116dedc-65dc-4a34-96a3-aa59d50be2ea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چم گلک",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 385,
-                            CityGuid = new Guid("7de69453-a960-4f56-87cc-a0ea211d9560"),
+                            CityGuid = new Guid("4a43abb0-2fca-43c9-a96c-cd010f900c08"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چمران",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 386,
-                            CityGuid = new Guid("7007a1bc-3409-4dfa-b687-a56ea1a32a6b"),
+                            CityGuid = new Guid("94ba55f2-1c73-48a1-9327-9a17c79ac426"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چوئبده",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 387,
-                            CityGuid = new Guid("213a0227-77af-4ef7-af2c-6b256eef86c7"),
+                            CityGuid = new Guid("5bcafad5-ed61-4615-823a-6810f76e7555"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوت سيدنعيم",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 388,
-                            CityGuid = new Guid("81cdeea1-b11b-4bae-bbc9-ccae9bd014a7"),
+                            CityGuid = new Guid("a9ce3c3a-071f-4ce7-9af9-9e08be5f0262"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوت عبدالله",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 389,
-                            CityGuid = new Guid("9d806f31-7e11-45dd-a6a1-860a0dede5de"),
+                            CityGuid = new Guid("55c93f94-8c4a-4324-8813-126c71498fc0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گتوند",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 390,
-                            CityGuid = new Guid("94b041a3-f822-409b-8f7b-0e2182d2fdb8"),
+                            CityGuid = new Guid("cdf36d0f-7170-4a7c-82ad-e2554bf61df9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلگير",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 391,
-                            CityGuid = new Guid("80786a06-dc64-4df1-a684-94be308fc661"),
+                            CityGuid = new Guid("ded334d3-c838-46a7-8536-08db4c3e647e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوريه",
                             ProvinceId = 11
                         },
                         new
                         {
                             CityId = 392,
-                            CityGuid = new Guid("35929c65-51c4-4d85-8b57-325ac68d91ec"),
+                            CityGuid = new Guid("d1b2caf2-c6c6-49e4-a0aa-6b9ca5b5be00"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آباد",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 393,
-                            CityGuid = new Guid("79dcba52-f6df-46fd-9faf-73b7617653b9"),
+                            CityGuid = new Guid("988018fa-d1ec-4e73-b3d7-7ca7a67cb509"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبدان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 394,
-                            CityGuid = new Guid("06a2fedb-88e2-40c4-9bf6-e60837ddf1b5"),
+                            CityGuid = new Guid("e44f6faa-8c6f-4042-8548-e987ed5d34d0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبپخش",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 395,
-                            CityGuid = new Guid("e6d61a20-4c57-447a-b6b6-11d777c7ffeb"),
+                            CityGuid = new Guid("c506750b-b8bb-4eca-bed2-37b9d64eb823"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "امام حسن",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 396,
-                            CityGuid = new Guid("b92b5181-fde4-46c6-aa1c-196b70a1cb40"),
+                            CityGuid = new Guid("2eb56a54-14c5-4ba7-bb4e-1f5ef342079c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انارستان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 397,
-                            CityGuid = new Guid("67e02575-321e-4b03-9214-3fba0db256a4"),
+                            CityGuid = new Guid("37cca037-bef3-4ce0-88cd-92dc1c39e4ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اهرم",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 398,
-                            CityGuid = new Guid("31bbb74a-98d6-4917-baf5-dbdc411ceac6"),
+                            CityGuid = new Guid("1a766f43-11d9-420c-8e95-0dc231214cc7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بادوله",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 399,
-                            CityGuid = new Guid("eb5b5548-d90c-49f0-a984-d9113075bb7f"),
+                            CityGuid = new Guid("ca2a480a-1182-48ea-9c98-e87e88d2fec1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "برازجان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 400,
-                            CityGuid = new Guid("84b7a81f-0c9c-4acf-a78e-b507a1012f61"),
+                            CityGuid = new Guid("710c0c3f-5cae-48ac-b944-e389128beefc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بردخون",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 401,
-                            CityGuid = new Guid("3f32a684-e56b-40e7-827b-ec4610044c51"),
+                            CityGuid = new Guid("781e967c-0a79-4527-b91c-214ab6c6ee49"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بردستان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 402,
-                            CityGuid = new Guid("e5dbc340-d649-4df7-8888-9f2ab2ed9514"),
+                            CityGuid = new Guid("f1214e4d-a0b2-4288-8149-2a0cdf001543"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر دير",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 403,
-                            CityGuid = new Guid("16d25ec5-178d-4690-a0d2-056ea6baf965"),
+                            CityGuid = new Guid("57275940-836e-40dd-9bc4-599ce9313ade"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر ديلم",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 404,
-                            CityGuid = new Guid("f52b8739-1f2d-4637-8c0f-de4d1b9951db"),
+                            CityGuid = new Guid("8ea367fe-e66e-4690-994c-3fce92604fab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر ريگ",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 405,
-                            CityGuid = new Guid("a9084f83-3b97-4007-8159-8a1167bbf13e"),
+                            CityGuid = new Guid("61466df7-4420-4e63-a34a-7e7c1279770b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر کنگان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 406,
-                            CityGuid = new Guid("e2c36cde-4ca4-4b39-adbe-5deff43f586c"),
+                            CityGuid = new Guid("c6698c1f-f119-4724-97ab-d4746ae819b0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر گناوه",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 407,
-                            CityGuid = new Guid("e5489854-21af-4947-9f43-c90fef79f9cb"),
+                            CityGuid = new Guid("4515f648-8a4f-4a6d-9037-f282430c97eb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بنک",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 408,
-                            CityGuid = new Guid("28b9b7de-c256-493c-89b9-18201d31e12a"),
+                            CityGuid = new Guid("f16f6c63-424f-47be-a8a4-057f1de8e8b0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوشهر",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 409,
-                            CityGuid = new Guid("26dfc531-6914-45ed-9425-afe947f02645"),
+                            CityGuid = new Guid("321a6733-26f1-491e-a2de-c3e88e2cd9c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوشکان",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 410,
-                            CityGuid = new Guid("9e8f510a-4190-4e90-8639-da6ecdcbb313"),
+                            CityGuid = new Guid("8bdc7b50-3ead-4615-9ace-a5cca1352767"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تنگ ارم",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 411,
-                            CityGuid = new Guid("c727c118-06ba-43ef-ac23-1eaaca77243a"),
+                            CityGuid = new Guid("49b5ef36-c212-4c50-b1bb-5d9cf876a79b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جم",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 412,
-                            CityGuid = new Guid("5e73f8a6-84fe-4334-8aa5-7b1f1c1ab27c"),
+                            CityGuid = new Guid("df5b753a-a7a3-4120-ac2e-695840c09674"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خارک",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 413,
-                            CityGuid = new Guid("23b61936-dbf6-4b5f-a338-3b7be8f3a9f7"),
+                            CityGuid = new Guid("fea2f41c-d6de-4f4f-b3f6-e4f3f4dee85f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خورموج",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 414,
-                            CityGuid = new Guid("f36487d4-8c80-49e8-aaf9-00a8b21de804"),
+                            CityGuid = new Guid("fe363f33-1f7b-4a35-a8db-2a2acb2a44c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دالکي",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 415,
-                            CityGuid = new Guid("2348ed29-9a74-4f36-a854-9e8d0bbcc993"),
+                            CityGuid = new Guid("abede31e-44e2-445a-ae94-1495639082b6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دلوار",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 416,
-                            CityGuid = new Guid("e391fe60-dc20-41ee-a325-bfba28bf2afb"),
+                            CityGuid = new Guid("33755117-e614-42ad-94c9-3a78f7ab6e64"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوراهک",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 417,
-                            CityGuid = new Guid("9883c96f-588d-47b5-b90b-d39dc801faac"),
+                            CityGuid = new Guid("69132512-1212-4880-8c09-7e356cacb1e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ريز",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 418,
-                            CityGuid = new Guid("75e3c80d-2204-4173-96dc-8768547250b8"),
+                            CityGuid = new Guid("1e6251be-1289-4d76-8099-7072cadf8dbf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سعد آباد",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 419,
-                            CityGuid = new Guid("f7423558-4c6a-4b9c-aa3b-41caba5a413d"),
+                            CityGuid = new Guid("9eee6a81-a0af-4801-a2ac-b5b0dc6f0571"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيراف",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 420,
-                            CityGuid = new Guid("e4d4ee4b-5ffb-4ec9-9e35-fbfdb22d22e3"),
+                            CityGuid = new Guid("3f2627a0-faa9-4b84-b193-ef3c7a177b97"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شبانکاره",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 421,
-                            CityGuid = new Guid("fd7ad939-d201-4e6f-a700-ed77c73930a3"),
+                            CityGuid = new Guid("065b9fc3-d6c3-4b51-8dbd-53fa3f366176"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شنبه",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 422,
-                            CityGuid = new Guid("8fe9ff2c-9f33-4c6d-be8a-0acb0e000240"),
+                            CityGuid = new Guid("0b8e0890-9474-4aaa-9f14-31eea9dba8b6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عسلويه",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 423,
-                            CityGuid = new Guid("d754a02b-d740-4a98-b2bc-658025cc5ab0"),
+                            CityGuid = new Guid("0c2fb345-fa97-47ae-8650-0cc6111f9f3a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نخل تقي",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 424,
-                            CityGuid = new Guid("6116ef59-cc6c-4c56-b92f-cd26113e423e"),
+                            CityGuid = new Guid("aaa786a6-442c-4d85-8c0f-faa1b0b0208a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وحدتيه",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 425,
-                            CityGuid = new Guid("2c8994e3-ec4a-4c5f-9fbc-c2b481419143"),
+                            CityGuid = new Guid("ef9f6526-cd6f-454e-b811-ee9130155ab5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چغادک",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 426,
-                            CityGuid = new Guid("40ea4b4c-b68f-4965-a19b-0322b7f690b1"),
+                            CityGuid = new Guid("a7f63d4d-cec7-4707-bdce-e76ed59e982d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاکي",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 427,
-                            CityGuid = new Guid("1343ed7e-5750-471b-99e5-1267b0db72ec"),
+                            CityGuid = new Guid("e78efb5f-3f6e-4cac-ba00-a45fac792c3e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلمه",
                             ProvinceId = 12
                         },
                         new
                         {
                             CityId = 428,
-                            CityGuid = new Guid("a66c7b55-3130-4943-9953-ab555c11091e"),
+                            CityGuid = new Guid("59a740e7-b562-47fa-bc81-b0657bbca88c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آب بر",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 429,
-                            CityGuid = new Guid("ba917bff-bbe5-48c4-bd58-ea378b81e170"),
+                            CityGuid = new Guid("ed6549c8-c782-4939-bccd-c405a2369dca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابهر",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 430,
-                            CityGuid = new Guid("bbb39af4-85b5-4dd9-b5f0-3193c0af521e"),
+                            CityGuid = new Guid("5909830d-d53a-4b9b-b489-1c04823c2a94"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارمخانخانه",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 431,
-                            CityGuid = new Guid("23dd5299-1eb9-4ce4-8cca-6316a1429238"),
+                            CityGuid = new Guid("6f3079f8-7086-4800-b4a5-4694ab193a8e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حلب",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 432,
-                            CityGuid = new Guid("475be4e9-c0ae-4b94-952a-beff4d0141b0"),
+                            CityGuid = new Guid("d253e5fa-d2d6-4b0c-8726-6b6b174a52e8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرمدره",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 433,
-                            CityGuid = new Guid("207cf7c9-1806-4be4-806f-1363ac077d27"),
+                            CityGuid = new Guid("5b61ab2a-9246-48f8-b30a-0decde5ef953"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دندي",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 434,
-                            CityGuid = new Guid("b50df567-e855-4ec8-8b46-340c19a8cbc3"),
+                            CityGuid = new Guid("9062dbad-8781-430c-a623-b23548e4b576"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرين آباد",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 435,
-                            CityGuid = new Guid("3726d413-0ae0-43b6-b00b-96fdf7aa111b"),
+                            CityGuid = new Guid("ab4b7db2-1b74-4346-9b09-2ffabf7d4c9b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرين رود",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 436,
-                            CityGuid = new Guid("ddfb8c97-84b3-4f7c-b26c-72171905750b"),
+                            CityGuid = new Guid("cf11f687-2dd2-4007-8330-d1b4a89e7fcf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زنجان",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 437,
-                            CityGuid = new Guid("45e33e21-fb94-4779-85ef-f658236d1c99"),
+                            CityGuid = new Guid("72a41a52-5ad2-43c0-a8b7-ceb457c98835"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سجاس",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 438,
-                            CityGuid = new Guid("cc7cc0da-8cb5-41d2-85bd-2e56013e4593"),
+                            CityGuid = new Guid("5aab4484-eb30-4739-962c-efb9e26480ab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلطانيه",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 439,
-                            CityGuid = new Guid("a5d04757-1883-4922-8fda-7267a0c4f3c3"),
+                            CityGuid = new Guid("4edc2bb0-df54-4106-9c87-965379b2219e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سهرورد",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 440,
-                            CityGuid = new Guid("e6fef2cc-d2f6-49db-ae39-c5ab62efffb5"),
+                            CityGuid = new Guid("d3b8db77-2e40-400d-8d05-7bc52b1c2c57"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صائين قلعه",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 441,
-                            CityGuid = new Guid("9aa29d98-fa6a-46b4-b0b3-db2bf8ffd1b1"),
+                            CityGuid = new Guid("976405a3-ea9a-493b-8aa7-1a7b68f84336"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قيدار",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 442,
-                            CityGuid = new Guid("93f48f31-5a5a-4992-aebc-18fe17b2b458"),
+                            CityGuid = new Guid("c8cded89-e022-4bf2-8828-1108103eab47"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماه نشان",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 443,
-                            CityGuid = new Guid("97a49ae7-945a-4f51-ac79-d7fe439acd12"),
+                            CityGuid = new Guid("626b0248-5231-4284-973c-b138ffe698da"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوربهار",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 444,
-                            CityGuid = new Guid("34764104-039e-42cf-847b-7b48dad19c74"),
+                            CityGuid = new Guid("fa4178e6-6cd8-4f3c-801c-52c699622ab7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيک پي",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 445,
-                            CityGuid = new Guid("638e42a4-a466-491a-a246-2bb586055c65"),
+                            CityGuid = new Guid("187450f9-8c8d-4e4a-95d0-a7a283078bf9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هيدج",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 446,
-                            CityGuid = new Guid("d32a0a86-89fe-4685-947c-2e837c4488ac"),
+                            CityGuid = new Guid("e6ada71d-1356-42fc-933b-ec22306c7bb4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چورزق",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 447,
-                            CityGuid = new Guid("de43465c-6133-4798-ad64-d07941c3d0e4"),
+                            CityGuid = new Guid("74f935a8-b266-48ea-9d74-2230e0f5f679"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرسف",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 448,
-                            CityGuid = new Guid("00b7e855-97f8-4ccc-a409-699f0ef93c41"),
+                            CityGuid = new Guid("55f76ebc-b1e9-4f87-95ae-bfc1799aa8bc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرماب",
                             ProvinceId = 13
                         },
                         new
                         {
                             CityId = 449,
-                            CityGuid = new Guid("f3fea147-e09f-4ce0-874a-9f7c113ce250"),
+                            CityGuid = new Guid("88ff3c4b-fb19-4e25-b9c6-754d20c360ad"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آزاد شهر",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 450,
-                            CityGuid = new Guid("a4ef5803-8f6a-4c9a-bc00-12959b62c6cd"),
+                            CityGuid = new Guid("85dc375e-1dec-425c-a6da-8045308f7709"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آق قلا",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 451,
-                            CityGuid = new Guid("da0f0231-7b1a-480b-bef9-a9fe33833723"),
+                            CityGuid = new Guid("22dedc5c-7b6a-4362-b5ff-9722a1f5f143"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انبار آلوم",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 452,
-                            CityGuid = new Guid("2d7aa8ea-b135-4b82-97e2-e3a2dad63a08"),
+                            CityGuid = new Guid("069ea2e6-b1e4-4d91-bf41-a09256cb2191"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اينچه برون",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 453,
-                            CityGuid = new Guid("6b072ffc-6a41-4ca5-9b76-3a20126f7db3"),
+                            CityGuid = new Guid("3b3bc255-dab8-4136-968c-cf7348ad71e8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر ترکمن",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 454,
-                            CityGuid = new Guid("e835b630-55c1-4bc3-bdc3-86e86399fa0a"),
+                            CityGuid = new Guid("878f0575-088d-43f6-bb50-128b1dc589d7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر گز",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 455,
-                            CityGuid = new Guid("ac46be4f-1068-4155-b65b-ea17efb1d159"),
+                            CityGuid = new Guid("4e085f18-aed2-4946-b416-d0440216089d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تاتار عليا",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 456,
-                            CityGuid = new Guid("09e21c05-f755-4e0b-ab1c-db9944501410"),
+                            CityGuid = new Guid("3a32d1f2-bc3f-48e2-b395-cbfe9dd7de4d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جلين",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 457,
-                            CityGuid = new Guid("7fef58bb-3413-4259-92bc-6a7dae69d27c"),
+                            CityGuid = new Guid("06a27824-f751-44f5-a77f-025157a85d45"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خان ببين",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 458,
-                            CityGuid = new Guid("df78dac5-be6e-4c93-925d-f9104cd639f8"),
+                            CityGuid = new Guid("909c3b0d-315b-4b46-a3f5-2ad4074498a3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دلند",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 459,
-                            CityGuid = new Guid("7c37c5ce-956c-4811-8a8a-a42678fd2e87"),
+                            CityGuid = new Guid("a3e0513c-958a-41fc-99b0-0a4ed9b8f5d6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "راميان",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 460,
-                            CityGuid = new Guid("45514117-4b08-47d4-bd71-a1843e71355c"),
+                            CityGuid = new Guid("a0402f03-1ea4-432a-9162-a2f6d7d34f56"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرخنکلاته",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 461,
-                            CityGuid = new Guid("addf446a-13fd-4f4e-bf6b-70faf60d6946"),
+                            CityGuid = new Guid("6f611162-eb29-4c04-820d-d92248368318"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنگدوين",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 462,
-                            CityGuid = new Guid("dafda3cf-694a-4fa4-9d38-56edbcdb56c7"),
+                            CityGuid = new Guid("28802077-bd9a-4005-b98a-bafdf04a4133"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيمين شهر",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 463,
-                            CityGuid = new Guid("745158c7-80db-4b98-9f0b-6ff15e2a7809"),
+                            CityGuid = new Guid("bea2d6d7-ad80-453f-aeda-4983e0dab553"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "علي آباد",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 464,
-                            CityGuid = new Guid("af0638bb-b11a-4903-80ea-a196282fd6fd"),
+                            CityGuid = new Guid("de5b6a95-29b6-4c9f-9fe5-f923058f1693"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فاضل آباد",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 465,
-                            CityGuid = new Guid("3b4a7856-7d09-4b03-bbcf-9a50d5187aa8"),
+                            CityGuid = new Guid("d06cb68c-eb33-48d8-aaa3-3ba9108add6b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فراغي",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 466,
-                            CityGuid = new Guid("b8c1b20a-f0f1-4f16-9ea2-48c3a7ef9685"),
+                            CityGuid = new Guid("a54f1cb1-33a1-4c0c-96a3-20532d4e9304"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مراوه تپه",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 467,
-                            CityGuid = new Guid("9524fecc-e3a9-41e7-a9b7-c8744330292d"),
+                            CityGuid = new Guid("b3398dc8-c0c3-46f3-bd1c-bfd3286e310e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مزرعه",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 468,
-                            CityGuid = new Guid("88ed4a43-6529-4167-a21a-5845bac9acda"),
+                            CityGuid = new Guid("640153a1-33a4-401b-9b86-dbeafe59db36"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مينودشت",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 469,
-                            CityGuid = new Guid("ef32c119-0a8f-430f-ab0f-4441145068a2"),
+                            CityGuid = new Guid("e838bf8c-9c19-4707-9f6e-5f208f906e77"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوده خاندوز",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 470,
-                            CityGuid = new Guid("d2b37253-7731-4ddb-a0f2-7a0d2f393e26"),
+                            CityGuid = new Guid("669c034e-35fa-49a1-8847-a93800766f34"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوکنده",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 471,
-                            CityGuid = new Guid("0296efd7-6ef0-4c0a-a900-35b1fb9f0b90"),
+                            CityGuid = new Guid("f61887ba-4479-465d-9348-503a2a0f2da4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نگين شهر",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 472,
-                            CityGuid = new Guid("08d27149-bd2f-4abd-91c3-46a62f9115cd"),
+                            CityGuid = new Guid("2a66c1e5-8173-49eb-8fc9-26c39f3ccf59"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرد کوي",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 473,
-                            CityGuid = new Guid("f7d04b26-4992-4d67-89f1-2f5caf428c16"),
+                            CityGuid = new Guid("3f2d9864-abdb-4b1e-8dad-fd0b62f112a2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلاله",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 474,
-                            CityGuid = new Guid("5b4c80fb-1a35-4b64-88a9-c051b22a84fa"),
+                            CityGuid = new Guid("8c062b92-74d0-4b90-924d-168897b8f054"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گاليکش",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 475,
-                            CityGuid = new Guid("d4f87cd9-1001-45ae-9828-09ce08feaf88"),
+                            CityGuid = new Guid("0a2fbc37-db41-4c3e-8b31-970af80eacd4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرگان",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 476,
-                            CityGuid = new Guid("6246f2fe-d4ab-4655-b0e4-a27a4ec5f0d7"),
+                            CityGuid = new Guid("c02b1e9a-2643-4108-89ad-8457d4e99c72"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گميش تپه",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 477,
-                            CityGuid = new Guid("eacdb3e8-9c01-4845-a0ff-3cbfcbfba89a"),
+                            CityGuid = new Guid("582147cb-96e0-42a1-af2c-a4a3c0b35374"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گنبدکاووس",
                             ProvinceId = 14
                         },
                         new
                         {
                             CityId = 478,
-                            CityGuid = new Guid("f2ec0fb6-f097-4221-af4b-d19f449a6acf"),
+                            CityGuid = new Guid("233d448d-8fe2-4343-89f1-c88e590e3d86"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آلاشت",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 479,
-                            CityGuid = new Guid("817f0c64-3123-4e9e-bd36-bb537d042b21"),
+                            CityGuid = new Guid("a4dffb09-e914-4363-a9ec-e9341537ca86"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آمل",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 480,
-                            CityGuid = new Guid("3210a87e-1da8-4962-af09-47681143527d"),
+                            CityGuid = new Guid("7ced85a4-dcaa-4e25-b14c-72ddb58ef1cb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارطه",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 481,
-                            CityGuid = new Guid("50f097f3-4c8f-4050-a35f-8d966ccfcef3"),
+                            CityGuid = new Guid("f90f4609-bc32-4a1a-959a-f6383d26d02f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "امامزاده عبدالله",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 482,
-                            CityGuid = new Guid("848989ea-9945-4959-a102-3cc6d9aac045"),
+                            CityGuid = new Guid("0abea1d2-5cb6-435b-b6e6-941886bd71f3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "امير کلا",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 483,
-                            CityGuid = new Guid("f4aee4e7-b5b6-4392-a4f8-8aab281a9059"),
+                            CityGuid = new Guid("b4d66db2-1d65-43ce-ba70-0535fb6f60cc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايزد شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 484,
-                            CityGuid = new Guid("f033020f-3664-4f16-8331-00aa43ff855f"),
+                            CityGuid = new Guid("22d59696-f470-418c-9767-e144e377b7b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بابل",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 485,
-                            CityGuid = new Guid("6e47ffb3-7e45-408a-93eb-b3a47fc385bc"),
+                            CityGuid = new Guid("ca38e95e-8919-4745-ae54-56a422f2e63a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بابلسر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 486,
-                            CityGuid = new Guid("c9005897-6fcc-49bc-8630-e591a276d28e"),
+                            CityGuid = new Guid("7a33aee9-2f16-45a1-b6d0-22de1f879761"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلده",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 487,
-                            CityGuid = new Guid("1c003bce-2340-4748-8928-0495349fb26e"),
+                            CityGuid = new Guid("3713bc87-a574-45fb-bb1a-6d1b2b002bb6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهشهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 488,
-                            CityGuid = new Guid("3512ebea-fa0d-4746-a31c-631f1d9a3d92"),
+                            CityGuid = new Guid("cda472ab-c7bc-4a31-bf88-df372682726f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهنمير",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 489,
-                            CityGuid = new Guid("7b9fa50d-04e1-470f-a643-679cda2f4ac8"),
+                            CityGuid = new Guid("6e330b50-bc9d-4c77-9b2c-ed7de6789ef8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تنکابن",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 490,
-                            CityGuid = new Guid("f9f1e50a-bc2d-41aa-a369-003efc81b985"),
+                            CityGuid = new Guid("c211eb18-b26f-444d-8f9f-6813e00f1deb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جويبار",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 491,
-                            CityGuid = new Guid("bb516e61-f390-40a7-bd22-1577849243dc"),
+                            CityGuid = new Guid("f2658869-e349-4e56-8faf-fa2430e510e2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرم آباد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 492,
-                            CityGuid = new Guid("7a8eb64f-f1e4-42dd-aca5-fb6baed87d30"),
+                            CityGuid = new Guid("435a7816-e16f-4196-ab70-3f85cc892daa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خليل شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 493,
-                            CityGuid = new Guid("8620a711-1ed2-4980-be94-370612702f9b"),
+                            CityGuid = new Guid("b06eee5d-556e-4793-aa99-d9834c6d8a93"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوش رودپي",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 494,
-                            CityGuid = new Guid("6f0b9ea5-c9b2-4f21-b0af-cad8a101c0f9"),
+                            CityGuid = new Guid("36f58a58-122c-40de-b0b2-baf637e26ce1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دابودشت",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 495,
-                            CityGuid = new Guid("b7aa3441-4310-425e-a2cf-6116ab496651"),
+                            CityGuid = new Guid("b6da5119-40fa-4b84-bfed-310ca885955f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رامسر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 496,
-                            CityGuid = new Guid("d70a7529-fa59-4550-81b6-99c06c1d95e2"),
+                            CityGuid = new Guid("1649951a-5798-450d-a17c-48a80b8e18c1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رستمکلا",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 497,
-                            CityGuid = new Guid("3142c279-360a-4e78-b025-102569d84b31"),
+                            CityGuid = new Guid("0b275a77-0f95-4564-a3e2-ad1756cec87f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رويان",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 498,
-                            CityGuid = new Guid("31467aa6-5d8b-4561-83f0-e13e2683fbd0"),
+                            CityGuid = new Guid("e870be32-783d-4353-a585-f6c049c249fb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رينه",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 499,
-                            CityGuid = new Guid("7654e85c-90bf-4e10-bb00-d487f3a9a498"),
+                            CityGuid = new Guid("5133c358-3694-489f-955d-4845184d6f86"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرگر محله",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 500,
-                            CityGuid = new Guid("e01545e6-242f-45be-b259-84d8a40d1add"),
+                            CityGuid = new Guid("17083842-321c-4d70-85d1-4ced612f6224"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيرآب",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 501,
-                            CityGuid = new Guid("fb6aa93e-ce40-47ad-9aea-4d30dc51cf5b"),
+                            CityGuid = new Guid("d5417371-998c-4450-b25c-839f94cc351a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ساري",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 502,
-                            CityGuid = new Guid("17a876e1-3143-45c7-8577-cf0d48db8292"),
+                            CityGuid = new Guid("a901bf85-7dbe-400e-92ca-f880a7b7b9f4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرخرود",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 503,
-                            CityGuid = new Guid("bbc3f5fa-6891-4cb2-bf00-6df0365bfea5"),
+                            CityGuid = new Guid("091006d1-69e1-40c3-bd15-6e0c635b388b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلمان شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 504,
-                            CityGuid = new Guid("750259fd-f735-42d2-a56a-17a5a0f462c7"),
+                            CityGuid = new Guid("aa31f4bb-0ad8-4b81-989c-117009544229"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سورک",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 505,
-                            CityGuid = new Guid("89007eff-57c6-4308-a966-d4a35ba4e9d6"),
+                            CityGuid = new Guid("5cad0e76-7ac3-4557-a340-b09bd671674b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيرود",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 506,
-                            CityGuid = new Guid("c4394bab-b576-4cfc-ac7f-6d52e10cc7a1"),
+                            CityGuid = new Guid("7b1bf238-33ae-421c-83b2-a2c0f86342c4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيرگاه",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 507,
-                            CityGuid = new Guid("952d7ccf-cec4-4da9-860a-24b62ccf2d33"),
+                            CityGuid = new Guid("b9430c99-279a-44c4-a52c-42bf0cd74902"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عباس آباد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 508,
-                            CityGuid = new Guid("da83ebcc-27aa-4e8e-aa0d-df92194f3faa"),
+                            CityGuid = new Guid("8ed357a8-2d23-470d-a8d9-c3681cd5d1eb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فريدونکنار",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 509,
-                            CityGuid = new Guid("bd7aeba8-a874-424c-85a2-2aca52926caa"),
+                            CityGuid = new Guid("7e9ba00f-46a9-449e-9fc7-98b3b9cb7580"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فريم",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 510,
-                            CityGuid = new Guid("2d6a1976-010b-4485-949c-119626235ad2"),
+                            CityGuid = new Guid("b475de7e-f9fc-4b64-94f5-c5c37e7ecf8c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قائم شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 511,
-                            CityGuid = new Guid("4999cd98-6eba-4e3c-a572-e59920e42229"),
+                            CityGuid = new Guid("2da0171d-296b-4f0f-85b8-ad23132cc783"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمود آباد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 512,
-                            CityGuid = new Guid("39c2ba58-e1a6-44ad-9f98-0770e35d917c"),
+                            CityGuid = new Guid("018ba855-3d22-49dc-98c6-e487d88fbca6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرزن آباد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 513,
-                            CityGuid = new Guid("a641ab21-a1a8-4c6b-9be4-3dbc0dfe4bf8"),
+                            CityGuid = new Guid("556baa52-1dab-4882-8baf-972b193b82be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرزيکلا",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 514,
-                            CityGuid = new Guid("0b524268-117a-4d60-8067-f1e68cf56ff1"),
+                            CityGuid = new Guid("4c0d5b6f-3faa-4770-917a-1af249c09982"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نشتارود",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 515,
-                            CityGuid = new Guid("db636f29-cbd4-41c4-962e-5930309cb407"),
+                            CityGuid = new Guid("8c7d4100-7d26-450d-84aa-e7b8c7de4589"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نور",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 516,
-                            CityGuid = new Guid("6625f58c-2f98-4760-a46b-a1d3619ea17f"),
+                            CityGuid = new Guid("14521996-f242-4cbf-8a89-728b276918d5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوشهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 517,
-                            CityGuid = new Guid("4c516d3e-b5fa-4ff9-bd8b-e92f4ea0abf8"),
+                            CityGuid = new Guid("e7c9c684-c67e-43bf-9a2f-3bc3647ff800"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نکا",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 518,
-                            CityGuid = new Guid("a999f9b0-e559-4945-9d33-0dc4ae3d9ef0"),
+                            CityGuid = new Guid("97d05735-cd30-49ca-8314-af6b5574382a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هادي شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 519,
-                            CityGuid = new Guid("ba5db523-013d-4cba-b1fc-8084d8490fcc"),
+                            CityGuid = new Guid("c60b3320-ec16-46ca-80a0-c2fef5f1880d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هچيرود",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 520,
-                            CityGuid = new Guid("95cdc14a-55e7-48a4-9677-cb479813029b"),
+                            CityGuid = new Guid("0351f6c5-d31d-4d39-88a2-406a4eb6e681"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پايين هولار",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 521,
-                            CityGuid = new Guid("f8fee01e-8d0c-4e34-a724-73d55edbc663"),
+                            CityGuid = new Guid("6e23413a-515c-49c7-8546-5e56415ecf30"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پل سفيد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 522,
-                            CityGuid = new Guid("1597154b-47e4-4f34-af3f-f23f7fb2025c"),
+                            CityGuid = new Guid("22592211-c9dc-4ef6-b739-267b66cebd68"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پول",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 523,
-                            CityGuid = new Guid("923c5661-a965-4d98-a145-b60d9ca0ec0f"),
+                            CityGuid = new Guid("23b5e1fb-8a25-4758-a9c6-0bd558ba9e7e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چالوس",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 524,
-                            CityGuid = new Guid("dbb2697b-deb4-4f05-8764-de0fd244d248"),
+                            CityGuid = new Guid("d0bf0e22-ec7e-42bf-a18e-bf8fd0b4faf4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چمستان",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 525,
-                            CityGuid = new Guid("745c9c77-8330-4ff6-9a25-09cd257d938c"),
+                            CityGuid = new Guid("0a358205-acd9-450c-9ab7-7579c11cbf3b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کتالم و سادات شهر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 526,
-                            CityGuid = new Guid("2ae79b4d-2aa0-4baf-8320-717c563f702c"),
+                            CityGuid = new Guid("d4520c77-6a12-4c6d-b3e2-bc49de71756e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کجور",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 527,
-                            CityGuid = new Guid("4fcc152d-8db0-40ec-8e33-5124e24b1122"),
+                            CityGuid = new Guid("e45f52c2-b6e7-4e9d-850e-a7c6a80a4019"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلارآباد",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 528,
-                            CityGuid = new Guid("7b10d001-f7dc-416c-bded-dd5df8b5431f"),
+                            CityGuid = new Guid("7a8fa583-abe5-41c2-a2e1-29b40534df5a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلاردشت",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 529,
-                            CityGuid = new Guid("60db61d8-35a6-42e7-a888-91b04f2e47f2"),
+                            CityGuid = new Guid("bfa7eb08-797f-4933-8ea2-7b34090d1930"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهي خيل",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 530,
-                            CityGuid = new Guid("d3d5a9ad-1ff2-4faf-87b8-5819e9447af5"),
+                            CityGuid = new Guid("af253cc9-465c-4689-ade9-280bcf69dcf0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کياسر",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 531,
-                            CityGuid = new Guid("004714c6-330f-48ee-a2a4-7b133c1a57e3"),
+                            CityGuid = new Guid("a06d2ff6-99f1-4744-b78a-903cef040ffa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کياکلا",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 532,
-                            CityGuid = new Guid("c4885c13-1de9-47ae-8c7c-1753eeb7adf2"),
+                            CityGuid = new Guid("c9dc8d9a-ba43-4f74-b229-0f3908080fcf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گتاب",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 533,
-                            CityGuid = new Guid("2b6f7f24-71b7-4f08-bfb5-c009ad9c2b65"),
+                            CityGuid = new Guid("16d87e93-9fa3-488a-8cb4-d667ca198d2a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گزنک",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 534,
-                            CityGuid = new Guid("f3685ae7-c094-4c81-b145-08bae0f2ba52"),
+                            CityGuid = new Guid("250c2951-ae65-4823-af83-d36ccd637b21"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلوگاه",
                             ProvinceId = 15
                         },
                         new
                         {
                             CityId = 535,
-                            CityGuid = new Guid("2546c910-dc83-4869-a031-cbd49c401616"),
+                            CityGuid = new Guid("44480eff-776c-4bd9-a31d-11197df74045"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبيک",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 536,
-                            CityGuid = new Guid("ec21165e-1eb8-4841-95e3-2758e020a70a"),
+                            CityGuid = new Guid("5bf07161-c5ed-4c0a-b870-e872d20fac5a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبگرم",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 537,
-                            CityGuid = new Guid("339b3184-8564-4d76-8046-7c657c34dd36"),
+                            CityGuid = new Guid("651c5c85-de6c-4350-827d-996a0eb98f08"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آوج",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 538,
-                            CityGuid = new Guid("841cbb29-82f1-4171-9129-ee510727434f"),
+                            CityGuid = new Guid("ec168d3a-be07-439d-b6a1-3bffff6a73bc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارداق",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 539,
-                            CityGuid = new Guid("46dc486f-975e-462a-930c-6cc3ff85c5c2"),
+                            CityGuid = new Guid("4721e51b-faea-4618-992c-4e499326bff9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسفرورين",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 540,
-                            CityGuid = new Guid("989d3d18-704b-4c08-a90d-8f12f8dd4996"),
+                            CityGuid = new Guid("42f8e72a-246c-40e4-ac7b-37612d4912f4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اقباليه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 541,
-                            CityGuid = new Guid("2cfef79a-50ed-4d06-9398-f6bc54b57557"),
+                            CityGuid = new Guid("505bacad-a8b8-476f-8e99-61018830ec08"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "الوند",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 542,
-                            CityGuid = new Guid("91e98052-5c2a-4397-aa4a-8edb7c14b3ef"),
+                            CityGuid = new Guid("2975a624-77c5-4ee8-a44f-6a680449510c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوئين زهرا",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 543,
-                            CityGuid = new Guid("872f10bc-4a1b-4fa3-bc2f-1cbb508480b4"),
+                            CityGuid = new Guid("483a7d7d-6c4d-402d-bb7e-6ff5a581e5b6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيدستان",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 544,
-                            CityGuid = new Guid("51af84a5-228e-40d1-8e66-8b3e4e0e0e6d"),
+                            CityGuid = new Guid("eefcd9f8-624d-455a-90e8-9d6572585249"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تاکستان",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 545,
-                            CityGuid = new Guid("e8f2a124-7823-4eac-ac37-211ddc01a710"),
+                            CityGuid = new Guid("ac21b659-d6dd-48e6-9654-39783855fdd2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خاکعلي",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 546,
-                            CityGuid = new Guid("d4444963-d995-4dcc-b758-15ebffaa147c"),
+                            CityGuid = new Guid("5bc4d070-b635-45bf-b936-5c7d1a6c7066"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرمدشت",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 547,
-                            CityGuid = new Guid("64c29ece-f8dc-4bcc-9fa2-4fda28a18263"),
+                            CityGuid = new Guid("17df9150-3820-4e4e-b27f-bec88333f21a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دانسفهان",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 548,
-                            CityGuid = new Guid("c257c6a4-2640-4930-8497-061508dc5cd5"),
+                            CityGuid = new Guid("7463279e-9e31-43f3-a967-5fa3f0ccef5c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رازميان",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 549,
-                            CityGuid = new Guid("90b8dd15-f617-4ea0-9e73-bdd098429fc3"),
+                            CityGuid = new Guid("b8c90e21-90f8-42c3-b2db-a003702446ac"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيردان",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 550,
-                            CityGuid = new Guid("7c5f4b62-78f9-4fa1-a54f-5caa9f439620"),
+                            CityGuid = new Guid("93917de2-bb55-44bf-a7b3-13bf0fcc9b8d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سگز آباد",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 551,
-                            CityGuid = new Guid("679af883-e81d-47ea-8833-eac15307fd79"),
+                            CityGuid = new Guid("577317ce-bfc5-4944-8298-1f0b5c87c9a8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شال",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 552,
-                            CityGuid = new Guid("9b7d9aeb-d1dc-4c49-b744-1d136077ebb5"),
+                            CityGuid = new Guid("7d461ef9-bb01-4a93-9561-35a9dc7dd893"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شريفيه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 553,
-                            CityGuid = new Guid("b05db0b6-36b4-445d-a96f-cccaa6ee29bb"),
+                            CityGuid = new Guid("d6ae9fe9-ce8b-42d3-91f3-5fbb9c5a136a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ضياء آباد",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 554,
-                            CityGuid = new Guid("200513ea-dc80-4667-941e-d617718bd513"),
+                            CityGuid = new Guid("475cef46-4b50-4e82-bbad-bd977774ecaa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قزوين",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 555,
-                            CityGuid = new Guid("57e215c3-9ea7-46ad-8ee0-7e14a2f9abff"),
+                            CityGuid = new Guid("c1c4e583-c377-48f9-96c9-08fdf159a9e3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمديه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 556,
-                            CityGuid = new Guid("1a5aef4f-556c-4591-857c-4137abfa5ad6"),
+                            CityGuid = new Guid("65b15f32-9575-4ee6-8c69-858072e62381"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمود آباد نمونه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 557,
-                            CityGuid = new Guid("9a6e5a3b-607c-43ab-abf4-81c7fd7b0144"),
+                            CityGuid = new Guid("41e31db7-0922-4ee8-befe-8ce5bb43b007"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "معلم کلايه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 558,
-                            CityGuid = new Guid("03f12b7d-8513-4fea-b471-79bec628bb1f"),
+                            CityGuid = new Guid("befbcffe-8441-4571-bb05-f3c8d73ef7a8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نرجه",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 559,
-                            CityGuid = new Guid("1d134d2a-d5f7-406f-9f7f-e1dd64cd0ba2"),
+                            CityGuid = new Guid("7607435c-adba-439d-bc64-091c90bcfa2e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهين",
                             ProvinceId = 16
                         },
                         new
                         {
                             CityId = 560,
-                            CityGuid = new Guid("68bab453-19e8-4c09-aadf-7b3d810949ab"),
+                            CityGuid = new Guid("7a207f45-ee76-4b7a-bdbf-b8e2f028f96d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ازنا",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 561,
-                            CityGuid = new Guid("f6f710b8-f37f-4243-8c8e-1c51ac5f4a3b"),
+                            CityGuid = new Guid("f9c53556-f215-420a-9303-e31a82938f7c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اشترينان",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 562,
-                            CityGuid = new Guid("7fe6366e-fea3-49d4-a69e-533ffc7a8109"),
+                            CityGuid = new Guid("76fdb2b7-03e3-4889-890a-baeffe58d8b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "الشتر",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 563,
-                            CityGuid = new Guid("05c0f202-65d8-4e37-b4cf-1cce09e31b55"),
+                            CityGuid = new Guid("8e32f2f2-22b5-465e-806e-f7a2339c9ad9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اليگودرز",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 564,
-                            CityGuid = new Guid("8f733656-cb07-46ac-b476-e59f00dc9088"),
+                            CityGuid = new Guid("f7e7f9c6-6caa-4307-9597-1174b238b793"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بروجرد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 565,
-                            CityGuid = new Guid("ca250ec4-5153-4c7c-8256-ef8b9f1bc0c9"),
+                            CityGuid = new Guid("1e5fab7b-f7fb-497f-9053-274c66552dc2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيرانشهر",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 566,
-                            CityGuid = new Guid("2f12943d-6745-4cbd-acda-6c639727aad3"),
+                            CityGuid = new Guid("b1be17f0-a48f-47a3-a941-0c5e144650ab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرم آباد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 567,
-                            CityGuid = new Guid("716ef7d1-a7c8-42c5-8a35-25ae319971be"),
+                            CityGuid = new Guid("534737e8-bf8b-4bdd-981a-0f9092bcff70"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درب گنبد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 568,
-                            CityGuid = new Guid("e3471d75-1c82-4993-a262-f1b54747cfd1"),
+                            CityGuid = new Guid("a842982a-fdfe-4093-818f-17fa8ce94ecd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دورود",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 569,
-                            CityGuid = new Guid("a70c74b2-c3ad-4cf3-9446-476d6f16c862"),
+                            CityGuid = new Guid("3daf3512-685d-4a8c-888c-5628c0cf7105"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زاغه",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 570,
-                            CityGuid = new Guid("6e015dce-6531-4c60-8625-cc316de6956d"),
+                            CityGuid = new Guid("89d627e0-a4dd-489d-bad2-16a6867b3822"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سراب دوره",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 571,
-                            CityGuid = new Guid("8f90613c-8ca2-4fb2-9580-6f50c5cceee1"),
+                            CityGuid = new Guid("8147cb67-4a2e-4f40-a52f-e13fe8033ff0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سپيد دشت",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 572,
-                            CityGuid = new Guid("c46f54f8-76b6-42e1-8e5e-dc75d45c4eb7"),
+                            CityGuid = new Guid("e25df2d7-466a-4ea3-8dad-f500a43f0181"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شول آباد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 573,
-                            CityGuid = new Guid("20cea538-e1b0-4b9a-a166-c25ef4931735"),
+                            CityGuid = new Guid("31b61e8f-dcfe-4f25-aff7-ff05904fd1b4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيروزآباد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 574,
-                            CityGuid = new Guid("df12976b-82e1-41a1-9f4e-3102c4ec900c"),
+                            CityGuid = new Guid("ed33dc24-36f6-46f3-9a03-a8b5722e43f2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "معمولان",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 575,
-                            CityGuid = new Guid("f7222f80-6c9e-4e35-b572-d33705594968"),
+                            CityGuid = new Guid("7405b4a0-b3c7-416d-87bc-3e40f98e0bff"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مومن آباد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 576,
-                            CityGuid = new Guid("105f4536-d7fe-4055-b088-7f86f701add8"),
+                            CityGuid = new Guid("a50e5331-36ba-46f6-aa11-dbbe2ae29f37"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نورآباد",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 577,
-                            CityGuid = new Guid("cb1abe80-1658-439c-ae55-bf11e411c8ec"),
+                            CityGuid = new Guid("84510800-7cd5-429b-89be-09979b15f259"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هفت چشمه",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 578,
-                            CityGuid = new Guid("75b76902-b066-46de-a5ba-ee21f9f7c330"),
+                            CityGuid = new Guid("a3333cb4-6e08-442c-bde7-65af111f7747"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ويسيان",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 579,
-                            CityGuid = new Guid("eacd9464-8a3c-4c29-9d67-4bba0cda6d09"),
+                            CityGuid = new Guid("ef89d4e8-6eb5-485f-b5b0-242a9a2e8a93"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پلدختر",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 580,
-                            CityGuid = new Guid("afc11795-b5c5-4dda-a0e3-0f0cc14304b1"),
+                            CityGuid = new Guid("2745bf63-5b24-4c39-b2b3-3b647757ef9e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چالانچولان",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 581,
-                            CityGuid = new Guid("f7633c86-afb6-40d5-84be-81ecb0f6f9b1"),
+                            CityGuid = new Guid("27d5c4a3-9c36-40eb-b877-948a6c83ac7c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چقابل",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 582,
-                            CityGuid = new Guid("da5f72bb-c236-4034-915e-fa98cc2bc654"),
+                            CityGuid = new Guid("0911762a-eecd-495e-8dca-0b99875ff6e8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهدشت",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 583,
-                            CityGuid = new Guid("d4f65f09-cb57-4edb-beb8-f41a5cc3c9cf"),
+                            CityGuid = new Guid("8d91e279-4001-424d-b331-63e077c2a418"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهناني",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 584,
-                            CityGuid = new Guid("6781ed4c-1d66-4ac7-a12d-4281746e4a36"),
+                            CityGuid = new Guid("30ab2904-e83e-42bb-8d3c-78a3c0c8c3ed"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گراب",
                             ProvinceId = 17
                         },
                         new
                         {
                             CityId = 585,
-                            CityGuid = new Guid("de8aba01-d839-47b4-b773-098d21cd5bfb"),
+                            CityGuid = new Guid("dd669d85-f037-45b2-ad15-babc102cee86"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبي بيگلو",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 586,
-                            CityGuid = new Guid("d92e3bb1-6b72-48ae-aeca-86a769f56f1c"),
+                            CityGuid = new Guid("fb22bce5-0c50-4559-a934-e7225f4a090d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردبيل",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 587,
-                            CityGuid = new Guid("93bbcd30-80b7-47d7-b466-7540368daf4c"),
+                            CityGuid = new Guid("23860e1e-c0d6-4440-86bf-cc54ba1ac466"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسلام آباد",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 588,
-                            CityGuid = new Guid("4eb3c7c6-dcad-463c-9b4d-eefd079697e4"),
+                            CityGuid = new Guid("d6e21d01-c076-4bd6-962f-cd23ab5ac4ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اصلاندوز",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 589,
-                            CityGuid = new Guid("fe5046ce-cd8d-458e-b79a-d8fa67d62f9d"),
+                            CityGuid = new Guid("04454ca5-e738-4d05-8d16-cb986bb99ff0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيله سوار",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 590,
-                            CityGuid = new Guid("01957e24-2284-49d4-a60e-70e72e8ea38d"),
+                            CityGuid = new Guid("19d38896-73d1-4a5a-ba73-96e7b793a8e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تازه کند",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 591,
-                            CityGuid = new Guid("0297a27c-6448-409c-8f21-ba052abeac16"),
+                            CityGuid = new Guid("6c4061b8-b9db-4df1-bc8d-83d0e93907aa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تازه کند انگوت",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 592,
-                            CityGuid = new Guid("b92405ef-9fc8-48ae-ac0e-d9490c2c0287"),
+                            CityGuid = new Guid("dd5b4516-14c5-4355-93f7-4a896ba73b9b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جعفر آباد",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 593,
-                            CityGuid = new Guid("9c0a607d-f564-48d2-bd3c-982ee1afe9b2"),
+                            CityGuid = new Guid("9155db26-1b81-4680-963b-29120621d282"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خلخال",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 594,
-                            CityGuid = new Guid("6795d46d-f515-4b20-904a-7a0960e36c1c"),
+                            CityGuid = new Guid("d9922972-9570-49dd-8022-920ff7ab534b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رضي",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 595,
-                            CityGuid = new Guid("fd9b105a-7cf4-4bbb-8ba4-91e1927626cc"),
+                            CityGuid = new Guid("094106b5-2567-48a0-bab6-978b81ae0087"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرعين",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 596,
-                            CityGuid = new Guid("e6feed57-d973-4e57-8c0a-d06d8163d355"),
+                            CityGuid = new Guid("fd2d5641-db3d-4061-90b9-26737638d080"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عنبران",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 597,
-                            CityGuid = new Guid("7aa48098-0ea2-49c9-a208-d3fbff0430e9"),
+                            CityGuid = new Guid("5c758bb6-a210-44a2-8c2e-6fc5261441e4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فخرآباد",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 598,
-                            CityGuid = new Guid("2812efdc-c4be-490b-882b-1584959a2f07"),
+                            CityGuid = new Guid("f74b22ee-6652-4fbe-bddc-a1edb7c3c838"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قصابه",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 599,
-                            CityGuid = new Guid("55e7e096-5450-430b-aad6-96ff79c90185"),
+                            CityGuid = new Guid("51662238-3eb2-42d8-8c17-18f5ae078f74"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لاهرود",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 600,
-                            CityGuid = new Guid("005e648f-f928-4944-854c-e60316488274"),
+                            CityGuid = new Guid("1146a6d4-0dd6-4cf1-8de9-13488cf641e6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرادلو",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 601,
-                            CityGuid = new Guid("fa773708-9b40-4006-a934-faa6e605d85e"),
+                            CityGuid = new Guid("160be356-9a51-45b3-b45b-7d92856b4e2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشگين شهر",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 602,
-                            CityGuid = new Guid("4eeda655-ecf2-4370-adf5-4fba9f97f37d"),
+                            CityGuid = new Guid("7af5b049-bdbd-4501-adf8-ea647b857ce8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نمين",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 603,
-                            CityGuid = new Guid("57d260db-d5a3-4a64-afb9-61aee2e1ec21"),
+                            CityGuid = new Guid("b4a34455-50ec-45f4-8478-a8c4976dcce6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نير",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 604,
-                            CityGuid = new Guid("9acd099a-3d53-4718-8ba7-3b1f783b02d0"),
+                            CityGuid = new Guid("2ba4b1ec-1097-420b-b8ca-8f8c4d76c405"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هشتجين",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 605,
-                            CityGuid = new Guid("0ed35ea3-c564-4c75-92a5-cbf2e68406ba"),
+                            CityGuid = new Guid("f86bc454-e0f4-4c01-8f9a-f7f02a00a47b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هير",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 606,
-                            CityGuid = new Guid("c6c4e575-6433-4b18-99f4-7a06cae4a359"),
+                            CityGuid = new Guid("d8fe7f1f-da3f-4f29-bf72-d13d5282a6f3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پارس آباد",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 607,
-                            CityGuid = new Guid("ee706685-2439-4d30-be62-5a8571d60196"),
+                            CityGuid = new Guid("24da799e-18f9-4854-819d-64780a89ebbe"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلور",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 608,
-                            CityGuid = new Guid("d2b34c6f-7dcf-4c5a-90b1-aa1e0f64ee7a"),
+                            CityGuid = new Guid("5be1983d-96cb-4754-8813-4f209ea236a2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کورائيم",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 609,
-                            CityGuid = new Guid("1951e4e9-3c12-4479-8951-3a08aacdc3ce"),
+                            CityGuid = new Guid("8b4b2ebb-190b-4020-b566-32a18af2252e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرمي",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 610,
-                            CityGuid = new Guid("0ae92f1a-6223-4685-97af-e5a9e3813626"),
+                            CityGuid = new Guid("61eae3cb-9e84-4a3b-ac52-09c4f487ca63"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گيوي",
                             ProvinceId = 18
                         },
                         new
                         {
                             CityId = 611,
-                            CityGuid = new Guid("b554ddb7-5ca2-4b31-b065-77af3aa3c820"),
+                            CityGuid = new Guid("b45399a9-17f2-4925-820a-9c0e6431f3d1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آران و بيدگل",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 612,
-                            CityGuid = new Guid("796ac532-5b9f-4e6e-93f1-5ef231fd4a22"),
+                            CityGuid = new Guid("a333b0cf-ce82-49a0-a99d-0c49033e9c9e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابريشم",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 613,
-                            CityGuid = new Guid("d113bd12-4478-4043-8785-2e7ca1babf24"),
+                            CityGuid = new Guid("1d55de87-56dd-4367-9a9d-c307056b2d93"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابوزيد آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 614,
-                            CityGuid = new Guid("adcd8759-c079-4af5-b5dc-ff9bc12edd30"),
+                            CityGuid = new Guid("e8c62d0e-2c4b-49db-939a-da5655962685"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردستان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 615,
-                            CityGuid = new Guid("c47356aa-16ff-4fbe-8408-99531f536d42"),
+                            CityGuid = new Guid("ac776d8d-1114-40e2-b3db-4212c0739610"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اصغرآباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 616,
-                            CityGuid = new Guid("a7c6552f-12c9-49e1-8fb0-96491247dff1"),
+                            CityGuid = new Guid("e06611a9-bb24-44ba-82e9-6a740d566533"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اصفهان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 617,
-                            CityGuid = new Guid("9c74ede7-7957-4a63-8429-f17eefc3b5fc"),
+                            CityGuid = new Guid("26ceaeab-e57d-45d4-8feb-9fb5efc4f3f8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "افوس",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 618,
-                            CityGuid = new Guid("49cb0d36-2455-4682-bdde-9f5c40085542"),
+                            CityGuid = new Guid("bc084a72-2063-4724-b86e-538c55d49d11"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انارک",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 619,
-                            CityGuid = new Guid("ac3d9702-2173-4e96-82d3-e10f4cd62c8d"),
+                            CityGuid = new Guid("da9387b5-dd95-4a04-8e4b-0086c7d5247f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايمانشهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 620,
-                            CityGuid = new Guid("9aaa8a1d-08cd-40bf-87dd-03872a037740"),
+                            CityGuid = new Guid("c547c934-61a3-4163-8bd0-4c935a1df159"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اژيه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 621,
-                            CityGuid = new Guid("faa5e6ac-876c-4414-a427-d9dc39233a97"),
+                            CityGuid = new Guid("9bc5a798-a736-4d1f-97b3-ba5f4b90c280"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بادرود",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 622,
-                            CityGuid = new Guid("be2da753-09db-4e01-adf2-870b424822f8"),
+                            CityGuid = new Guid("8635156e-9aff-4ce6-928b-f7051b259ce8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باغ بهادران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 623,
-                            CityGuid = new Guid("b217dbb2-5767-469d-86a0-f7f4655dca73"),
+                            CityGuid = new Guid("c4056a4f-45c2-44fd-ab1f-715fc52c1ac5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باغشاد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 624,
-                            CityGuid = new Guid("574c87c2-ad30-46fd-8173-5e5622dbae93"),
+                            CityGuid = new Guid("86c266c6-8b93-48d9-92ce-98bade03ea0c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بافران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 625,
-                            CityGuid = new Guid("bd63b772-1ff3-4fde-b0b2-7fb79479e24e"),
+                            CityGuid = new Guid("cae17af0-5ac4-49d9-be1a-321d04454a7b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "برزک",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 626,
-                            CityGuid = new Guid("e41e9d1d-88d4-43d5-89f6-b15eaf263192"),
+                            CityGuid = new Guid("8264558d-5a87-42ca-bc7b-5c7fac2f4bce"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "برف انبار",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 627,
-                            CityGuid = new Guid("e6d89421-d3ed-4436-98e4-51d97a60acfe"),
+                            CityGuid = new Guid("7f1318ec-d551-4097-b4b8-8f3a5c34d752"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهاران شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 628,
-                            CityGuid = new Guid("a4e6ef87-22c7-49fd-b77c-7d48f43bd232"),
+                            CityGuid = new Guid("2a1fa9c1-99b1-41fe-8b1b-35c1295624fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهارستان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 629,
-                            CityGuid = new Guid("634b952c-484e-41dd-9ed6-18d24ec545b7"),
+                            CityGuid = new Guid("944b176b-e5c2-44c8-8549-9418478ae250"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوئين مياندشت",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 630,
-                            CityGuid = new Guid("1260229c-78d0-4bce-895c-550423dc8134"),
+                            CityGuid = new Guid("1e413548-4296-4317-97e0-3af45ff0b239"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تودشک",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 631,
-                            CityGuid = new Guid("f4cf764b-5c33-47ec-b8ed-1d7f0d8612ba"),
+                            CityGuid = new Guid("c82a7ba4-8830-4d7d-81ad-4efe970e31fa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تيران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 632,
-                            CityGuid = new Guid("2c7aee8a-7e8a-4abc-97ba-2b797c4fbe88"),
+                            CityGuid = new Guid("869c510d-89b4-4aae-8e87-b4caa6592e46"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جندق",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 633,
-                            CityGuid = new Guid("f961c36b-cba2-4d4b-9ee8-f34e78f5503c"),
+                            CityGuid = new Guid("531e1828-8b22-4ec4-bf75-9ae110ebf4f2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوزدان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 634,
-                            CityGuid = new Guid("a66212bc-39a8-48de-83dc-7c7f3659903b"),
+                            CityGuid = new Guid("844f9e7b-6f40-4f91-b289-9d19cb25e07a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوشقان قالي",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 635,
-                            CityGuid = new Guid("a731c93b-2b3a-4c07-af27-56e827d79746"),
+                            CityGuid = new Guid("c5991e93-6926-4efa-ad4e-afa866072e18"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حبيب آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 636,
-                            CityGuid = new Guid("3925e687-9f8c-4f44-b642-1f9a6bf90971"),
+                            CityGuid = new Guid("4b5468a5-fe42-4da6-b48d-022ad5d7c363"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حسن آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 637,
-                            CityGuid = new Guid("64f5d4b2-cc3f-4a14-b66b-02263a0caaa5"),
+                            CityGuid = new Guid("d8aa296c-d2b2-4a0d-96b5-19090cecf51b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حنا",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 638,
-                            CityGuid = new Guid("3f586b36-0612-4231-8b79-dfb235342019"),
+                            CityGuid = new Guid("e5e9c681-bfed-4caa-a394-4839e010e3bc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خالد آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 639,
-                            CityGuid = new Guid("167aae7f-7aec-4c57-a1b2-1178f9bb40c4"),
+                            CityGuid = new Guid("81b3c606-5e1c-4ebc-a3bf-8ff0afa64aaf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خميني شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 640,
-                            CityGuid = new Guid("9ab8b86e-64bb-4a8b-be68-270a200974fc"),
+                            CityGuid = new Guid("b5e3a01e-7d33-447f-a576-619ad4140b4e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوانسار",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 641,
-                            CityGuid = new Guid("2989dd6b-f4c7-4279-8fc4-103250d5319d"),
+                            CityGuid = new Guid("019c3a84-032d-428e-8b71-ae8ea6f47297"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خور",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 642,
-                            CityGuid = new Guid("44b07f89-b5c3-4c5e-9bf9-34b256c135ff"),
+                            CityGuid = new Guid("90f01b3b-1a97-482c-8a8b-28a68871be3c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خورزوق",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 643,
-                            CityGuid = new Guid("a2bb6d3a-e67b-483a-aa93-2a485fcfd504"),
+                            CityGuid = new Guid("fdec24e4-e5bb-439d-85c4-8797696cbbfb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "داران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 644,
-                            CityGuid = new Guid("0a724db4-716a-4d73-8799-af942bba01de"),
+                            CityGuid = new Guid("8e99162a-2759-4b01-a443-220cabf250e9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دامنه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 645,
-                            CityGuid = new Guid("fab46c68-56ac-4faa-8db7-ef8359a733f2"),
+                            CityGuid = new Guid("043b89ce-dbdf-4efb-a087-aaef24ff9443"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درچه پياز",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 646,
-                            CityGuid = new Guid("fff979e6-c29c-494e-ba8c-3ae812f325b4"),
+                            CityGuid = new Guid("aa972baf-5bf2-43da-bb61-5147b1e897e8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دستگرد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 647,
-                            CityGuid = new Guid("55afd4f1-eb3d-4d62-ac89-0f2cd41b8412"),
+                            CityGuid = new Guid("87988b92-909b-45e0-aae3-ef7abaceec6b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهاقان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 648,
-                            CityGuid = new Guid("16250e91-ab28-4464-98b8-3d752f001ef0"),
+                            CityGuid = new Guid("fa147778-16a7-4769-92ed-466e1ddc842a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهق",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 649,
-                            CityGuid = new Guid("64ea511d-ae1a-4a9c-b9f7-56ab9469ea5f"),
+                            CityGuid = new Guid("b6dbd70d-1fd6-4105-b6b3-8847367ebbdf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دولت آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 650,
-                            CityGuid = new Guid("52e5f39a-19de-4c3d-85cf-6459c3c3e554"),
+                            CityGuid = new Guid("16f4d410-1c49-4430-84e9-db20c1eff403"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديزيچه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 651,
-                            CityGuid = new Guid("1c2b9e2b-2d55-406b-989c-4c3289bd0468"),
+                            CityGuid = new Guid("a0f08dee-b954-4096-9713-232149b2c3cb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رزوه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 652,
-                            CityGuid = new Guid("20769467-1eb3-46f3-b1e2-136255e2d164"),
+                            CityGuid = new Guid("ef0977e9-f0a7-4233-be3a-16e00c89ba9c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رضوانشهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 653,
-                            CityGuid = new Guid("d0324183-a1ce-437c-872d-8729b447717c"),
+                            CityGuid = new Guid("276208b7-8c56-4d00-9a93-228dec83d668"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زازران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 654,
-                            CityGuid = new Guid("14dce371-5f18-47cc-9af8-69ab75ec649f"),
+                            CityGuid = new Guid("26bec9dd-a0a3-4f2c-a20d-6f0ae762dee2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زاينده رود",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 655,
-                            CityGuid = new Guid("2f7fac07-8911-41ca-8528-8e5cb9edcd53"),
+                            CityGuid = new Guid("984be769-38cb-4f8f-80d6-295fcf8d1854"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرين شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 656,
-                            CityGuid = new Guid("c4ea7577-1059-4ca8-bd46-3ef6e49fc3cb"),
+                            CityGuid = new Guid("9eb3c62d-017a-4ab7-bae8-dab9db1b6edb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زواره",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 657,
-                            CityGuid = new Guid("da11d016-981e-4c31-a16d-48dc0d2815a2"),
+                            CityGuid = new Guid("f95bebf6-a1ac-49dd-9bf3-0372eac7b002"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيار",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 658,
-                            CityGuid = new Guid("9f37e24b-7d09-48bd-ab4e-b9daf7a7aafe"),
+                            CityGuid = new Guid("80cd51a2-80a8-41dc-9b99-f2a98755f8d7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيباشهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 659,
-                            CityGuid = new Guid("c859f419-c6ea-46bf-9045-8a81324e54f1"),
+                            CityGuid = new Guid("ceea9f21-2ae6-4701-bcc7-678a64e420d3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سده لنجان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 660,
-                            CityGuid = new Guid("5107eb7e-0692-4c54-9d45-3b93b30d474b"),
+                            CityGuid = new Guid("49f50499-ba72-471d-b124-f61c9ca83a30"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سفيد شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 661,
-                            CityGuid = new Guid("9093744d-c76e-4deb-a998-3e8a637ee3d3"),
+                            CityGuid = new Guid("6b92552f-39cf-492c-ac36-1116808d9420"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سميرم",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 662,
-                            CityGuid = new Guid("c8d06581-d262-4bfc-937a-02bb43f072a7"),
+                            CityGuid = new Guid("2b173250-060c-4f4f-9c62-584768527e27"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سين",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 663,
-                            CityGuid = new Guid("5bdebe3f-b961-49a0-b38b-2e269b2e0918"),
+                            CityGuid = new Guid("38f929af-6a68-4409-b173-07e20d5806d4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سگزي",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 664,
-                            CityGuid = new Guid("aea4358d-eea1-417c-8636-26384b32f2a3"),
+                            CityGuid = new Guid("a19b3477-a5af-450b-8191-13839160b347"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهين شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 665,
-                            CityGuid = new Guid("a0e0156c-b944-463d-877b-e9126bfcab9d"),
+                            CityGuid = new Guid("8db5cca2-ced3-4e1a-8680-b77e8c8285b7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاپورآباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 666,
-                            CityGuid = new Guid("7ea66b81-a5f1-4e69-967c-d54b4996b19f"),
+                            CityGuid = new Guid("d16cbaba-aa65-4c62-8da2-f4bb52b535ae"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهرضا",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 667,
-                            CityGuid = new Guid("b9f0037f-6ff8-4ba4-a505-48b253f3d1bb"),
+                            CityGuid = new Guid("d5f36444-6da5-4941-a4bc-083e4d80934c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طالخونچه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 668,
-                            CityGuid = new Guid("b3235d60-5f59-4863-a8d5-31116cc2eb16"),
+                            CityGuid = new Guid("9ea177ba-c84d-404a-99bd-2873a14919e3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "طرق رود",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 669,
-                            CityGuid = new Guid("406999f6-ff4d-466e-9f26-e45cc9c308ab"),
+                            CityGuid = new Guid("7fa7bce8-9764-4b2a-9353-4aa5a1209389"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عسگران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 670,
-                            CityGuid = new Guid("f6653079-329f-459a-8a10-7b725a96b067"),
+                            CityGuid = new Guid("93d70bc6-71f6-43d5-bacf-731505521b8f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "علويچه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 671,
-                            CityGuid = new Guid("2b498f6c-95f4-495b-aa8f-c3ed54ef74d7"),
+                            CityGuid = new Guid("ef874061-f3de-4482-bd3d-23bd1307a373"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرخي",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 672,
-                            CityGuid = new Guid("31acc9a9-0b46-403f-9fec-6b6055af0031"),
+                            CityGuid = new Guid("61f00c09-2ebf-4db7-98a2-dcfceffa4b4f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فريدونشهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 673,
-                            CityGuid = new Guid("52e2ab07-6027-417c-87df-7e97517955c0"),
+                            CityGuid = new Guid("e2dce5f1-6f3b-4a51-943f-cc4f75ceb58a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فلاورجان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 674,
-                            CityGuid = new Guid("d7c6bdfa-0201-44a3-a513-290ec3be7904"),
+                            CityGuid = new Guid("ed8d9574-3d06-48d4-b673-068ffd495fef"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فولاد شهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 675,
-                            CityGuid = new Guid("0da17f04-4dbf-4eec-84d6-d953ae098f30"),
+                            CityGuid = new Guid("18e5dc82-a694-42d2-9d6d-a7b4701babb0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قمصر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 676,
-                            CityGuid = new Guid("534e4630-5622-49d9-a3ad-9ba441b6a9a0"),
+                            CityGuid = new Guid("12351e8e-9b68-4072-ab9f-ae85b3de9e82"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قهجاورستان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 677,
-                            CityGuid = new Guid("7bd87f50-ba87-40f4-8252-fd0621861135"),
+                            CityGuid = new Guid("3c1c0bc3-1d49-42f9-b0da-77e7a6905c31"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قهدريجان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 678,
-                            CityGuid = new Guid("63fb7865-e92a-4603-960b-f255749ce149"),
+                            CityGuid = new Guid("66d2acc4-2afe-4739-988f-f4e2276f8038"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لاي بيد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 679,
-                            CityGuid = new Guid("08b79104-1586-4a76-ac9b-6eba48fe815d"),
+                            CityGuid = new Guid("4e4bf021-78c9-40f7-972e-f694dcaf01a7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مبارکه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 680,
-                            CityGuid = new Guid("b213ba77-92be-430e-baeb-8040f2a51ce1"),
+                            CityGuid = new Guid("9b884d25-fcbb-4c41-b732-5e2f493c655a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمد آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 681,
-                            CityGuid = new Guid("d4b94b27-fe8f-4caa-b4c8-753a491f3e84"),
+                            CityGuid = new Guid("cab63cd4-547c-4a54-af40-9431912bd876"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشکات",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 682,
-                            CityGuid = new Guid("b6889bce-bcb1-4720-aec4-175734a35d5d"),
+                            CityGuid = new Guid("2143ef1f-bf5f-4d1f-9061-c971bf53cb0f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "منظريه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 683,
-                            CityGuid = new Guid("436bbdb6-3473-4633-9307-76fd6e06a85f"),
+                            CityGuid = new Guid("44d8a9a8-8ce5-4f59-82f6-bc10bdcf11bf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهاباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 684,
-                            CityGuid = new Guid("809163c6-fb2d-432f-a8c5-262238bf6fea"),
+                            CityGuid = new Guid("bb051ee1-3972-4b6c-a85f-cf7171ea3766"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميمه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 685,
-                            CityGuid = new Guid("557d6460-a21d-47c2-b5af-bfadccb2f4c9"),
+                            CityGuid = new Guid("49c85354-e5ec-4ced-abd8-3d97c8e087fe"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نائين",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 686,
-                            CityGuid = new Guid("1f20be7c-d572-45a2-889f-0e8c251b0768"),
+                            CityGuid = new Guid("7eac7ee3-edf1-49bb-a30f-22ec8ae559e5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نجف آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 687,
-                            CityGuid = new Guid("dd95b513-495c-4c42-9404-1b2990583368"),
+                            CityGuid = new Guid("b2b03746-5210-4c53-a8f4-6af55ce507ad"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نصرآباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 688,
-                            CityGuid = new Guid("61d6ee9b-57eb-4ab5-8239-e90461049c0d"),
+                            CityGuid = new Guid("0d6876bf-73d5-4455-9288-2a0913b2c9f4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نطنز",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 689,
-                            CityGuid = new Guid("f21702a6-4b2c-4bb2-91a9-bd9fd247dbb7"),
+                            CityGuid = new Guid("7851d5cf-aa2e-4342-b1ff-a6cb2c63f41a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوش آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 690,
-                            CityGuid = new Guid("df24c32c-93d9-4f76-9438-a507ccfc63d2"),
+                            CityGuid = new Guid("b87fbe16-e43d-4305-859f-a1dc13188a51"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نياسر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 691,
-                            CityGuid = new Guid("dec50358-4117-4c88-8a2b-7b609d4a5e48"),
+                            CityGuid = new Guid("43712c15-59e5-46ab-8b01-283e06cb8a0d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيک آباد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 692,
-                            CityGuid = new Guid("5fb40988-54f4-4414-9f01-cb9986fefa9b"),
+                            CityGuid = new Guid("08ad6be1-2f33-4de7-ad31-0332dee0ac72"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هرند",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 693,
-                            CityGuid = new Guid("6af128d9-7222-44bd-9e02-c210c390bce6"),
+                            CityGuid = new Guid("f369f3c3-d088-4627-8b0d-fac9150b1b4f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ورزنه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 694,
-                            CityGuid = new Guid("9f5106c7-10e5-4d7d-a069-be9c9bf12d05"),
+                            CityGuid = new Guid("3f6d121d-6d33-429f-8ce2-32801f51c463"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ورنامخواست",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 695,
-                            CityGuid = new Guid("b7871b65-82ae-477b-a7f2-26137707b0c1"),
+                            CityGuid = new Guid("b60f461b-ea5b-4df4-a5c7-fd04f51b102d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وزوان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 696,
-                            CityGuid = new Guid("503ee790-da34-4d48-b7d7-1db59c5178b6"),
+                            CityGuid = new Guid("21b50226-7ac0-4c83-b511-f1d3fb56cf34"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ونک",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 697,
-                            CityGuid = new Guid("920e7d14-e4de-4435-bff7-f731e03ce7e5"),
+                            CityGuid = new Guid("f7418a80-be28-4780-8a8f-a8d4f80b8dec"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پير بکران",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 698,
-                            CityGuid = new Guid("ec8dd664-783e-4b78-8000-b5145dd63bd2"),
+                            CityGuid = new Guid("0ee87ecc-f561-48f0-bcba-e31a6ffb6cc8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چادگان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 699,
-                            CityGuid = new Guid("3211e95f-8001-437a-a562-f1d6604ecce0"),
+                            CityGuid = new Guid("f6b4057e-87a6-4576-a4e1-11fb9cd444d1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چرمهين",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 700,
-                            CityGuid = new Guid("b08d87b2-0c87-43a5-aa12-c8eac240bb4c"),
+                            CityGuid = new Guid("d7b4ac4a-d985-41e4-89bc-764667739fcc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چمگردان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 701,
-                            CityGuid = new Guid("c0d48c82-c6e2-4522-8a26-f4427638560d"),
+                            CityGuid = new Guid("0706f6dd-a6d2-46fb-b4c7-9525f36736f0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاشان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 702,
-                            CityGuid = new Guid("38f50517-0ef5-4a53-93e3-f04ab24477c6"),
+                            CityGuid = new Guid("d942a6af-fc74-4e9e-ae75-2f0ae34e0520"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کامو و چوگان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 703,
-                            CityGuid = new Guid("400800fc-4f26-423d-8828-671e456716aa"),
+                            CityGuid = new Guid("6a1bbfef-bbb0-4ccf-a64a-bad6352975ef"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرکوند",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 704,
-                            CityGuid = new Guid("8df4e49a-f614-4e43-916a-0fe97c1dde45"),
+                            CityGuid = new Guid("70d08470-dd75-4495-8b02-83aba9cc0982"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کليشاد و سودرجان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 705,
-                            CityGuid = new Guid("2eb003d0-56e8-4d5c-aaeb-b796ddba1522"),
+                            CityGuid = new Guid("1ae29618-21b2-430b-83f8-20cf2f8129e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کمشجه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 706,
-                            CityGuid = new Guid("ed29b70d-c781-4292-88af-270a2a4076ff"),
+                            CityGuid = new Guid("c67cb7ba-450b-4c4f-98a4-857770d3a588"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کمه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 707,
-                            CityGuid = new Guid("cb0c7bf6-e449-4b35-86a2-7cc7406b19e0"),
+                            CityGuid = new Guid("a7c7ed14-2eb4-492b-a1aa-87b2ea08c3da"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهريزسنگ",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 708,
-                            CityGuid = new Guid("c5333e52-0750-49d9-be8a-5fcb4aae3b44"),
+                            CityGuid = new Guid("331b4221-8312-4940-a8b5-b35059ff65c3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوشک",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 709,
-                            CityGuid = new Guid("8f36bbe4-38d9-449a-9414-9b32a855c00c"),
+                            CityGuid = new Guid("9d60cd6c-0763-4e57-865f-5668da57d0a0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهپايه",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 710,
-                            CityGuid = new Guid("411043e1-5f7a-4016-ad08-2b43e36b2ac9"),
+                            CityGuid = new Guid("61cce136-0484-4d0f-9e00-8da56d12e3f8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرگاب",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 711,
-                            CityGuid = new Guid("9605717c-7357-4a40-b899-d819b19dad56"),
+                            CityGuid = new Guid("f7a62f46-482d-47cf-b652-50eae0b6521f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گز برخوار",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 712,
-                            CityGuid = new Guid("34fa22ce-d1de-4f73-94ed-7246ada208d7"),
+                            CityGuid = new Guid("000865fd-c781-43cb-bd33-8759fa1fa353"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلدشت",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 713,
-                            CityGuid = new Guid("edd596e0-a5e0-4c64-9807-b33cfbbbbac5"),
+                            CityGuid = new Guid("0481c89a-a5b1-4f44-baac-578b29f862f0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلشن",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 714,
-                            CityGuid = new Guid("d526593b-58e0-4342-9494-043da263e3c6"),
+                            CityGuid = new Guid("7f2cb021-3a91-4ff6-8ef9-6ec3c40d215d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلشهر",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 715,
-                            CityGuid = new Guid("7c6643e3-66e1-43f2-9541-62a15f8dbb9e"),
+                            CityGuid = new Guid("0ad897bc-8d3f-4f40-bac9-b106b257d9f1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلپايگان",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 716,
-                            CityGuid = new Guid("bb734a27-ff21-44b4-83f4-37394d5e4d54"),
+                            CityGuid = new Guid("27091036-7dd0-437e-a63e-d8310a4efa13"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوگد",
                             ProvinceId = 19
                         },
                         new
                         {
                             CityId = 717,
-                            CityGuid = new Guid("af8efc0e-e511-4ab0-88bd-4a694e849999"),
+                            CityGuid = new Guid("1dd5fd27-dbe0-4717-98f1-f4a4f61cf375"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبدانان",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 718,
-                            CityGuid = new Guid("ae20539d-01af-4e62-984c-271c203aacab"),
+                            CityGuid = new Guid("5f07154f-955b-44a7-9ea3-50be470c2fb4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آسمان آباد",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 719,
-                            CityGuid = new Guid("11228bf2-3c55-4702-b2bc-3bb460baaf57"),
+                            CityGuid = new Guid("0148429b-e303-45b8-a817-97c28a080f44"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارکواز",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 720,
-                            CityGuid = new Guid("b5c38085-bb86-403b-9361-c258984b353e"),
+                            CityGuid = new Guid("38c5d7ad-a2d1-4f15-bdef-c5053febfb61"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايلام",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 721,
-                            CityGuid = new Guid("da4393ed-4f15-4f2a-83a0-25c620308292"),
+                            CityGuid = new Guid("b366e1af-f240-436d-a510-a38ba6aa77e2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايوان",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 722,
-                            CityGuid = new Guid("0578cadd-9f5e-4e35-9412-8f07b71912ba"),
+                            CityGuid = new Guid("0b29c3eb-7ef9-40e2-80b2-c877b047f6f4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بدره",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 723,
-                            CityGuid = new Guid("95eccaa1-cf18-4cbb-a3b5-ab0cdc75b2b8"),
+                            CityGuid = new Guid("2611c456-66e4-4ba5-b675-15389e25d853"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلاوه",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 724,
-                            CityGuid = new Guid("1c2bf5bf-4d11-4fb4-b896-46b2ca700957"),
+                            CityGuid = new Guid("99f600de-6070-4657-8dfd-a2fa3391adfa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "توحيد",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 725,
-                            CityGuid = new Guid("112d4781-d56a-4b14-8791-8ac09186bfb1"),
+                            CityGuid = new Guid("464e4616-5081-49a3-978a-679072c166a2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دره شهر",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 726,
-                            CityGuid = new Guid("a7f24faa-42d1-4811-9919-d580ba4cc5d1"),
+                            CityGuid = new Guid("15ddda24-20ee-4762-ad14-3c1bd4753afb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دلگشا",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 727,
-                            CityGuid = new Guid("0cea24d3-194f-4fa2-a4fd-56228720f3df"),
+                            CityGuid = new Guid("f6184195-ec4b-41d7-9f68-1892807a03ae"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهلران",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 728,
-                            CityGuid = new Guid("125ccd92-63f2-461c-bd82-87225cacca70"),
+                            CityGuid = new Guid("2e9ffae7-ffd9-4c93-9ccc-ab75d00db5b8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرنه",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 729,
-                            CityGuid = new Guid("72ded125-c9bf-45b8-a23d-ac04fe4892b4"),
+                            CityGuid = new Guid("b00c0389-d972-400a-841f-a7e70aa4a636"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سراب باغ",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 730,
-                            CityGuid = new Guid("10273927-9489-414e-ae32-3396e166d83b"),
+                            CityGuid = new Guid("d7521e54-9c57-49c0-849c-68f9f61cd1f6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرابله",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 731,
-                            CityGuid = new Guid("2ae371ca-b26e-4ca2-9d51-1c856ce3e389"),
+                            CityGuid = new Guid("b5d790af-2aa7-446c-87e7-9be76b6d9ddf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شباب",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 732,
-                            CityGuid = new Guid("566fd53c-a54d-43e9-9f1a-a2245b3bf984"),
+                            CityGuid = new Guid("c784c41e-2b82-4525-96da-159ed7d8f775"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صالح آباد",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 733,
-                            CityGuid = new Guid("b054c762-67d5-4a41-87bd-08e67f656333"),
+                            CityGuid = new Guid("e5cb4502-8336-4b91-8594-2de145e0e704"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لومار",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 734,
-                            CityGuid = new Guid("663afb66-2eb5-4ff8-8fc1-9503d2a54d8c"),
+                            CityGuid = new Guid("8095b671-55a7-4ea4-b9dc-7a340d98a297"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماژين",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 735,
-                            CityGuid = new Guid("59ac2be5-e16f-4d69-9338-9936be81a4a1"),
+                            CityGuid = new Guid("069c3f1e-a2bc-43a1-9106-d9490d5a9d45"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهر",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 736,
-                            CityGuid = new Guid("97bec43a-a04a-4a63-8600-344fba72d038"),
+                            CityGuid = new Guid("fcc1a4f1-3d65-4fac-90af-3699f91b4598"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهران",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 737,
-                            CityGuid = new Guid("b7986cf9-3c1d-4974-bc8a-d72ec68c07f4"),
+                            CityGuid = new Guid("ef40507d-b3b1-400c-8069-8eac465da2bf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مورموري",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 738,
-                            CityGuid = new Guid("22a1ce78-f1d8-4b13-b809-907bf82d9f9b"),
+                            CityGuid = new Guid("8f07fa5b-1913-4209-b677-af7b40b6959d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "موسيان",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 739,
-                            CityGuid = new Guid("61e1b931-fc8f-4444-a3bd-cb76cd008490"),
+                            CityGuid = new Guid("6c4b2e36-b9f4-4a15-8326-201226475181"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميمه",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 740,
-                            CityGuid = new Guid("552fa9fd-c143-4d49-8dff-7a7c81bc0aef"),
+                            CityGuid = new Guid("4ccfa460-5f75-4fb7-b142-3171288e48be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پهله",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 741,
-                            CityGuid = new Guid("5c446840-9024-47b7-b003-85b2097cb7b7"),
+                            CityGuid = new Guid("35e8d48d-281b-4d6c-aa6e-09d6032b3bde"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چوار",
                             ProvinceId = 20
                         },
                         new
                         {
                             CityId = 742,
-                            CityGuid = new Guid("41c1044f-03a0-4f84-90ad-86766b8122bc"),
+                            CityGuid = new Guid("94f069b8-3653-43f0-9829-711a7022fa9f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبسرد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 743,
-                            CityGuid = new Guid("ff77693d-49b7-4515-b4c8-29224ae2019c"),
+                            CityGuid = new Guid("1bbe0e02-3fe6-4253-ad4a-e02177bc78ad"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبعلي",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 744,
-                            CityGuid = new Guid("8b690684-e9b9-4565-b0c7-72fb476ffce8"),
+                            CityGuid = new Guid("3fa00130-78c2-4509-96ca-9ffce05e575d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارجمند",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 745,
-                            CityGuid = new Guid("4628ea63-e34b-41b8-8846-945fabf46df2"),
+                            CityGuid = new Guid("384f4861-7078-4a9d-bf25-058f220711c2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسلامشهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 746,
-                            CityGuid = new Guid("aae7a481-a3d4-4766-aa7e-41d6fa0bd45b"),
+                            CityGuid = new Guid("5e8baf8d-e6aa-4361-8ea1-208ceb06f7fa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انديشه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 747,
-                            CityGuid = new Guid("2df9f041-977a-4fb3-b334-de556e4a2754"),
+                            CityGuid = new Guid("5e7e8853-cee2-4ae4-bc33-895a6a30946e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باغستان",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 748,
-                            CityGuid = new Guid("558fba52-e4d5-429d-9800-ad3c2c1d91f8"),
+                            CityGuid = new Guid("a5c5b0fe-6245-4387-96f5-55ccdaca6995"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باقرشهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 749,
-                            CityGuid = new Guid("9bdf085d-143d-424b-9afd-e818fed7a896"),
+                            CityGuid = new Guid("44de9b4c-fa48-4b3b-934c-c2b2ad122e33"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بومهن",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 750,
-                            CityGuid = new Guid("94268cb7-5259-44e8-afb3-46c24ec2ec7b"),
+                            CityGuid = new Guid("6cacc97b-61f7-4613-b5f7-cf8a39530fd0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تجريش",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 751,
-                            CityGuid = new Guid("979019d7-643b-4b0f-977c-47fed3cb4346"),
+                            CityGuid = new Guid("ac90771f-e7e6-47ac-a05f-4603ca206dfa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تهران",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 752,
-                            CityGuid = new Guid("ef223704-07f3-46d8-be76-2c2ddf059c72"),
+                            CityGuid = new Guid("f8392b72-1e0b-417a-93ca-ff35c9159977"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جواد آباد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 753,
-                            CityGuid = new Guid("7d401139-392d-4f27-8a28-5f5098ef13dc"),
+                            CityGuid = new Guid("c03f1284-5b52-4e97-8a5f-ba97d6c0b824"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حسن آباد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 754,
-                            CityGuid = new Guid("b6db6e9a-9b8d-496c-ab79-32d687a9ff5c"),
+                            CityGuid = new Guid("45a11c6b-b0df-451e-989a-e6ac6d3cd07c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دماوند",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 755,
-                            CityGuid = new Guid("9dc3affe-45a9-4f6f-9034-1f51df43755d"),
+                            CityGuid = new Guid("bf6a5f7c-60af-42b6-a738-b9ebce45e186"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رباط کريم",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 756,
-                            CityGuid = new Guid("38ad566a-8f7f-47b0-812a-02d1ebc08684"),
+                            CityGuid = new Guid("a7cfe537-d3bf-42f5-aa5d-2cfd87c08b56"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رودهن",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 757,
-                            CityGuid = new Guid("b62dd0ba-6d88-42fd-b028-72d69859bf1c"),
+                            CityGuid = new Guid("acf5b3e9-5baf-430e-8284-78843f0b493e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ري",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 758,
-                            CityGuid = new Guid("1186deb6-28d6-4d11-bd49-a8208f08b543"),
+                            CityGuid = new Guid("beffae53-0207-46c3-b480-f9b50762d840"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهدشهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 759,
-                            CityGuid = new Guid("4617e218-f156-46fa-9b23-4e1f796c3ed6"),
+                            CityGuid = new Guid("9949a7ae-3a0e-418f-9ec0-7af5a228690b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شريف آباد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 760,
-                            CityGuid = new Guid("6f5e1213-9b12-407f-87bc-0ace2cc65e0b"),
+                            CityGuid = new Guid("cbb0b029-fc0c-4e1b-8ea2-6304fa538533"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شمشک",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 761,
-                            CityGuid = new Guid("1c865742-9e4f-4815-b184-5fa6cfca9cbb"),
+                            CityGuid = new Guid("00146e9c-7053-41f3-a6ab-407bc3400d7f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر جديد پرند",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 762,
-                            CityGuid = new Guid("f585a22f-9cfc-4af1-a078-564475f53a0d"),
+                            CityGuid = new Guid("d6d094b9-2af9-4760-abac-dc3b7e3d0555"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهريار",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 763,
-                            CityGuid = new Guid("3846da04-621e-41ae-94e1-6e77c018e20e"),
+                            CityGuid = new Guid("f830181b-4dad-406e-9d30-268c86d2d9ea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صالحيه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 764,
-                            CityGuid = new Guid("94446965-3a7f-4748-b970-27301642d4b9"),
+                            CityGuid = new Guid("0c3ef935-fd7f-42e0-bff7-2da3dc8ee676"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صبا شهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 765,
-                            CityGuid = new Guid("e6d18133-ac8e-4730-b300-cb0f1ee6a80b"),
+                            CityGuid = new Guid("206284f9-2bf0-4047-9d0e-dd6a8ada86e1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صفادشت",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 766,
-                            CityGuid = new Guid("7e6209a4-2925-4d14-9eed-669eca512ffd"),
+                            CityGuid = new Guid("dda13a44-6bc0-4a9d-b767-ac351b0343be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فردوسيه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 767,
-                            CityGuid = new Guid("eba5a06d-820b-457b-b638-94c4b6790538"),
+                            CityGuid = new Guid("a4c3d38e-9128-4265-886b-c77658e242e6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرون آباد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 768,
-                            CityGuid = new Guid("d9ab3146-f7b2-4192-9aec-f777e1742dc1"),
+                            CityGuid = new Guid("2f20e4ac-8f54-4c7a-ae81-fc5447e1548d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فشم",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 769,
-                            CityGuid = new Guid("7fdfa8d9-0664-459b-bf1e-32656bb7004a"),
+                            CityGuid = new Guid("f4bd0ce6-94b8-4f55-8db3-7419440ce4cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيروزکوه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 770,
-                            CityGuid = new Guid("cb2d22f9-e6e0-4eb4-8721-30dbbe06ad52"),
+                            CityGuid = new Guid("395b23aa-182d-4d00-9af4-78ef566a459b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قدس",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 771,
-                            CityGuid = new Guid("2caa4370-d20c-4504-933f-3d465720f9cc"),
+                            CityGuid = new Guid("410e80e3-c013-4779-b02f-62b908b0066d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قرچک",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 772,
-                            CityGuid = new Guid("a3d4a1ee-2cfe-4b86-97bb-8df83eca37aa"),
+                            CityGuid = new Guid("a9d81b41-8fb1-4178-a026-fc5628ac25fd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لواسان",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 773,
-                            CityGuid = new Guid("eecd7fd9-f11a-41ee-9c01-08428a82e189"),
+                            CityGuid = new Guid("9d47dff3-db09-45e1-869b-bb40d785df09"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ملارد",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 774,
-                            CityGuid = new Guid("179894be-78ee-41e3-bff5-7e40fa5ad0a2"),
+                            CityGuid = new Guid("eaa23d21-6432-4b0d-aa88-5929f299eb38"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نسيم شهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 775,
-                            CityGuid = new Guid("c0b40434-86ba-44af-9d56-4c0de110aecb"),
+                            CityGuid = new Guid("3840f29a-3994-4be9-b2ef-c89e7b53e3a2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نصيرشهر",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 776,
-                            CityGuid = new Guid("98cb6bd6-f59d-441e-a177-57305e97bc4d"),
+                            CityGuid = new Guid("71f26939-62d2-4e9a-a612-41d8bbf3d2ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وحيديه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 777,
-                            CityGuid = new Guid("bde473de-d3d4-445b-bca3-b4fabec722db"),
+                            CityGuid = new Guid("9bab8131-c3b8-40fd-9d02-a152c1176d26"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ورامين",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 778,
-                            CityGuid = new Guid("bd8c276c-134f-491c-88cb-20667c6a4a98"),
+                            CityGuid = new Guid("e11242c3-db2c-498d-8181-14d9feccaab9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پاکدشت",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 779,
-                            CityGuid = new Guid("47655427-523c-4ebc-ae15-c363dc65015f"),
+                            CityGuid = new Guid("1690e205-dcec-4829-9b03-9ae18f6228e4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پرديس",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 780,
-                            CityGuid = new Guid("7feaefc6-ffe9-4419-a190-9200c4865ea4"),
+                            CityGuid = new Guid("49e2eb16-0d26-4a6b-8882-2d46e3ede80f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پيشوا",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 781,
-                            CityGuid = new Guid("6916a6a1-cbeb-48f6-a3ca-b37af9d07747"),
+                            CityGuid = new Guid("102c1388-ca56-4355-b6d0-131f8b1e5515"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چهاردانگه",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 782,
-                            CityGuid = new Guid("a7afaa12-4340-4964-9fcb-0f46bd86215b"),
+                            CityGuid = new Guid("fd4ea61f-3d74-4f21-a213-f314283b77a5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهريزک",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 783,
-                            CityGuid = new Guid("1164a3a2-b221-426f-be27-34b496f3d25b"),
+                            CityGuid = new Guid("f1ea86da-9fe4-468d-b9f0-840c777b222a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کيلان",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 784,
-                            CityGuid = new Guid("5679108a-92dd-4d1c-9634-c01d7acf84cc"),
+                            CityGuid = new Guid("02dd0ac8-d553-429b-bdfa-ea49f09d37fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلستان",
                             ProvinceId = 21
                         },
                         new
                         {
                             CityId = 785,
-                            CityGuid = new Guid("b1c66ca6-5cbf-46be-b57d-058a6369116a"),
+                            CityGuid = new Guid("36ed339b-27f9-4e9c-b9dc-28802043a72a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آبش احمد",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 786,
-                            CityGuid = new Guid("7ff61648-f996-40b2-bd50-2228b2c5e2a0"),
+                            CityGuid = new Guid("e1f360e2-d313-403a-993d-b483523b2af0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آذرشهر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 787,
-                            CityGuid = new Guid("8bdc088c-9e6a-4057-8593-3fd6829f6cbf"),
+                            CityGuid = new Guid("027f15e8-1847-4e64-ac4c-e5be62471c7f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آقکند",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 788,
-                            CityGuid = new Guid("bacc4222-a8ef-4869-be4f-44b449020293"),
+                            CityGuid = new Guid("d81e0b5c-2333-4988-b505-29d2145e7311"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آچاچي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 789,
-                            CityGuid = new Guid("ab9fd010-4f6b-4639-a1a6-6e016a5e186c"),
+                            CityGuid = new Guid("b802ae82-2e3b-4783-a11f-3fbedc905c8f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسکو",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 790,
-                            CityGuid = new Guid("c07f7c3f-a44e-4109-9f71-eaba4f778441"),
+                            CityGuid = new Guid("b05f6c42-9f8c-4995-90a3-5f421b159b49"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اهر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 791,
-                            CityGuid = new Guid("a0fabf74-5ed5-4e26-bc92-f0856c85ee4f"),
+                            CityGuid = new Guid("6784a936-2cfa-4649-83e2-a5440d5f8ea1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايلخچي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 792,
-                            CityGuid = new Guid("1d5fd13f-f268-470d-a16e-f973fdb12db5"),
+                            CityGuid = new Guid("42ee92c8-f7a9-4d5a-9963-cc5fb935899d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باسمنج",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 793,
-                            CityGuid = new Guid("e0b9e929-a042-4a1f-ae50-0435f3f20a35"),
+                            CityGuid = new Guid("d784296d-20f6-45d9-9255-739bd532d5dd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بخشايش",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 794,
-                            CityGuid = new Guid("e0ee0dd9-74d9-4db0-8bbc-91747beb31c7"),
+                            CityGuid = new Guid("7c1b7c0c-f8ec-448b-afeb-0700c7e18a56"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بستان آباد",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 795,
-                            CityGuid = new Guid("80b849c0-bc0b-46a7-8049-6640dadf6a28"),
+                            CityGuid = new Guid("5f08d61c-3247-4f20-b477-cd7a83eca123"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بناب",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 796,
-                            CityGuid = new Guid("ac91d24b-6d5e-4ac3-97f2-306158bb1025"),
+                            CityGuid = new Guid("fcd213ed-99f4-4226-951d-50f26403c5ce"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بناب مرند",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 797,
-                            CityGuid = new Guid("19857670-8aa4-490e-a3ba-ec629c532472"),
+                            CityGuid = new Guid("fcf1b63c-bee2-43c8-8fdd-e9ae92fa049b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تبريز",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 798,
-                            CityGuid = new Guid("61b894df-2cb7-4089-875f-b1359e318934"),
+                            CityGuid = new Guid("78a5c55b-cb3c-4d22-80f3-f51e480a11b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ترک",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 799,
-                            CityGuid = new Guid("bfc63a02-aa2d-457d-bf9a-3828eada230a"),
+                            CityGuid = new Guid("7563d992-4892-4219-8d29-bf11aa5b1ea3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ترکمانچاي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 800,
-                            CityGuid = new Guid("09128619-5bbb-482f-8f2d-0d561444aeba"),
+                            CityGuid = new Guid("35d299f2-28ac-4738-98c8-58f91684ad65"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تسوج",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 801,
-                            CityGuid = new Guid("aaa70642-49fd-4baf-96ab-424ea3649720"),
+                            CityGuid = new Guid("a7cce5be-0045-4fd3-a305-c064c76981b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تيمورلو",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 802,
-                            CityGuid = new Guid("2f004cd1-c629-409d-807d-7ffbe3d426b3"),
+                            CityGuid = new Guid("3df31cca-39df-48e3-ad7e-2fd221778e5a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تيکمه داش",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 803,
-                            CityGuid = new Guid("9281921f-07c6-460d-a49a-ea3b0b7dd7ac"),
+                            CityGuid = new Guid("d1bbedfe-df1b-4aa9-88ac-13fe2c1a9296"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جلفا",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 804,
-                            CityGuid = new Guid("2270ac7e-7bfc-4437-b433-6a3ce98b3ae7"),
+                            CityGuid = new Guid("25b33f61-695f-4016-bb97-2c15e122db0d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوان قلعه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 805,
-                            CityGuid = new Guid("007593d1-0fa2-4732-a3fa-d7d035d0b2fa"),
+                            CityGuid = new Guid("b65a74de-a89e-4f6e-9fbd-fb02908fce40"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خاروانا",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 806,
-                            CityGuid = new Guid("cec62aa4-4746-447d-97c2-56a7d58471d6"),
+                            CityGuid = new Guid("83adff51-0c2f-45a6-b86e-25a6cbe5cc6d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خامنه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 807,
-                            CityGuid = new Guid("26a76eba-9636-49f2-8c5f-b37b18036aa9"),
+                            CityGuid = new Guid("9e4ad1ff-4268-47a7-b18d-88df3ae2ac9f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خداجو",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 808,
-                            CityGuid = new Guid("ba16ada3-8bc4-40ff-879e-e362cfbec9e4"),
+                            CityGuid = new Guid("5e0b1789-d3f3-4962-b4df-2badbdf00984"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خسروشاه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 809,
-                            CityGuid = new Guid("8d3de269-15ab-4683-907f-9bf6bd3af52e"),
+                            CityGuid = new Guid("4b7ed8b3-343d-4f2a-81c1-aaeb004d2141"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خمارلو",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 810,
-                            CityGuid = new Guid("1ad62dce-77e4-4972-9343-b43b4d4f7f72"),
+                            CityGuid = new Guid("10abfe37-4a01-4d8d-8c1a-51dfc7b4f093"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خواجه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 811,
-                            CityGuid = new Guid("7be5f6a4-b33f-425c-b910-cba840b9ce51"),
+                            CityGuid = new Guid("e4ab2b6c-8ad3-4ab0-828e-3c407b0c7e9d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوزدوزان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 812,
-                            CityGuid = new Guid("a59fecfa-cd27-4010-aa59-08677d064ed8"),
+                            CityGuid = new Guid("5a4374d1-bc36-43ff-84d6-9b56a6aa38d9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرنق",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 813,
-                            CityGuid = new Guid("8ac3de05-95a8-47ab-8611-d77630333db6"),
+                            CityGuid = new Guid("3439cad2-6971-4fcc-9230-ca4b803c6499"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زنوز",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 814,
-                            CityGuid = new Guid("d6746d2b-46b3-4a1e-a696-0026448e0b8f"),
+                            CityGuid = new Guid("10bae718-daa7-4571-8fb3-e020754bc364"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سراب",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 815,
-                            CityGuid = new Guid("b5fbe937-ac4f-44bd-84fc-ac8703a174f3"),
+                            CityGuid = new Guid("f684ea77-f8e6-4bbe-b0ab-ef3f0a5c0702"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سردرود",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 816,
-                            CityGuid = new Guid("3bc5ae76-5c3f-493d-a520-18c77800a589"),
+                            CityGuid = new Guid("b2f1a24c-1f4d-4b47-b8bf-0152ce7a309f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيس",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 817,
-                            CityGuid = new Guid("62c318fa-1c8a-49da-ba25-0cf27b97382e"),
+                            CityGuid = new Guid("e93863a5-4ab8-43e8-9a6b-69e0ab00e264"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيه رود",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 818,
-                            CityGuid = new Guid("f76d7a2b-ed93-4ae6-a847-e7d8d25ab832"),
+                            CityGuid = new Guid("adf9bcff-7688-46ef-a255-e144dd798590"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شبستر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 819,
-                            CityGuid = new Guid("5085c31e-0d21-40d6-aaf2-e7046feb95d9"),
+                            CityGuid = new Guid("85264049-73be-42a4-a7c4-43a33ce4fbd5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شربيان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 820,
-                            CityGuid = new Guid("3a8c4f42-0c64-4aad-b524-8cb2ae7c7b93"),
+                            CityGuid = new Guid("c46f9def-02d0-4982-ba7b-8ec6dfe6775c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شرفخانه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 821,
-                            CityGuid = new Guid("7433f02e-d184-4bb9-b61e-810c135ee444"),
+                            CityGuid = new Guid("2dd59c44-3d96-452c-b3f0-fb94b319a5a1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شند آباد",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 822,
-                            CityGuid = new Guid("2c97a336-3c54-47d9-8232-69c8c633ef69"),
+                            CityGuid = new Guid("7df5c25c-b711-49d3-b4cb-95428ce8c89d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر جديد سهند",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 823,
-                            CityGuid = new Guid("e70531b6-b164-498e-b6df-e9e35e70408b"),
+                            CityGuid = new Guid("f6c257b6-9669-45cf-a23c-86e39a0e6807"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صوفيان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 824,
-                            CityGuid = new Guid("53a47b89-9732-45b3-818b-1c416a27c4ec"),
+                            CityGuid = new Guid("57ca0bc6-0bc8-4c5d-b2e3-3eab1e5cf416"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عجب شير",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 825,
-                            CityGuid = new Guid("0eb5a820-6bb3-487f-8b43-b4548c7fa0f4"),
+                            CityGuid = new Guid("a64098b0-ac10-42db-9363-d35e5c8a9692"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قره آغاج",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 826,
-                            CityGuid = new Guid("5c13f036-fee2-4588-8979-eb2d03cd0484"),
+                            CityGuid = new Guid("4518c068-00fc-42dc-b5f5-de68d1f47245"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ليلان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 827,
-                            CityGuid = new Guid("48622817-3ac8-41a6-b3b5-d1c1fa80ea7a"),
+                            CityGuid = new Guid("e5a32fb2-c96e-4381-b497-74728115fb61"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مبارک شهر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 828,
-                            CityGuid = new Guid("8869995d-6420-43fd-aed9-3d4cdbaf2e6d"),
+                            CityGuid = new Guid("352d2518-4742-49ad-9863-ad1fdc86c882"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مراغه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 829,
-                            CityGuid = new Guid("8d706dc6-ff58-4b95-8d3c-9ddca85dc27e"),
+                            CityGuid = new Guid("85d37133-cfca-40a9-9eb9-9e580e5a937d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرند",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 830,
-                            CityGuid = new Guid("b3410ae4-16b5-4d3b-bcd1-95cc2a491d5f"),
+                            CityGuid = new Guid("f5cbe2cc-921f-4bcc-beb7-d55429ccf75e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ملکان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 831,
-                            CityGuid = new Guid("e80c1eb6-49dd-4881-ae58-245a56ffc08b"),
+                            CityGuid = new Guid("792d17fe-07e2-4365-81a2-6230fc698e0b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ممقان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 832,
-                            CityGuid = new Guid("4122b46e-5a44-4864-ba85-3931f1f90bd4"),
+                            CityGuid = new Guid("52165778-d8c8-444b-b7de-5c902510ad9f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهربان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 833,
-                            CityGuid = new Guid("b18e52c0-72f3-41f4-88de-441535d3ca0c"),
+                            CityGuid = new Guid("019ddb70-a9f9-4ddc-a32d-757c6a32e178"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميانه",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 834,
-                            CityGuid = new Guid("29b8e51f-8e4a-4d27-822c-e51eeb314f3e"),
+                            CityGuid = new Guid("78943a17-f57e-4eed-bba9-0dee1c2c1a79"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نظرکهريزي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 835,
-                            CityGuid = new Guid("966d2e38-942b-4c0c-bf7e-6c2dd8881c9f"),
+                            CityGuid = new Guid("e6f5e370-13be-44dd-98e8-2cf82668d159"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هاديشهر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 836,
-                            CityGuid = new Guid("9ae8cf49-ac1e-4d29-917d-30e802fd15ed"),
+                            CityGuid = new Guid("60af3abb-087b-4467-b503-f7fdf388ce12"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هريس",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 837,
-                            CityGuid = new Guid("01941bdb-4b8e-4215-a5f9-c8252fc2195f"),
+                            CityGuid = new Guid("21c35612-3a25-4993-a49b-e40511f3cc39"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هشترود",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 838,
-                            CityGuid = new Guid("13fefa00-26e3-4491-ad89-46a0bd431885"),
+                            CityGuid = new Guid("63d7a6bf-70d1-411c-a759-7f33a94749dd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هوراند",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 839,
-                            CityGuid = new Guid("9a08a3c3-c511-4847-bd7e-9c52eec970e8"),
+                            CityGuid = new Guid("b0b7618d-f2e3-43a8-a326-e68a57f103ca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وايقان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 840,
-                            CityGuid = new Guid("402dc6f6-2b48-4970-b5c1-eafcf4631a6d"),
+                            CityGuid = new Guid("338c628b-08b4-4f30-b518-8519d0669256"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ورزقان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 841,
-                            CityGuid = new Guid("ddd14353-8bfe-4f8b-ad6b-323b9ee68da9"),
+                            CityGuid = new Guid("507a22a4-1437-4934-83f7-72dfe502300c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "يامچي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 842,
-                            CityGuid = new Guid("def41a72-7c54-485e-88d1-494d15a71fd2"),
+                            CityGuid = new Guid("fe1ea430-4713-4488-9d3a-f7e3e3658474"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کشکسراي",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 843,
-                            CityGuid = new Guid("556ffb3c-035a-420a-af21-e23eb39641c0"),
+                            CityGuid = new Guid("5a635d91-0fb3-4835-8d14-0d7d6e2c25d7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلوانق",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 844,
-                            CityGuid = new Guid("ce270d4d-3d1c-466d-975b-bb94ece6db98"),
+                            CityGuid = new Guid("bdb9a92f-5fab-4d20-a4d6-701f96e6f258"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کليبر",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 845,
-                            CityGuid = new Guid("1904d866-1b41-44c1-b299-627cdadad3f2"),
+                            CityGuid = new Guid("79d4b3da-e736-4eca-8ad0-0e675404ba95"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوزه کنان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 846,
-                            CityGuid = new Guid("bcfbfc3a-2660-4ae8-9e82-ed8de4f4a400"),
+                            CityGuid = new Guid("97ecb0d2-0270-47d5-960e-088c7fdbbed0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوگان",
                             ProvinceId = 22
                         },
                         new
                         {
                             CityId = 847,
-                            CityGuid = new Guid("3bf463ff-c352-40e1-a2a2-079416e1e8e1"),
+                            CityGuid = new Guid("a4593923-6817-4acd-a877-325236738bb4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آباده",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 848,
-                            CityGuid = new Guid("7980ce7d-6b1e-411c-a5a1-2f6f4e804257"),
+                            CityGuid = new Guid("cc9d5710-8876-4cc4-a262-1309a4969d40"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آباده طشک",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 849,
-                            CityGuid = new Guid("c7c9a05f-c2d0-4016-8070-78ef2543a1b2"),
+                            CityGuid = new Guid("89dc828f-a6ba-4cac-9551-14d713b71a24"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردکان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 850,
-                            CityGuid = new Guid("66cdb60c-c3b3-4266-a710-82709bf01fa2"),
+                            CityGuid = new Guid("d022b585-26c9-468a-b243-8ec618e05133"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارسنجان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 851,
-                            CityGuid = new Guid("fb276aa8-15da-476b-b14e-045e1c6fea14"),
+                            CityGuid = new Guid("84297ad3-bbd1-40fd-8a2f-9c8cbc6c2e8f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "استهبان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 852,
-                            CityGuid = new Guid("d9b44af6-76ca-43ae-b2a8-d2f9b94beb5a"),
+                            CityGuid = new Guid("71b87095-3180-44c2-b57d-5446648acf32"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسير",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 853,
-                            CityGuid = new Guid("8aa6e31d-e53f-4c56-8f51-54f3d6a05498"),
+                            CityGuid = new Guid("6759f3d9-6c29-4420-940f-cb2f80560344"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اشکنان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 854,
-                            CityGuid = new Guid("27bf295b-1f3e-43c0-8b9a-edac0bbcb3ab"),
+                            CityGuid = new Guid("9adea4f3-36b8-4bf1-b783-1ae15a47136b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "افزر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 855,
-                            CityGuid = new Guid("a717f374-a38b-4021-838d-82d4672e7ddf"),
+                            CityGuid = new Guid("3ee4ae12-9399-427f-af58-a2d4fffa67ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اقليد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 856,
-                            CityGuid = new Guid("7b50d453-dc1b-4a8f-80f6-c2dbd8ada263"),
+                            CityGuid = new Guid("8036c72f-39ac-414b-9aed-b45d47d3c293"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "امام شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 857,
-                            CityGuid = new Guid("cddd854d-ebd6-4b66-8e23-de09b6b12802"),
+                            CityGuid = new Guid("373b7f19-848c-4e50-bad4-8b6b174f95e1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اهل",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 858,
-                            CityGuid = new Guid("e5cda992-552a-4686-bce7-e0b840f84396"),
+                            CityGuid = new Guid("f2b45ec3-e138-4a9e-aada-f236f1b44d41"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اوز",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 859,
-                            CityGuid = new Guid("4b47fbed-53c8-4d1d-addd-db07d2471916"),
+                            CityGuid = new Guid("86726d26-57b6-4f39-95cc-b64519d9f4e9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايج",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 860,
-                            CityGuid = new Guid("7a6ee5c2-342c-4f95-bf39-45c9cd32687a"),
+                            CityGuid = new Guid("34de9cd1-eb06-4e0d-92cd-b29400d96122"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايزد خواست",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 861,
-                            CityGuid = new Guid("628c64a5-3e6b-4f0a-aff5-8ffd2128b84a"),
+                            CityGuid = new Guid("b8773c45-1a8b-4517-b805-ecd9f0f4d282"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باب انار",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 862,
-                            CityGuid = new Guid("ded87adc-04fe-4dbf-88d3-fc9a1fc42461"),
+                            CityGuid = new Guid("2f74f150-1ee7-4d17-a40c-3e4e695f3687"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بابامنير",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 863,
-                            CityGuid = new Guid("da963d94-dd2c-4963-8165-8880543a580d"),
+                            CityGuid = new Guid("7391f94c-5544-47c4-a630-51feb2070f6f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بالاده",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 864,
-                            CityGuid = new Guid("9cc05182-bff2-4a65-945d-18762da208e9"),
+                            CityGuid = new Guid("5e5408db-5292-468d-ac41-cefa965faf08"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بنارويه",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 865,
-                            CityGuid = new Guid("564699fe-b37b-49cc-bbaf-b8ff9f7b6c20"),
+                            CityGuid = new Guid("a3dcecdd-7d3c-4384-8df7-ad66cb54a802"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهمن",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 866,
-                            CityGuid = new Guid("cfcb04fe-60bd-4a9a-86f5-183d89d31259"),
+                            CityGuid = new Guid("afec48e4-e5f7-4487-b59f-9c968c0471bc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوانات",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 867,
-                            CityGuid = new Guid("bebfe04a-9860-4c65-a0a5-ba613c8dbeca"),
+                            CityGuid = new Guid("00a44254-ec75-47cb-b865-7fe9fe81ba4c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيرم",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 868,
-                            CityGuid = new Guid("499115b6-78c7-4f85-a22d-51d2c292f0d2"),
+                            CityGuid = new Guid("b0a99cfe-64b0-4ed8-893e-2cd875d2dbe1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيضا",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 869,
-                            CityGuid = new Guid("33c49d9a-946c-4836-b583-a105a4334f22"),
+                            CityGuid = new Guid("b0db855b-2495-4764-bfb5-fce7ae5bff52"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جنت شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 870,
-                            CityGuid = new Guid("8c358f13-683d-4aa3-b1eb-c8b20fca38fd"),
+                            CityGuid = new Guid("bd8ce527-6819-4f3f-959c-86f722fdd9ef"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جهرم",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 871,
-                            CityGuid = new Guid("f7f7c913-0b99-43c1-982b-881cf35be8a2"),
+                            CityGuid = new Guid("245f863e-d4c7-40aa-858d-052cb9e92a0a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جويم",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 872,
-                            CityGuid = new Guid("85ecec7e-d284-46f0-bb1e-2500d052b143"),
+                            CityGuid = new Guid("469001e2-6d14-4dc4-a6ca-8f1825e65205"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حاجي آباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 873,
-                            CityGuid = new Guid("874be741-8fe4-4a50-b27a-b2af8974fe08"),
+                            CityGuid = new Guid("20338979-b98e-4df8-b630-281aadc62dc4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حسامي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 874,
-                            CityGuid = new Guid("b6505104-859a-4405-9f4b-7e83b8aa0b41"),
+                            CityGuid = new Guid("3649d9e5-9fb5-4940-b8a5-ad0ca26e1aa4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حسن آباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 875,
-                            CityGuid = new Guid("1d5c2915-5077-40f0-bc4f-1738e56a0938"),
+                            CityGuid = new Guid("9f53a36f-12fa-4e7b-9d85-232198b57c16"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خانه زنيان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 876,
-                            CityGuid = new Guid("80f750b5-38e3-49f9-b226-24f0c37d9c49"),
+                            CityGuid = new Guid("c20a4553-b37d-48d4-accd-058fd3806c2b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خانيمن",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 877,
-                            CityGuid = new Guid("e6bda13e-9fcc-407b-a9be-16c35b731f30"),
+                            CityGuid = new Guid("ad25b8d0-72b2-43fb-b43d-4415a298aeb7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خاوران",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 878,
-                            CityGuid = new Guid("c8cfc7e1-e5c3-42c1-abbe-bf295ec3a663"),
+                            CityGuid = new Guid("077c4634-b822-429a-b490-580965bb8ee9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خرامه",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 879,
-                            CityGuid = new Guid("be93f5f7-82e2-41bc-8fc3-dca19a399056"),
+                            CityGuid = new Guid("ab2685ab-3176-4318-a399-b4feb6f73444"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خشت",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 880,
-                            CityGuid = new Guid("439110a1-5096-4f43-a004-3f2c05d0b788"),
+                            CityGuid = new Guid("04c0b310-2850-4bc2-b25e-fb69bb4cfcb8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خنج",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 881,
-                            CityGuid = new Guid("22f7d710-6f64-4ad7-9b0a-4476041e74d7"),
+                            CityGuid = new Guid("d0dddbdf-ffda-4e00-8325-50f0f2566719"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خور",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 882,
-                            CityGuid = new Guid("98740b0e-4389-46e3-869f-e14cab98e631"),
+                            CityGuid = new Guid("4b48bb35-2cce-4c56-b1aa-09ac94195bca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوزي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 883,
-                            CityGuid = new Guid("0509fba9-9a68-4f49-9aee-697091c7d207"),
+                            CityGuid = new Guid("8c39b47f-3f31-46bf-a362-8ce9efc610e9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خومه زار",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 884,
-                            CityGuid = new Guid("b15e5fef-ddc6-4efc-81a4-9a3c73a7ac84"),
+                            CityGuid = new Guid("14e7e943-7715-415b-9f32-90f788edbfb5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "داراب",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 885,
-                            CityGuid = new Guid("afa5c073-881e-4a01-b904-824d2ad2e13e"),
+                            CityGuid = new Guid("40db343d-e269-4926-a796-49afcfaae2ce"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "داريان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 886,
-                            CityGuid = new Guid("e3b14e8b-aacd-4fae-9115-9de2b2304f37"),
+                            CityGuid = new Guid("813fbcb0-1200-4117-b76e-414c61892516"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دبيران",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 887,
-                            CityGuid = new Guid("07d6666d-b234-4cbf-8d1a-06361b430dc6"),
+                            CityGuid = new Guid("4dc5eb48-4bf3-4028-a892-1591693e997b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهرم",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 888,
-                            CityGuid = new Guid("8bc5e9ad-cccc-4ea5-98f9-4ccf75acccab"),
+                            CityGuid = new Guid("7899d8c7-ea5c-4147-90eb-e19e578af38c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوبرجي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 889,
-                            CityGuid = new Guid("b6eefe18-0d14-42f0-9b39-b4d7fb6444d6"),
+                            CityGuid = new Guid("c3646013-3d68-471f-961e-0fb0b0ac0757"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوزه",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 890,
-                            CityGuid = new Guid("e1c03f97-54a1-49d1-a496-df2e3ebfb4f4"),
+                            CityGuid = new Guid("cf9376fb-27e8-49dc-bab3-950635ebd183"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دژکرد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 891,
-                            CityGuid = new Guid("c019ba2b-0438-43cc-bf65-1c9626d22f68"),
+                            CityGuid = new Guid("303051e3-5b51-4819-b15d-2d3299821b16"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رامجرد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 892,
-                            CityGuid = new Guid("b00b4886-d2f3-487a-a25e-6ec51f9eca82"),
+                            CityGuid = new Guid("75edd580-b22f-4d92-8819-66b55025fabc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رونيز",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 893,
-                            CityGuid = new Guid("056f3aed-7638-4044-8520-e57935d02c8f"),
+                            CityGuid = new Guid("294b1a2a-72b4-463f-a66f-68347e2c6672"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زاهد شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 894,
-                            CityGuid = new Guid("e614422d-c516-4e62-b560-7b567ce7d3d3"),
+                            CityGuid = new Guid("51322954-0554-498d-865d-1abd59d30563"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرقان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 895,
-                            CityGuid = new Guid("b62b8c98-b704-4eb2-8baa-ed46b0c13c46"),
+                            CityGuid = new Guid("31620ec8-990c-4890-b6f3-e06a7d76e803"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سده",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 896,
-                            CityGuid = new Guid("ff074044-9e5a-4cb2-ae03-0185566e1a83"),
+                            CityGuid = new Guid("c441d2f7-759e-46ab-a149-afcae9ec136c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سروستان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 897,
-                            CityGuid = new Guid("41391623-16c3-4156-823f-38ab140d8cba"),
+                            CityGuid = new Guid("9486727f-c921-43d5-be66-54aa59d51ee6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سعادت شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 898,
-                            CityGuid = new Guid("3220d875-cb3c-4849-b67e-15b7ea46ca25"),
+                            CityGuid = new Guid("58eddbc2-b05d-4e96-a785-0b01d1b29797"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سلطان شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 899,
-                            CityGuid = new Guid("b17eae9f-f046-40f8-bd0c-35f24fe6ed11"),
+                            CityGuid = new Guid("c528441e-d0e1-40e8-ac2e-a61eb4f95d92"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سورمق",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 900,
-                            CityGuid = new Guid("75d955f1-7e18-4b00-b717-6a083d90f1fc"),
+                            CityGuid = new Guid("5587c94d-ac93-4f9f-9aa4-e5b960cb01ef"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيدان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 901,
-                            CityGuid = new Guid("190edb8d-40c0-442d-9ef6-a7a6332dff50"),
+                            CityGuid = new Guid("652e82c0-35f6-4aec-97b6-e3781a1c6e73"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ششده",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 902,
-                            CityGuid = new Guid("1e30897f-092e-49de-9927-1fafa41e959a"),
+                            CityGuid = new Guid("8f37abd6-95fc-4b29-96ba-2c80ff216d06"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر جديد صدرا",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 903,
-                            CityGuid = new Guid("fefed4df-e513-45f5-9a4e-4c0699b518cd"),
+                            CityGuid = new Guid("7419caac-5735-4936-b717-aff3881f896b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر پير",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 904,
-                            CityGuid = new Guid("fbb62462-92de-45c7-b33a-90cca9d58c4b"),
+                            CityGuid = new Guid("6d3ab3b0-5ab9-435c-b750-240d2da59d03"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيراز",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 905,
-                            CityGuid = new Guid("afea53e1-284f-48e8-8995-5c3d1f0ca06b"),
+                            CityGuid = new Guid("189b920a-b65d-40ac-9f65-853510de8668"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صغاد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 906,
-                            CityGuid = new Guid("0d103643-740c-4303-a242-8d642a9355ee"),
+                            CityGuid = new Guid("da393084-1124-41e1-9fef-431b92d3747a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صفا شهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 907,
-                            CityGuid = new Guid("8ef77f25-393f-416c-a0cc-112fab968d41"),
+                            CityGuid = new Guid("f9bf0b23-3a81-4860-8699-eaec5be09110"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "علامرودشت",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 908,
-                            CityGuid = new Guid("475c785f-4dd0-49fc-92a0-8b219d44c0d9"),
+                            CityGuid = new Guid("7c0adfea-b5b0-46e7-a65f-b9436e24ace9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عماد ده",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 909,
-                            CityGuid = new Guid("0d898d7f-97c0-4888-a9c9-3a3f9c947b10"),
+                            CityGuid = new Guid("f305dcdc-b5a4-46ca-bdba-ac47b35575ff"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فدامي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 910,
-                            CityGuid = new Guid("85007e84-8c03-4ca8-855c-ed514192944e"),
+                            CityGuid = new Guid("60da57b8-2391-4bd4-93b6-193f7f8e8bfe"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فراشبند",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 911,
-                            CityGuid = new Guid("a00f06ae-f5c2-489d-a03b-f66973124833"),
+                            CityGuid = new Guid("89cc9d6d-1a4c-4beb-aac8-559cc78bd9bf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فسا",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 912,
-                            CityGuid = new Guid("e2e95f03-1444-45a6-9ced-9c1a89dac4f4"),
+                            CityGuid = new Guid("7bdbb58a-6604-47b9-b9aa-be82d901ed62"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيروزآباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 913,
-                            CityGuid = new Guid("f8267871-b718-499a-b6c9-b7e179776cb5"),
+                            CityGuid = new Guid("5b42c49d-7a15-476f-b7ce-af70690e83db"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قائميه",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 914,
-                            CityGuid = new Guid("abd950a8-c4cc-41cb-9ad7-369d6336bdcd"),
+                            CityGuid = new Guid("8a1a01a5-0169-4559-bd3f-a3a6deaa4529"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قادرآباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 915,
-                            CityGuid = new Guid("82728763-aac3-497f-80b2-6d45a9e39fe8"),
+                            CityGuid = new Guid("aaa749fe-b761-46f8-84bf-1983aed3c938"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قره بلاغ",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 916,
-                            CityGuid = new Guid("ff0e6bef-4689-4754-bc27-f0f467e90508"),
+                            CityGuid = new Guid("6df831a6-cc21-488a-9fce-bc5426dc3150"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قطب آباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 917,
-                            CityGuid = new Guid("c0168aea-339b-4375-b4d8-b6169d2a51a3"),
+                            CityGuid = new Guid("6bd9b4a6-d163-4756-89a5-eb714cb11494"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قطرويه",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 918,
-                            CityGuid = new Guid("a3430b16-869a-4acb-a7f4-c81052108b12"),
+                            CityGuid = new Guid("7a9332a9-539c-470f-b5eb-582db685e444"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قير",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 919,
-                            CityGuid = new Guid("f787a745-4f0a-45e8-aa62-338b0f5225a4"),
+                            CityGuid = new Guid("c00f1d42-407b-4ac2-8243-11dc5210f962"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لار",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 920,
-                            CityGuid = new Guid("3120c048-5220-406e-92ca-d636f2817f0a"),
+                            CityGuid = new Guid("5344ab40-4924-48fd-b699-536b38664356"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لامرد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 921,
-                            CityGuid = new Guid("6fd76dcb-6bea-4d67-864e-117f72ab13e7"),
+                            CityGuid = new Guid("a2bdcada-61a5-40c0-9540-949b8b79c347"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لطيفي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 922,
-                            CityGuid = new Guid("24ed79ee-1739-4951-bd3c-5dc6d87eba7b"),
+                            CityGuid = new Guid("765c31bf-6b05-41b2-9710-b67c6329ba70"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لپوئي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 923,
-                            CityGuid = new Guid("335cbc59-e873-4b01-a2e2-dafb7af10685"),
+                            CityGuid = new Guid("a3665f96-9ad6-4025-adc0-218385f0a304"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مادرسليمان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 924,
-                            CityGuid = new Guid("7ac02971-7c49-48ab-84fd-7945f03b242b"),
+                            CityGuid = new Guid("43147bb8-e063-496b-9d14-fa391a941e66"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مبارک آباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 925,
-                            CityGuid = new Guid("6d2ca1f2-31f2-4dfa-ad61-34559861e4da"),
+                            CityGuid = new Guid("0319ddcb-cef5-491a-a73d-f69c646edfb5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرودشت",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 926,
-                            CityGuid = new Guid("fb1c6932-1ef5-4869-872c-203adaf8a7c5"),
+                            CityGuid = new Guid("69fd8206-d0df-427b-bf10-ce060aba19f5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مزايجان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 927,
-                            CityGuid = new Guid("3e8f3362-dc94-4508-98b0-0e8c6cceb215"),
+                            CityGuid = new Guid("37d5696e-c138-42c6-917f-1aba06befe72"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مشکان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 928,
-                            CityGuid = new Guid("ccf0e55f-3679-4608-aa90-eab5ddba38a3"),
+                            CityGuid = new Guid("d31e2cbb-1d40-4933-b8c2-4c673ab76a7f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مصيري",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 929,
-                            CityGuid = new Guid("f1b9faf9-fb22-4925-9454-15417dbb41e4"),
+                            CityGuid = new Guid("5950558a-0f04-4d15-951e-001a4059f9d4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 930,
-                            CityGuid = new Guid("6499e75f-0c33-446e-b570-f231ee80b4ad"),
+                            CityGuid = new Guid("6481a0d5-705c-4ec9-b6b4-0323e2f933f5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميانشهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 931,
-                            CityGuid = new Guid("969baf77-52ea-4f6a-ba3d-f2f364d69a1d"),
+                            CityGuid = new Guid("c8d25a09-9b37-48bb-a141-6c1e9babd16c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميمند",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 932,
-                            CityGuid = new Guid("0a1a2bae-4e34-4f4c-8824-fad3e31e20d5"),
+                            CityGuid = new Guid("7c1a2b43-feb6-43d2-8774-265e0a2cfc15"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوبندگان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 933,
-                            CityGuid = new Guid("8f5c56af-bab7-44c2-8b9c-ac82827cdde5"),
+                            CityGuid = new Guid("f5b729ce-427e-48f2-8cda-d43838aeb70f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوجين",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 934,
-                            CityGuid = new Guid("f2fb97f8-bd53-4c94-9e80-0b3e2942e983"),
+                            CityGuid = new Guid("ebf76652-13a2-40c4-93e4-134e8cf9dcf6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نودان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 935,
-                            CityGuid = new Guid("4208654a-a7ac-497e-bc80-8d2f2c3d9db4"),
+                            CityGuid = new Guid("e5a3eee9-2b29-488e-b716-43f48c79c365"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نورآباد",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 936,
-                            CityGuid = new Guid("98bcb741-79fa-4b88-a373-32ecad7a3813"),
+                            CityGuid = new Guid("2b2186e9-92be-4041-a714-bcb736c73a34"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ني ريز",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 937,
-                            CityGuid = new Guid("2871867b-c260-4434-a256-6bf5270e2adb"),
+                            CityGuid = new Guid("4a92ff1d-f35e-48ff-bd2c-1fd47123366b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هماشهر",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 938,
-                            CityGuid = new Guid("612946bf-862d-443b-ac3b-c4dab94f61d6"),
+                            CityGuid = new Guid("115ee320-57cf-46bc-aea6-775609cfd61f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "وراوي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 939,
-                            CityGuid = new Guid("da1f54ff-dcb1-41e0-8002-97078fe1fb97"),
+                            CityGuid = new Guid("e5932bc0-f130-48f7-99fd-0c482d477f83"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کارزين",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 940,
-                            CityGuid = new Guid("973b69bc-b67e-4999-b3de-f32e2b803275"),
+                            CityGuid = new Guid("6ec06564-ea6c-4ee5-8e9c-4de5f5c9b255"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کازرون",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 941,
-                            CityGuid = new Guid("4c63c7e4-ca86-4dbc-975e-a4e3a97b303d"),
+                            CityGuid = new Guid("93979c9b-8b90-497a-89ba-ff321968091e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کامفيروز",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 942,
-                            CityGuid = new Guid("1acddb4d-8e7c-44dc-af83-67efba49e5d0"),
+                            CityGuid = new Guid("a9d7bffc-1b38-408c-a3be-762affec2233"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کره اي",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 943,
-                            CityGuid = new Guid("677eca4d-d5b1-4e9a-aa69-7aaba1d39803"),
+                            CityGuid = new Guid("5f23f6b7-20dd-4e89-a7bd-63a73ff37fc3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کنار تخته",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 944,
-                            CityGuid = new Guid("2c633fb4-1ae3-49f4-ab9b-9f17436a0740"),
+                            CityGuid = new Guid("4836b254-464a-4f03-9af0-d336caf36c5d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوار",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 945,
-                            CityGuid = new Guid("80164c00-4b46-498f-96c6-7c9feb271084"),
+                            CityGuid = new Guid("4ef296cd-4412-4493-9b7b-fe4f8f9c4ad5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهنجان",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 946,
-                            CityGuid = new Guid("b86f76eb-1871-4f84-af12-fe2ab2e05667"),
+                            CityGuid = new Guid("af855de6-6275-454d-80ec-0fd1b7fe7ea2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوپن",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 947,
-                            CityGuid = new Guid("f9cca930-86e2-49ab-b6cb-549c9c6faaa9"),
+                            CityGuid = new Guid("2db946c6-ee0b-431e-9ea9-bb97a25483fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گراش",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 948,
-                            CityGuid = new Guid("2a405257-6a12-4d13-a11d-e859451538ab"),
+                            CityGuid = new Guid("e70dcb53-dbce-42fd-a811-f811683b17fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گله دار",
                             ProvinceId = 23
                         },
                         new
                         {
                             CityId = 949,
-                            CityGuid = new Guid("e2d06b2f-d6b3-4b3e-88ad-d09729a2753a"),
+                            CityGuid = new Guid("595b4e76-8bc7-47d6-a2f4-8e72ccca2bdf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ازگله",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 950,
-                            CityGuid = new Guid("6e8017a2-bf5d-4bca-941b-82deef1450de"),
+                            CityGuid = new Guid("7bc8b70a-933c-4c3c-8661-2e30500ac426"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسلام آباد غرب",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 951,
-                            CityGuid = new Guid("8cfa884a-194f-466e-b0fc-d4bf9689fb48"),
+                            CityGuid = new Guid("4144d6ca-2a87-486b-a1a5-962a656c946e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بانوره",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 952,
-                            CityGuid = new Guid("eeda1f98-d3af-46ac-8155-eb98674b5363"),
+                            CityGuid = new Guid("5164b7d3-4f5e-4b6f-bb41-b6fa9f8711c3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باينگان",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 953,
-                            CityGuid = new Guid("ee5142da-8160-4e37-8a32-1f7c8dd24d75"),
+                            CityGuid = new Guid("cf12bed2-f15b-42d9-9c45-75cb48f098b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيستون",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 954,
-                            CityGuid = new Guid("8bd4bcae-f27f-4853-aa20-972de98c8a0d"),
+                            CityGuid = new Guid("c471d447-5027-46bc-9416-2c33b22985e9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تازه آباد",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 955,
-                            CityGuid = new Guid("0038adc6-c797-49e2-a9a4-cd95f7f2a57d"),
+                            CityGuid = new Guid("99fbd4f6-446d-489e-84ed-50c8cf76a194"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوانرود",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 956,
-                            CityGuid = new Guid("c8e949bb-747a-440a-9c8c-28ce997a2b03"),
+                            CityGuid = new Guid("5eb7811b-d8d4-4bbd-a170-87885ad7934f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حميل",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 957,
-                            CityGuid = new Guid("851dd0bc-f033-4cd5-8f94-b07b5a0e829e"),
+                            CityGuid = new Guid("77e8ebc0-5109-48f5-8ca2-c2c9ae5b40e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رباط",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 958,
-                            CityGuid = new Guid("028dc06f-208d-4aa4-9500-04842acde27c"),
+                            CityGuid = new Guid("a4dbc7dd-9b08-42bf-8820-580316537e0a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "روانسر",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 959,
-                            CityGuid = new Guid("0bfc9b68-6ef9-4bf6-8f6d-84344b28f6d3"),
+                            CityGuid = new Guid("cace534c-6236-4ba6-a939-d1dbc9391985"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ريجاب",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 960,
-                            CityGuid = new Guid("74fefc44-2be3-4f30-a656-ab933c623661"),
+                            CityGuid = new Guid("fd829b1d-0dfd-4457-8836-7d25d56e93e6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سر پل ذهاب",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 961,
-                            CityGuid = new Guid("4eb63346-7542-4e19-9044-d27b288c2e16"),
+                            CityGuid = new Guid("92bddeb5-84ac-47a1-b347-5f93a478437d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرمست",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 962,
-                            CityGuid = new Guid("d18805e4-1289-443f-a70c-c288f0a0aa54"),
+                            CityGuid = new Guid("da95dc0b-ea87-4749-aed7-11ed642bfedd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سطر",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 963,
-                            CityGuid = new Guid("41122600-f50e-44d9-a662-e4d39179b417"),
+                            CityGuid = new Guid("4d055ee1-02b7-4d15-947f-83822ac1d7fd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنقر",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 964,
-                            CityGuid = new Guid("9d375adf-347a-48d7-a8d5-e1677c3e5227"),
+                            CityGuid = new Guid("4c2ebc03-3fd3-4c13-99f1-58f535ba78ab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سومار",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 965,
-                            CityGuid = new Guid("d50bcf0f-4ea3-46cd-8057-556fad4c8ef6"),
+                            CityGuid = new Guid("292cb4ad-8035-4daf-8bf1-de04dd6f0fc6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهو",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 966,
-                            CityGuid = new Guid("0549b40c-808c-4145-9f09-cd38a5a35af0"),
+                            CityGuid = new Guid("a722ec63-f1b7-4e44-a155-8a62c48f70ad"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صحنه",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 967,
-                            CityGuid = new Guid("2d61a91d-f5e2-4252-b752-c58a3a66ce32"),
+                            CityGuid = new Guid("786830c2-966c-41a6-a43f-32658294c7e6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قصر شيرين",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 968,
-                            CityGuid = new Guid("ab576003-6d38-4174-a843-c1bd5da3aae0"),
+                            CityGuid = new Guid("1f470963-71c4-48de-b4b2-43fe8b15606d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميان راهان",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 969,
-                            CityGuid = new Guid("d0989b45-c31e-4532-8a6b-c67e29841763"),
+                            CityGuid = new Guid("ea6512c8-0cf1-42de-ba21-07fe262e2b4f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نودشه",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 970,
-                            CityGuid = new Guid("3bff0ab6-263b-483b-8a0c-b85d6347bb93"),
+                            CityGuid = new Guid("8c0062c1-a94f-4172-bc06-4e8e3eb26c36"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوسود",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 971,
-                            CityGuid = new Guid("bf65d50f-ce09-4301-91d9-b3742fc3eed1"),
+                            CityGuid = new Guid("4083bbab-bef2-4863-b4a9-04ece8249885"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هرسين",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 972,
-                            CityGuid = new Guid("6082c3b3-3742-4ea6-af6c-219df28b2afa"),
+                            CityGuid = new Guid("c9afdb7d-70a5-421f-bd80-acb375df39ea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هلشي",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 973,
-                            CityGuid = new Guid("2b046b96-4d60-4cd9-b001-ab866c4cb1e7"),
+                            CityGuid = new Guid("58beb43e-8d69-4d65-8d27-fd6995bc7352"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پاوه",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 974,
-                            CityGuid = new Guid("e4296982-bd1a-4c41-936f-56c2b8a7ad61"),
+                            CityGuid = new Guid("8ed2c994-51f0-44c9-9b63-d87b95bc5774"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرمانشاه",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 975,
-                            CityGuid = new Guid("f361819d-8f50-4b64-a5a9-c773b1664ecf"),
+                            CityGuid = new Guid("f6b1e896-6e91-4656-b85f-f69dfaed832b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرند غرب",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 976,
-                            CityGuid = new Guid("d4231901-f152-4b3d-98e6-9ccac9b46687"),
+                            CityGuid = new Guid("09616970-d4a9-4a3c-92fa-4051c3597d2e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کنگاور",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 977,
-                            CityGuid = new Guid("4c39ccee-c079-471c-bb65-156522e0e4eb"),
+                            CityGuid = new Guid("bd2cb3c8-1cc7-428c-ac3c-c1a50b45c443"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوزران",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 978,
-                            CityGuid = new Guid("35f1c930-2122-48f3-a9d2-186f9b829f11"),
+                            CityGuid = new Guid("e548b598-140b-4aa6-9188-6f8aef012265"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گهواره",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 979,
-                            CityGuid = new Guid("c63ebb74-3de1-4ddc-ae06-e265aea9a23e"),
+                            CityGuid = new Guid("b337c679-5c4b-43bc-a8e6-546a10fdc8c7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گودين",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 980,
-                            CityGuid = new Guid("9b74329b-ea5c-48c1-ac22-c56b4e507a53"),
+                            CityGuid = new Guid("34a3811a-7dba-4421-809c-6e177b95f7d5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گيلانغرب",
                             ProvinceId = 24
                         },
                         new
                         {
                             CityId = 981,
-                            CityGuid = new Guid("d8e7d848-cddc-4ed8-b4bd-d4dd752939f6"),
+                            CityGuid = new Guid("a76727a7-37de-4054-ae91-af7b3d63727e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ابوموسي",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 982,
-                            CityGuid = new Guid("ece2d00f-0c61-4bdc-9a41-751eb546e158"),
+                            CityGuid = new Guid("dd98165e-cd83-4ccc-a325-fc109580c3a1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بستک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 983,
-                            CityGuid = new Guid("b07296d5-5fab-4845-9507-0940209b46ba"),
+                            CityGuid = new Guid("93c0bf8f-1959-4d66-826a-9f0a4948f74c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر جاسک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 984,
-                            CityGuid = new Guid("4a7a6560-233a-4f56-b32a-37ce14fab516"),
+                            CityGuid = new Guid("6ceed47c-adc7-4abe-a258-5b16790f17ff"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر عباس",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 985,
-                            CityGuid = new Guid("78f191aa-4e01-40a8-9773-a453358c6622"),
+                            CityGuid = new Guid("e4260e49-fd8c-4a65-9f26-2d7da6376830"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر لنگه",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 986,
-                            CityGuid = new Guid("a482c5f6-c44c-4165-b3bf-f1cbf044bd9a"),
+                            CityGuid = new Guid("41764f4a-394b-46b4-934a-0e09c9d91ddf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيکاه",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 987,
-                            CityGuid = new Guid("c7a9c6a8-65b5-42f9-8c64-82404dd8f26e"),
+                            CityGuid = new Guid("0268e95d-ac9d-4513-a8b7-f12080f1ddb8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تازيان پائين",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 988,
-                            CityGuid = new Guid("2aeadf30-21ef-4064-b97f-74bd9898bbc9"),
+                            CityGuid = new Guid("69b85bba-8f04-46a1-8f2c-db58302e5b2a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تخت",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 989,
-                            CityGuid = new Guid("86bd43b6-7795-46aa-9f05-6491ba2e0a09"),
+                            CityGuid = new Guid("036cfa50-ec94-4a25-963a-7b3ee3063f85"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تيرور",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 990,
-                            CityGuid = new Guid("097a6253-da7c-4c77-84cb-4a39f76bd56f"),
+                            CityGuid = new Guid("f23ce7ba-1d7c-4d19-be1d-8c2f2361940d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جناح",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 991,
-                            CityGuid = new Guid("6d016b09-e35f-4a2f-806f-f539b78a1800"),
+                            CityGuid = new Guid("a4718272-b329-42a7-b913-97b24474592b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حاجي آباد",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 992,
-                            CityGuid = new Guid("7e459bc9-c747-44d0-9b0b-12d4588b983f"),
+                            CityGuid = new Guid("108c10b1-7532-4354-b567-4aeee05f16c2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خمير",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 993,
-                            CityGuid = new Guid("049dad2a-8144-4fc8-81d0-01b82ff997d6"),
+                            CityGuid = new Guid("e7fb5552-9521-41f8-80e1-5ef70209e1db"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درگهان",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 994,
-                            CityGuid = new Guid("55b68f5d-795d-4f27-b09c-2b431efb4584"),
+                            CityGuid = new Guid("53b4be27-8d6b-41a0-882f-ac1f185f8168"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دشتي",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 995,
-                            CityGuid = new Guid("64712b37-0b87-4e6b-9557-50542e5994e5"),
+                            CityGuid = new Guid("e4e86ceb-cb80-444d-89f4-554423092c81"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهبارز",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 996,
-                            CityGuid = new Guid("030f9a9a-15c0-4291-aa27-7a412b7b77fa"),
+                            CityGuid = new Guid("eba4364d-f49d-467c-ad87-fb8ca78b368d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رويدر",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 997,
-                            CityGuid = new Guid("584aa5bc-85b9-4edb-b423-edbd948db93d"),
+                            CityGuid = new Guid("f0ad189b-1ddb-4856-914e-b56b39364b6d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيارتعلي",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 998,
-                            CityGuid = new Guid("9e60750b-d64e-4a40-bb18-a072bd20c749"),
+                            CityGuid = new Guid("5308af32-659e-46ff-af57-56e6ccacb0fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سردشت",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 999,
-                            CityGuid = new Guid("5e82a89e-7209-4d65-8935-ac85b11b79db"),
+                            CityGuid = new Guid("58cfedd9-dbb3-419f-a9d0-53679f89bfc3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرگز",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1000,
-                            CityGuid = new Guid("de5f0e5c-bd26-46dc-a6fd-4db279c0c4c2"),
+                            CityGuid = new Guid("64c9d3d5-4bf4-4356-a0b4-295fcf01d4f0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سندرک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1001,
-                            CityGuid = new Guid("3fb25bdb-29d6-4531-9b13-d2b76c0673b0"),
+                            CityGuid = new Guid("8cadcecf-7f95-4b16-ab9b-b5768611853c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سوزا",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1002,
-                            CityGuid = new Guid("15f57c22-9418-4251-967c-2ef6ab2afabe"),
+                            CityGuid = new Guid("3a4f0384-8ee9-405b-b9a9-4e9b9d176811"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيريک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1003,
-                            CityGuid = new Guid("ae97cf35-5aea-4af6-981c-f051482290ec"),
+                            CityGuid = new Guid("81519bc4-4634-4da5-8ebb-10a8cda193c3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فارغان",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1004,
-                            CityGuid = new Guid("826d2c41-fd14-40e0-a896-c84e76aa4641"),
+                            CityGuid = new Guid("6521f0b6-8ca4-48d0-8e48-b75fef3cfed6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فين",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1005,
-                            CityGuid = new Guid("07151834-29d0-498b-9b2b-be6b1462fa5f"),
+                            CityGuid = new Guid("750cf776-cc0f-4d44-82ce-cad8c6999590"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قشم",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1006,
-                            CityGuid = new Guid("ecf3bd5c-6152-4398-b704-d1532186ab60"),
+                            CityGuid = new Guid("4c390089-3d3f-4ba4-97cb-48f15551ebd5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلعه قاضي",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1007,
-                            CityGuid = new Guid("6ead9bb2-773a-4a4e-b6e5-efc4aa09d57e"),
+                            CityGuid = new Guid("42def88b-466a-4c3f-b6fe-3a302c2bf9b7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لمزان",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1008,
-                            CityGuid = new Guid("973f3cb7-a81c-4cd1-a08e-ce9446f42cea"),
+                            CityGuid = new Guid("ab08d0e3-b983-4f32-8a5c-4f8f29470486"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميناب",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1009,
-                            CityGuid = new Guid("e8bf0513-2976-404d-8f2b-3296c8f3e425"),
+                            CityGuid = new Guid("106e9e19-f8d1-4c99-98c9-a1cf5f1fb698"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هرمز",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1010,
-                            CityGuid = new Guid("4481de9d-9748-421e-a00a-a44a35008326"),
+                            CityGuid = new Guid("65dc34d3-80fd-4838-b966-b07fd59eee73"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هشتبندي",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1011,
-                            CityGuid = new Guid("9074699f-e311-4854-86e0-2163cf0dc5b7"),
+                            CityGuid = new Guid("bf3aaa76-935b-493d-a24c-175e5355df1b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پارسيان",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1012,
-                            CityGuid = new Guid("581f422c-c22f-4304-b8d0-a7d530cead00"),
+                            CityGuid = new Guid("f9c3ccff-71cd-4330-b240-8bc766e8e720"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چارک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1013,
-                            CityGuid = new Guid("e03da1b7-cf41-4597-8ec6-0af85a924eb4"),
+                            CityGuid = new Guid("702df869-1dd7-47df-bc5b-3f7abc1f6071"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کنگ",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1014,
-                            CityGuid = new Guid("7de9f517-6c48-4264-b1f4-dbb6223417d7"),
+                            CityGuid = new Guid("4469ecd1-1956-4199-8870-1439d2f9f433"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوخردهرنگ",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1015,
-                            CityGuid = new Guid("0fe02b36-cb3b-483f-9f17-d631ff286fce"),
+                            CityGuid = new Guid("7faa8d0c-48f5-4406-96c6-0d6178485198"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوشکنار",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1016,
-                            CityGuid = new Guid("20d290ce-92d1-452c-8fbd-ef91396dbb97"),
+                            CityGuid = new Guid("f7f6e3e7-7991-4f2c-b546-891c9254abe8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهستک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1017,
-                            CityGuid = new Guid("ca2f96a0-d582-4414-a055-1f4cedb8c9a1"),
+                            CityGuid = new Guid("5c51d1c7-f243-45f3-b4df-e001ce3ab2fb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کيش",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1018,
-                            CityGuid = new Guid("cd11a932-1ff1-407d-8f5f-5dbeb4a49fd1"),
+                            CityGuid = new Guid("7f0a8042-f843-48b8-ab58-d7fb1a9560aa"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گروک",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1019,
-                            CityGuid = new Guid("d6712008-5a3e-43b5-9659-ce374bb193d5"),
+                            CityGuid = new Guid("54485a6f-c63c-4190-907c-e5014e4b28ca"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوهران",
                             ProvinceId = 25
                         },
                         new
                         {
                             CityId = 1020,
-                            CityGuid = new Guid("8da98c89-359e-4e7c-bd21-53b304513e07"),
+                            CityGuid = new Guid("6be22a94-9682-4a8b-a51e-ec7e9bb99dbf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آستانه",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1021,
-                            CityGuid = new Guid("e6ee6879-7c4e-497e-92c0-de4b37f09f91"),
+                            CityGuid = new Guid("9934c536-64c3-4365-8c94-812d869c7973"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آشتيان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1022,
-                            CityGuid = new Guid("5a40f60e-f228-41f7-ab16-abb304c70e17"),
+                            CityGuid = new Guid("2f976455-268f-4a42-807a-ac7788a05822"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آوه",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1023,
-                            CityGuid = new Guid("ee0308f5-67c0-4967-819f-3efd34656a15"),
+                            CityGuid = new Guid("76ca9d9b-07eb-4069-8ae6-d313e7abf4a3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اراک",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1024,
-                            CityGuid = new Guid("00e01df7-2869-40a5-9b65-e6b6263fdeb7"),
+                            CityGuid = new Guid("c996f038-45fd-4adf-9200-fa583659a4c2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تفرش",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1025,
-                            CityGuid = new Guid("43f8bdce-6bdc-44b4-9908-29ec972eb71a"),
+                            CityGuid = new Guid("0e975610-eb13-4586-9a5e-956013e4f2cb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "توره",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1026,
-                            CityGuid = new Guid("01593358-3505-404e-90cf-18da44c2399a"),
+                            CityGuid = new Guid("4d4ebdda-8cac-4e3a-93c8-392ace7aac1f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جاورسيان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1027,
-                            CityGuid = new Guid("c154d653-a480-468b-81ba-be3aeb1757e2"),
+                            CityGuid = new Guid("fd7c9a16-d708-4c2b-827f-54f4887481e7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خشکرود",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1028,
-                            CityGuid = new Guid("f22de0f9-9f42-48a3-9b0b-25701f3ae6e6"),
+                            CityGuid = new Guid("a92c4a71-7954-437b-95a9-86d2600de7f8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خمين",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1029,
-                            CityGuid = new Guid("dd3191bc-c0a8-4b3f-afc8-49938e2a8b8d"),
+                            CityGuid = new Guid("9af2b922-bc32-4434-b9e6-e18b6db0aae3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خنجين",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1030,
-                            CityGuid = new Guid("b9b160ad-ce48-4cd2-8104-d95b8975d2db"),
+                            CityGuid = new Guid("0c824a35-8571-4c9c-91de-80431945df5d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خنداب",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1031,
-                            CityGuid = new Guid("288b82e3-4a30-4907-a23d-d931b9d267e5"),
+                            CityGuid = new Guid("51caf4a6-60a7-4ffd-a433-58bf23b60506"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "داود آباد",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1032,
-                            CityGuid = new Guid("65640028-1f97-4959-b01a-a86950b47098"),
+                            CityGuid = new Guid("425933c0-1e92-4f8f-b5c4-3c764d86fffc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دليجان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1033,
-                            CityGuid = new Guid("0f52a388-db40-46ed-b5bd-595fbc2a8e82"),
+                            CityGuid = new Guid("5d83cb3d-b795-46b3-a4e8-1a46c63d0d9a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رازقان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1034,
-                            CityGuid = new Guid("08246eca-9f4e-4de7-8d72-092eb2c157bb"),
+                            CityGuid = new Guid("e3029472-7b69-4694-9ae2-54dc07205b80"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زاويه",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1035,
-                            CityGuid = new Guid("35539b45-5c8a-4435-9fd7-fe65c3b57638"),
+                            CityGuid = new Guid("3e781fa1-653c-4235-b8ce-5f2094778503"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ساروق",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1036,
-                            CityGuid = new Guid("1d87c983-dfea-4bb3-a938-7a279b974266"),
+                            CityGuid = new Guid("ffff25a1-50a1-4571-80d7-c3ff458dad55"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ساوه",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1037,
-                            CityGuid = new Guid("de3e7280-2d72-47f4-acda-fca898c3c36a"),
+                            CityGuid = new Guid("01e30afe-021a-4a54-bb27-0840fcc84f71"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شازند",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1038,
-                            CityGuid = new Guid("a567aae0-2c93-41cd-b65e-2852be1af5ad"),
+                            CityGuid = new Guid("5df20a53-3c7d-4a45-a40b-f508f46a6f2c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهباز",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1039,
-                            CityGuid = new Guid("71d8ae27-800f-4486-a25a-a6866102414d"),
+                            CityGuid = new Guid("7e77d2c7-a2d3-4e5a-a368-355ae7f299cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر جديد مهاجران",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1040,
-                            CityGuid = new Guid("e49697fd-c9bb-41da-8a5e-db7dbc80482e"),
+                            CityGuid = new Guid("b70cc9fc-8b5e-4f6a-bb64-ad1f02fe68bc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "غرق آباد",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1041,
-                            CityGuid = new Guid("7dde5ab6-a247-479e-9dbf-147b7f8371de"),
+                            CityGuid = new Guid("a6a663fc-d8fe-437b-b82b-98ff22e391e4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرمهين",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1042,
-                            CityGuid = new Guid("c5b5931f-ed4c-4560-b6eb-e6ee11ce92ef"),
+                            CityGuid = new Guid("62ec962c-8047-4a9a-b423-37a41fe25366"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قورچي باشي",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1043,
-                            CityGuid = new Guid("ffcae4ed-ba17-4c08-b3d4-f100617cc9c7"),
+                            CityGuid = new Guid("d129d6c3-bf13-4f1b-b473-aa12fa48417f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مامونيه",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1044,
-                            CityGuid = new Guid("7bf92754-3bb4-4fbc-848f-89d57c50afdf"),
+                            CityGuid = new Guid("966c6a9e-06c7-455f-a752-3f790edd80bb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محلات",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1045,
-                            CityGuid = new Guid("2e5dde9e-0538-4255-99d2-a4e8875f7835"),
+                            CityGuid = new Guid("5c35da35-785f-4a9e-be3b-2800213ab131"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميلاجرد",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1046,
-                            CityGuid = new Guid("52dbb9b6-7f11-40b4-9c36-2fcaf437dd4f"),
+                            CityGuid = new Guid("8d663c3b-22ae-4063-8100-b4e354f7f774"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نراق",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1047,
-                            CityGuid = new Guid("b127bc00-a662-4724-b9f6-c8b6101893ac"),
+                            CityGuid = new Guid("c512433a-4dc5-4c23-8259-3c5fcf8668d6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نوبران",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1048,
-                            CityGuid = new Guid("65ba0c02-e6e2-41c6-8ddb-8186d076b7a3"),
+                            CityGuid = new Guid("eb6ff067-3db2-49a1-80aa-567b26590205"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نيمور",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1049,
-                            CityGuid = new Guid("9b2968ed-ceb9-4810-a530-c00fe91bbbe0"),
+                            CityGuid = new Guid("8d78d4e1-f1ce-4caa-b19f-36c49552858e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هندودر",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1050,
-                            CityGuid = new Guid("f04c38ad-7dbb-4429-b077-05908d78aadf"),
+                            CityGuid = new Guid("47912a97-7cdb-4753-b19b-c8835c5f116e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پرندک",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1051,
-                            CityGuid = new Guid("53c54f09-7208-4fc7-9a23-fac8c09baefc"),
+                            CityGuid = new Guid("e6d6ce4e-0202-4d77-9128-9bc7c0470f6f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کارچان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1052,
-                            CityGuid = new Guid("cd310b48-734d-459d-92b6-e46c7bae1653"),
+                            CityGuid = new Guid("fb82cfcc-ca63-4aac-bc82-824abcef23f5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کميجان",
                             ProvinceId = 26
                         },
                         new
                         {
                             CityId = 1053,
-                            CityGuid = new Guid("53c99e10-e43f-4496-a478-3fd5a716fc5a"),
+                            CityGuid = new Guid("13995751-4316-49d3-b21d-0c7974e355ea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آستارا",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1054,
-                            CityGuid = new Guid("d8287a8d-095d-4b86-8ce7-9edb0402bd78"),
+                            CityGuid = new Guid("6f94d5d8-c8eb-49d2-9728-c22561e2848a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آستانه اشرفيه",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1055,
-                            CityGuid = new Guid("2bd3f66b-1e83-4dbc-96d7-f1baf8c50c36"),
+                            CityGuid = new Guid("95e53371-b529-48b7-b489-a15c7e1ebcf8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "احمد سرگوراب",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1056,
-                            CityGuid = new Guid("146c41ae-8807-4cd9-9595-e08b891020c3"),
+                            CityGuid = new Guid("425fad25-91a1-4c76-8360-db70475addcf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسالم",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1057,
-                            CityGuid = new Guid("58f5f6ba-f9e1-4bc8-b27b-7dc616161168"),
+                            CityGuid = new Guid("9ab4c6a7-cdd4-41d4-91a7-948c7ff90bc8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اطاقور",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1058,
-                            CityGuid = new Guid("2dd1215b-ccca-4d50-8ce6-cca8daf528b9"),
+                            CityGuid = new Guid("577caf82-007d-4f8d-b681-7ca9aa545159"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "املش",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1059,
-                            CityGuid = new Guid("a5829075-12aa-4f51-899a-81b96918e801"),
+                            CityGuid = new Guid("e17a3dde-5bca-4e39-86bf-0898c1a6d7fc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بازار جمعه",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1060,
-                            CityGuid = new Guid("f5c52b90-072a-4f24-ad4d-f28fe259bdfb"),
+                            CityGuid = new Guid("53af1036-7ab9-4f34-8ad7-f2c9a502f7f7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بره سر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1061,
-                            CityGuid = new Guid("6b3a784a-ddc2-44ba-b351-d1570f40ad9f"),
+                            CityGuid = new Guid("cd63cb93-a4fd-4e69-befa-2347d0782ff4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بندر انزلي",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1062,
-                            CityGuid = new Guid("5d9e206b-7e86-4d10-98a0-bfd1867fac52"),
+                            CityGuid = new Guid("90956065-b38e-46d9-aa17-75381f20f0ed"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "توتکابن",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1063,
-                            CityGuid = new Guid("799eb5c3-0e7d-4125-90c5-00fa7bcefeaa"),
+                            CityGuid = new Guid("bb47ae20-399c-4e9b-9bdf-a6ef8032dc41"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جيرنده",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1064,
-                            CityGuid = new Guid("b9b57eed-4023-4291-8ad6-862760788e99"),
+                            CityGuid = new Guid("1471fb8e-d983-43b6-adbc-dbf6cf1924cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "حويق",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1065,
-                            CityGuid = new Guid("bbc8d084-1176-4c00-8011-f15122b56023"),
+                            CityGuid = new Guid("7f48d993-372d-49eb-bea4-ae08dcf75a9d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خشکبيجار",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1066,
-                            CityGuid = new Guid("024dd938-d38a-49d7-9ca1-78a80dd3b3ae"),
+                            CityGuid = new Guid("aa7bbca6-dcde-4734-bd24-2c8a8d8755b4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خمام",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1067,
-                            CityGuid = new Guid("bab45b36-c63c-43fd-b7de-94c9fe529aad"),
+                            CityGuid = new Guid("7d6e439e-981a-4e97-ad4a-756b5d12f07b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديلمان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1068,
-                            CityGuid = new Guid("801ec998-cc99-4898-ae8f-2b81e878f380"),
+                            CityGuid = new Guid("52828e34-3c59-42fb-8fc6-11ad43664c51"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رانکوه",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1069,
-                            CityGuid = new Guid("1014c8e6-f43e-444e-9875-2f1d30377aec"),
+                            CityGuid = new Guid("d8276690-3184-41b7-9afb-c281a3c3cbbf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رحيم آباد",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1070,
-                            CityGuid = new Guid("c847a982-3e64-4435-a14a-f8dd52c27b00"),
+                            CityGuid = new Guid("c1a90643-dc30-43f7-b4ec-95b9767a46dd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رستم آباد",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1071,
-                            CityGuid = new Guid("e68dae7c-9084-4f10-b0c4-2b787f730d58"),
+                            CityGuid = new Guid("43d4f415-4966-49e7-af55-43279e0ad8bb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رشت",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1072,
-                            CityGuid = new Guid("f26527ee-f10b-4ac2-907d-c806bb32b690"),
+                            CityGuid = new Guid("7c1585e3-8337-45bc-b9bd-f02811730065"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رضوانشهر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1073,
-                            CityGuid = new Guid("5220407d-06b3-4fd1-a280-089bb397c3b3"),
+                            CityGuid = new Guid("6e7cae09-0707-4e56-81ef-a3578771f679"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رودبار",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1074,
-                            CityGuid = new Guid("9bd0f288-5f1e-465d-85ad-12bbd544a6a9"),
+                            CityGuid = new Guid("df86dd94-43a0-4473-83d5-d8813c305047"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رودبنه",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1075,
-                            CityGuid = new Guid("63a3b0b6-ef72-453e-8235-772a3c0cc3b5"),
+                            CityGuid = new Guid("33abf352-e0f4-498e-8d42-5a28ca9db09f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رودسر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1076,
-                            CityGuid = new Guid("ded470d5-3465-43e2-a478-9b81ea91b071"),
+                            CityGuid = new Guid("664a31da-8a92-4414-aea0-1279089e435c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سنگر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1077,
-                            CityGuid = new Guid("bc1ea9f1-cfd2-4172-b979-1652840cdd6a"),
+                            CityGuid = new Guid("d92b2353-5d62-492c-927c-b22281748c49"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سياهکل",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1078,
-                            CityGuid = new Guid("f73a76ae-29b8-4236-929f-0a2ac10cd7e2"),
+                            CityGuid = new Guid("00f08982-4ae8-4b74-8eaf-f56236c4a1f2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شفت",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1079,
-                            CityGuid = new Guid("78f156a5-3ce6-4afa-9187-1622b30ec91d"),
+                            CityGuid = new Guid("5e445f20-d827-434f-a6f6-56ac156d79ef"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شلمان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1080,
-                            CityGuid = new Guid("9e920bb4-ce77-4d75-9b6b-d0245de50ef9"),
+                            CityGuid = new Guid("9101ca98-90a0-47ac-aec3-d6d683aa0faf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صومعه سرا",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1081,
-                            CityGuid = new Guid("8ed7a1a8-e2d7-4a8b-80a1-44c5016d7d5f"),
+                            CityGuid = new Guid("e6030a4e-291d-420d-9305-c26022c42406"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فومن",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1082,
-                            CityGuid = new Guid("b401a286-edb0-4238-a7b2-d0183d7b4e04"),
+                            CityGuid = new Guid("2aa7a10e-ff2c-411c-9051-83b3875c81e0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لاهيجان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1083,
-                            CityGuid = new Guid("d042ac72-4e34-4991-ba04-0593ee03fd6e"),
+                            CityGuid = new Guid("e0055b58-f997-4582-bfad-440eaca2427c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لشت نشاء",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1084,
-                            CityGuid = new Guid("d978cb0d-ede5-47ea-a86f-79c5d16d05c7"),
+                            CityGuid = new Guid("f30e6cee-bdb0-4894-b4cd-6ee39d8e579c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لنگرود",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1085,
-                            CityGuid = new Guid("e1f356d7-958e-40e9-87ad-8ca20fa873f0"),
+                            CityGuid = new Guid("5216984d-5252-479c-8117-4bf97c40b19d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لوشان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1086,
-                            CityGuid = new Guid("7399c8de-6ab8-4d8b-9a9a-80234a1e5551"),
+                            CityGuid = new Guid("029aa3cb-2c71-4726-b984-7cdea0f53431"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لولمان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1087,
-                            CityGuid = new Guid("0588edce-563b-4e86-a662-2cd5fedc5768"),
+                            CityGuid = new Guid("11a281b6-c561-4d53-94cb-1d96a1bc7ff7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لوندويل",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1088,
-                            CityGuid = new Guid("b4876d51-20ab-49e5-99a7-1fa9dd406472"),
+                            CityGuid = new Guid("58fb437c-ad1b-427d-9a4f-46bb43943216"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ليسار",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1089,
-                            CityGuid = new Guid("3cf4a3f8-cb2b-4bec-9777-245aeee1a0c8"),
+                            CityGuid = new Guid("bff8c003-7aa6-470c-96ed-baeb5ccca461"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماسال",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1090,
-                            CityGuid = new Guid("633c62b0-e5c9-4539-99c8-76f304db4f3c"),
+                            CityGuid = new Guid("be162537-2539-4dab-8683-53cf3a259926"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماسوله",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1091,
-                            CityGuid = new Guid("0853d7a4-1ef0-48fb-9383-b1292c2ba93d"),
+                            CityGuid = new Guid("9b8d0d4a-f420-477e-aae7-aa0cb95cd061"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماکلوان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1092,
-                            CityGuid = new Guid("4119ac12-c460-4400-a141-65a00a8a9121"),
+                            CityGuid = new Guid("6bf77fbf-6a41-468e-bbdf-02c8e996187e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرجقل",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1093,
-                            CityGuid = new Guid("9af89ba6-1a3f-4b4d-ab67-483168e5fef1"),
+                            CityGuid = new Guid("e527a474-56da-448f-b389-76dcaa9914c0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "منجيل",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1094,
-                            CityGuid = new Guid("1816e8f6-0948-4e64-af9e-55b73d0ec781"),
+                            CityGuid = new Guid("c35fa332-2d5b-484a-92de-4da1077c1cba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هشتپر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1095,
-                            CityGuid = new Guid("ae5441bb-957b-4424-8137-9100391763c2"),
+                            CityGuid = new Guid("68e7cd04-0a20-4de3-9b17-4b3ffa326e68"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "واجارگاه",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1096,
-                            CityGuid = new Guid("4a58655c-240e-4671-ae2d-91abd1f54721"),
+                            CityGuid = new Guid("70bfe2a7-c1aa-4409-89a8-9eed4f2827d8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پره سر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1097,
-                            CityGuid = new Guid("96572232-cca9-45b1-a445-0dedd335e10a"),
+                            CityGuid = new Guid("c3c4baa1-c7aa-4caf-8f4a-f1d1a4085b05"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چابکسر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1098,
-                            CityGuid = new Guid("5e68692f-9929-4860-80ac-c5be17192f1a"),
+                            CityGuid = new Guid("bfda51df-0969-4d8d-93d2-9feac8d76ebf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چاف و چمخاله",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1099,
-                            CityGuid = new Guid("444ef31b-972e-4d46-b011-1a3a7ce69db6"),
+                            CityGuid = new Guid("ccaf21b1-0701-4679-b374-4e923fa0cc83"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چوبر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1100,
-                            CityGuid = new Guid("2b2c8174-22f9-49e4-9868-984b679328a8"),
+                            CityGuid = new Guid("8a52e8b9-7aa0-456f-9d83-7dfead51a376"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلاچاي",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1101,
-                            CityGuid = new Guid("270e73ba-1a7b-4d67-9233-41f359719ddc"),
+                            CityGuid = new Guid("ed30d8fb-70ca-4a6c-99d3-c238088f7a1c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کومله",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1102,
-                            CityGuid = new Guid("c0e3aaeb-87b2-4dd9-8661-10e47eb055db"),
+                            CityGuid = new Guid("1a64ca2b-9496-45f6-a072-49534eaa0d4a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوچصفهان",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1103,
-                            CityGuid = new Guid("bbaaf524-921a-44c3-ab54-5c6a2b58b8db"),
+                            CityGuid = new Guid("c7839812-2090-4fc0-bb0b-043157b897cc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کياشهر",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1104,
-                            CityGuid = new Guid("aeb22d20-0a0b-47a2-9f8a-e85f56d8b37e"),
+                            CityGuid = new Guid("021c747f-bf72-4c4c-87bf-daff0b2b4ce5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گوراب زرميخ",
                             ProvinceId = 27
                         },
                         new
                         {
                             CityId = 1105,
-                            CityGuid = new Guid("1da6339e-5e0e-423c-acde-d48dc5d7856f"),
+                            CityGuid = new Guid("a1b5cdf3-d683-4a46-b3a0-a164806dd29a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آجين",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1106,
-                            CityGuid = new Guid("4bff84c1-05ee-47e8-a67c-b8345c6ee883"),
+                            CityGuid = new Guid("335c10c1-05e3-4e20-84c6-a765f7f744c8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ازندريان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1107,
-                            CityGuid = new Guid("584d1e61-844b-4134-b34c-f21c872e11a7"),
+                            CityGuid = new Guid("ef8432a1-61d6-4bb5-b80a-918d5d59287b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اسد آباد",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1108,
-                            CityGuid = new Guid("ac418376-ec52-4c71-ae6b-439af872a958"),
+                            CityGuid = new Guid("9887ad0a-e0ab-464d-b44c-b220bcfd1bd9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "برزول",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1109,
-                            CityGuid = new Guid("9d17a58e-2384-44a5-975d-417e2ec3cd4d"),
+                            CityGuid = new Guid("913db810-cec7-41e3-9606-1b434a88b7cc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهار",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1110,
-                            CityGuid = new Guid("c8d7cffb-c64b-4176-aee6-2f63d709795f"),
+                            CityGuid = new Guid("85954d9c-0670-4d4b-a7ed-6558a86f493d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تويسرکان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1111,
-                            CityGuid = new Guid("61ffec86-bc95-4ffb-9c36-3b6a4e4d2b21"),
+                            CityGuid = new Guid("5edf24b3-9fd0-48c4-9d2b-0e510981c566"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جورقان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1112,
-                            CityGuid = new Guid("b9e53b31-7e2e-49b1-8d8d-19cc4d8385a7"),
+                            CityGuid = new Guid("6ee8482a-410e-44cb-8717-8f1a23534ee4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوکار",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1113,
-                            CityGuid = new Guid("9fbaf7f8-2ed4-4d06-bafc-a71894d0a240"),
+                            CityGuid = new Guid("d0184832-18a4-40b9-a504-a60a453404cb"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دمق",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1114,
-                            CityGuid = new Guid("d274ed0a-c3c1-4e10-aedf-826d13780144"),
+                            CityGuid = new Guid("5ecf0bf0-be94-40db-b8cb-6c905ba88c52"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رزن",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1115,
-                            CityGuid = new Guid("6444eed6-1298-4f0f-bce4-f47fd631bb25"),
+                            CityGuid = new Guid("f42660e1-e725-44be-bf3f-a03f007ebfa9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زنگنه",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1116,
-                            CityGuid = new Guid("290eb4a6-2e24-416b-8c9a-806e534fbf62"),
+                            CityGuid = new Guid("832ddc1c-cd01-4bbe-9e43-03344befa9f5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سامن",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1117,
-                            CityGuid = new Guid("e6a6b409-92e1-477f-a57b-7553169e90a6"),
+                            CityGuid = new Guid("6082e6d1-7816-455d-b709-cc45d0d2e9ac"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرکان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1118,
-                            CityGuid = new Guid("493c3c64-c096-4fc0-85c9-3c5b5a947f3b"),
+                            CityGuid = new Guid("ef0cc705-0be9-475e-823f-ec622a8f1b02"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شيرين سو",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1119,
-                            CityGuid = new Guid("42d062db-9e77-49ca-a5c9-2c9cce28ef27"),
+                            CityGuid = new Guid("5887d2e9-8e30-4500-b1d4-9aaf5a883c2c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صالح آباد",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1120,
-                            CityGuid = new Guid("86f3e549-2adb-401c-88b8-d34e2389368c"),
+                            CityGuid = new Guid("26149141-9cfb-4c8a-9a79-e0a6df92064d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فامنين",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1121,
-                            CityGuid = new Guid("f22163f4-de1e-4068-a548-ecb9b95b66ec"),
+                            CityGuid = new Guid("f5b31724-6adb-44eb-b389-56aaab1d659f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فرسفج",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1122,
-                            CityGuid = new Guid("0ad5593e-d552-4b29-9582-99c2b60046e3"),
+                            CityGuid = new Guid("72c55f25-125b-41a3-8731-4163b3ac6c66"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فيروزان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1123,
-                            CityGuid = new Guid("cf7cc5e6-8921-435a-9985-9ef129dd6274"),
+                            CityGuid = new Guid("e5fea714-1673-4cb8-8817-4a9720ca0e5e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قروه در جزين",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1124,
-                            CityGuid = new Guid("e67606f0-6d57-4459-9518-05428ee0e8e8"),
+                            CityGuid = new Guid("0078321a-3a99-4759-9051-f79297599762"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قهاوند",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1125,
-                            CityGuid = new Guid("fb3c616c-85ec-4e4b-b90f-45268a0dc28d"),
+                            CityGuid = new Guid("58a10011-86b2-41e7-85a1-aab13dcb90f6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لالجين",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1126,
-                            CityGuid = new Guid("b7fce07b-c248-4055-8dca-557a14bff391"),
+                            CityGuid = new Guid("b19fc347-8779-44ba-ad3b-affdc3b255c1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مريانج",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1127,
-                            CityGuid = new Guid("c5ba441c-e323-447a-a992-289d7c00719a"),
+                            CityGuid = new Guid("8dd5136a-2230-4b81-a008-f4e4cd624be3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ملاير",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1128,
-                            CityGuid = new Guid("8d3cb3f7-23c2-4e60-bbf7-0d1147428d18"),
+                            CityGuid = new Guid("85c0b161-46c2-4b51-b440-f376c5eb7f18"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهاجران",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1129,
-                            CityGuid = new Guid("ef55b00d-6ccb-40f7-8926-096be4c8928d"),
+                            CityGuid = new Guid("7f87cb6f-68f9-46f2-8c34-18f798d76f52"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نهاوند",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1130,
-                            CityGuid = new Guid("8de3a32d-1119-4530-b634-a81c0380d7c4"),
+                            CityGuid = new Guid("d5864aa7-8fdc-4ed9-bb6f-5a7f91c46333"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "همدان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1131,
-                            CityGuid = new Guid("66641838-6cd4-4483-a874-571cc9c159cf"),
+                            CityGuid = new Guid("883f3007-e0d8-415d-a5a3-2733b9998562"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کبودر آهنگ",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1132,
-                            CityGuid = new Guid("d53e58a6-5b72-4ad9-b008-72c5f7eface5"),
+                            CityGuid = new Guid("235e05e9-aa09-42cc-8405-42ef12a48404"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گل تپه",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1133,
-                            CityGuid = new Guid("1559eb9e-a38f-48c9-9560-bd8745a164dd"),
+                            CityGuid = new Guid("ffa8562f-cdc7-44fe-a0b0-1682991cc919"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گيان",
                             ProvinceId = 28
                         },
                         new
                         {
                             CityId = 1134,
-                            CityGuid = new Guid("c23d366e-22e3-41ff-9b77-14c07c2bec3d"),
+                            CityGuid = new Guid("fd4f0784-6b28-4313-86f3-26a7cfd0f882"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اختيار آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1135,
-                            CityGuid = new Guid("adee4b23-d71b-416f-ad0c-7be1314bd2ea"),
+                            CityGuid = new Guid("6d97410a-bdfe-4ed9-be54-4dc0ecbdbb0e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ارزوئيه",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1136,
-                            CityGuid = new Guid("fff4e787-e129-490d-b675-2122dbfd7b37"),
+                            CityGuid = new Guid("c67ae1e8-0062-46bc-b4cf-4301d73e405e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "امين شهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1137,
-                            CityGuid = new Guid("5b67b8f8-a88a-4267-80e6-787630430f21"),
+                            CityGuid = new Guid("3aa70aa3-a5be-4c2f-ae2e-8b9528ba4477"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "انار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1138,
-                            CityGuid = new Guid("ccae0f88-69af-469b-a3b1-e66812136f7d"),
+                            CityGuid = new Guid("880d5535-a726-4147-944d-651fbec3766b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اندوهجرد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1139,
-                            CityGuid = new Guid("c238ede6-2c2c-4b37-adff-e1f31adb9f5c"),
+                            CityGuid = new Guid("8c457c1c-4e33-4b82-bbfa-50ca83d0a06a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باغين",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1140,
-                            CityGuid = new Guid("c8cf6679-e9a4-44ba-a9e7-ee5006ff494a"),
+                            CityGuid = new Guid("ecae9b06-e510-430e-9264-4c6c91153515"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بافت",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1141,
-                            CityGuid = new Guid("e5364527-45e9-48b6-a4cc-8b49ed273d97"),
+                            CityGuid = new Guid("78957e6e-c939-473c-8e03-227bdb243fa0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بردسير",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1142,
-                            CityGuid = new Guid("a28e0699-2698-4551-8f50-765d03478390"),
+                            CityGuid = new Guid("eff8587c-62f1-4c13-9e59-910b315f2ca7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بروات",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1143,
-                            CityGuid = new Guid("9ac6c9d4-727e-43a7-9ef6-42b6a81f830f"),
+                            CityGuid = new Guid("2e280295-29fa-4654-9b31-a697f25a88ad"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بزنجان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1144,
-                            CityGuid = new Guid("118dde33-013d-4eea-bb41-d5ac7de03f7b"),
+                            CityGuid = new Guid("ce119112-bff1-4463-a9c3-9000faa8bdc1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلورد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1145,
-                            CityGuid = new Guid("8ecf30df-177c-4782-b6d4-7acfb24d2dfe"),
+                            CityGuid = new Guid("0f27c5eb-2aa9-4f30-b21f-82bc9a458072"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بلوک",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1146,
-                            CityGuid = new Guid("6622d7ba-ddbe-407b-94f1-7c965ebff0c6"),
+                            CityGuid = new Guid("19256728-14a8-4847-b416-46eda5cae289"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بم",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1147,
-                            CityGuid = new Guid("7350779a-9c26-44a3-b26b-ae2a81d0ce81"),
+                            CityGuid = new Guid("d4b72a89-a22c-485f-9e8a-cca64f6d4fe1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بهرمان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1148,
-                            CityGuid = new Guid("b6596789-b76c-4c76-bcdc-a6bfec6b587d"),
+                            CityGuid = new Guid("b672c70f-ac9b-4f6f-8571-98ff723fe1d6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جبالبارز",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1149,
-                            CityGuid = new Guid("ab8f9170-b054-4947-b57d-19b320de1943"),
+                            CityGuid = new Guid("3cd237c9-7250-4479-ac43-f6072ef3fba7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوزم",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1150,
-                            CityGuid = new Guid("e5cd8944-5516-4b9c-b513-62fad43e0d53"),
+                            CityGuid = new Guid("6c716c2d-b7f0-4093-b3a8-9e20302845ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جوپار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1151,
-                            CityGuid = new Guid("72257466-a977-42c7-bf9c-46edf2a287d6"),
+                            CityGuid = new Guid("2eccd60d-a964-42c2-8f75-8e42a16ccf79"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "جيرفت",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1152,
-                            CityGuid = new Guid("c26243c3-5cc2-46b0-afab-83296b5393f2"),
+                            CityGuid = new Guid("9dced347-655c-4c3b-8cf3-d68b01edcb3b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خاتون آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1153,
-                            CityGuid = new Guid("f544b99b-b725-4f98-b22b-e8ccb45f2230"),
+                            CityGuid = new Guid("2d6d1644-e14e-4ce6-aa7d-1cfdbee7a0b0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خانوک",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1154,
-                            CityGuid = new Guid("b04e033e-7599-4ff6-925f-b2cf2475182f"),
+                            CityGuid = new Guid("418f749c-86b4-4c01-8736-9804ec721ae4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خواجوشهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1155,
-                            CityGuid = new Guid("86656e95-c034-4379-86ea-765ff178f604"),
+                            CityGuid = new Guid("a7cf9532-7d9f-4b17-b9b1-ae0301fda510"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خورسند",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1156,
-                            CityGuid = new Guid("8af96c90-c6d2-47f2-bb3c-fae3bcfbea72"),
+                            CityGuid = new Guid("a0ecfb06-f50f-4006-94e3-19ce826b9af9"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درب بهشت",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1157,
-                            CityGuid = new Guid("7bb95c7f-9430-4f8b-9669-6057d53e8139"),
+                            CityGuid = new Guid("869c1cf5-fae5-468f-a8da-6cf54a4f5a27"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دشتکار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1158,
-                            CityGuid = new Guid("0450d8bd-5d9f-4ec3-ab71-36c1dd132890"),
+                            CityGuid = new Guid("cacf5be1-c41b-4edd-967e-730462b8bd57"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهج",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1159,
-                            CityGuid = new Guid("3a285670-71e8-4818-92e6-bbf608a1fc52"),
+                            CityGuid = new Guid("5d3e7e4f-d5dd-4f80-a167-cfcabeeae03b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوساري",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1160,
-                            CityGuid = new Guid("0f605575-1866-4946-814c-4b5b5b5cdaaf"),
+                            CityGuid = new Guid("3692032f-3863-415e-beb8-4e582c31f197"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رابر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1161,
-                            CityGuid = new Guid("20a121d0-e3c9-43e9-b8b9-3eda8833186b"),
+                            CityGuid = new Guid("b4d418fb-66f1-4562-9fab-2282ba4b0fd2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "راور",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1162,
-                            CityGuid = new Guid("630ca23d-14c4-4e79-80e7-c154eede41ff"),
+                            CityGuid = new Guid("06f6395c-22d4-406e-9b8d-db997d080746"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "راين",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1163,
-                            CityGuid = new Guid("afb985d3-4a51-4b7e-9734-68a3c5986b14"),
+                            CityGuid = new Guid("ae5a377a-1bd9-4482-a5b1-fe85c1fa4a4d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رفسنجان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1164,
-                            CityGuid = new Guid("4329e10a-d867-43af-afd9-07bbc759d9aa"),
+                            CityGuid = new Guid("4c2f21e4-a9ae-444d-a930-56dcf2ae9a98"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "رودبار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1165,
-                            CityGuid = new Guid("713247a1-8b51-4673-b0cc-a9bdfd3c47b6"),
+                            CityGuid = new Guid("3fd1a61c-f5d3-441c-a838-f4e7e558e7ce"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ريحان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1166,
-                            CityGuid = new Guid("1d928424-b084-41fc-b8ad-6f96a9f0fc2e"),
+                            CityGuid = new Guid("01135ca9-cac3-45be-96bc-4906cc965283"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زرند",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1167,
-                            CityGuid = new Guid("3dce2ac1-8c6a-46f1-895b-0a7741bbb34e"),
+                            CityGuid = new Guid("d2185d85-4514-44a7-a401-f02bae6315d2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زنگي آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1168,
-                            CityGuid = new Guid("bbfeaeb8-b23c-4e5c-8528-fd1baf0c9261"),
+                            CityGuid = new Guid("8f7f48be-3bf0-4ded-9c1b-7294b9538990"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زهکلوت",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1169,
-                            CityGuid = new Guid("2a5f200d-bd73-4388-ae65-56673434798a"),
+                            CityGuid = new Guid("4a5a76b6-796a-4a39-8aa7-2c7821b6629f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زيد آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1170,
-                            CityGuid = new Guid("4c4ff384-7bb4-4ef7-8bff-f8fd1e486e33"),
+                            CityGuid = new Guid("8de0b418-41af-4894-a591-794865271b24"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيرجان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1171,
-                            CityGuid = new Guid("8fda8fca-dd11-4252-bec9-c3c1b0334d7e"),
+                            CityGuid = new Guid("e001a62e-0c96-4e18-98a4-65c1f7dcccea"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهداد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1172,
-                            CityGuid = new Guid("4c0353cf-4d41-4006-87a5-c5de079417ed"),
+                            CityGuid = new Guid("633dc450-eece-4f2c-a31e-2dc47145f8be"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهر بابک",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1173,
-                            CityGuid = new Guid("4c489e3f-0a18-486c-9a49-0bdaa7e62843"),
+                            CityGuid = new Guid("2bfbc3b2-c4cf-4ce0-9516-db0bdad1bef2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "صفائيه",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1174,
-                            CityGuid = new Guid("906ae487-cb77-437f-904e-f4e4210971df"),
+                            CityGuid = new Guid("f1d0f031-ac7e-4c24-870b-5dd57366c3b0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "عنبر آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1175,
-                            CityGuid = new Guid("e9bf3bbc-59a3-4d0d-b9b2-7e24fa718c6e"),
+                            CityGuid = new Guid("85732c47-0048-46b3-a549-c7872bd5563c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فارياب",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1176,
-                            CityGuid = new Guid("a8444181-58cb-4b13-9bf7-46d6aad5eea2"),
+                            CityGuid = new Guid("9520baec-1be2-4394-b204-7ec454be2e99"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فهرج",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1177,
-                            CityGuid = new Guid("bb4016bc-4546-4bf4-beaf-db94ab344709"),
+                            CityGuid = new Guid("c8cf2d16-4828-4828-a209-a23c987e568b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلعه گنج",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1178,
-                            CityGuid = new Guid("068668ba-793c-4c55-b122-ea649ffe0dfa"),
+                            CityGuid = new Guid("ef02d5a1-8914-4cef-af71-3a85cf38c144"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لاله زار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1179,
-                            CityGuid = new Guid("c44b871c-29db-4eca-bc7e-8907b81493b0"),
+                            CityGuid = new Guid("1c80315a-608c-4355-a489-598af1e57d9b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ماهان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1180,
-                            CityGuid = new Guid("955843ab-3a49-48f0-8205-1a81bd7bc834"),
+                            CityGuid = new Guid("3c34089d-074d-4d09-a8b3-b3dbfb77771a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محمد آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1181,
-                            CityGuid = new Guid("a88731fb-8871-4434-9255-fbb6f12eac4b"),
+                            CityGuid = new Guid("008cf8e7-2d19-49e9-bb5e-7a9b474fd810"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "محي آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1182,
-                            CityGuid = new Guid("4658ee6d-2958-46c3-9b0b-f497c467e28b"),
+                            CityGuid = new Guid("6e30aaed-25dc-4c6f-8ecf-b4978c1057a5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مردهک",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1183,
-                            CityGuid = new Guid("78d19ec2-56a4-41c4-a143-8e8992d6a6dd"),
+                            CityGuid = new Guid("8c725c9f-4b7a-4330-abe5-609549beebe0"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مس سرچشمه",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1184,
-                            CityGuid = new Guid("c9f7990f-5155-4478-ab84-a13c9e1e232e"),
+                            CityGuid = new Guid("c0211ad4-e5bd-477e-949f-dc0281cb8556"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "منوجان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1185,
-                            CityGuid = new Guid("da24d58a-22cf-4d98-a901-b85926b95fc7"),
+                            CityGuid = new Guid("d4e6f722-60ab-4482-89da-c748e387477d"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نجف شهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1186,
-                            CityGuid = new Guid("c944c8fe-dd45-43eb-b0f5-ee12c01c62b3"),
+                            CityGuid = new Guid("7eb9ad79-c7aa-4073-8ac7-cbb71ab24b28"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نرماشير",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1187,
-                            CityGuid = new Guid("e8ece94e-4903-4957-97a5-870b80bc1739"),
+                            CityGuid = new Guid("034333ac-0657-4ee6-a824-8710298bc8fe"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نظام شهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1188,
-                            CityGuid = new Guid("b842e407-e5df-43e2-9693-d38b945dc481"),
+                            CityGuid = new Guid("7f1bc542-04d3-44d8-8ad6-d57e40fe72d8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نودژ",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1189,
-                            CityGuid = new Guid("a313758b-2c44-4148-b008-7d421bdcd401"),
+                            CityGuid = new Guid("94361b04-b090-4edb-8191-e93dabd39171"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "نگار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1190,
-                            CityGuid = new Guid("9a9012f3-a436-40d2-a541-1215f63d9d44"),
+                            CityGuid = new Guid("24c56830-4c7c-4ee9-8811-3be32494a66f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هجدک",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1191,
-                            CityGuid = new Guid("c8bfa98b-a745-4467-96f9-818c654aae38"),
+                            CityGuid = new Guid("5fa1965a-85e9-4ee4-b0cc-c679b9acb3a2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هماشهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1192,
-                            CityGuid = new Guid("991b04c2-5abc-4f57-aba6-4d22912d541a"),
+                            CityGuid = new Guid("6b77ab5b-6b77-4c57-99e5-853d55ece9b3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هنزا",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1193,
-                            CityGuid = new Guid("961b5d60-2e2d-474f-a2b4-d58c7376c0b4"),
+                            CityGuid = new Guid("71f66c55-ab17-42dd-b83f-c7cab9f2a72a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "يزدان شهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1194,
-                            CityGuid = new Guid("79caedfa-4cc4-4fed-b0bb-e50efdc95254"),
+                            CityGuid = new Guid("caa1f171-c53b-4586-b009-dd5567337ae1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پاريز",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1195,
-                            CityGuid = new Guid("0403e130-ffb2-4625-9554-21fd1f75d133"),
+                            CityGuid = new Guid("68c7f84a-fa2f-4f9b-9f5a-661275ddb9f1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چترود",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1196,
-                            CityGuid = new Guid("3eda92e4-5683-4de7-96f8-57641f6bb2b2"),
+                            CityGuid = new Guid("143b2934-d7d3-4156-a5ee-28d9b09b8555"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کاظم آباد",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1197,
-                            CityGuid = new Guid("93af6b60-26e2-4dfc-b5be-b4446ac10e64"),
+                            CityGuid = new Guid("4131ecb9-5bbb-496e-82db-896cfc4e8653"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرمان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1198,
-                            CityGuid = new Guid("5644501d-7f08-49c9-a488-3be908171088"),
+                            CityGuid = new Guid("ec745661-9679-4f33-8843-9c042a120ae7"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کشکوئيه",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1199,
-                            CityGuid = new Guid("138c3f6d-2c04-4bd2-b93b-b0df1cccb6da"),
+                            CityGuid = new Guid("284a5301-4548-4094-9b79-95326e3bbce3"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهنوج",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1200,
-                            CityGuid = new Guid("c1b4391b-d9d5-4e5b-a13b-b99e20694cc9"),
+                            CityGuid = new Guid("b203dd1e-7bc0-4f53-9ec3-b03e4a2b8b78"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کوهبنان",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1201,
-                            CityGuid = new Guid("a262ac5b-7752-4f30-b9bb-b08ada9428c5"),
+                            CityGuid = new Guid("1ef7ff29-ad56-4361-8a77-7e1842ab56b1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کيانشهر",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1202,
-                            CityGuid = new Guid("cad0d106-8443-4f89-a59a-f8e8a21fa1e6"),
+                            CityGuid = new Guid("347eddfd-84e8-4a51-8ba1-e8b958735ac1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلباف",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1203,
-                            CityGuid = new Guid("9bdd7e14-d3d5-44f6-aff8-eea032053540"),
+                            CityGuid = new Guid("7617b880-cd1e-4284-a825-1058f507de0e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلزار",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1204,
-                            CityGuid = new Guid("b2e07ead-c953-4338-9ed6-aa293428eab9"),
+                            CityGuid = new Guid("f7837006-cec9-45d4-945d-f61fad5bda48"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گنبکي",
                             ProvinceId = 29
                         },
                         new
                         {
                             CityId = 1205,
-                            CityGuid = new Guid("f5c4426d-b1a8-4c8a-a8a3-0c9942675714"),
+                            CityGuid = new Guid("2655d2a4-121b-4ab2-a103-6f91ac3f8781"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آرادان",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1206,
-                            CityGuid = new Guid("0eb484aa-22e7-4551-a353-e9c6b3d961a9"),
+                            CityGuid = new Guid("8febe6cc-9355-477d-9c41-17f0c19d67ba"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اميريه",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1207,
-                            CityGuid = new Guid("eb1a3960-6133-4640-8e30-ef41bac3baf2"),
+                            CityGuid = new Guid("99710274-7728-4ee4-85c9-7116183c7aaf"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايوانکي",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1208,
-                            CityGuid = new Guid("624aca4d-b3a0-4f34-917a-6bc998b3f61c"),
+                            CityGuid = new Guid("7a7f5148-90a4-4583-8139-35d3cad353ed"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بسطام",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1209,
-                            CityGuid = new Guid("c9d1019c-7a2c-4a59-9322-fdac3f7eeafc"),
+                            CityGuid = new Guid("f4132202-23da-44a9-9cfb-13a1aca69f22"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بيارجمند",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1210,
-                            CityGuid = new Guid("c73ceb9e-86d9-4c10-b220-ffcc37106435"),
+                            CityGuid = new Guid("2aee20d7-4a58-4cfe-8fa4-7ab6696c5e2e"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دامغان",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1211,
-                            CityGuid = new Guid("342c0df2-351d-459f-91b6-2fd883c427f1"),
+                            CityGuid = new Guid("7dc196b3-b9e9-42c0-97fd-d6d1c3d4d703"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "درجزين",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1212,
-                            CityGuid = new Guid("e6908f61-5dff-4f03-86c3-a5d0b1c78a2e"),
+                            CityGuid = new Guid("754dbc6f-7c40-4d7d-8051-4d109df2bf6f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديباج",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1213,
-                            CityGuid = new Guid("d4e8c7b2-22c3-468d-b18d-ee49d2bb147d"),
+                            CityGuid = new Guid("5fbcc725-c1bd-4ef4-97bb-8644da9614f6"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "روديان",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1214,
-                            CityGuid = new Guid("58bf548b-64eb-448c-8708-82b7500abd86"),
+                            CityGuid = new Guid("dbbe7f47-efc7-4575-8598-905d3f20650f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرخه",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1215,
-                            CityGuid = new Guid("8ed2a437-34d2-4e43-b903-f85ba8ec5407"),
+                            CityGuid = new Guid("fd6b88f8-2dcf-4eb0-a665-01d36c89e1d8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سمنان",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1216,
-                            CityGuid = new Guid("dc774755-0bac-413d-adc9-06a3fe245c9f"),
+                            CityGuid = new Guid("cee8e460-fc72-4046-b20d-e8fbfa8198ab"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شاهرود",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1217,
-                            CityGuid = new Guid("7180dcdf-0c86-4656-8ecc-17de16103126"),
+                            CityGuid = new Guid("894351b7-c870-40aa-b101-d4bb7e54f1a5"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "شهميرزاد",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1218,
-                            CityGuid = new Guid("b34f70fb-e370-466a-9d8c-7ee65b34e2ef"),
+                            CityGuid = new Guid("561dea2c-409b-44b5-9724-bdca186af07a"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مجن",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1219,
-                            CityGuid = new Guid("c6c3fedb-ea7b-4cbb-81eb-0bccb1da43db"),
+                            CityGuid = new Guid("93856a61-df3e-4d1e-bb71-573ca1df0748"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مهدي شهر",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1220,
-                            CityGuid = new Guid("0d878a7b-7e5f-41a4-ad08-e79888c3f932"),
+                            CityGuid = new Guid("bba0422a-1107-4ee5-ba5e-9d0196036f02"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ميامي",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1221,
-                            CityGuid = new Guid("9343a786-89fa-45fa-8538-9cea9255c67d"),
+                            CityGuid = new Guid("847b33cf-546b-4e2c-8458-e3c9ce9e2171"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلاته",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1222,
-                            CityGuid = new Guid("726edb8f-4133-47e1-a9a0-7107f11b8fec"),
+                            CityGuid = new Guid("a8441d5d-9421-41ec-8c08-979cadf40c3f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کلاته خيج",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1223,
-                            CityGuid = new Guid("094b50a2-39fc-4567-9f7e-607d6915d636"),
+                            CityGuid = new Guid("6ebb79dd-f4c8-43db-87aa-287035c221c4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهن آباد",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1224,
-                            CityGuid = new Guid("4293b7dc-1719-409c-bfc4-eb2761201b40"),
+                            CityGuid = new Guid("55322819-3669-4009-a055-608986aea2cd"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گرمسار",
                             ProvinceId = 30
                         },
                         new
                         {
                             CityId = 1225,
-                            CityGuid = new Guid("e54c2e1b-2381-4474-9648-aed1be1d3133"),
+                            CityGuid = new Guid("dd2de5f8-8ee9-4bac-9d59-95d7a8f1e060"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "باشت",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1226,
-                            CityGuid = new Guid("f62a1768-9472-4e01-bf69-6c7cc8de9e4c"),
+                            CityGuid = new Guid("66318e16-8061-43c8-b1da-a45755f9d1b1"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دهدشت",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1227,
-                            CityGuid = new Guid("31bfbd51-aa86-435c-8ff7-ca1274a0aeb1"),
+                            CityGuid = new Guid("2ebdae2f-4beb-4998-a347-3dd074e5e40f"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "دوگنبدان",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1228,
-                            CityGuid = new Guid("b9da8103-da34-44bd-a15b-872df21fe928"),
+                            CityGuid = new Guid("60685948-192b-46db-8e5a-ed9da5057e02"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ديشموک",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1229,
-                            CityGuid = new Guid("ee3d2021-b00e-4861-9d08-c19ed8667135"),
+                            CityGuid = new Guid("ebc328b5-5e19-46e7-8725-80cf6fa24b04"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سرفارياب",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1230,
-                            CityGuid = new Guid("9c029536-8c6f-4151-b4a2-76a660d34f97"),
+                            CityGuid = new Guid("dbd7e8f9-7265-42bc-ae68-817f603f4b78"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سوق",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1231,
-                            CityGuid = new Guid("b3743f0f-5896-4685-af14-cbd286f214e5"),
+                            CityGuid = new Guid("9661078b-2616-420f-abe8-ae1a582512f2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سي سخت",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1232,
-                            CityGuid = new Guid("a5320618-3ce9-4b7b-84e7-fd34325086d1"),
+                            CityGuid = new Guid("e3b4b909-320d-4de3-bb6e-70522aa39e42"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قلعه رئيسي",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1233,
-                            CityGuid = new Guid("c4bf17b2-cb31-475a-966b-4bb51946dcbf"),
+                            CityGuid = new Guid("88e1ae28-8a52-440c-b74c-29651cfecb69"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لنده",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1234,
-                            CityGuid = new Guid("c0f1b74a-b859-470c-84eb-be34dcad93ad"),
+                            CityGuid = new Guid("21f3e48b-c577-4b2e-a05b-7a7ea4eea762"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ليکک",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1235,
-                            CityGuid = new Guid("5f84f240-4a63-4f73-9e33-4aa7bf20791f"),
+                            CityGuid = new Guid("cbb97e25-ea3c-4456-ad7d-26f52120e3f4"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مادوان",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1236,
-                            CityGuid = new Guid("f28ea859-3c3a-44b7-892e-8a0094fc958b"),
+                            CityGuid = new Guid("df9d8201-c53e-4bb1-848b-c10e265bffbc"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مارگون",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1237,
-                            CityGuid = new Guid("8f2a0f06-de8a-4545-b88e-a72a3f021ddb"),
+                            CityGuid = new Guid("766fe095-7855-4ca5-9985-e6801fadefa2"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ياسوج",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1238,
-                            CityGuid = new Guid("9491df3b-9190-4e1c-ac9a-8aecfa829511"),
+                            CityGuid = new Guid("7a6a226e-e07f-4aa9-808e-83981214cec8"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "پاتاوه",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1239,
-                            CityGuid = new Guid("c3edd367-f226-4bbf-a492-fc3a843455de"),
+                            CityGuid = new Guid("2e036526-53e8-4ec8-8c29-9c891e75449b"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چرام",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1240,
-                            CityGuid = new Guid("10a11e97-1827-4539-ab57-d2cbfb88a75e"),
+                            CityGuid = new Guid("31de326e-51b3-4eee-95b3-aea51c14ed7c"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چيتاب",
                             ProvinceId = 31
                         },
                         new
                         {
                             CityId = 1241,
-                            CityGuid = new Guid("e65af01c-f54f-4f8f-8b74-f65f15d6f6b9"),
+                            CityGuid = new Guid("3c1e6032-70a3-40f0-b374-510ddcf2aa38"),
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گراب سفلي",
                             ProvinceId = 31
                         });
@@ -9429,9 +13167,9 @@ namespace Pisheyar.Infrastructure.Migrations
                         {
                             ClientId = 1,
                             CityId = 751,
-                            ClientGuid = new Guid("6070156a-45d5-43c7-92c1-22ea0839d27e"),
+                            ClientGuid = new Guid("b120653d-1515-45c1-954f-ea014bca850d"),
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(7139),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 172, DateTimeKind.Local).AddTicks(8886),
                             UserId = 2
                         });
                 });
@@ -9841,6 +13579,11 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                         .HasDefaultValueSql("(newid())");
 
+                    b.Property<DateTime>("CreationDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(128)")
@@ -9931,12 +13674,12 @@ namespace Pisheyar.Infrastructure.Migrations
                             ContractorId = 1,
                             BusinessTypeCodeId = 4,
                             CityId = 751,
-                            ContractorGuid = new Guid("96e04030-374b-4a81-a306-e0e620761bb4"),
+                            ContractorGuid = new Guid("5d390402-7441-418a-baa1-d7b307f72e56"),
                             Credit = 0,
                             IsDelete = false,
                             Latitude = "1",
                             Longitude = "2",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 251, DateTimeKind.Local).AddTicks(3698),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 175, DateTimeKind.Local).AddTicks(179),
                             UserId = 3
                         },
                         new
@@ -9944,12 +13687,12 @@ namespace Pisheyar.Infrastructure.Migrations
                             ContractorId = 2,
                             BusinessTypeCodeId = 4,
                             CityId = 751,
-                            ContractorGuid = new Guid("61eb62bf-b4fd-4d8a-b5f5-e30ec5209e0b"),
+                            ContractorGuid = new Guid("0b468746-137f-4c58-a7dd-311307a9c5ad"),
                             Credit = 10000,
                             IsDelete = false,
                             Latitude = "1",
                             Longitude = "2",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 251, DateTimeKind.Local).AddTicks(4466),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 175, DateTimeKind.Local).AddTicks(1565),
                             UserId = 4
                         });
                 });
@@ -9989,70 +13732,70 @@ namespace Pisheyar.Infrastructure.Migrations
                         {
                             ContractorCategoryId = 1,
                             CategoryId = 4,
-                            ContractorCategoryGuid = new Guid("fc620337-38ba-4d12-818f-87647856c544"),
+                            ContractorCategoryGuid = new Guid("50f5b284-aff3-441e-a446-484f78fbc70c"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 2,
                             CategoryId = 5,
-                            ContractorCategoryGuid = new Guid("b77ea6ee-e17b-4834-98cd-bb117914b48e"),
+                            ContractorCategoryGuid = new Guid("6538eb5e-bd42-4dc2-9f22-2a5dcdd21e81"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 3,
                             CategoryId = 14,
-                            ContractorCategoryGuid = new Guid("092a9edb-5477-4605-9499-ac6f0d71dd5f"),
+                            ContractorCategoryGuid = new Guid("e0f0943c-13f8-430d-a66b-b70aab582bd3"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 4,
                             CategoryId = 22,
-                            ContractorCategoryGuid = new Guid("b2e405c3-6dc2-44b5-a28d-903630adac1c"),
+                            ContractorCategoryGuid = new Guid("01f10561-da9a-44a2-b1b3-a354f6bdc70c"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 5,
                             CategoryId = 25,
-                            ContractorCategoryGuid = new Guid("1bcbbc89-d3ec-4f31-abef-8bf0fd69880c"),
+                            ContractorCategoryGuid = new Guid("ff384d6a-85e3-4373-826f-d431c8da7bc7"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 6,
                             CategoryId = 30,
-                            ContractorCategoryGuid = new Guid("a7b5fe22-5611-4d02-9032-4cfe734e527a"),
+                            ContractorCategoryGuid = new Guid("22e384ae-0dea-4635-b9af-eec23400919f"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 7,
                             CategoryId = 33,
-                            ContractorCategoryGuid = new Guid("f6dc13be-1e3f-4da5-8c42-b52141d4c12d"),
+                            ContractorCategoryGuid = new Guid("3453e994-c7fa-48a3-bbc9-4ffb4d640877"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 8,
                             CategoryId = 34,
-                            ContractorCategoryGuid = new Guid("388c0322-9a41-4c37-b39c-e0c791c4893d"),
+                            ContractorCategoryGuid = new Guid("12df2195-efea-4d1d-af8b-29310fe55032"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 9,
                             CategoryId = 27,
-                            ContractorCategoryGuid = new Guid("c0ec05ed-623d-4521-abd7-5e884ab7de56"),
+                            ContractorCategoryGuid = new Guid("027db6d3-49fe-45f2-883f-4635bbf5ce97"),
                             ContractorId = 1
                         },
                         new
                         {
                             ContractorCategoryId = 10,
                             CategoryId = 20,
-                            ContractorCategoryGuid = new Guid("e39b13a2-f6d6-451a-882c-4e83be2056e5"),
+                            ContractorCategoryGuid = new Guid("db65a591-57de-4433-9cde-f18e7066df4c"),
                             ContractorId = 1
                         });
                 });
@@ -10222,8 +13965,8 @@ namespace Pisheyar.Infrastructure.Migrations
                             ClientId = 1,
                             Description = "توضیح",
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 252, DateTimeKind.Local).AddTicks(5749),
-                            OrderGuid = new Guid("23545ac6-928f-418a-a230-de7bd71d8b88"),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 176, DateTimeKind.Local).AddTicks(4093),
+                            OrderGuid = new Guid("26bc868b-ce23-41b2-b8f7-d5be35862bc4"),
                             StateCodeId = 9,
                             Title = "تیتر"
                         },
@@ -10234,8 +13977,8 @@ namespace Pisheyar.Infrastructure.Migrations
                             ClientId = 1,
                             Description = "کولر ماشین مشکل داره",
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 252, DateTimeKind.Local).AddTicks(6369),
-                            OrderGuid = new Guid("c9e32e93-951a-47ee-a5be-7295d9494964"),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 176, DateTimeKind.Local).AddTicks(4823),
+                            OrderGuid = new Guid("e16617d6-7183-4afc-b435-c96fac9b4ac9"),
                             StateCodeId = 9,
                             Title = "مشکل"
                         });
@@ -10307,10 +14050,10 @@ namespace Pisheyar.Infrastructure.Migrations
                             IsAllow = true,
                             IsDelete = false,
                             Message = "پیام",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 253, DateTimeKind.Local).AddTicks(3751),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 177, DateTimeKind.Local).AddTicks(1414),
                             OfferedPrice = 250000L,
                             OrderId = 1,
-                            OrderRequestGuid = new Guid("2f017ce4-844f-4da6-9d67-6c112d15f290")
+                            OrderRequestGuid = new Guid("f700f27a-2b3d-411a-82f7-e2fb06b8f3c5")
                         });
                 });
 
@@ -10348,6 +14091,10 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("uniqueidentifier")
                         .HasDefaultValueSql("(newid())");
 
+                    b.Property<int>("PaymentProviderSettingId")
+                        .HasColumnName("PaymentProviderSettingID")
+                        .HasColumnType("int");
+
                     b.Property<long?>("TrackingToken")
                         .HasColumnType("bigint");
 
@@ -10355,7 +14102,105 @@ namespace Pisheyar.Infrastructure.Migrations
 
                     b.HasIndex("ContractorId");
 
+                    b.HasIndex("PaymentProviderSettingId");
+
                     b.ToTable("Payment");
+                });
+
+            modelBuilder.Entity("Pisheyar.Domain.Entities.PaymentProvider", b =>
+                {
+                    b.Property<int>("PaymentProviderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("PaymentProviderID")
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool?>("IsActive")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((0))");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<Guid>("PaymentProviderGuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("PaymentProviderGUID")
+                        .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
+                        .HasDefaultValueSql("(newid())");
+
+                    b.HasKey("PaymentProviderId");
+
+                    b.ToTable("PaymentProvider");
+                });
+
+            modelBuilder.Entity("Pisheyar.Domain.Entities.PaymentProviderSetting", b =>
+                {
+                    b.Property<int>("PaymentProviderSettingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("PaymentProviderSettingID")
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Apikey")
+                        .IsRequired()
+                        .HasColumnName("APIKey")
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((0))");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<int>("PaymentProviderId")
+                        .HasColumnName("PaymentProviderID")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("PaymentProviderSettingGuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("PaymentProviderSettingGUID")
+                        .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
+                        .HasDefaultValueSql("(newid())");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.HasKey("PaymentProviderSettingId");
+
+                    b.HasIndex("PaymentProviderId");
+
+                    b.ToTable("PaymentProviderSetting");
                 });
 
             modelBuilder.Entity("Pisheyar.Domain.Entities.Permission", b =>
@@ -10727,6 +14572,21 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((0))");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(128)")
@@ -10746,188 +14606,281 @@ namespace Pisheyar.Infrastructure.Migrations
                         new
                         {
                             ProvinceId = 1,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "يزد",
-                            ProvinceGuid = new Guid("7ca94235-0322-439d-ba3c-c24118fc6095")
+                            ProvinceGuid = new Guid("e0e7dc4e-0007-4370-a3d1-1662e5978918")
                         },
                         new
                         {
                             ProvinceId = 2,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "چهار محال و بختياري",
-                            ProvinceGuid = new Guid("3f458316-b381-480d-8af7-bc17c7a7a26e")
+                            ProvinceGuid = new Guid("d0fd2378-53ce-415e-9c27-b592726c3708")
                         },
                         new
                         {
                             ProvinceId = 3,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خراسان شمالي",
-                            ProvinceGuid = new Guid("ea1c16a0-bbde-4ee4-8de2-b46916abdf5f")
+                            ProvinceGuid = new Guid("be88e02b-65c9-498d-9fa9-65674df6b0e7")
                         },
                         new
                         {
                             ProvinceId = 4,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "البرز",
-                            ProvinceGuid = new Guid("f60853d0-00de-4b23-95e0-7a86a6b19b09")
+                            ProvinceGuid = new Guid("1519da58-5b4d-497e-a27b-8f9743bcc39f")
                         },
                         new
                         {
                             ProvinceId = 5,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قم",
-                            ProvinceGuid = new Guid("ab020b57-ebf0-4106-a015-c5d1839dfa65")
+                            ProvinceGuid = new Guid("c5d6e5a6-dd8c-4875-8bdd-c245517b29b4")
                         },
                         new
                         {
                             ProvinceId = 6,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کردستان",
-                            ProvinceGuid = new Guid("2e17f2ba-755e-4a73-9a1d-89ca21120fa7")
+                            ProvinceGuid = new Guid("9b84b7cb-abd6-4348-acef-19c3e1afe613")
                         },
                         new
                         {
                             ProvinceId = 7,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آذربايجان غربي",
-                            ProvinceGuid = new Guid("69b2df50-1df5-452e-b07b-3f77101a43d8")
+                            ProvinceGuid = new Guid("ac614113-0acf-457c-b85d-872fa933e4ea")
                         },
                         new
                         {
                             ProvinceId = 8,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خراسان رضوي",
-                            ProvinceGuid = new Guid("11d4ed84-4b4f-45e4-aecf-59d859fdb683")
+                            ProvinceGuid = new Guid("c6d2041a-0549-40e5-89e2-f08aec46d202")
                         },
                         new
                         {
                             ProvinceId = 9,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سيستان و بلوچستان",
-                            ProvinceGuid = new Guid("9a68d6df-c72e-4b70-991c-7a266d52786d")
+                            ProvinceGuid = new Guid("cc97369f-a353-498b-872f-33f10e70a49f")
                         },
                         new
                         {
                             ProvinceId = 10,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خراسان جنوبي",
-                            ProvinceGuid = new Guid("ad69fd23-f6d8-4a9a-b6ae-6d25f52345f8")
+                            ProvinceGuid = new Guid("14c7c5f8-6193-45fb-bc36-9ffe567d2156")
                         },
                         new
                         {
                             ProvinceId = 11,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "خوزستان",
-                            ProvinceGuid = new Guid("deef82c0-6e0e-4ad6-8217-bc5d7512a3d6")
+                            ProvinceGuid = new Guid("3abf300f-0fd8-48c5-96c2-efb256c5b9f9")
                         },
                         new
                         {
                             ProvinceId = 12,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "بوشهر",
-                            ProvinceGuid = new Guid("0a5cf507-a0a9-4f88-b3b2-8608da4d3a93")
+                            ProvinceGuid = new Guid("5dc0ffd0-c539-450a-bbef-38b864788883")
                         },
                         new
                         {
                             ProvinceId = 13,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "زنجان",
-                            ProvinceGuid = new Guid("d3452410-4a59-473d-8ad1-8c6d15aa50f3")
+                            ProvinceGuid = new Guid("5da539c7-0a7c-4406-93cc-4a1b623248c3")
                         },
                         new
                         {
                             ProvinceId = 14,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گلستان",
-                            ProvinceGuid = new Guid("44820ab0-8614-4482-a902-8c8e3fd04ba1")
+                            ProvinceGuid = new Guid("797f9576-54d4-48b4-a7d7-69f6b3ddd22a")
                         },
                         new
                         {
                             ProvinceId = 15,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مازندران",
-                            ProvinceGuid = new Guid("0ea21f2a-35c8-4176-878d-fbf43d7ea082")
+                            ProvinceGuid = new Guid("ab5cf666-d3ed-4895-99cc-0c101721d26b")
                         },
                         new
                         {
                             ProvinceId = 16,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "قزوين",
-                            ProvinceGuid = new Guid("1771d8dc-84f7-4191-9db2-7b075dcf4a6e")
+                            ProvinceGuid = new Guid("ed2497ea-4951-4494-b3ee-8b89d1b480fe")
                         },
                         new
                         {
                             ProvinceId = 17,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "لرستان",
-                            ProvinceGuid = new Guid("9efa8c0f-3663-4bea-aec7-aaf870209e7f")
+                            ProvinceGuid = new Guid("179ed318-ce57-4dd4-80e4-1bef010acdf6")
                         },
                         new
                         {
                             ProvinceId = 18,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اردبيل",
-                            ProvinceGuid = new Guid("b6599359-8bca-49d9-890c-090641d2c20d")
+                            ProvinceGuid = new Guid("57aa1fe7-89ec-49de-a60f-de16ebbc95f9")
                         },
                         new
                         {
                             ProvinceId = 19,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "اصفهان",
-                            ProvinceGuid = new Guid("19abcdc6-6378-4026-8fe7-530bb25d0922")
+                            ProvinceGuid = new Guid("4cd46d10-6357-4494-85a8-311c89d00ad1")
                         },
                         new
                         {
                             ProvinceId = 20,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "ايلام",
-                            ProvinceGuid = new Guid("ed974d78-18d2-44fd-9d9c-2f677d1a9646")
+                            ProvinceGuid = new Guid("90cf5a6a-ee21-4a62-a93c-3877dad30af1")
                         },
                         new
                         {
                             ProvinceId = 21,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "تهران",
-                            ProvinceGuid = new Guid("52499ea2-eef5-4e3b-a5e4-d1501853ed60")
+                            ProvinceGuid = new Guid("5aa33ade-2e25-49e9-918d-f744763dcfca")
                         },
                         new
                         {
                             ProvinceId = 22,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "آذربايجان شرقي",
-                            ProvinceGuid = new Guid("b7d61ff2-91bc-4eaa-b491-7ef47c751b83")
+                            ProvinceGuid = new Guid("c75aa72c-8f48-41f7-990d-96d6d3b288ce")
                         },
                         new
                         {
                             ProvinceId = 23,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "فارس",
-                            ProvinceGuid = new Guid("dcc2183e-d4f8-43b6-b1da-5408830e7e64")
+                            ProvinceGuid = new Guid("67749b66-1cac-49c8-85cb-357a5868200f")
                         },
                         new
                         {
                             ProvinceId = 24,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرمانشاه",
-                            ProvinceGuid = new Guid("06ac121a-ef04-4b61-9790-d97cd1804a81")
+                            ProvinceGuid = new Guid("d049b376-710e-4ab7-be7c-062609b3da1a")
                         },
                         new
                         {
                             ProvinceId = 25,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "هرمزگان",
-                            ProvinceGuid = new Guid("1c15a27e-290d-40b9-9713-094bd8028a12")
+                            ProvinceGuid = new Guid("20c1d945-534f-4e64-9531-cb4dea108df7")
                         },
                         new
                         {
                             ProvinceId = 26,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "مرکزي",
-                            ProvinceGuid = new Guid("78af6eb8-3a57-4d02-946b-4123e76418ba")
+                            ProvinceGuid = new Guid("4ef84c1d-1491-418b-a1f0-c6e71d00828b")
                         },
                         new
                         {
                             ProvinceId = 27,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "گيلان",
-                            ProvinceGuid = new Guid("dd24ff84-3a81-4a24-9766-e30aa96c24e3")
+                            ProvinceGuid = new Guid("b74cd6d1-aaba-4d78-8ef1-5d0666f773bd")
                         },
                         new
                         {
                             ProvinceId = 28,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "همدان",
-                            ProvinceGuid = new Guid("fa5df7ff-5ba6-4cec-a487-32c2a10a8de1")
+                            ProvinceGuid = new Guid("e991d104-7a26-4c39-a801-acf388f05e50")
                         },
                         new
                         {
                             ProvinceId = 29,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کرمان",
-                            ProvinceGuid = new Guid("b0b62257-1c92-46a3-9bff-4b15bead714b")
+                            ProvinceGuid = new Guid("6042d663-41b4-4373-a8cf-20fd1b4fddbb")
                         },
                         new
                         {
                             ProvinceId = 30,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "سمنان",
-                            ProvinceGuid = new Guid("81c11d03-3bba-4f86-8cf3-3e24b8616b5d")
+                            ProvinceGuid = new Guid("e29b662e-cac5-47be-ae46-7dadea258054")
                         },
                         new
                         {
                             ProvinceId = 31,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "کهگيلويه و بويراحمد",
-                            ProvinceGuid = new Guid("e86b600a-3fc3-4402-8c4e-734b733eb5e3")
+                            ProvinceGuid = new Guid("d2c989ea-c78e-4a51-9e59-c718d8e3140d")
                         });
                 });
 
@@ -11025,27 +14978,27 @@ namespace Pisheyar.Infrastructure.Migrations
                             RoleId = 1,
                             DisplayName = "ادمین",
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 246, DateTimeKind.Local).AddTicks(9878),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 163, DateTimeKind.Local).AddTicks(4471),
                             Name = "Admin",
-                            RoleGuid = new Guid("51c85bfd-5b01-4373-a0c6-04bfa2323f62")
+                            RoleGuid = new Guid("083d677d-4aca-4012-8241-3695c4c71e7e")
                         },
                         new
                         {
                             RoleId = 2,
                             DisplayName = "سرویس دهنده",
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 247, DateTimeKind.Local).AddTicks(906),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 167, DateTimeKind.Local).AddTicks(8239),
                             Name = "Contractor",
-                            RoleGuid = new Guid("c1c40b38-a2c6-457e-a2e9-1775dd573368")
+                            RoleGuid = new Guid("2cdb0c20-0c1f-4ce5-aa73-a1c2099b6f37")
                         },
                         new
                         {
                             RoleId = 3,
                             DisplayName = "سرویس گیرنده",
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 247, DateTimeKind.Local).AddTicks(937),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 167, DateTimeKind.Local).AddTicks(8336),
                             Name = "Client",
-                            RoleGuid = new Guid("5f14dac2-5f28-4841-9688-7733d1d1d3ec")
+                            RoleGuid = new Guid("42479697-f5f9-4fbc-b0fa-9185d0deaa35")
                         });
                 });
 
@@ -11122,11 +15075,61 @@ namespace Pisheyar.Infrastructure.Migrations
                     b.ToTable("Setting");
                 });
 
-            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderConfiguration", b =>
+            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProvider", b =>
                 {
-                    b.Property<int>("SmsProviderConfigurationId")
+                    b.Property<int>("SmsProviderId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSProviderConfigurationID")
+                        .HasColumnName("SMSProviderID")
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
+                    b.Property<bool>("IsDelete")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((0))");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("(getdate())");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(128)")
+                        .HasMaxLength(128);
+
+                    b.Property<Guid>("SmsProviderGuid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("SMSProviderGUID")
+                        .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
+                        .HasDefaultValueSql("(newid())");
+
+                    b.HasKey("SmsProviderId");
+
+                    b.ToTable("SMSProvider");
+
+                    b.HasData(
+                        new
+                        {
+                            SmsProviderId = 1,
+                            IsActive = false,
+                            IsDelete = false,
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Name = "Kavenegar",
+                            SmsProviderGuid = new Guid("00000000-0000-0000-0000-000000000000")
+                        });
+                });
+
+            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderSetting", b =>
+                {
+                    b.Property<int>("SmsProviderSettingId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("SMSProviderSettingID")
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -11135,6 +15138,11 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnName("APIKey")
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
 
                     b.Property<bool>("IsDelete")
                         .ValueGeneratedOnAdd()
@@ -11151,9 +15159,13 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
 
-                    b.Property<Guid>("SmsProviderConfigurationGuid")
+                    b.Property<int>("SmsProviderId")
+                        .HasColumnName("SMSProviderID")
+                        .HasColumnType("int");
+
+                    b.Property<Guid>("SmsProviderSettingGuid")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSProviderConfigurationGUID")
+                        .HasColumnName("SMSProviderSettingGUID")
                         .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                         .HasDefaultValueSql("(newid())");
 
@@ -11162,30 +15174,39 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
 
-                    b.HasKey("SmsProviderConfigurationId");
+                    b.HasKey("SmsProviderSettingId");
 
-                    b.ToTable("SMSProviderConfiguration");
+                    b.HasIndex("SmsProviderId");
+
+                    b.ToTable("SMSProviderSetting");
 
                     b.HasData(
                         new
                         {
-                            SmsProviderConfigurationId = 1,
+                            SmsProviderSettingId = 1,
                             Apikey = "61726634455053586E44464E413462574A76535677436B547236574B56386D6A6F6E4F326A374A4C7755773D",
+                            IsActive = false,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 242, DateTimeKind.Local).AddTicks(1161),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Password = "ptcoptco",
-                            SmsProviderConfigurationGuid = new Guid("8749b863-62de-4d86-95a8-dc7a88638f48"),
+                            SmsProviderId = 1,
+                            SmsProviderSettingGuid = new Guid("00000000-0000-0000-0000-000000000000"),
                             Username = "ptmgroupco@gmail.com"
                         });
                 });
 
-            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderNumber", b =>
+            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderSettingNumber", b =>
                 {
-                    b.Property<int>("SmsProviderNumberId")
+                    b.Property<int>("SmsProviderSettingNumberId")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSProviderNumberID")
+                        .HasColumnName("SMSProviderSettingNumberID")
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
 
                     b.Property<bool>("IsDelete")
                         .ValueGeneratedOnAdd()
@@ -11197,13 +15218,13 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("datetime2")
                         .HasDefaultValueSql("(getdate())");
 
-                    b.Property<int>("SmsProviderConfigurationId")
-                        .HasColumnName("SMSProviderConfigurationID")
+                    b.Property<int>("SmsProviderSettingId")
+                        .HasColumnName("SMSProviderSettingID")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("SmsProviderNumberGuid")
+                    b.Property<Guid>("SmsProviderSettingNumberGuid")
                         .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSProviderNumberGUID")
+                        .HasColumnName("SMSProviderSettingNumberGUID")
                         .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                         .HasDefaultValueSql("(newid())");
 
@@ -11212,12 +15233,12 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
 
-                    b.HasKey("SmsProviderNumberId");
+                    b.HasKey("SmsProviderSettingNumberId");
 
-                    b.HasIndex("SmsProviderConfigurationId")
+                    b.HasIndex("SmsProviderSettingId")
                         .HasName("IX_Tbl_SMSProviderNumber_SPN_SPCID");
 
-                    b.ToTable("SMSProviderNumber");
+                    b.ToTable("SMSProviderSettingNumber");
                 });
 
             modelBuilder.Entity("Pisheyar.Domain.Entities.SmsResponse", b =>
@@ -11303,58 +15324,6 @@ namespace Pisheyar.Infrastructure.Migrations
                     b.ToTable("SMSResponse");
                 });
 
-            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsSetting", b =>
-                {
-                    b.Property<int>("SmsSettingId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSSettingID")
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<bool>("IsDelete")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValueSql("((0))");
-
-                    b.Property<DateTime>("ModifiedDate")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("(getdate())");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(128)")
-                        .HasMaxLength(128);
-
-                    b.Property<int>("SmsProviderConfigurationId")
-                        .HasColumnName("SMSProviderConfigurationID")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("SmsSettingGuid")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnName("SMSSettingGUID")
-                        .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
-                        .HasDefaultValueSql("(newid())");
-
-                    b.HasKey("SmsSettingId");
-
-                    b.HasIndex("SmsProviderConfigurationId")
-                        .HasName("IX_Tbl_SMSSetting_SS_SPCID");
-
-                    b.ToTable("SMSSetting");
-
-                    b.HasData(
-                        new
-                        {
-                            SmsSettingId = 1,
-                            IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 245, DateTimeKind.Local).AddTicks(7950),
-                            Name = "Kavenegar",
-                            SmsProviderConfigurationId = 1,
-                            SmsSettingGuid = new Guid("cc90d39f-1169-48f2-bd74-40c7250abcbf")
-                        });
-                });
-
             modelBuilder.Entity("Pisheyar.Domain.Entities.SmsTemplate", b =>
                 {
                     b.Property<int>("SmsTemplateId")
@@ -11363,6 +15332,11 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("IsActive")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bit")
+                        .HasDefaultValueSql("((1))");
+
                     b.Property<bool>("IsDelete")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bit")
@@ -11378,8 +15352,8 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasColumnType("nvarchar(128)")
                         .HasMaxLength(128);
 
-                    b.Property<int>("SmsSettingId")
-                        .HasColumnName("SMSSettingID")
+                    b.Property<int>("SmsProviderSettingId")
+                        .HasColumnName("SMSProviderSettingID")
                         .HasColumnType("int");
 
                     b.Property<Guid>("SmsTemplateGuid")
@@ -11390,7 +15364,7 @@ namespace Pisheyar.Infrastructure.Migrations
 
                     b.HasKey("SmsTemplateId");
 
-                    b.HasIndex("SmsSettingId")
+                    b.HasIndex("SmsProviderSettingId")
                         .HasName("IX_Tbl_SMSTemplate_ST_SSID");
 
                     b.ToTable("SMSTemplate");
@@ -11399,11 +15373,12 @@ namespace Pisheyar.Infrastructure.Migrations
                         new
                         {
                             SmsTemplateId = 1,
+                            IsActive = false,
                             IsDelete = false,
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 246, DateTimeKind.Local).AddTicks(3923),
+                            ModifiedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Name = "VerifyAccount",
-                            SmsSettingId = 1,
-                            SmsTemplateGuid = new Guid("f3662ab3-2cd2-4b2c-a024-a196f46f1b34")
+                            SmsProviderSettingId = 1,
+                            SmsTemplateGuid = new Guid("00000000-0000-0000-0000-000000000000")
                         });
                 });
 
@@ -11670,11 +15645,11 @@ namespace Pisheyar.Infrastructure.Migrations
                             IsDelete = false,
                             IsRegister = true,
                             LastName = "رودکی",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 248, DateTimeKind.Local).AddTicks(7323),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(568),
                             PhoneNumber = "09227204305",
-                            RegisteredDate = new DateTime(2020, 6, 10, 14, 41, 38, 248, DateTimeKind.Local).AddTicks(6814),
+                            RegisteredDate = new DateTime(2020, 6, 15, 16, 58, 11, 170, DateTimeKind.Local).AddTicks(9519),
                             RoleId = 1,
-                            UserGuid = new Guid("c1db5525-bb03-4ce7-ba96-9627d5cc6156")
+                            UserGuid = new Guid("52a2b449-429f-47d2-a993-ae71b81e17d8")
                         },
                         new
                         {
@@ -11686,11 +15661,11 @@ namespace Pisheyar.Infrastructure.Migrations
                             IsDelete = false,
                             IsRegister = true,
                             LastName = "شامخی",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 248, DateTimeKind.Local).AddTicks(9988),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4217),
                             PhoneNumber = "09128277075",
-                            RegisteredDate = new DateTime(2020, 6, 10, 14, 41, 38, 248, DateTimeKind.Local).AddTicks(9962),
+                            RegisteredDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4170),
                             RoleId = 3,
-                            UserGuid = new Guid("d24b74d8-b645-4010-a15d-a04aa0b1f63d")
+                            UserGuid = new Guid("20d3a70a-a9f5-4e07-b45e-72aa0897a437")
                         },
                         new
                         {
@@ -11702,11 +15677,11 @@ namespace Pisheyar.Infrastructure.Migrations
                             IsDelete = false,
                             IsRegister = true,
                             LastName = "حقیقیان",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(33),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4308),
                             PhoneNumber = "09108347428",
-                            RegisteredDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(29),
+                            RegisteredDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4299),
                             RoleId = 2,
-                            UserGuid = new Guid("774ddaf9-a66e-4494-aa7b-3ce22b121649")
+                            UserGuid = new Guid("ee237459-09ae-4b2a-8129-fba972e10109")
                         },
                         new
                         {
@@ -11718,11 +15693,11 @@ namespace Pisheyar.Infrastructure.Migrations
                             IsDelete = false,
                             IsRegister = true,
                             LastName = "میرزایی",
-                            ModifiedDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(47),
+                            ModifiedDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4346),
                             PhoneNumber = "09147830093",
-                            RegisteredDate = new DateTime(2020, 6, 10, 14, 41, 38, 249, DateTimeKind.Local).AddTicks(44),
+                            RegisteredDate = new DateTime(2020, 6, 15, 16, 58, 11, 171, DateTimeKind.Local).AddTicks(4339),
                             RoleId = 2,
-                            UserGuid = new Guid("d9c1f618-8418-418b-916b-fc5c9ed8db02")
+                            UserGuid = new Guid("3039bb8d-42c9-48b4-9571-0e487c21adb2")
                         });
                 });
 
@@ -12017,6 +15992,21 @@ namespace Pisheyar.Infrastructure.Migrations
                         .HasForeignKey("ContractorId")
                         .HasConstraintName("FK_Payment_Contractor")
                         .IsRequired();
+
+                    b.HasOne("Pisheyar.Domain.Entities.PaymentProviderSetting", "PaymentProviderSetting")
+                        .WithMany("Payment")
+                        .HasForeignKey("PaymentProviderSettingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Pisheyar.Domain.Entities.PaymentProviderSetting", b =>
+                {
+                    b.HasOne("Pisheyar.Domain.Entities.PaymentProvider", "PaymentProvider")
+                        .WithMany("PaymentProviderSetting")
+                        .HasForeignKey("PaymentProviderId")
+                        .HasConstraintName("FK_PaymentProviderSetting_PaymentProvider")
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Pisheyar.Domain.Entities.Permission", b =>
@@ -12127,12 +16117,21 @@ namespace Pisheyar.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderNumber", b =>
+            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderSetting", b =>
                 {
-                    b.HasOne("Pisheyar.Domain.Entities.SmsProviderConfiguration", "SmsProviderConfiguration")
-                        .WithMany("SmsProviderNumber")
-                        .HasForeignKey("SmsProviderConfigurationId")
-                        .HasConstraintName("FK_SMSProviderNumber_SMSProviderConfiguration")
+                    b.HasOne("Pisheyar.Domain.Entities.SmsProvider", "SmsProvider")
+                        .WithMany("SmsProviderSetting")
+                        .HasForeignKey("SmsProviderId")
+                        .HasConstraintName("FK_SMSProviderSetting_SMSProvider")
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsProviderSettingNumber", b =>
+                {
+                    b.HasOne("Pisheyar.Domain.Entities.SmsProviderSetting", "SmsProviderSetting")
+                        .WithMany("SmsProviderSettingNumber")
+                        .HasForeignKey("SmsProviderSettingId")
+                        .HasConstraintName("FK_SMSProviderSettingNumber_SMSProviderSetting")
                         .IsRequired();
                 });
 
@@ -12150,21 +16149,12 @@ namespace Pisheyar.Infrastructure.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Pisheyar.Domain.Entities.SmsSetting", b =>
-                {
-                    b.HasOne("Pisheyar.Domain.Entities.SmsProviderConfiguration", "SmsProviderConfiguration")
-                        .WithMany("SmsSetting")
-                        .HasForeignKey("SmsProviderConfigurationId")
-                        .HasConstraintName("FK_SMSSetting_SMSProviderConfiguration")
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Pisheyar.Domain.Entities.SmsTemplate", b =>
                 {
-                    b.HasOne("Pisheyar.Domain.Entities.SmsSetting", "SmsSetting")
+                    b.HasOne("Pisheyar.Domain.Entities.SmsProviderSetting", "SmsProviderSetting")
                         .WithMany("SmsTemplate")
-                        .HasForeignKey("SmsSettingId")
-                        .HasConstraintName("FK_SMSTemplate_SMSSetting")
+                        .HasForeignKey("SmsProviderSettingId")
+                        .HasConstraintName("FK_SMSTemplate_SMSProviderSetting")
                         .IsRequired();
                 });
 

@@ -11,6 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<ChatMessage> entity)
         {
+            entity.HasIndex(e => e.OrderRequestId);
+
+            entity.HasIndex(e => e.UserId);
+
             entity.Property(e => e.ChatMessageGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
