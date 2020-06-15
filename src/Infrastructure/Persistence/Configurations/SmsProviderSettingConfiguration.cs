@@ -7,26 +7,25 @@ using System.Text;
 
 namespace Pisheyar.Infrastructure.Persistence.Configurations
 {
-    public class SmsSettingConfiguration : IEntityTypeConfiguration<SmsSetting>
+    public class SmsProviderSettingConfiguration : IEntityTypeConfiguration<SmsProviderSetting>
     {
-        public void Configure(EntityTypeBuilder<SmsSetting> entity)
+        public void Configure(EntityTypeBuilder<SmsProviderSetting> entity)
         {
-            entity.HasIndex(e => e.SmsProviderConfigurationId)
-                    .HasName("IX_Tbl_SMSSetting_SS_SPCID");
+            entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");
 
-            entity.Property(e => e.SmsSettingGuid)
+            entity.Property(e => e.SmsProviderSettingGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
 
-            entity.HasOne(d => d.SmsProviderConfiguration)
-                .WithMany(p => p.SmsSetting)
-                .HasForeignKey(d => d.SmsProviderConfigurationId)
+            entity.HasOne(d => d.SmsProvider)
+                .WithMany(p => p.SmsProviderSetting)
+                .HasForeignKey(d => d.SmsProviderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_SMSSetting_SMSProviderConfiguration");
+                .HasConstraintName("FK_SMSProviderSetting_SMSProvider");
         }
     }
 }

@@ -11,8 +11,10 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
     {
         public void Configure(EntityTypeBuilder<SmsTemplate> entity)
         {
-            entity.HasIndex(e => e.SmsSettingId)
+            entity.HasIndex(e => e.SmsProviderSettingId)
                     .HasName("IX_Tbl_SMSTemplate_ST_SSID");
+
+            entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
 
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
@@ -22,11 +24,11 @@ namespace Pisheyar.Infrastructure.Persistence.Configurations
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
 
-            entity.HasOne(d => d.SmsSetting)
+            entity.HasOne(d => d.SmsProviderSetting)
                 .WithMany(p => p.SmsTemplate)
-                .HasForeignKey(d => d.SmsSettingId)
+                .HasForeignKey(d => d.SmsProviderSettingId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_SMSTemplate_SMSSetting");
+                .HasConstraintName("FK_SMSTemplate_SMSProviderSetting");
         }
     }
 }

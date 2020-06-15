@@ -9108,16 +9108,13 @@ namespace Pisheyar.Infrastructure.Persistence
 
 			#region SmsProviderConfiguration
 
-			modelBuilder.Entity<SmsProviderConfiguration>().HasData(
-					new SmsProviderConfiguration
+			modelBuilder.Entity<SmsProviderSetting>().HasData(
+					new SmsProviderSetting
 					{
-						SmsProviderConfigurationId = 1,
-						SmsProviderConfigurationGuid = Guid.NewGuid(),
+						SmsProviderId = 1,
 						Username = "ptmgroupco@gmail.com",
 						Password = "ptcoptco",
-						Apikey = "61726634455053586E44464E413462574A76535677436B547236574B56386D6A6F6E4F326A374A4C7755773D",
-						ModifiedDate = DateTime.Now,
-						IsDelete = false
+						Apikey = "61726634455053586E44464E413462574A76535677436B547236574B56386D6A6F6E4F326A374A4C7755773D"
 					}
 				);
 
@@ -9125,15 +9122,10 @@ namespace Pisheyar.Infrastructure.Persistence
 
 			#region SmsSetting
 
-			modelBuilder.Entity<SmsSetting>().HasData(
-					new SmsSetting
+			modelBuilder.Entity<SmsProvider>().HasData(
+					new SmsProvider
 					{
-						SmsSettingId = 1,
-						SmsSettingGuid = Guid.NewGuid(),
-						SmsProviderConfigurationId = 1,
-						Name = "Kavenegar",
-						ModifiedDate = DateTime.Now,
-						IsDelete = false
+						Name = "Kavenegar"
 					}
 				);
 
@@ -9144,12 +9136,8 @@ namespace Pisheyar.Infrastructure.Persistence
 			modelBuilder.Entity<SmsTemplate>().HasData(
 					new SmsTemplate
 					{
-						SmsTemplateId = 1,
-						SmsTemplateGuid = Guid.NewGuid(),
-						SmsSettingId = 1,
-						Name = "VerifyAccount",
-						ModifiedDate = DateTime.Now,
-						IsDelete = false
+						SmsProviderSettingId = 1,
+						Name = "VerifyAccount"
 					}
 				);
 

@@ -7,15 +7,17 @@ using System.Text;
 
 namespace Pisheyar.Infrastructure.Persistence.Configurations
 {
-    public class SmsProviderConfigurationConfiguration : IEntityTypeConfiguration<SmsProviderConfiguration>
+    public class SmsProviderConfiguration : IEntityTypeConfiguration<SmsProvider>
     {
-        public void Configure(EntityTypeBuilder<SmsProviderConfiguration> entity)
+        public void Configure(EntityTypeBuilder<SmsProvider> entity)
         {
+            entity.Property(e => e.IsActive).HasDefaultValueSql("((1))");
+
             entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
 
             entity.Property(e => e.ModifiedDate).HasDefaultValueSql("(getdate())");
 
-            entity.Property(e => e.SmsProviderConfigurationGuid)
+            entity.Property(e => e.SmsProviderGuid)
                 .HasColumnType("UNIQUEIDENTIFIER ROWGUIDCOL")
                 .HasDefaultValueSql("(newid())");
         }

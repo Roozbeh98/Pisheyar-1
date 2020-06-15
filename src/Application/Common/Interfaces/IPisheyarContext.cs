@@ -38,10 +38,10 @@ namespace Pisheyar.Application.Common.Interfaces
         DbSet<Role> Role { get; set; }
         DbSet<RolePermission> RolePermission { get; set; }
         DbSet<Setting> Setting { get; set; }
-        DbSet<SmsProviderConfiguration> SmsProviderConfiguration { get; set; }
-        DbSet<SmsProviderNumber> SmsProviderNumber { get; set; }
+        DbSet<SmsProviderSetting> SmsProviderSetting { get; set; }
+        DbSet<SmsProviderSettingNumber> SmsProviderSettingNumber { get; set; }
         DbSet<SmsResponse> SmsResponse { get; set; }
-        DbSet<SmsSetting> SmsSetting { get; set; }
+        DbSet<SmsProvider> SmsProvider { get; set; }
         DbSet<SmsTemplate> SmsTemplate { get; set; }
         DbSet<Suggestion> Suggestion { get; set; }
         DbSet<Tag> Tag { get; set; }

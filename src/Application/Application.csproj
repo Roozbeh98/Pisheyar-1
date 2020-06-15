@@ -31,8 +31,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Advertisements\Commands\EditAdvertisement\" />
+    <Folder Include="Advertisements\Commands\DeleteAdvertisement\" />
+    <Folder Include="Advertisements\Queries\GetAdvertisement\" />
     <Folder Include="Clients\Queries\" />
     <Folder Include="CodeGroups\Commands\" />
+    <Folder Include="Codes\Commands\EditCode\" />
+    <Folder Include="Complaints\Queries\GetComplaint\" />
+    <Folder Include="Contact\Commands\DeleteMessage\" />
+    <Folder Include="Contact\Queries\GetContactUsMessage\" />
+    <Folder Include="Suggestions\Commands\DeleteSuggestion\" />
+    <Folder Include="Suggestions\Queries\GetSuggestion\" />
     <Folder Include="Tags\Commands\" />
     <Folder Include="Common\Mappings\" />
     <Folder Include="Users\Queries\" />

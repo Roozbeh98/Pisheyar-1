@@ -59,10 +59,10 @@ namespace Pisheyar.Infrastructure.Persistence
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<RolePermission> RolePermission { get; set; }
         public virtual DbSet<Setting> Setting { get; set; }
-        public virtual DbSet<SmsProviderConfiguration> SmsProviderConfiguration { get; set; }
-        public virtual DbSet<SmsProviderNumber> SmsProviderNumber { get; set; }
+        public virtual DbSet<SmsProviderSetting> SmsProviderSetting { get; set; }
+        public virtual DbSet<SmsProviderSettingNumber> SmsProviderSettingNumber { get; set; }
         public virtual DbSet<SmsResponse> SmsResponse { get; set; }
-        public virtual DbSet<SmsSetting> SmsSetting { get; set; }
+        public virtual DbSet<SmsProvider> SmsProvider { get; set; }
         public virtual DbSet<SmsTemplate> SmsTemplate { get; set; }
         public virtual DbSet<Suggestion> Suggestion { get; set; }
         public virtual DbSet<Tag> Tag { get; set; }

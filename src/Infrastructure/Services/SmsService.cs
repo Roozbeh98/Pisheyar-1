@@ -22,7 +22,7 @@ namespace Pisheyar.Infrastructure.Services
         public SmsService(IPisheyarContext context)
         {
             _context = context;
-            apikey = _context.SmsProviderConfiguration.FirstOrDefault().Apikey;
+            apikey = _context.SmsProviderSetting.FirstOrDefault().Apikey;
         }
 
         private string GetSmsTemplateName(SmsTemplate template)
