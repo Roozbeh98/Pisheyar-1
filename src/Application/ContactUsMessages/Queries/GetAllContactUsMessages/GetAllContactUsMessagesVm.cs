@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pisheyar.Application.Posts.Queries.GetAllContactUsMessages
+namespace Pisheyar.Application.ContactUsMessages.Queries.GetAllContactUsMessages
 {
     public class GetAllContactUsMessagesVm
     {

@@ -86,7 +86,7 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
 
                     // TODO: error handling
 
-                    //if (monthNum == 0) return new GetAllPaymentsVm()
+                    //if (month == 0) return new GetAllPaymentsVm()
                     //{
                     //    Message = "تاریخ شروع نامعتبر",
                     //    State = (int)GetAllPaymentsState.InvalidStartDate
@@ -107,7 +107,7 @@ namespace Pisheyar.Application.Payments.Queries.GetAllPayments
 
                     // TODO: error handling
 
-                    //if (monthNum == 0) return new GetAllPaymentsVm()
+                    //if (month == 0) return new GetAllPaymentsVm()
                     //{
                     //    Message = "تاریخ پایان نامعتبر",
                     //    State = (int)GetAllPaymentsState.InvalidEndDate

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Pisheyar.Application.Contact.Commands.SendMessage
+namespace Pisheyar.Application.ContactUsMessages.Commands.SendMessage
 {
     public class SendMessageVm
     {

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Pisheyar.Application.Contact.Commands.SendMessage;
-using Pisheyar.Application.Posts.Queries.GetAllContactUsMessages;
+using Pisheyar.Application.ContactUsMessages.Commands.SendMessage;
+using Pisheyar.Application.ContactUsMessages.Queries.GetAllContactUsMessages;
 
 namespace WebUI.Controllers
 {

@@ -6,7 +6,7 @@ using Pisheyar.Domain.Entities;
 using System;
 using System.Collections.Generic;
 
-namespace Pisheyar.Application.Posts.Queries.GetAllContactUsMessages
+namespace Pisheyar.Application.ContactUsMessages.Queries.GetAllContactUsMessages
 {
     public class GetAllContactUsMessagesDto : IMapFrom<ContactUs>
     {

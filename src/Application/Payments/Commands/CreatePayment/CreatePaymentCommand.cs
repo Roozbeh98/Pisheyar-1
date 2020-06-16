@@ -16,6 +16,8 @@ namespace Pisheyar.Application.Payments.Commands.CreatePayment
     {
         public int Cost { get; set; }
 
+        public string DiscountCode { get; set; }
+
         public class CreatePaymentCommandHandler : IRequestHandler<CreatePaymentCommand, CreatePaymentVm>
         {
             private readonly IPisheyarContext _context;
@@ -58,6 +60,11 @@ namespace Pisheyar.Application.Payments.Commands.CreatePayment
                     };
                 }
 
+                if (!string.IsNullOrEmpty(request.DiscountCode))
+                {
+
+                }
+                
                 // TODO: check if it exists => update
 
                 var payment = new Payment()

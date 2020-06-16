@@ -10,7 +10,7 @@ using Pisheyar.Domain.Enums;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
-namespace Pisheyar.Application.Contact.Commands.SendMessage
+namespace Pisheyar.Application.ContactUsMessages.Commands.SendMessage
 {
     public class SendMessageCommand : IRequest<SendMessageVm>
     {

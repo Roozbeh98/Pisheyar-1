@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using AutoMapper.QueryableExtensions;
 using AutoMapper;
 
-namespace Pisheyar.Application.Posts.Queries.GetAllContactUsMessages
+namespace Pisheyar.Application.ContactUsMessages.Queries.GetAllContactUsMessages
 {
     public class GetAllContactUsMessagesQuery : IRequest<GetAllContactUsMessagesVm>
     {

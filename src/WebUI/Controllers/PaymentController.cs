@@ -43,7 +43,7 @@ namespace WebUI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// افزودن پرداخت
         /// </summary>
         /// <param name="command">اطلاعات درخواست پرداخت</param>
         /// <returns></returns>
@@ -54,7 +54,7 @@ namespace WebUI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// پرداخت آنلاین
         /// </summary>
         /// <param name="paymentGuid">آیدی پرداخت</param>
         /// <returns></returns>

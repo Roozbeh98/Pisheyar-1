@@ -22,11 +22,13 @@ namespace Pisheyar.Domain.Entities
         [Required]
         [StringLength(128)]
         public string Name { get; set; }
-        public int Value { get; set; }
+        [Required]
+        [StringLength(128)]
+        public string Value { get; set; }
         public DateTime ExpirationDate { get; set; }
         public DateTime CreationDate { get; set; }
         [Required]
-        public bool? IsActive { get; set; }
+        public bool IsActive { get; set; }
         public bool IsDelete { get; set; }
 
         [ForeignKey(nameof(TypeCodeId))]
